@@ -1,0 +1,167 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+DB_KelaCraftProject_Initialized(0);
+
+DB_KELA_ToolTagNames((TAG)KELAANVIL_01dc7295-d16e-4d98-afe2-ea39c5f1ba43, "KELAANVIL");
+DB_KELA_ToolTagNames((TAG)KELAWHETSTONE_80b11843-186f-4b78-bd17-850d5c7ec4d9, "KELAWHETSTONE");
+DB_KELA_ToolTagNames((TAG)KELAWORKBENCH_d2eedda0-c4ce-4602-960e-c57b4989b420, "KELAWORKBENCH");
+KBSECTION
+//REGION DEBUG region
+
+// DEBUG MESSAGE
+IF
+DualEntityEvent(_Main, _Debug, _EventMessage)
+AND
+GetHostCharacter(_Player)
+AND 
+_Main == _Debug
+AND
+GUIDToString(_Main, _ItemString)
+AND
+Concatenate("KELA DEBUG Error: ", _EventMessage, _DebugMessage)
+THEN
+ShowNotification((CHARACTER)_Player, _DebugMessage);
+DebugBreak(_DebugMessage);
+
+//END_REGION
+
+
+//REGION Kela Craft Project Initialization
+
+IF
+LevelLoaded(_)
+AND
+DB_KelaCraftProject_Initialized(0)
+THEN
+TimerLaunch("KelaCraftProject_InitDelay", 0);
+
+IF
+TimerFinished("KelaCraftProject_InitDelay")
+THEN
+NOT DB_KelaCraftProject_Initialized(0);
+DB_KelaCraftProject_Initialized(1);
+TimerLaunch("KELA_Wait_Game_Loaded", 2000);
+
+IF
+TimerFinished("KELA_Wait_Game_Loaded")
+THEN
+SetFlag(GLO_KELA_KelaCraftProject_Initialized_a344df28-2bed-42da-8862-4b7b363b3d27,NULL_00000000-0000-0000-0000-000000000000, 0); // flagType: Global
+
+//Add-on initialized
+IF
+FlagSet((FLAG)GLO_KELA_KelaCraftProject_Initialized_a344df28-2bed-42da-8862-4b7b363b3d27,NULL_00000000-0000-0000-0000-000000000000,_)
+AND
+DB_Players((CHARACTER)_Player)
+THEN
+ShowNotification((CHARACTER)_Player, "Kela Craft Project Succesfully Initialized");
+
+//END_REGION
+
+//REGION Books 
+
+// Adding the blacksmith's apprentice passive after reading his notes
+IF
+GameBookInterfaceClosed(S_KELA_Blacksmith_Apprentice_Notes_001_a1cde797-9585-47a8-be13-e83fd24da558,_Char)
+AND
+HasPassive(_Char,"PassiveFeature_Blacksmith",0)
+AND
+HasPassive(_Char,"PassiveFeature_Blacksmith_Apprentice",0)
+THEN
+ApplyStatus(_Char, "KELA_MESSAGE_GET_BLACKSMITH_APPRENTICE_PASSIVE", 15.0, 1);
+AddPassive(_Char,"PassiveFeature_Blacksmith_Apprentice");
+
+//END_REGION
+
+//REGION Upgrade weapon
+
+// Get user level
+IF
+DualEntityEvent(_Tool, _User, "KELA_GetUserLevel")
+AND
+GetLevel(_User,_Level)
+AND
+IntegerToReal(_Level,_LevelRealValue)
+THEN
+SetEntityEventReal(_Tool,"KELA_SetUserLevel",_LevelRealValue);
+
+// Proficient with weapon for upgrade
+IF
+DualEntityEvent(_Tool, _User, "KELA_GetProficiencyWithEquippedWeapon")
+AND
+GetEquippedItem((CHARACTER)_User, "Melee Main Weapon", _Weapon)
+AND
+IsProficientWith(_User, _Weapon, 1)
+THEN
+SetEntityEvent(_Tool,"KELA_SetProficiencyWithEquippedWeapon");
+
+//Because for the item in the inventory the timer in Anubis does not end
+// Timer before request roll
+IF
+EntityEvent(_Item,"KELA_Start_Upgrade_Timer")
+THEN
+ObjectTimerLaunch(_Item, "KELA_Upgrade_Timer", 2500);
+IF
+ObjectTimerFinished(_Item, "KELA_Upgrade_Timer")
+THEN
+SetEntityEvent(_Item,"KELA_Stop_Upgrade_Timer");
+//-------------------------------------------------
+// Timer for completing status calculations
+IF
+EntityEvent(_Item,"KELA_Start_ApplyStatus_Timer")
+THEN
+ObjectTimerLaunch(_Item, "KELA_ApplyStatus_Timer", 500);
+IF
+ObjectTimerFinished(_Item, "KELA_ApplyStatus_Timer")
+THEN
+SetEntityEvent(_Item,"KELA_Stop_ApplyStatus_Timer");
+//-------------------------------------------------
+
+// Oil used
+IF
+EntityEvent(_User,"KELA_Blacksmiths_Oil_Used")
+THEN
+TemplateRemoveFrom((ITEMROOT)LOOT_KELA_Smith_Oil_3486ab6b-a396-4f39-a5cf-16dee0f873fd, _User, 1);
+//ShowNotification((CHARACTER)_User, "KELA_Blacksmiths_Oil_Used");
+
+//END_REGION
+
+//REGION Use craft tool 
+
+IF
+UseStarted(_Character,_Item)
+AND
+DB_KELA_ToolTagNames(_Tag, _TagName)
+AND
+IsTagged(_Item, _Tag, 1)
+AND
+NOT GetItemByTagInInventory("KELAWEAPONUPGRADETOOL_4c6fe143-48cc-4613-9da3-2ed62440c902", _Character, _)
+AND
+CreateAtObject(KELA_Helper_Invisible_WeaponUpgradeTool_73b91f98-59ef-475d-b356-d6141db7c7af, _Character, 0, 0, "", 1, _UpgradeTool)
+THEN
+ToInventory(_UpgradeTool, _Character, 1, 0, 0);
+ShowNotification(_Character, "UseStarted 1");
+
+IF
+UseStarted(_Character,_Item)
+AND
+DB_KELA_ToolTagNames(_Tag, _TagName)
+AND
+IsTagged(_Item, _Tag, 1)
+AND
+GetItemByTagInInventory("KELAWEAPONUPGRADETOOL_4c6fe143-48cc-4613-9da3-2ed62440c902", _Character, _UpgradeTool)
+THEN
+SetEntityEvent(_UpgradeTool, _TagName);
+Use((CHARACTER)_Character, (ITEM)_UpgradeTool, "");
+ShowNotification(_Character, "UseStarted 2");
+
+// Need apply effect on tool
+IF
+EntityEvent(_Item,"KELA_Apply_Craft_Effect")
+THEN
+PlayEffect(_Item,(EFFECTRESOURCE)VFX_Status_MagicWeapon_ApplyFX_01_1a366c75-a573-78e0-e667-1f615703fcc7);
+
+//END_REGION
+EXITSECTION
+
+ENDEXITSECTION

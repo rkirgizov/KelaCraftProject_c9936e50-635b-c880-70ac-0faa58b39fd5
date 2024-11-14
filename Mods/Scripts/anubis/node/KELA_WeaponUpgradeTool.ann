@@ -1,0 +1,328 @@
+game.states.KELA_WeaponUpgradeTool = State{ function ()
+
+    modules = {"kela.util"}
+
+    -- DC 
+    local DC_WithoutOil    = DifficultyClass("DC_WithoutOil_037842fe-d4cc-435f-896b-fab76f050d5e")
+    local DC_NoBlacksmith  = DifficultyClass("DC_NoBlacksmith_8a813eb2-a3a1-4387-b316-1925ed3bf95c")
+    local DC_Blacksmith12  = DifficultyClass("DC_Blacksmith12_9e816e4c-8855-45f9-8a63-af821560dbb9")
+    local DC_Blacksmith10  = DifficultyClass("DC_Blacksmith10_413fb020-fe89-4a21-a897-c964077b22ce")
+    local DC_Blacksmith8   = DifficultyClass("DC_Blacksmith8_42965a0b-abad-4174-b7c7-4365c936c9fd")
+    local DC_Blacksmith6   = DifficultyClass("DC_Blacksmith6_adb51e69-4408-49e7-8969-29dd3b9d264b")
+    local DC_Blacksmith4   = DifficultyClass("DC_Blacksmith4_9b381c50-5f3e-4b33-8890-dc2bb37336fb")
+    local DC_Blacksmith    = DifficultyClass("DC_Blacksmith_7a53f100-1fba-4b68-aff9-cb2fcc5b5622")       
+    
+    -- Upgrade Statuses
+    local upgradeStatusesBad = {
+        "KELA_WEAPON_UPGRADED_0_1", 
+        "KELA_WEAPON_UPGRADED_0_2", 
+        "KELA_WEAPON_UPGRADED_0_3", 
+    }
+    local upgradeStatusesGood = {
+        "KELA_WEAPON_UPGRADED_1", 
+        "KELA_WEAPON_UPGRADED_2", 
+        "KELA_WEAPON_UPGRADED_3", 
+        "KELA_WEAPON_UPGRADED_4", 
+        "KELA_WEAPON_UPGRADED_5", 
+        "KELA_WEAPON_GUILD_ARTISAN_BONUS", 
+    }
+    local upgradeStatusBad_1        = "KELA_WEAPON_UPGRADED_0_1"
+    local upgradeStatusBad_2        = "KELA_WEAPON_UPGRADED_0_2"
+    local upgradeStatusBad_3        = "KELA_WEAPON_UPGRADED_0_3"
+    local upgradeStatusGood_1       = "KELA_WEAPON_UPGRADED_1"
+    local upgradeStatusGood_2       = "KELA_WEAPON_UPGRADED_2"
+    local upgradeStatusGood_3       = "KELA_WEAPON_UPGRADED_3"
+    local upgradeStatusGood_4       = "KELA_WEAPON_UPGRADED_4"
+    local upgradeStatusGood_5       = "KELA_WEAPON_UPGRADED_5"
+    local upgradeStatusGood_Artisan = "KELA_WEAPON_GUILD_ARTISAN_BONUS"
+
+    -- user
+    local user
+    local userLevel
+    local userBlacksmith = false
+    local userBlacksmithApprentice = false
+    local userGuildArtisan = false
+    -- tool and weapon
+    local validTool
+    local messageNoSuitableWeapon
+    local validWeaponForUpgrade
+    local isProficientWithWeaponForUpgrade
+    -- oil
+    local templateSmithOil
+    local ownerOfSmithOil
+    -- proccess
+    local blacksmithConditionDC
+    local statusForUpgrade
+    local isUpgrading
+
+    helpers.Init = function()
+    end
+
+    helpers.UseStartedSetup = function(e)
+        validWeaponForUpgrade = null
+        isProficientWithWeaponForUpgrade = false
+        user = e.User
+        SetEntityEvent(me,"KELA_GetUserLevel", user)
+        templateSmithOil = FindTemplate("LOOT_KELA_Smith_Oil_3486ab6b-a396-4f39-a5cf-16dee0f873fd")
+        
+        if IsTagged(user, Tag("KELABLACKSMITH_c78b77b9-b33c-43fb-8dec-a91bacebb1bf")) then
+            userBlacksmith = true
+        elseif IsTagged(user, Tag("KELABLACKSMITHAPPRENTICE_5c77c6bf-22f7-4109-b9f8-21e3bd7a2634")) then
+            userBlacksmithApprentice = true
+        end
+        
+        if IsTagged(user, Tag("GUILD_ARTISAN_baf9fb0e-f535-40a0-bb78-3ec289d84e66")) then
+            userGuildArtisan = true
+        end
+        
+    end
+
+    helpers.AnyPlayerHaveSmithOil = function()
+        ownerOfSmithOil = null
+        local smithOil = GetFirstItemByTemplateInInventory(user, templateSmithOil)
+        if smithOil ~= null then
+            ownerOfSmithOil = user
+            return true
+        end
+        local actives = GetActiveCharacters(user, 20.0)
+        for _,char in pairs(actives) do
+            if char.Character.IsPlayer then
+                smithOil = GetFirstItemByTemplateInInventory(char, templateSmithOil)
+                if smithOil ~= null then
+                    ownerOfSmithOil = char
+                    return true
+                end
+            end
+        end
+        return false
+    end
+
+    helpers.UserHasVaildWeapon = function()
+        local equippedMeleeMainHand = GetEquippedItem(user.Character, EquipmentSlot.MeleeMainHand)
+        if equippedMeleeMainHand ~= nil then
+            if (validTool == "KELAANVIL" and mod.util.IsAnvilWeapon(equippedMeleeMainHand)) 
+                or (validTool == "KELAWHETSTONE" and mod.util.IsWhetstoneWeapon(equippedMeleeMainHand)) 
+                or (validTool == "KELAWORKBENCH" and mod.util.IsWorkbenchWeapon(equippedMeleeMainHand)) then
+                    Unequip(user.Character, equippedMeleeMainHand.Item)
+                    Equip(user.Character, equippedMeleeMainHand.Item)
+                    validWeaponForUpgrade = equippedMeleeMainHand
+                    return true
+            end
+        end
+        return false
+    end
+
+    -- Remove upgrades
+    helpers.RemoveAllUpgrades = function()
+        helpers.RemoveGoodUpgrades()
+        helpers.RemoveBadUpgrades()    
+    end
+    helpers.RemoveGoodUpgrades = function()
+        if validWeaponForUpgrade ~= null then 
+            for i = #upgradeStatusesGood, 1, -1 do
+                RemoveStatus(validWeaponForUpgrade, upgradeStatusesGood[i])
+            end
+        end
+    end
+    helpers.RemoveBadUpgrades = function()
+        if validWeaponForUpgrade ~= null then 
+            for i = #upgradeStatusesBad, 1, -1 do
+                RemoveStatus(validWeaponForUpgrade, upgradeStatusesBad[i])
+            end     
+        end
+    end
+
+    -- set statuses for upgrade
+    helpers.SetStatusForGoodUpgrade = function()
+        if userLevel >= 12 then
+            statusForUpgrade = upgradeStatusGood_4
+        elseif userLevel >= 10 then
+            statusForUpgrade = upgradeStatusGood_3
+        elseif userLevel >= 8 then
+            statusForUpgrade = upgradeStatusGood_2
+        end
+        if userLevel >= 6 and isProficientWithWeaponForUpgrade then
+            RequestPassiveRoll(user.Character, me, Skill.SleightOfHand, DifficultyClass("DC_Blacksmith6_adb51e69-4408-49e7-8969-29dd3b9d264b"), "KELA_SetStatusForGoodUpgrade_RollEvent")
+        end
+    end
+    helpers.SetStatusForBadUpgrade = function()
+        statusForUpgrade = upgradeStatusBad_1
+        if HasActiveStatus(validWeaponForUpgrade, upgradeStatusBad_1) then
+            RemoveStatus(validWeaponForUpgrade, upgradeStatusBad_1)
+            statusForUpgrade = upgradeStatusBad_2
+        elseif HasActiveStatus(validWeaponForUpgrade, upgradeStatusBad_2) then
+            RemoveStatus(validWeaponForUpgrade, upgradeStatusBad_2)
+            statusForUpgrade = upgradeStatusBad_3
+        end       
+    end
+
+    helpers.StartUpgrading = function()
+        isUpgrading = true
+
+        -- SetEntityEvent(me,"KELA_Apply_Craft_Effect")
+
+        if userGuildArtisan then
+            ApplyStatus(user, "KELA_GUILD_ARTISAN_SKILLCHECK_BONUS", true, -1, me)
+        end
+        if HasActiveStatus(user, "ALCH_ELIXIR_CONCENTRATION") then 
+            ApplyStatus(user, "KELA_ALCH_ELIXIR_CONCENTRATION_BONUS", true, -1, me)
+        end
+        if ownerOfSmithOil ~= null then
+            SetEntityEvent(ownerOfSmithOil,"KELA_Blacksmiths_Oil_Used")
+        end
+              
+        SetWeaponUnsheathed(user, true, false)
+        if validTool == "KELAANVIL" then
+            ApplyStatus(me, "KELA_MESSAGE_UPGRADE_IN_PROGRESS_ANVIL", true, -1, user)      
+        elseif validTool == "KELAWHETSTONE" then
+            ApplyStatus(me, "KELA_MESSAGE_UPGRADE_IN_PROGRESS_WHETSTONE", true, -1, user)            
+        elseif validTool == "KELAWORKBENCH" then
+            ApplyStatus(me, "KELA_MESSAGE_UPGRADE_IN_PROGRESS_WORKBENCH", true, -1, user)      
+        end
+        SetEntityEvent(me,"KELA_Start_Upgrade_Timer")
+    end
+
+    helpers.StopUpgrading = function()
+        blacksmithConditionDC = null
+
+        if ownerOfSmithOil == null then
+            blacksmithConditionDC = DC_WithoutOil -- 18
+        elseif not userBlacksmith then
+            blacksmithConditionDC = DC_NoBlacksmith -- 16
+        elseif userLevel >= 12 then
+            blacksmithConditionDC = DC_Blacksmith12 -- 6
+        elseif userLevel >= 10 then
+            blacksmithConditionDC = DC_Blacksmith10 -- 8
+        elseif userLevel >= 8 then
+            blacksmithConditionDC = DC_Blacksmith8 -- 10
+        elseif userLevel >= 6 then
+            blacksmithConditionDC = DC_Blacksmith6 -- 12
+        elseif userLevel >= 4 then
+            blacksmithConditionDC = DC_Blacksmith4 -- 14
+        else
+            blacksmithConditionDC = DC_Blacksmith -- 15
+        end
+
+        RequestActiveRoll(user.Character, me, Skill.SleightOfHand, blacksmithConditionDC, "KELA_Upgrading_RollEvent")
+    end
+
+    helpers.ApplyStatus = function()
+        ApplyStatus(validWeaponForUpgrade, statusForUpgrade, true, -1, me)
+        if userGuildArtisan then
+            ApplyStatus(validWeaponForUpgrade, upgradeStatusGood_Artisan, true, -1, me)
+        end
+        SetWeaponUnsheathed(user,false, false)
+        RemoveStatus(me, "KELA_MESSAGE_UPGRADE_IN_PROGRESS_ANVIL")
+        RemoveStatus(me, "KELA_MESSAGE_UPGRADE_IN_PROGRESS_WHETSTONE")
+        RemoveStatus(me, "KELA_MESSAGE_UPGRADE_IN_PROGRESS_WORKBENCH")
+        RemoveStatus(user, "KELA_GUILD_ARTISAN_SKILLCHECK_BONUS")
+        RemoveStatus(user, "KELA_ALCH_ELIXIR_CONCENTRATION_BONUS")
+        RemoveStatus(user, "KELA_WEAPON_PROFICIENCY_SKILLCHECK_BONUS")
+        isUpgrading = false
+        validTool = null
+        messageNoSuitableWeapon = null
+    end
+
+    nodes.WeaponUpgradeTool = Action {
+        function()
+            WaitForInterrupt()
+        end
+    }
+
+    self.OnInit = function()
+        helpers.Init()
+    end
+
+    events.UseStarted = function(e)
+        if e.Object == me then
+            helpers.UseStartedSetup(e)
+            
+
+            -- SetEntityEvent(me, "KELA_EVENT " .. validTool , me)
+
+            if isUpgrading then
+                ApplyStatus(me, "KELA_MESSAGE_ERROR", true, 5.0, user)
+            else
+                -- no weapon to upgrade in hands
+                if not helpers.UserHasVaildWeapon() then
+                    if messageNoSuitableWeapon ~= null then
+                        ApplyStatus(me, messageNoSuitableWeapon, true, 5.0, user)
+                    else
+                        ApplyStatus(me, "KELA_MESSAGE_ERROR", true, 5.0, user)
+                    end
+                    return
+                end
+                -- if the weapon is too damaged
+                if HasActiveStatus(validWeaponForUpgrade, upgradeStatusBad_3) then
+                    ApplyStatus(me, "KELA_MESSAGE_SUITABLE_WEAPON_TOO_DAMAGED", true, 5.0, user)
+                    return
+                end
+                -- if no one in the party has forging oil, then we set a warning status, during which you can start Upgrading without oil
+                if helpers.AnyPlayerHaveSmithOil() or HasActiveStatus(me, "KELA_MESSAGE_PLAYER_HAS_NOT_SMITH_OIL") then
+                    -- get proficiency with equipped weapon
+                    SetEntityEvent(me,"KELA_GetProficiencyWithEquippedWeapon", user)
+                    helpers.StartUpgrading()
+                else
+                    ApplyStatus(me, "KELA_MESSAGE_PLAYER_HAS_NOT_SMITH_OIL", true, 5.0, user)
+                    return
+                end            
+            end
+        end        
+
+    end
+
+    events.RollResult = function(e)
+        if e.RollSubject == me and e.Event == "KELA_Upgrading_RollEvent" then
+            if e.Type == RollResultType.Success then
+                statusForUpgrade = upgradeStatusGood_1
+                helpers.RemoveBadUpgrades()
+                if userBlacksmith then 
+                    helpers.SetStatusForGoodUpgrade()
+                    SetEntityEvent(me,"KELA_Start_ApplyStatus_Timer")
+                else
+                    helpers.ApplyStatus()
+                end
+            elseif e.Type == RollResultType.Failure then 
+                helpers.RemoveGoodUpgrades()
+                helpers.SetStatusForBadUpgrade()
+                helpers.ApplyStatus()
+            end
+        elseif e.RollSubject == me and e.Event == "KELA_SetStatusForGoodUpgrade_RollEvent" then
+            if e.Type == RollResultType.Success then
+                if userLevel >= 12 then
+                    statusForUpgrade = upgradeStatusGood_5
+                elseif userLevel >= 10 then
+                    statusForUpgrade = upgradeStatusGood_4
+                elseif userLevel >= 8 then
+                    statusForUpgrade = upgradeStatusGood_3
+                elseif userLevel >= 6 then
+                    statusForUpgrade = upgradeStatusGood_2
+                end
+            end
+            helpers.ApplyStatus()
+        end
+    end
+   
+    events.EntityEvent = function(e)
+        if e.TargetEntity == me then
+            if e.Event == "KELAANVIL" or e.Event == "KELAWHETSTONE" or e.Event == "KELAWORKBENCH" then
+                validTool = e.Event
+                messageNoSuitableWeapon = "KELA_MESSAGE_NO_SUITABLE_WEAPON_" .. e.Event
+            elseif e.Event == "KELA_SetUserLevel" then
+                userLevel = 1
+                if type(e.Params[1]) == "number" then
+                    userLevel = e.Params[1]
+                end
+            elseif e.Event == "KELA_SetProficiencyWithEquippedWeapon" then
+                isProficientWithWeaponForUpgrade = true
+                ApplyStatus(user, "KELA_WEAPON_PROFICIENCY_SKILLCHECK_BONUS", true, -1, me)
+            elseif e.Event == "KELA_Stop_Upgrade_Timer" then
+                helpers.StopUpgrading()
+            elseif e.Event == "KELA_Stop_ApplyStatus_Timer" then
+                helpers.ApplyStatus()
+            end
+        end
+    end
+
+end
+}

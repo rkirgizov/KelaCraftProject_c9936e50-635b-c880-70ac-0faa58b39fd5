@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="7" revision="1" build="3"/>
+    <region id="TooltipExtraTexts">
+        <node id="root">
+            <children>
+                <node id="TooltipExtraTexts">
+                    <attribute id="Text" type="TranslatedString" handle="ha9baf891g6e5bg4fd8gccdfg12eac8735290" version="1"/>
+                    <attribute id="UUID" type="guid" value="b99e6dc3-0296-468e-9dde-5fe6fb1543ad"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="c045520a-c4bc-4b3a-a5d8-61667e0a1cc4">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_3" />
+        <field name="UUID" type="IdTableFieldDefinition" value="ebbcb373-63bc-4806-89f5-957a9cbfcb1b" />
+        <field name="Identifier" type="FixedStringTableFieldDefinition" value="CanUseSmithOil" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hc9e78e2dg36c7g37b0gea9dg042843fb2b55" version="1" />
+        <field name="ErrorDescriptionType" type="EnumerationTableFieldDefinition" value="ErrorStringData" enumeration_type_name="ErrorDescriptionType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_0" />
+        <field name="UUID" type="IdTableFieldDefinition" value="7098e62f-6e00-410c-afd8-436d56d86659" />
+        <field name="Identifier" type="FixedStringTableFieldDefinition" value="HasSmithOil" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h14eb2b2ag9c12g0566g3e50g852386e517ef" version="1" />
+        <field name="ErrorDescriptionType" type="EnumerationTableFieldDefinition" value="ErrorName" enumeration_type_name="ErrorDescriptionType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_1" />
+        <field name="UUID" type="IdTableFieldDefinition" value="7dce528f-ddac-41d7-a07a-6912b99dd964" />
+        <field name="Identifier" type="FixedStringTableFieldDefinition" value="CanUseWhetstoneTrue" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3887e396g0a7fgd608gfb3egf38decd708c5" version="1" />
+        <field name="ErrorDescriptionType" type="EnumerationTableFieldDefinition" value="ErrorName" enumeration_type_name="ErrorDescriptionType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_2" />
+        <field name="UUID" type="IdTableFieldDefinition" value="6448e306-2a4e-4b10-9de9-6c110e2df06f" />
+        <field name="Identifier" type="FixedStringTableFieldDefinition" value="CanUseWhetstoneFalse" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hfb107d55g64f5g55adgfab7g1eb7595bf84e" version="1" />
+        <field name="ErrorDescriptionType" type="EnumerationTableFieldDefinition" value="ErrorName" enumeration_type_name="ErrorDescriptionType" version="1" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

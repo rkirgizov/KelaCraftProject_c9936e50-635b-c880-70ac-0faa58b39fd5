@@ -1,0 +1,52 @@
+local m = AnubisModule()
+
+m.IsWhetstoneWeapon = function(entity)
+    if IsEquipmentWithProficiency(entity, ProficiencyGroup.Daggers) 
+        or IsEquipmentWithProficiency(entity, ProficiencyGroup.Rapiers) 
+        or IsEquipmentWithProficiency(entity, ProficiencyGroup.Scimitars) 
+        or IsEquipmentWithProficiency(entity, ProficiencyGroup.Greatswords) 
+        or IsEquipmentWithProficiency(entity, ProficiencyGroup.Longswords) 
+        or IsEquipmentWithProficiency(entity, ProficiencyGroup.Shortswords) 
+        or IsEquipmentWithProficiency(entity, ProficiencyGroup.Battleaxes) 
+        or IsEquipmentWithProficiency(entity, ProficiencyGroup.Greataxes) 
+        or IsEquipmentWithProficiency(entity, ProficiencyGroup.Handaxes) 
+        or IsEquipmentWithProficiency(entity, ProficiencyGroup.Glaives) 
+        or IsEquipmentWithProficiency(entity, ProficiencyGroup.Halberds) 
+        or IsEquipmentWithProficiency(entity, ProficiencyGroup.Pikes) 
+        or IsEquipmentWithProficiency(entity, ProficiencyGroup.Sickles) 
+        or IsEquipmentWithProficiency(entity, ProficiencyGroup.Spears) 
+        or IsEquipmentWithProficiency(entity, ProficiencyGroup.Tridents) 
+        or IsEquipmentWithProficiency(entity, ProficiencyGroup.Warpicks) 
+        or IsEquipmentWithProficiency(entity, ProficiencyGroup.Javelins) then
+        return true
+    end
+    return false
+end
+
+m.IsAnvilWeapon = function(entity)
+    if IsEquipmentWithProficiency(entity, ProficiencyGroup.Flails) 
+        or IsEquipmentWithProficiency(entity, ProficiencyGroup.Maces) 
+        or IsEquipmentWithProficiency(entity, ProficiencyGroup.Mauls) 
+        or IsEquipmentWithProficiency(entity, ProficiencyGroup.Morningstars) 
+        or IsEquipmentWithProficiency(entity, ProficiencyGroup.LightHammers) 
+        or IsEquipmentWithProficiency(entity, ProficiencyGroup.Warhammers) then
+        return true
+    end
+    return false
+end
+
+m.IsWorkbenchWeapon = function(entity)
+    if IsEquipmentWithProficiency(entity, ProficiencyGroup.HandCrossbows) 
+        or IsEquipmentWithProficiency(entity, ProficiencyGroup.HeavyCrossbows) 
+        or IsEquipmentWithProficiency(entity, ProficiencyGroup.Longbows) 
+        or IsEquipmentWithProficiency(entity, ProficiencyGroup.Shortbows)
+        or IsEquipmentWithProficiency(entity, ProficiencyGroup.Quarterstaffs) 
+        or IsEquipmentWithProficiency(entity, ProficiencyGroup.Clubs)
+        or IsEquipmentWithProficiency(entity, ProficiencyGroup.Greatclubs) then
+        return true
+    end
+    return false
+end
+
+
+return m

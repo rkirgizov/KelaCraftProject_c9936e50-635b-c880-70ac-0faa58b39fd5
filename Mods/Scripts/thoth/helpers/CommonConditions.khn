@@ -1,0 +1,135 @@
+function CanUseDebug()
+    local result = true
+    return ConditionResult(result)
+end
+
+-- function CanBePickapedIntoBlacksmithChest ()
+--     local entity = entity or context.Source
+--     return IsTagged(entity, Tag("KELASMITHOIL_b45cf712-6f66-4cf0-ab52-c8baeb27f8c6"))
+-- end
+
+function HasBackgroundGuildArtisan(entity)
+    local entity = entity or context.target
+    return IsTagged(entity, Tag("GUILD_ARTISAN_baf9fb0e-f535-40a0-bb78-3ec289d84e66"))
+end
+
+function CanUseWhetstone()
+    local user = context.Source
+    local whetstone = context.Target
+    local result = false
+    local strResultTrue = "CanUseWhetstoneTrue"
+    local strResultFalse = "CanUseWhetstoneFalse"
+
+
+    local oiledWhetstone = HasStatus('KELA_SMITH_OIL_USED',whetstone)
+
+    if oiledWhetstone.Result then
+        result = true
+    end
+
+    return ConditionResult(result, {ConditionError("CanUseWhetstoneFalse")}, {ConditionError("CanUseWhetstoneTrue")})
+end
+
+function CanUseAlchemyRecipe(value, needConcentration)
+    needConcentration = needConcentration or false
+    local result = true
+    local entity = context.Source
+    local strError = "CanUseAlchemyRecipe_False_"
+    local isInLaboratiry = HasStatus('KELA_LABORATORY_AURA_ACTIVE',entity)
+    local hasConcentrationStatus = HasStatus('ALCH_ELIXIR_CONCENTRATION',entity) 
+    if entity.Intelligence < value then
+        strError = strError .. "Intelligence"
+        result = false
+    end
+    if ~isInLaboratiry.Result then
+        strError = strError .. "Laboratory"
+        result = false
+    end
+    if needConcentration and ~hasConcentrationStatus.Result then
+        strError = strError .. "Concentration"
+        result = false
+    end
+    return ConditionResult(result, {ConditionError(strError, {ConditionErrorData.MakeFromNumber(value, EErrorDataType.SimpleNumber)})})
+end
+
+function CanUseWorkbenchDraft(value, needConcentration)
+    needConcentration = needConcentration or false
+    local entity = context.Source
+    local strError = "CanUseWorkbenchDraft_False_"
+    local CanUseWorkbench = HasPassive('PassiveFeature_KelaBlacksmith', entity) | HasPassive('Background_GuildArtisan',entity) | Tagged('DROWELF',entity) | Tagged('ELF',entity)   
+    local nearWorkbench = HasStatus('KELA_BLACKSMITH_FORGE_WORKBENCH_AURA',entity) 
+    local hasConcentrationStatus = HasStatus('ALCH_ELIXIR_CONCENTRATION',entity) 
+    
+    local result = true
+    if ~CanUseWorkbench.Result then
+        strError = strError .. "CanUseWorkbench"
+        result = false
+    else     
+        if entity.Level < value then
+            strError = strError .. "Level"
+            result = false
+        end
+        if ~nearWorkbench.Result then
+            strError = strError .. "Workbench"
+            result = false
+        end
+        if needConcentration and ~hasConcentrationStatus.Result then
+            strError = strError .. "Concentration"
+            result = false
+        end
+    end
+    return ConditionResult(result, {ConditionError(strError, {ConditionErrorData.MakeFromNumber(value, EErrorDataType.SimpleNumber)})})
+end
+
+function CanUseForgeTools(value, needConcentration)
+    needConcentration = needConcentration or false
+    local entity = context.Source
+    local strError = "CanUseForgeTools_False_"
+    local hasFeatBlacksmith = HasPassive('PassiveFeature_KelaBlacksmith',entity)    
+    local isInForge = HasStatus('KELA_BLACKSMITH_FORGE_FIRSTSTAGE_AURA',entity) | HasStatus('KELA_BLACKSMITH_FORGE_SECONDSTAGE_AURA',entity)
+    local hasConcentrationStatus = HasStatus('ALCH_ELIXIR_CONCENTRATION',entity) 
+    
+    local result = true
+    if ~hasFeatBlacksmith.Result then
+        strError = strError .. "Blacksmith"
+        result = false
+    else     
+        if entity.Level < value then
+            strError = strError .. "Level"
+            result = false
+        end
+        if ~isInForge.Result then
+            strError = strError .. "Forge"
+            result = false
+        end
+        if needConcentration and ~hasConcentrationStatus.Result then
+            strError = strError .. "Concentration"
+            result = false
+        end
+    end
+    return ConditionResult(result, {ConditionError(strError, {ConditionErrorData.MakeFromNumber(value, EErrorDataType.SimpleNumber)})})
+end
+
+function IsForgeFirstStage ()
+    local entity = context.Source
+    result = HasStatus('KELA_BLACKSMITH_FORGE_FIRSTSTAGE_AURA',entity)
+    return ConditionResult(result.Result, {ConditionError("IsForgeFirstStage_False")})
+end
+function IsForgeSecondStage ()
+    local entity = context.Source
+    result = HasStatus('KELA_BLACKSMITH_FORGE_SECONDSTAGE_AURA',entity)
+    return ConditionResult(result.Result, {ConditionError("IsForgeSecondStage_False")})
+end
+function IsForgeSussurStage ()
+    local entity = context.Source
+    result = HasStatus('KELA_SUSSUR_FORGE_AURA_ACTIVE',entity)
+    return ConditionResult(result.Result, {ConditionError("IsForgeSussurStage_False")})
+end
+
+function StrengthEqualOrGreaterThan(value, entity)
+    entity = entity or context.Target
+    local errorTrue = {ConditionError("StrengthEqualOrGreaterThan_True", {ConditionErrorData.MakeFromNumber(value, EErrorDataType.SimpleNumber)})}
+    local errorFalse = {ConditionError("StrengthEqualOrGreaterThan_False", {ConditionErrorData.MakeFromNumber(value, EErrorDataType.SimpleNumber)})}
+    return ConditionResult(entity.Strength >= value, errorFalse, errorTrue)
+end
+

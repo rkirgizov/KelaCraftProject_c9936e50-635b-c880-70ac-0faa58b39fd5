@@ -1,0 +1,4 @@
+treasure itemtypes "Common","Uncommon","Rare","Epic","Legendary","Divine","Unique"
+new treasuretable "KELA_Debug_Treasures"
+new subtable "7,1"
+object category "I_KELA_CONS_Smith_Oil",1,0,0,0,0,0,0,0

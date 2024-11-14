@@ -1,0 +1,53 @@
+<ls:StateMachine xmlns:ls="clr-namespace:ls;assembly=Code"
+              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <ls:StateMachine.States>
+
+        <!--STATE: Active Roll -->
+        <ls:State Name = "ActiveRoll" DisableStatesBelow = "True" HideStatesBelow="True" IsModal="True" Layout = "Adaptive" Owner = "Player" ForceSplitscreen="False">
+            <!-- <ls:State.Widgets>
+                <ls:StateWidget Filename="ActiveRoll_c.xaml" Layer="PopupPanels"/>
+            </ls:State.Widgets>
+            <ls:State.Events>
+                <ls:StateEvent Name = "OpenMessageBox">
+                    <ls:StateEvent.Actions>
+                        <ls:PushState Name="MessageBox"/>
+                    </ls:StateEvent.Actions>
+                </ls:StateEvent>
+                <ls:StateEvent Name = "CloseWidget">
+                    <ls:StateEvent.Actions>
+                        <ls:RemoveState/>
+                    </ls:StateEvent.Actions>
+                </ls:StateEvent>
+                <ls:StateEvent Name = "OpenTutorial">
+                    <ls:StateEvent.Actions>
+                        <ls:AddSubstate Name="Tutorial"/>
+                    </ls:StateEvent.Actions>
+                </ls:StateEvent>
+                <ls:StateEvent Name = "OpenSelectionFlyOut">
+                    <ls:StateEvent.Actions>
+                        <ls:AddSubstate Name="SelectionFlyOut"/>
+                    </ls:StateEvent.Actions>
+                </ls:StateEvent>
+                <ls:StateEvent Name = "OpenPinnedTooltips">
+                    <ls:StateEvent.Actions>
+                        <ls:AddSubstate Name="PinnedTooltips"/>
+                    </ls:StateEvent.Actions>
+                </ls:StateEvent>
+                <ls:StateEvent Name = "ToggleGameMenu">
+                    <ls:StateEvent.Actions>
+                        <ls:PushState Name="Paused"/>
+                    </ls:StateEvent.Actions>
+                </ls:StateEvent>
+                <ls:StateEvent Name = "IE.ToggleInGameMenu">
+                    <ls:StateEvent.Actions>
+                        <ls:PushState Name="Paused"/>
+                    </ls:StateEvent.Actions>
+                </ls:StateEvent>
+            </ls:State.Events> -->
+        </ls:State>
+
+        
+    </ls:StateMachine.States>
+
+</ls:StateMachine>

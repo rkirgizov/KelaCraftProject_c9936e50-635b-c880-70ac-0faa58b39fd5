@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="aaa76b11-1bc1-445d-bb70-abda08f6decb">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="037842fe-d4cc-435f-896b-fab76f050d5e" />
+        <field name="Name" type="NameTableFieldDefinition" value="WithoutOil" />
+        <field name="Difficulties" type="StringTableFieldDefinition" value="18" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8a813eb2-a3a1-4387-b316-1925ed3bf95c" />
+        <field name="Name" type="NameTableFieldDefinition" value="NoBlacksmith" />
+        <field name="Difficulties" type="StringTableFieldDefinition" value="16" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7a53f100-1fba-4b68-aff9-cb2fcc5b5622" />
+        <field name="Name" type="NameTableFieldDefinition" value="Blacksmith" />
+        <field name="Difficulties" type="StringTableFieldDefinition" value="15" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9b381c50-5f3e-4b33-8890-dc2bb37336fb" />
+        <field name="Name" type="NameTableFieldDefinition" value="Blacksmith4" />
+        <field name="Difficulties" type="StringTableFieldDefinition" value="14" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="adb51e69-4408-49e7-8969-29dd3b9d264b" />
+        <field name="Name" type="NameTableFieldDefinition" value="Blacksmith6" />
+        <field name="Difficulties" type="StringTableFieldDefinition" value="12" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="42965a0b-abad-4174-b7c7-4365c936c9fd" />
+        <field name="Name" type="NameTableFieldDefinition" value="Blacksmith8" />
+        <field name="Difficulties" type="StringTableFieldDefinition" value="10" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="413fb020-fe89-4a21-a897-c964077b22ce" />
+        <field name="Name" type="NameTableFieldDefinition" value="Blacksmith10" />
+        <field name="Difficulties" type="StringTableFieldDefinition" value="8" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9e816e4c-8855-45f9-8a63-af821560dbb9" />
+        <field name="Name" type="NameTableFieldDefinition" value="Blacksmith12" />
+        <field name="Difficulties" type="StringTableFieldDefinition" value="6" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>
