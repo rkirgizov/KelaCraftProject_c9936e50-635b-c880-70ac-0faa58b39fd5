@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <contentList xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <content contentuid="h7b1c0fcag0704gd3bdg7b83g1d04e350470e" version="1">Anvil</content>
-  <content contentuid="hcd2aa42dgfd80g40d6gb65fg9c8cd4a2a7d1" version="14">KELA Anvil</content>
+  <content contentuid="hcd2aa42dgfd80g40d6gb65fg9c8cd4a2a7d1" version="15">KELA Anvil</content>
   <content contentuid="h32fe5703g6d4cg9e63g5623g27acd8adfa58" version="1">VO_POSTPROCESS</content>
   <content contentuid="h7128ab3dg508eg4819g4bfcg1d67d5110029" version="1">VO_POSTPROCESS tooltip</content>
   <content contentuid="hf253fe29g0131gbebeg40ddg88591372a74a" version="1">TORCH</content>
@@ -951,8 +951,8 @@
   <content contentuid="h64f6603agb728g4284g64c7g991cc09b870a" version="2">KELAWORKBENCH tooltip</content>
   <content contentuid="h8344e68eg4e00g07d2g6521g1c3a9a834080" version="2">KELAWHETSTONE</content>
   <content contentuid="h2f49abf1g9515gc4c9g4091g8c6e55751ee5" version="2">KELAWHETSTONE tooltip</content>
-  <content contentuid="h40f55ab4g1998g4dfagae4dgc0857f167d3f" version="48">Workbench</content>
-  <content contentuid="h02ada5begfce9g4138g9e64g8159047f035c" version="49">Though scratched and stained, the sturdy wood provides a perfect working space.</content>
+  <content contentuid="h40f55ab4g1998g4dfagae4dgc0857f167d3f" version="52">Kela Workbench</content>
+  <content contentuid="h02ada5begfce9g4138g9e64g8159047f035c" version="53">Though scratched and stained, the sturdy wood provides a perfect working space.</content>
   <content contentuid="hc3980eceg2297g4132g9a64g3c1b1f40b90c" version="31">Whetstone</content>
   <content contentuid="hd7510306g5a37g4948g8e4ag0930d0cd11c6" version="16">Whetstone</content>
   <content contentuid="hc4525474g5654gb0f2gfb25g1ec77a17b424" version="1">Silence Aura</content>
@@ -990,8 +990,8 @@
   <content contentuid="hbe6e860egabaegbe74g8944ga8834e1290bf" version="1">Use</content>
   <content contentuid="h3aaec276g8efcg4378gd136gbe6d05547535" version="6">KELA useful tool</content>
   <content contentuid="h75837053g1ab6g0396ge570g568248766b73" version="7">KELA Whetstone A</content>
-  <content contentuid="hc0470050ge70eg4f6eg764bg4589a33dd073" version="52">KELA Whetstone B</content>
-  <content contentuid="hef370917ged4ag82e9g7e7bg58d2dcaf15a5" version="50">Use</content>
+  <content contentuid="hc0470050ge70eg4f6eg764bg4589a33dd073" version="53">KELA Whetstone B</content>
+  <content contentuid="hef370917ged4ag82e9g7e7bg58d2dcaf15a5" version="51">Use</content>
   <content contentuid="hff21d79eg2959g29e5g0b4cge84428891a53" version="2">Upgrade Weapon</content>
   <content contentuid="hb2717552ge793g4804g04a3ge6d1c80f421b" version="2">Can upgrade your weapon</content>
   <content contentuid="h87f84af8g6de5g2b68g7c72gdebc9ea52d0b" version="2">Craft</content>
@@ -1229,8 +1229,8 @@
   <content contentuid="hfd6dc39dgf208gc535g9280gcec177192478" version="2">KELA Gives a weapon an attack bonus [1], a damage bonus [2].</content>
   <content contentuid="h4ee93350g2979g7628g1af9g6fee10ca8b01" version="2">KELA Guild Quality</content>
   <content contentuid="h5491c51dg71fag7f2ag6ccag91ce8fabe363" version="2">KELA This weapon has been upgraded by a skilled guild artisan, giving it an additional attack bonus [1].</content>
-  <content contentuid="h2e0fc362g9423ge904gd1f2g536a0c11c782" version="2">KELA Upgrade in progress</content>
-  <content contentuid="he67fb955g1325gae36gfb6bga637b160567b" version="3">KELA Improvement in progress, need to wait for completion.</content>
+  <content contentuid="h2e0fc362g9423ge904gd1f2g536a0c11c782" version="3">KELA Upgrade in process</content>
+  <content contentuid="he67fb955g1325gae36gfb6bga637b160567b" version="4">KELA Improvement in process, need to wait for completion.</content>
   <content contentuid="hb916afacg1ef8ge856gcc4bg027b87dff5c0" version="2">KELA Not possible now</content>
   <content contentuid="ha4157baagc891g225eg229eg230914f05ab2" version="4">KELA The action cannot be performed at this time.</content>
   <content contentuid="h193ebf76g645bg2c63g70edg709f4f628936" version="2">KELA The Artisan's Past</content>
@@ -1257,7 +1257,7 @@
   <content contentuid="h1a8cf37dga2b7g8f93g748dgef4dcf8774d1" version="3">KELA You have gained access to weapon upgrades in forges and workbenches, but the upgrade level is limited to the minimum. &lt;br&gt;Forging new weapons and tempering are only available to the blacksmith.</content>
   <content contentuid="h556bd450ga0d7g5642g6373gcdfbe4796bd0" version="1">KELABLACKSMITHLOOT</content>
   <content contentuid="hac75bd97g3095g8898g2232gbc5b97db9b3e" version="1">KELABLACKSMITHLOOT tooltip</content>
-  <content contentuid="h7c4fb3dbg26a5g9e84ge4d5g4da7b60b2c3c" version="3">&lt;b&gt;Notes of a blacksmith's apprentice.&lt;/b&gt;&lt;br&gt;You won't learn much, only about upgrading weapons to a minimum level, but at least it says how to work with a workbench and a forge...&lt;br&gt;It's worth trying to upgrade some weapons.&lt;br&gt;&lt;br&gt;&lt;b&gt;Weapon upgrading&lt;/b&gt;&lt;br&gt;1. The Blacksmith passive must be in the Off state.&lt;br&gt;2. Take the weapon to be upgraded in your Main hand.&lt;br&gt;3. Use a tool. If no one in the party has Blacksmith's Oil, then click on the tool again while the warning is active.&lt;br&gt;3. The difficulty of the rolls and the upgrade level are affected by the use of Blacksmith's Oil, the presence of the feat Blacksmith or background Guild Artisan, the Player's level, and proficiency with weapon.&lt;br&gt;&lt;br&gt;&lt;b&gt;Tools and upgradeable weapons:&lt;/b&gt;&lt;br&gt;Whetstone - piercing and slashing weapons&lt;br&gt;Anvil - blunt weapons&lt;br&gt;Workbench - ranged weapons</content>
+  <content contentuid="h7c4fb3dbg26a5g9e84ge4d5g4da7b60b2c3c" version="4">&lt;b&gt;Notes of a blacksmith's apprentice.&lt;/b&gt;&lt;br&gt;You won't learn much, only about upgrading weapons to a minimum level, but at least it says how to work with a workbench and a forge...&lt;br&gt;It's worth trying to upgrade some weapons.&lt;br&gt;&lt;br&gt;&lt;b&gt;Weapon upgrading&lt;/b&gt;&lt;br&gt;1. The Blacksmith passive must be in the Off state.&lt;br&gt;2. Take the weapon to be upgraded in your Main hand.&lt;br&gt;3. Use a tool. If no one in the party has Blacksmith's Oil, then click on the tool again while the warning is active.&lt;br&gt;3. The difficulty of the rolls and the upgrade level are affected by the use of Blacksmith's Oil, the presence of the feat Blacksmith or background Guild Artisan, the Player's level, and proficiency with weapon.&lt;br&gt;&lt;br&gt;&lt;b&gt;Tools and upgradeable weapons:&lt;/b&gt;&lt;br&gt;Whetstone - piercing and slashing weapons&lt;br&gt;Anvil - blunt weapons&lt;br&gt;Workbench - ranged weapons</content>
   <content contentuid="h3e3c7493g124dgae22g4d2bg6c9d7dfe1543" version="2">KELA The pages of this book are written in large, sloppy handwriting.</content>
   <content contentuid="hac77effegd241gdd53g80f0gead914e1fa50" version="1">Daredevil Proximity</content>
   <content contentuid="h8f508851g9fe7g56e3g0ecfg33ebfe6c500f" version="1">Your &lt;LSTag Tooltip="RangedSpellAttack"&gt;Ranged Spell Attacks&lt;/LSTag&gt; are made as melee spell attacks when you are adjacent to a hostile creature. This effect can be toggled off.</content>
@@ -1285,4 +1285,27 @@
   <content contentuid="ha2952b9fg7f4cg4167g36f5g16bd1e833280" version="1">KELA_UPGRADETOOL_INVENTORY</content>
   <content contentuid="h79b6c4f5g9c83ge3b9g5801gb1da3b9eacda" version="2">KELA Concentration on work</content>
   <content contentuid="hb2452c40ge4b5g3e94g575dge7ea90bf6712" version="2">KELA The Elixir of Peerless Focus allows you to focus on your work and adds &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on crafting checks.</content>
+  <content contentuid="h63c76128g0344g4fbfg81ddg8b6204f6b5c8" version="3">Kela Workbench</content>
+  <content contentuid="hc8b6a212ga81eg4566gb6a4g6dd4b1926173" version="3">Though scratched and stained, the sturdy wood provides a perfect working space.</content>
+  <content contentuid="h1fc60a24geaecg4a09gb731g94b73338aeb0" version="3">Kela Workbench</content>
+  <content contentuid="hf76aeb71g4492g4556g8d5bgef462e44c87b" version="3">Though scratched and stained, the sturdy wood provides a perfect working space.</content>
+  <content contentuid="hca4ada95gf7c5g43a3g9094g4ddf13996b20" version="3">Kela Workbench</content>
+  <content contentuid="h40fec372g267cg4902g9ebeg73633fe8d070" version="3">Though scratched and stained, the sturdy wood provides a perfect working space.</content>
+  <content contentuid="h53781230geaf0g4fbbg990bg28fde29791fe" version="5">Bench</content>
+  <content contentuid="h8d1aafedgbb29g492aga917g3ba3a8f878a0" version="5">Though scratched and stained, the sturdy wood provides a perfect working space.</content>
+  <content contentuid="h7ea0f425g1ac7g4a40g9e00ge8c0afb02dbb" version="3">Kela Workbench</content>
+  <content contentuid="hb6e2050fg86c4g42c1g91c4g019f6814ac0e" version="3">Though scratched and stained, the sturdy wood provides a perfect working space.</content>
+  <content contentuid="hf9a74a2fg6e4dg4717gae5cg4b295c28dfe0" version="4">Anvil</content>
+  <content contentuid="h7e21f5a0g4669g09d4g9715g3c56ff440683" version="3">KELAWEAPONCREATETOOL</content>
+  <content contentuid="h0bd3d97bgb63eg583ag9de2ga80d36c42326" version="3">KELAWEAPONCREATETOOL</content>
+  <content contentuid="h9c1eb0d8g8193g92bcg171dgad8234de53e0" version="2">KELADEBUG</content>
+  <content contentuid="h5bdf2bbeg81fcg4515g81aeg1f107c127f66" version="2">KELADEBUG</content>
+  <content contentuid="h41e453edg4db9g8380g7cfdg343f0571ad30" version="2">KELAMESSAGE</content>
+  <content contentuid="h6482ff79gf820g9811g25e9gce52428895a2" version="2">KELAMESSAGE</content>
+  <content contentuid="h9eba6f35gdb8fg7bd3gf2c3g90fa8f5c4e69" version="1">KELA No one in your party nearby has &lt;LSTag Type="Status" Tooltip="KELA_ITEM_TOOLTIP_SMITH_OIL"&gt;Blacksmith Oil&lt;/LSTag&gt;.</content>
+  <content contentuid="hb43fe8bdg067eg9a93g943eg0be980edae00" version="1">%%% EMPTY</content>
+  <content contentuid="h62e83eb6ga37bg605eg1f29g30a56cb31e9b" version="1">KELA Upgrade in process</content>
+  <content contentuid="hb0952471g57edgd7e4gf4acgb1769cbda2be" version="1">KELA Improvement in process, need to wait for completion.</content>
+  <content contentuid="h5002ae53ge95dg1003gbb87g818d38daf1e4" version="1">KELA Upgrade in process</content>
+  <content contentuid="h83c6314bgf468g2f1ag7f8fg6de823bc902b" version="1">KELA Improvement in process, need to wait for completion.</content>
 </contentList>

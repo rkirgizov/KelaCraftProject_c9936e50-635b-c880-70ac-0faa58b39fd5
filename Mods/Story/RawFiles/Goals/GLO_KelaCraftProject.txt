@@ -3,9 +3,9 @@ SubGoalCombiner SGC_AND
 INITSECTION
 DB_KelaCraftProject_Initialized(0);
 
-DB_KELA_ToolTagNames((TAG)KELAANVIL_01dc7295-d16e-4d98-afe2-ea39c5f1ba43, "KELAANVIL");
-DB_KELA_ToolTagNames((TAG)KELAWHETSTONE_80b11843-186f-4b78-bd17-850d5c7ec4d9, "KELAWHETSTONE");
-DB_KELA_ToolTagNames((TAG)KELAWORKBENCH_d2eedda0-c4ce-4602-960e-c57b4989b420, "KELAWORKBENCH");
+DB_KELA_Tools((TAG)KELAANVIL_01dc7295-d16e-4d98-afe2-ea39c5f1ba43, "KELAANVIL");
+DB_KELA_Tools((TAG)KELAWHETSTONE_80b11843-186f-4b78-bd17-850d5c7ec4d9, "KELAWHETSTONE");
+DB_KELA_Tools((TAG)KELAWORKBENCH_d2eedda0-c4ce-4602-960e-c57b4989b420, "KELAWORKBENCH");
 KBSECTION
 //REGION DEBUG region
 
@@ -19,10 +19,23 @@ _Main == _Debug
 AND
 GUIDToString(_Main, _ItemString)
 AND
-Concatenate("KELA DEBUG Error: ", _EventMessage, _DebugMessage)
+GetDisplayName(_Main,_TranslatedStringKey)
+AND
+ResolveTranslatedString(_TranslatedStringKey,_Name)
+AND
+Concatenate("KELA DEBUG (Entity ",_Name,_FirstResult)
+//AND
+//Concatenate(_FirstResult," GUID ",_SecondResult)
+//AND
+//Concatenate(_SecondResult,_ItemString,_ThirdResult)
+AND
+Concatenate(_FirstResult,"): ",_FourthResult)
+AND
+Concatenate(_FourthResult,_EventMessage,_FinalResult)
 THEN
-ShowNotification((CHARACTER)_Player, _DebugMessage);
-DebugBreak(_DebugMessage);
+//ShowNotification((CHARACTER)_Player, _FinalResult);
+DebugBreak(_FinalResult);
+DebugText(_Player, _FinalResult);
 
 //END_REGION
 
@@ -73,29 +86,154 @@ AddPassive(_Char,"PassiveFeature_Blacksmith_Apprentice");
 
 //END_REGION
 
-//REGION Upgrade weapon
+//REGION Use craft tool 
 
-// Get user level
+// NOT PASS Check Upgrade in Process
 IF
-DualEntityEvent(_Tool, _User, "KELA_GetUserLevel")
+UseStarted(_User,_Tool)
+AND
+DB_KELA_Tools(_Tag, _TagName)
+AND
+IsTagged(_Tool, _Tag, 1)
+AND
+Concatenate("KELA_MESSAGE_UPGRADE_IN_PROCESS_",_TagName,_InProcessStatus)
+AND
+HasActiveStatus(_Tool, _InProcessStatus, 1)
+THEN
+PROC_PlayCantUseItemAD((CHARACTER)_User);
+
+// PASS Check Upgrade in Process with Oil Owner
+IF
+UseStarted(_User,_Tool)
+AND
+DB_KELA_Tools(_Tag, _TagName)
+AND
+IsTagged(_Tool, _Tag, 1)
+AND
+GetItemByTagInInventory("KELAWEAPONUPGRADETOOL_4c6fe143-48cc-4613-9da3-2ed62440c902", _Tool, _UpgradeTool)
+AND
+Concatenate("KELA_MESSAGE_UPGRADE_IN_PROCESS_",_TagName,_InProcessStatus)
+AND
+NOT HasActiveStatus(_Tool, _InProcessStatus, 1)
 AND
 GetLevel(_User,_Level)
 AND
 IntegerToReal(_Level,_LevelRealValue)
-THEN
-SetEntityEventReal(_Tool,"KELA_SetUserLevel",_LevelRealValue);
-
-// Proficient with weapon for upgrade
-IF
-DualEntityEvent(_Tool, _User, "KELA_GetProficiencyWithEquippedWeapon")
 AND
-GetEquippedItem((CHARACTER)_User, "Melee Main Weapon", _Weapon)
+GetItemByTagInPartyInventory("KELASMITHOIL_b45cf712-6f66-4cf0-ab52-c8baeb27f8c6", (CHARACTER)_User, (ITEM)_Oil)
+AND
+GetInventoryOwner(_Oil, _OilOwner)
+THEN
+SetDualEntityEvent(_UpgradeTool, _Tool, _TagName); // set coretool and coretooltag
+SetEntityEventReal(_UpgradeTool,"KELA_SetUserLevel",_LevelRealValue); // set user level
+SetDualEntityEvent(_UpgradeTool, _OilOwner, "KELA_SetOwnerOfSmithOil"); // set oil owner
+SetDualEntityEvent(_User, _UpgradeTool, "KELA_CheckProficiencyWithWeapon");
+Use((CHARACTER)_User, (ITEM)_UpgradeTool, "");
+
+// PASS Check Upgrade in Process Without Oil Owner, but with status KELA_MESSAGE_PLAYER_HAS_NOT_SMITH_OIL
+IF
+UseStarted(_User,_Tool)
+AND
+DB_KELA_Tools(_Tag, _TagName)
+AND
+IsTagged(_Tool, _Tag, 1)
+AND
+GetItemByTagInInventory("KELAWEAPONUPGRADETOOL_4c6fe143-48cc-4613-9da3-2ed62440c902", _Tool, _UpgradeTool)
+AND
+Concatenate("KELA_MESSAGE_UPGRADE_IN_PROCESS_",_TagName,_InProcessStatus)
+AND
+NOT HasActiveStatus(_Tool, _InProcessStatus, 1)
+AND
+GetLevel(_User,_Level)
+AND
+IntegerToReal(_Level,_LevelRealValue)
+AND
+NOT GetItemByTagInPartyInventory("KELASMITHOIL_b45cf712-6f66-4cf0-ab52-c8baeb27f8c6", (CHARACTER)_User, _)
+THEN
+SetDualEntityEvent(_UpgradeTool, _Tool, _TagName); // set coretool and coretooltag
+SetEntityEventReal(_UpgradeTool,"KELA_SetUserLevel",_LevelRealValue); // set user level
+SetDualEntityEvent(_UpgradeTool, NULL_00000000-0000-0000-0000-000000000000, "KELA_SetOwnerOfSmithOil"); // set NULL oil owner
+SetDualEntityEvent(_User, _UpgradeTool, "KELA_CheckProficiencyWithWeapon"); // check proficiency
+Use((CHARACTER)_User, (ITEM)_UpgradeTool, "");
+
+// ----------------------------------------------------------------
+// EXTRA CHECKS
+// ----------------------------------------------------------------
+//
+// Check Proficiency With Weapon
+IF
+DualEntityEvent(_User, _UpgradeTool, "KELA_CheckProficiencyWithWeapon")
+AND
+GetEquippedWeapon((CHARACTER)_User, _Weapon)
 AND
 IsProficientWith(_User, _Weapon, 1)
 THEN
-SetEntityEvent(_Tool,"KELA_SetProficiencyWithEquippedWeapon");
+SetEntityEventReal(_UpgradeTool,"KELA_SetProficiencyWithWeapon",1.0);
+// ELSE
+IF
+DualEntityEvent(_User, _UpgradeTool, "KELA_CheckProficiencyWithWeapon")
+AND
+GetEquippedWeapon((CHARACTER)_User, _Weapon)
+AND
+NOT IsProficientWith(_User, _Weapon, 1)
+THEN
+SetEntityEventReal(_UpgradeTool,"KELA_SetProficiencyWithWeapon",0.0);
+// ----------------------------------------------------------------
 
-//Because for the item in the inventory the timer in Anubis does not end
+// ----------------------------------------------------------------
+// ROLL RESULTS
+// RollResult((STRING)_EventName, (CHARACTER)_Roller, (GUIDSTRING)_RollSubject, (INTEGER)_ResultType, (INTEGER)_IsActiveRoll, (CRITICALITYTYPE)_Criticality)
+// ----------------------------------------------------------------
+
+// NOT Critical
+IF
+RollResult("KELA_Upgrading_RollEvent", _User, _RollSubject, _ResultType, _, _Criticality)
+AND
+NOT _Criticality == CRITICALITYTYPE.Success
+AND
+NOT _Criticality == CRITICALITYTYPE.Fail
+AND
+IntegerToReal(_ResultType,_ResultTypeRealValue)
+THEN
+SetEntityEventReal(_RollSubject,"KELA_RollResultCriticalNot",_ResultTypeRealValue);
+
+// Critical Success
+IF
+RollResult("KELA_Upgrading_RollEvent", _User, _RollSubject, _ResultType, _, _Criticality)
+AND
+_Criticality == CRITICALITYTYPE.Success
+AND
+IntegerToReal(_ResultType,_ResultTypeRealValue)
+THEN
+SetEntityEventReal(_RollSubject,"KELA_RollResultCriticalSuccess",_ResultTypeRealValue);
+
+// Critical Fail
+IF
+RollResult("KELA_Upgrading_RollEvent", _User, _RollSubject, _ResultType, _, _Criticality)
+AND
+_Criticality == CRITICALITYTYPE.Fail
+AND
+IntegerToReal(_ResultType,_ResultTypeRealValue)
+THEN
+SetEntityEventReal(_RollSubject,"KELA_RollResultCriticalFail",_ResultTypeRealValue);
+
+// ----------------------------------------------------------------
+// HANDLINGS
+// ----------------------------------------------------------------
+
+// Need apply effect on tool
+IF
+EntityEvent(_Tool,"KELA_Apply_Craft_Effect")
+THEN
+PlayEffect(_Tool,(EFFECTRESOURCE)VFX_Status_MagicWeapon_ApplyFX_01_1a366c75-a573-78e0-e667-1f615703fcc7);
+
+// Oil used
+IF
+EntityEvent(_User,"KELA_Blacksmiths_Oil_Used")
+THEN
+TemplateRemoveFrom((ITEMROOT)LOOT_KELA_Smith_Oil_3486ab6b-a396-4f39-a5cf-16dee0f873fd, _User, 1);
+
+// Because for the item in the inventory the timer in Anubis does not end
 // Timer before request roll
 IF
 EntityEvent(_Item,"KELA_Start_Upgrade_Timer")
@@ -117,49 +255,15 @@ THEN
 SetEntityEvent(_Item,"KELA_Stop_ApplyStatus_Timer");
 //-------------------------------------------------
 
-// Oil used
-IF
-EntityEvent(_User,"KELA_Blacksmiths_Oil_Used")
-THEN
-TemplateRemoveFrom((ITEMROOT)LOOT_KELA_Smith_Oil_3486ab6b-a396-4f39-a5cf-16dee0f873fd, _User, 1);
-//ShowNotification((CHARACTER)_User, "KELA_Blacksmiths_Oil_Used");
-
-//END_REGION
-
-//REGION Use craft tool 
-
-IF
-UseStarted(_Character,_Item)
-AND
-DB_KELA_ToolTagNames(_Tag, _TagName)
-AND
-IsTagged(_Item, _Tag, 1)
-AND
-NOT GetItemByTagInInventory("KELAWEAPONUPGRADETOOL_4c6fe143-48cc-4613-9da3-2ed62440c902", _Character, _)
-AND
-CreateAtObject(KELA_Helper_Invisible_WeaponUpgradeTool_73b91f98-59ef-475d-b356-d6141db7c7af, _Character, 0, 0, "", 1, _UpgradeTool)
-THEN
-ToInventory(_UpgradeTool, _Character, 1, 0, 0);
-ShowNotification(_Character, "UseStarted 1");
-
-IF
-UseStarted(_Character,_Item)
-AND
-DB_KELA_ToolTagNames(_Tag, _TagName)
-AND
-IsTagged(_Item, _Tag, 1)
-AND
-GetItemByTagInInventory("KELAWEAPONUPGRADETOOL_4c6fe143-48cc-4613-9da3-2ed62440c902", _Character, _UpgradeTool)
-THEN
-SetEntityEvent(_UpgradeTool, _TagName);
-Use((CHARACTER)_Character, (ITEM)_UpgradeTool, "");
-ShowNotification(_Character, "UseStarted 2");
-
-// Need apply effect on tool
-IF
-EntityEvent(_Item,"KELA_Apply_Craft_Effect")
-THEN
-PlayEffect(_Item,(EFFECTRESOURCE)VFX_Status_MagicWeapon_ApplyFX_01_1a366c75-a573-78e0-e667-1f615703fcc7);
+// Finishing Use Tool
+//IF
+//UseFinished(_User, _Tool, 1)
+//AND
+//DB_KELA_Tools(_Tag, _TagName)
+//AND
+//IsTagged(_Tool, _Tag, 1)
+//THEN
+//SetDualEntityEvent(_Tool, _Tool, "UseFinished");
 
 //END_REGION
 EXITSECTION

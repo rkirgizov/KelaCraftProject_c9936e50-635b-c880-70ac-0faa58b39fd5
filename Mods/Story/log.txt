@@ -66,7 +66,6 @@ UserTransferTaggedItems( (CHARACTER)_, (GUIDSTRING)_, (STRING)_, (INTEGER)_, (IN
 GetGlobalPriceModifier( [out] (REAL)_ )
 GetFirstInventoryOwnerCharacter( (GUIDSTRING)_, (GUIDSTRING)_ )
 IsReposedStanding( (GUIDSTRING)_, (INTEGER)_ )
-GetItemByTagInPartyInventory( (STRING)_, (CHARACTER)_, (ITEM)_ )
 GetSafeRomanceOption( (CHARACTER)_, (INTEGER)_ )
 GetSwarmGroup( (GUIDSTRING)_, (STRING)_ )
 QuestUpdateGetTopLevel( (STRING)_, (STRING)_, (STRING)_ )

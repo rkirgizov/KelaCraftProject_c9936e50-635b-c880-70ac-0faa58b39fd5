@@ -37,19 +37,5 @@
         <field name="LightningResistance" type="EnumerationListTableFieldDefinition" value="Resistant" enumeration_type_name="ResistanceFlags" version="1" />
       </fields>
     </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="7f2f5b21-cab8-42bb-bc37-8d614684dbee" />
-        <field name="Name" type="NameTableFieldDefinition" value="KELA_WeaponUpgradeTool" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="42cb9f1c-5c90-48dc-800b-1b9dc5bf85d9" />
-        <field name="Weight" type="FloatTableFieldDefinition" value="0" />
-        <field name="GameSize" type="EnumerationTableFieldDefinition" value="Tiny" enumeration_type_name="ObjectSize" version="1" />
-        <field name="AddToBottomBar" type="EnumerationTableFieldDefinition" value="No" enumeration_type_name="YesNo" version="1" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1" />
-        <field name="Flags" type="EnumerationListTableFieldDefinition" value="InventoryBound" enumeration_type_name="AttributeFlags" version="1" />
-        <field name="InventoryTab" type="EnumerationTableFieldDefinition" value="Hidden" enumeration_type_name="InventoryTabs" version="1" />
-        <field name="Rarity" type="EnumerationTableFieldDefinition" value="Common" enumeration_type_name="Rarity" version="1" />
-      </fields>
-    </stat_object>
   </stat_objects>
 </stats>

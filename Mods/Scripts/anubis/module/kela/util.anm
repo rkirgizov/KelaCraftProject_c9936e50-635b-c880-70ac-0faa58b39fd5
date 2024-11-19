@@ -48,5 +48,41 @@ m.IsWorkbenchWeapon = function(entity)
     return false
 end
 
+m.IsRangedWeapon = function(weapon)
+    if weapon ~= nil then
+        if IsEquipmentWithProficiency(weapon, ProficiencyGroup.HandCrossbows) 
+            or IsEquipmentWithProficiency(weapon, ProficiencyGroup.HeavyCrossbows) 
+            or IsEquipmentWithProficiency(weapon, ProficiencyGroup.Longbows) 
+            or IsEquipmentWithProficiency(weapon, ProficiencyGroup.Shortbows) then
+            return true
+        end
+        return false
+    end
+end
+
+m.IsElf = function(entity)
+    return IsTagged(entity, Tag("DROWELF_a672ac1d-d088-451a-9537-3da4bf74466c")) 
+        or IsTagged(entity, Tag("DROWHALFELF_4fa13243-199d-4c9a-b455-d844276a98f5")) 
+        or IsTagged(entity, Tag("ELF_351f4e42-1217-4c06-b47a-443dcf69b111")) 
+        or IsTagged(entity, Tag("HALFELF_34317158-8e6e-45a2-bd1e-6604d82fdda2")) 
+        or IsTagged(entity, Tag("HIGHELF_492c3200-1226-4114-bad1-f6b1ba737f3d")) 
+        or IsTagged(entity, Tag("HIGHHALFELF_52b71dea-9d4e-402d-9700-fb9c360a44c9")) 
+        or IsTagged(entity, Tag("LOLTHDROWELF_ef9c5b74-56a8-48cc-b0b9-169ee16bf026")) 
+        or IsTagged(entity, Tag("SELDARINEDROWELF_6e913b6e-58b1-41bf-8751-89250dd17bff")) 
+        or IsTagged(entity, Tag("WOODELF_889e0db5-d03e-4b63-86d7-13418f69729f")) 
+        or IsTagged(entity, Tag("WOODHALFELF_5ffb703c-3ef4-493b-966d-749bc038f6bd")) 
+
+
+        -- DROWELF_a672ac1d-d088-451a-9537-3da4bf74466c,
+        -- DROWHALFELF_4fa13243-199d-4c9a-b455-d844276a98f5,
+        -- ELF_351f4e42-1217-4c06-b47a-443dcf69b111,
+        -- HALFELF_34317158-8e6e-45a2-bd1e-6604d82fdda2,
+        -- HIGHELF_492c3200-1226-4114-bad1-f6b1ba737f3d,
+        -- HIGHHALFELF_52b71dea-9d4e-402d-9700-fb9c360a44c9,
+        -- LOLTHDROWELF_ef9c5b74-56a8-48cc-b0b9-169ee16bf026,
+        -- SELDARINEDROWELF_6e913b6e-58b1-41bf-8751-89250dd17bff,
+        -- WOODELF_889e0db5-d03e-4b63-86d7-13418f69729f,
+        -- WOODHALFELF_5ffb703c-3ef4-493b-966d-749bc038f6bd,
+end
 
 return m

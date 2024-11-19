@@ -84,6 +84,16 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb3b0219eg6740gcb52gcf4agc5efdd294949" version="2" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="974e1ba7-bd86-4efb-8c89-2b2fd09e2d88" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_USER_BLOCK_MOVEMENT" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResourceBlock(Movement)" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb43fe8bdg067eg9a93g943eg0be980edae00" version="1" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnTurn" enumeration_type_name="StatusEvent" version="1" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF5F9EA0" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="2eeaa94d-a407-4dbe-a88a-122188a810d5" />
@@ -171,40 +181,43 @@
     <stat_object color="#FF5F9EA0" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="9dd33f52-2cb8-4887-8a93-8ab338228bb0" />
-        <field name="Name" type="NameTableFieldDefinition" value="KELA_MESSAGE_UPGRADE_IN_PROGRESS_WHETSTONE" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2e0fc362g9423ge904gd1f2g536a0c11c782" version="2" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="he67fb955g1325gae36gfb6bga637b160567b" version="3" />
-        <field name="StackId" type="StringTableFieldDefinition" value="KELA_MESSAGE_UPGRADE_IN_PROGRESS_WHETSTONE" />
-        <field name="FormatColor" type="EnumerationTableFieldDefinition" value="Green" enumeration_type_name="FormatStringColor" version="1" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_MESSAGE_UPGRADE_IN_PROCESS_KELAWHETSTONE" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2e0fc362g9423ge904gd1f2g536a0c11c782" version="3" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="he67fb955g1325gae36gfb6bga637b160567b" version="4" />
+        <field name="StackId" type="StringTableFieldDefinition" value="KELA_MESSAGE_UPGRADE_IN_PROCESS_KELAWHETSTONE" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="2eeaa94d-a407-4dbe-a88a-122188a810d5" />
         <field name="Icon" type="StringTableFieldDefinition" value="Weapon_Upgrade_Good" />
         <field name="SoundStart" type="StringTableFieldDefinition" value="HUM_CUST_GrindingWeapon_Loop" />
         <field name="SoundStop" type="StringTableFieldDefinition" value="HUM_CUST_GrindingWeapon_Loop_Stop" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="ForceOverhead;DisableCombatlog" enumeration_type_name="StatusPropertyFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FF5F9EA0" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="8363b0a8-385e-44a1-9627-b1e247e18345" />
-        <field name="Name" type="NameTableFieldDefinition" value="KELA_MESSAGE_UPGRADE_IN_PROGRESS_ANVIL" />
-        <field name="StackId" type="StringTableFieldDefinition" value="KELA_MESSAGE_UPGRADE_IN_PROGRESS_ANVIL" />
-        <field name="FormatColor" type="EnumerationTableFieldDefinition" value="Green" enumeration_type_name="FormatStringColor" version="1" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="9dd33f52-2cb8-4887-8a93-8ab338228bb0" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_MESSAGE_UPGRADE_IN_PROCESS_KELAANVIL" />
+        <field name="StackId" type="StringTableFieldDefinition" value="KELA_MESSAGE_UPGRADE_IN_PROCESS_KELAANVIL" />
         <field name="Icon" type="StringTableFieldDefinition" value="Weapon_Upgrade_Good" />
-        <field name="SoundStart" type="StringTableFieldDefinition" value="FUR_GEN_Smelting_Forge_Stone_ABC_Bellows" />
-        <field name="SoundStop" type="StringTableFieldDefinition" value="FUR_GEN_Smelting_Forge_Stone_ABC_ForgeLoop_Stop" />
-        <field name="SoundLoop" type="StringTableFieldDefinition" value="FUR_GEN_Smelting_Forge_Stone_ABC_ForgeLoop" />
+        <field name="SoundStart" type="StringTableFieldDefinition" value="HAV_Tieflingsurvivors_Weaponsmith_Forging_Start" />
+        <field name="SoundStop" type="StringTableFieldDefinition" value="HAV_Tieflingsurvivors_Weaponsmith_Forging_Stop" />
+        <field name="SoundLoop" type="StringTableFieldDefinition" value="HAV_Tieflingsurvivors_Weaponsmith_Forging_Loop" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h62e83eb6ga37bg605eg1f29g30a56cb31e9b" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hb0952471g57edgd7e4gf4acgb1769cbda2be" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="ForceOverhead;DisableCombatlog" enumeration_type_name="StatusPropertyFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FF5F9EA0" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="1ecd6c3b-f95a-422f-8f00-30712bff7e7a" />
-        <field name="Name" type="NameTableFieldDefinition" value="KELA_MESSAGE_UPGRADE_IN_PROGRESS_WORKBENCH" />
-        <field name="StackId" type="StringTableFieldDefinition" value="KELA_MESSAGE_UPGRADE_IN_PROGRESS_WORKBENCH" />
-        <field name="FormatColor" type="EnumerationTableFieldDefinition" value="Green" enumeration_type_name="FormatStringColor" version="1" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="9dd33f52-2cb8-4887-8a93-8ab338228bb0" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_MESSAGE_UPGRADE_IN_PROCESS_KELAWORKBENCH" />
+        <field name="StackId" type="StringTableFieldDefinition" value="KELA_MESSAGE_UPGRADE_IN_PROCESS_KELAWORKBENCH" />
         <field name="Icon" type="StringTableFieldDefinition" value="Weapon_Upgrade_Good" />
-        <field name="SoundStart" type="StringTableFieldDefinition" value="HUM_CUST_GrindingWeapon_Loop" />
-        <field name="SoundStop" type="StringTableFieldDefinition" value="HUM_CUST_GrindingWeapon_Loop_Stop" />
+        <field name="SoundStart" type="StringTableFieldDefinition" value="Item_Container_Wood_Open" />
+        <field name="SoundStop" type="StringTableFieldDefinition" value="FUR_GEN_Smelting_Forge_Stone_ABC_ForgeLoop_Stop" />
+        <field name="SoundLoop" type="StringTableFieldDefinition" value="FUR_GEN_Smelting_Forge_Stone_ABC_ForgeLoop" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h5002ae53ge95dg1003gbb87g818d38daf1e4" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h83c6314bgf468g2f1ag7f8fg6de823bc902b" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="ForceOverhead;DisableCombatlog" enumeration_type_name="StatusPropertyFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FF5F9EA0" is_substat="false">
@@ -297,7 +310,8 @@
         <field name="StackId" type="StringTableFieldDefinition" value="KELA_WEAPON_UPGRADED_0_1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="WeaponAttackRollBonus(-1);IF(IsDamageTypeSlashing()):WeaponDamage(-1,Slashing);IF(IsDamageTypePiercing()):WeaponDamage(-1,Piercing);IF(IsDamageTypeBludgeoning()):WeaponDamage(-1,Bludgeoning)" />
         <field name="TooltipDamage" type="StringTableFieldDefinition" value="DealDamage(-1, Piercing)" />
-        <field name="ApplyEffect" type="GuidObjectTableFieldDefinition" value="0d1f50f9-b164-499a-9829-2ab46810597d" />
+        <field name="ApplyEffect" type="GuidObjectTableFieldDefinition" value="abb6d445-5db6-4b1d-be49-31336506e1de" />
+        <field name="FormatColor" type="EnumerationTableFieldDefinition" value="Yellow" enumeration_type_name="FormatStringColor" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FFA0522D" is_substat="false">
@@ -312,7 +326,7 @@
         <field name="StackId" type="StringTableFieldDefinition" value="KELA_WEAPON_UPGRADED_0_2" />
         <field name="Boosts" type="StringTableFieldDefinition" value="WeaponAttackRollBonus(-2);IF(IsDamageTypeSlashing()):WeaponDamage(-2,Slashing);IF(IsDamageTypePiercing()):WeaponDamage(-2,Piercing);IF(IsDamageTypeBludgeoning()):WeaponDamage(-2,Bludgeoning)" />
         <field name="TooltipDamage" type="StringTableFieldDefinition" value="DealDamage(-2, Piercing)" />
-        <field name="ApplyEffect" type="GuidObjectTableFieldDefinition" value="0d1f50f9-b164-499a-9829-2ab46810597d" />
+        <field name="FormatColor" type="EnumerationTableFieldDefinition" value="Orange" enumeration_type_name="FormatStringColor" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FFA0522D" is_substat="false">
@@ -327,7 +341,7 @@
         <field name="StackId" type="StringTableFieldDefinition" value="KELA_WEAPON_UPGRADED_0_3" />
         <field name="Boosts" type="StringTableFieldDefinition" value="WeaponAttackRollBonus(-3);IF(IsDamageTypeSlashing()):WeaponDamage(-3,Slashing);IF(IsDamageTypePiercing()):WeaponDamage(-3,Piercing);IF(IsDamageTypeBludgeoning()):WeaponDamage(-3,Bludgeoning)" />
         <field name="TooltipDamage" type="StringTableFieldDefinition" value="DealDamage(-3, Piercing)" />
-        <field name="ApplyEffect" type="GuidObjectTableFieldDefinition" value="0d1f50f9-b164-499a-9829-2ab46810597d" />
+        <field name="FormatColor" type="EnumerationTableFieldDefinition" value="Red" enumeration_type_name="FormatStringColor" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -359,7 +373,7 @@
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="2" />
         <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsDamageTypeSlashing()):WeaponDamage(2,Slashing);IF(IsDamageTypePiercing()):WeaponDamage(2,Piercing);IF(IsDamageTypeBludgeoning()):WeaponDamage(2,Bludgeoning)" />
         <field name="TooltipDamage" type="StringTableFieldDefinition" value="DealDamage(2, Piercing)" />
-        <field name="FormatColor" type="EnumerationTableFieldDefinition" value="Normal" enumeration_type_name="FormatStringColor" version="1" />
+        <field name="FormatColor" type="EnumerationTableFieldDefinition" value="Green" enumeration_type_name="FormatStringColor" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
