@@ -4,6 +4,44 @@
 
     <ls:StateMachine.States>
 
+        <!--STATE: Combine UI-->
+        <ls:State Name="Combine" DisableStatesBelow="False" Layout="Player" Owner="Player">
+            <!-- <ls:State.Widgets>
+                <ls:StateWidget Filename="Combine.xaml" Layer="PopupPanels" SoundLayer="NonHUDWidget"/>
+            </ls:State.Widgets>
+            <ls:State.Events>
+                <ls:StateEvent Name = "CloseWidget">
+                    <ls:StateEvent.Actions>
+                        <ls:RemoveState/>
+                    </ls:StateEvent.Actions>
+                </ls:StateEvent>
+                <ls:StateEvent Name = "IE.ToggleInGameMenu">
+                    <ls:StateEvent.Actions>
+                        <ls:RemoveState/>
+                    </ls:StateEvent.Actions>
+                </ls:StateEvent>
+            </ls:State.Events> -->
+        </ls:State>
+
+        <!--STATE: Combine UI-->
+        <ls:State Name="Combine" DisableStatesBelow="False" Layout="Player" Owner="Player">
+            <!-- <ls:State.Widgets>
+                <ls:StateWidget Filename="Combine.xaml" Layer="PopupPanels" SoundLayer="NonHUDWidget"/>
+            </ls:State.Widgets>
+            <ls:State.Events>
+                <ls:StateEvent Name = "CloseWidget">
+                    <ls:StateEvent.Actions>
+                        <ls:RemoveState/>
+                    </ls:StateEvent.Actions>
+                </ls:StateEvent>
+                <ls:StateEvent Name = "IE.ToggleInGameMenu">
+                    <ls:StateEvent.Actions>
+                        <ls:RemoveState/>
+                    </ls:StateEvent.Actions>
+                </ls:StateEvent>
+            </ls:State.Events> -->
+        </ls:State>
+
         <!--STATE: Active Roll -->
         <ls:State Name = "ActiveRoll" DisableStatesBelow = "True" HideStatesBelow="True"  IsModal="True" Layout = "Player" Owner = "Player">
             <!-- <ls:State.Widgets>

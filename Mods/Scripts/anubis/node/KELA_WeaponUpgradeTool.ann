@@ -12,20 +12,6 @@ game.states.KELA_WeaponUpgradeTool = State{ function ()
     local DC_Blacksmith4   = DifficultyClass("DC_Blacksmith4_9b381c50-5f3e-4b33-8890-dc2bb37336fb")
     local DC_Blacksmith    = DifficultyClass("DC_Blacksmith_7a53f100-1fba-4b68-aff9-cb2fcc5b5622")       
     
-    -- Elf Tags
-    -- local elfTags = {
-    --     DROWELF_a672ac1d-d088-451a-9537-3da4bf74466c,
-    --     DROWHALFELF_4fa13243-199d-4c9a-b455-d844276a98f5,
-    --     ELF_351f4e42-1217-4c06-b47a-443dcf69b111,
-    --     HALFELF_34317158-8e6e-45a2-bd1e-6604d82fdda2,
-    --     HIGHELF_492c3200-1226-4114-bad1-f6b1ba737f3d,
-    --     HIGHHALFELF_52b71dea-9d4e-402d-9700-fb9c360a44c9,
-    --     LOLTHDROWELF_ef9c5b74-56a8-48cc-b0b9-169ee16bf026,
-    --     SELDARINEDROWELF_6e913b6e-58b1-41bf-8751-89250dd17bff,
-    --     WOODELF_889e0db5-d03e-4b63-86d7-13418f69729f,
-    --     WOODHALFELF_5ffb703c-3ef4-493b-966d-749bc038f6bd,
-    -- }
-
     -- Upgrade Statuses
     local upgradeStatusesBad = {
         "KELA_WEAPON_UPGRADED_0_1", 
@@ -94,96 +80,58 @@ game.states.KELA_WeaponUpgradeTool = State{ function ()
 
     end
 
-    helpers.CheckWeaponByTool = function(weapon)
-        if (coreToolTag == "KELAANVIL" and mod.util.IsAnvilWeapon(weapon)) 
-            or (coreToolTag == "KELAWHETSTONE" and mod.util.IsWhetstoneWeapon(weapon)) 
-            or (coreToolTag == "KELAWORKBENCH" and mod.util.IsWorkbenchWeapon(weapon)) then
-                return true
-        end
-        return false
-    end
-
     helpers.GetValidWeaponForUpgrade = function()
-        local validWeapon
-        local validWeaponActive
-        local validWeaponRanged
-        local validWeaponMelee
-        local equippedWeaponActive = GetEquippedWeapon(user.Character, WeaponHandType.MainHand)
-        local equippedWeaponRanged = GetEquippedItem(user.Character, EquipmentSlot.RangedMainHand)
-        local equippedWeaponMelee = GetEquippedItem(user.Character, EquipmentSlot.MeleeMainHand)
         weaponIsDamaged = false
-
-        -- no weapon in hands
-        if equippedWeaponMelee == null and equippedWeaponRanged == null then
-            -- message
-            SetEntityEvent(me, "GetValidWeaponForUpgrade not weapon in hands", me)
+        local equippedWeaponActive = GetEquippedWeapon(user.Character, WeaponHandType.MainHand)
+        -- no active weapon
+        if equippedWeaponActive == null then
             return null
         end
-
+        -- weapon too damaged
+        if HasActiveStatus(equippedWeaponActive, "KELA_WEAPON_UPGRADED_0_3") then
+            weaponIsDamaged = true
+            return null
+        end
+        if (coreToolTag == "KELAANVIL" and mod.util.IsAnvilWeapon(equippedWeaponActive)) 
+            or (coreToolTag == "KELAWHETSTONE" and mod.util.IsWhetstoneWeapon(equippedWeaponActive)) then
+            return equippedWeaponActive
+        end
         if coreToolTag == "KELAWORKBENCH" then
-            local rangedDamaged
-            local meleeDamaged
-            -- RangedMainHand
-            if equippedWeaponRanged ~= null and helpers.CheckWeaponByTool(equippedWeaponRanged) then 
-                if HasActiveStatus(equippedWeaponRanged, "KELA_WEAPON_UPGRADED_0_3") then
-                    rangedDamaged = true
+            if mod.util.IsElf(user) and not (userBlacksmith or userBlacksmithApprentice or userGuildArtisan) then
+                if mod.util.IsRangedWeapon(equippedWeaponActive) and mod.util.IsWorkbenchWeapon(equippedWeaponActive) then
+                    return equippedWeaponActive
                 else
-                    validWeaponRanged = equippedWeaponRanged
+                    messageNoSuitableWeapon = "KELA_MESSAGE_NO_SUITABLE_WEAPON_RANGED"
                 end
-            end
-            -- MeleeMainHand
-            if equippedWeaponMelee ~= null and helpers.CheckWeaponByTool(equippedWeaponMelee) then 
-                if HasActiveStatus(equippedWeaponMelee, "KELA_WEAPON_UPGRADED_0_3") then
-                    meleeDamaged = true
-                else
-                    validWeaponMelee = equippedWeaponMelee
-                end
-            end
-            -- get valid weapon based on active
-            if validWeaponRanged ~= null and equippedWeaponActive == validWeaponRanged then
-                validWeapon = validWeaponRanged
-            elseif validWeaponMelee ~= null and equippedWeaponActive == validWeaponMelee then
-                validWeapon = validWeaponMelee
-            elseif validWeaponRanged ~= null and equippedWeaponActive ~= validWeaponRanged then
-                validWeapon = validWeaponRanged
-            elseif validWeaponMelee ~= null and equippedWeaponActive ~= validWeaponMelee then
-                validWeapon = validWeaponMelee
-            end
-            if validWeapon == null and (rangedDamaged or meleeDamaged) then
-                weaponIsDamaged = true
-            end
-        else
-            -- check MeleeMainHand if not Workbench
-            if equippedWeaponMelee ~= null and helpers.CheckWeaponByTool(equippedWeaponMelee) then
-                if HasActiveStatus(equippedWeaponMelee, "KELA_WEAPON_UPGRADED_0_3") then
-                    weaponIsDamaged = true
-                else
-                    validWeapon = equippedWeaponMelee
-                end           
+            elseif mod.util.IsWorkbenchWeapon(equippedWeaponActive) then
+                return equippedWeaponActive
             end
         end
-
-        return validWeapon
+        return null
     end
 
     helpers.CanPlayerUseTool = function()
-
         -- can this player use the tool?
         if coreToolTag == "KELAANVIL" then 
             if not (userBlacksmith or userBlacksmithApprentice or userGuildArtisan) then 
                 -- message
-                SetEntityEvent(me, "KELAANVIL not pass checks 1", me)
+                ApplyStatus(coreTool, "KELA_MESSAGE_NO_KNOWLEDGE_ANVIL", true, 5.0, user)
                 return false
             end
-            if not HasActiveStatus(coreTool, "KELA_FORGE_FIRSTSTAGE_AURA") or HasActiveStatus(coreTool, "KELA_FORGE_SECONDSTAGE_AURA") then 
+            if HasActiveStatus(coreTool, "KELA_SMELTINGFORGE_AURA_STAGE_2_ANVIL") then 
                 -- message
-                SetEntityEvent(me, "KELAANVIL not pass checks 2", me)
+                ApplyStatus(coreTool, "KELA_MESSAGE_ANVIL_FIRE_TOO_HOT", true, 5.0, user)
+                return false
+            end
+            if not HasActiveStatus(coreTool, "KELA_SMELTINGFORGE_AURA_STAGE_1_ANVIL") then 
+                -- message
+                ApplyStatus(coreTool, "KELA_MESSAGE_ANVIL_NOT_FIRE", true, 5.0, user)
                 return false
             end
         end
         if coreToolTag == "KELAWORKBENCH" and not (userBlacksmith or userBlacksmithApprentice or userGuildArtisan or mod.util.IsElf(user)) then
             -- message
-            SetEntityEvent(me, "KELAWORKBENCH not pass checks ", me)
+            ApplyStatus(coreTool, "KELA_MESSAGE_NO_KNOWLEDGE_WORKBENCH", true, 5.0, user)
             return false
         end
         return true
@@ -287,9 +235,6 @@ game.states.KELA_WeaponUpgradeTool = State{ function ()
 
     helpers.ApplyStatus = function()
         ApplyStatus(validWeaponForUpgrade, statusForUpgrade, true, -1, me)
-        if userGuildArtisan then
-            ApplyStatus(validWeaponForUpgrade, upgradeStatusGood_Artisan, true, -1, me)
-        end
         SetWeaponUnsheathed(user,false, false)
         RemoveStatus(coreTool, messageInProcess)
         RemoveStatus(user, "KELA_GUILD_ARTISAN_SKILLCHECK_BONUS")
@@ -336,7 +281,7 @@ game.states.KELA_WeaponUpgradeTool = State{ function ()
                 else
                     ApplyStatus(coreTool, messageNoSuitableWeapon, true, 5.0, user)
                 end
-                StartAutomatedDialogImmediate(Dialog("GLO_AD_CannotUseNow_057cb7cf-5aa4-1ed7-9639-65530939b2f9"), user)
+                    StartAutomatedDialogImmediate(Dialog("GLO_AD_CannotUseNow_057cb7cf-5aa4-1ed7-9639-65530939b2f9"), user)
                 return
             end
             
@@ -406,6 +351,9 @@ game.states.KELA_WeaponUpgradeTool = State{ function ()
                         helpers.RemoveAllUpgrades()
                         helpers.ApplyStatus()
                     end
+                    if userGuildArtisan then
+                        ApplyStatus(validWeaponForUpgrade, upgradeStatusGood_Artisan, true, -1, me)
+                    end
                 elseif e.Params[1] == 0 then 
                     helpers.SetStatusForBadUpgrade()
                     helpers.RemoveAllUpgrades()
@@ -423,6 +371,9 @@ game.states.KELA_WeaponUpgradeTool = State{ function ()
                 end
                 helpers.RemoveAllUpgrades()
                 helpers.ApplyStatus()
+                if userGuildArtisan then
+                    ApplyStatus(validWeaponForUpgrade, upgradeStatusGood_Artisan, true, -1, me)
+                end
             elseif e.Event == "KELA_RollResultCriticalFail" then
                 helpers.RemoveAllUpgrades()
                 statusForUpgrade = upgradeStatusBad_3

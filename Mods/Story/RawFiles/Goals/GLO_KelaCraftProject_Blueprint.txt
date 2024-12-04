@@ -1,0 +1,84 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+// Table of blueprints, entry into the table is REQUIRED
+// Stats Name of Object of Blueprint (Matches the entry name in ItemCombos) , Combination Key from ItemCombos separated by '/'
+// WORKBENCH
+
+// KELA_Blueprint_WPN_Quarterstaff
+DB_KELA_Blueprints("KELA_Blueprint_WPN_Quarterstaff", "KELA_CreateTool_Workbench");
+DB_KELA_Blueprints("KELA_Blueprint_WPN_Quarterstaff", "OBJ_Broom");
+DB_KELA_Blueprints("KELA_Blueprint_WPN_Quarterstaff", "EMPTY_3");
+DB_KELA_Blueprints("KELA_Blueprint_WPN_Quarterstaff", "EMPTY_4");
+DB_KELA_Blueprints("KELA_Blueprint_WPN_Quarterstaff", "EMPTY_5");
+
+// KELA_Blueprint_WPN_Shortbow
+DB_KELA_Blueprints("KELA_Blueprint_WPN_Shortbow", "KELA_CreateTool_Workbench");
+DB_KELA_Blueprints("KELA_Blueprint_WPN_Shortbow", "OBJ_Broom");
+DB_KELA_Blueprints("KELA_Blueprint_WPN_Shortbow", "OBJ_Rope");
+DB_KELA_Blueprints("KELA_Blueprint_WPN_Shortbow", "EMPTY_4");
+DB_KELA_Blueprints("KELA_Blueprint_WPN_Shortbow", "EMPTY_5");
+DB_KELA_Blueprints_Need_Tag("KELA_Blueprint_WPN_Shortbow", (TAG)REALLY_ELF_772b1dc6-14be-417f-afa3-c6cf364f45b4);
+DB_KELA_Blueprints_Need_Tag("KELA_Blueprint_WPN_Shortbow", (TAG)REALLY_DROWELF_676e854b-d74b-44f3-8363-3ef27164a54d);
+DB_KELA_Blueprints_Need_Tag("KELA_Blueprint_WPN_Shortbow", (TAG)REALLY_HIGHELF_78884c5f-9504-41af-912d-ce212df0ebea);
+DB_KELA_Blueprints_Need_Tag("KELA_Blueprint_WPN_Shortbow", (TAG)REALLY_WOODELF_b12e8dff-c1f0-4e9c-9ec0-1cafd22bb637);
+DB_KELA_Blueprints_Need_Tag("KELA_Blueprint_WPN_Shortbow", (TAG)REALLY_HALFELF_277f9609-ad0c-4883-b56d-0850904e88df);
+DB_KELA_Blueprints_Need_Tag("KELA_Blueprint_WPN_Shortbow", (TAG)KELABLACKSMITH_c78b77b9-b33c-43fb-8dec-a91bacebb1bf);
+
+// KELA_Blueprint_Kit_Trap_Disarm
+// DB_KELA_Blueprints("KELA_Blueprint_Kit_Trap_Disarm", "KELA_CreateTool_Workbench", "OBJ_Kit_ThievesTools", "OBJ_Tool_Shears", "OBJ_Tool_Tong", "EMPTY_5");
+DB_KELA_Blueprints("KELA_Blueprint_Kit_Trap_Disarm", "KELA_CreateTool_Workbench");
+DB_KELA_Blueprints("KELA_Blueprint_Kit_Trap_Disarm", "OBJ_Kit_ThievesTools");
+DB_KELA_Blueprints("KELA_Blueprint_Kit_Trap_Disarm", "OBJ_Tool_Shears");
+DB_KELA_Blueprints("KELA_Blueprint_Kit_Trap_Disarm", "OBJ_Tool_Tong");
+DB_KELA_Blueprints("KELA_Blueprint_Kit_Trap_Disarm", "EMPTY_5");
+
+
+// KELA_Blueprint_WPN_Longbow
+DB_KELA_Blueprints("KELA_Blueprint_WPN_Longbow", "KELA_CreateTool_Workbench");
+DB_KELA_Blueprints("KELA_Blueprint_WPN_Longbow", "OBJ_Broom");
+DB_KELA_Blueprints("KELA_Blueprint_WPN_Longbow", "OBJ_Rope");
+DB_KELA_Blueprints("KELA_Blueprint_WPN_Longbow", "OBJ_Broom");
+DB_KELA_Blueprints("KELA_Blueprint_WPN_Longbow", "OBJ_GreaseBottle");
+DB_KELA_Blueprints_Need_Level("KELA_Blueprint_WPN_Longbow", 3);
+DB_KELA_Blueprints_Need_Tag("KELA_Blueprint_WPN_Longbow", (TAG)REALLY_ELF_772b1dc6-14be-417f-afa3-c6cf364f45b4);
+DB_KELA_Blueprints_Need_Tag("KELA_Blueprint_WPN_Longbow", (TAG)REALLY_DROWELF_676e854b-d74b-44f3-8363-3ef27164a54d);
+DB_KELA_Blueprints_Need_Tag("KELA_Blueprint_WPN_Longbow", (TAG)REALLY_HIGHELF_78884c5f-9504-41af-912d-ce212df0ebea);
+DB_KELA_Blueprints_Need_Tag("KELA_Blueprint_WPN_Longbow", (TAG)REALLY_WOODELF_b12e8dff-c1f0-4e9c-9ec0-1cafd22bb637);
+DB_KELA_Blueprints_Need_Tag("KELA_Blueprint_WPN_Longbow", (TAG)REALLY_HALFELF_277f9609-ad0c-4883-b56d-0850904e88df);
+DB_KELA_Blueprints_Need_Tag("KELA_Blueprint_WPN_Longbow", (TAG)KELABLACKSMITH_c78b77b9-b33c-43fb-8dec-a91bacebb1bf);
+
+// For blueprints limited by Status, NOT required
+// It is possible to specify several statuses, all will be checked.
+// Stats Name of Object of Blueprint (Matches the entry name in ItemCombos), "Status"
+DB_KELA_Blueprints_Need_Status("KELA_FAKE_Blueprint", "KELA_FAKE_STATUS");
+//DB_KELA_Blueprints_Need_Status("KELA_Blueprint_Kit_Trap_Disarm", "ALCH_ELIXIR_CONCENTRATION");
+KBSECTION
+//REGION
+// Reading Blueprints
+IF
+UseFinished(_User,_Blueprint,_)
+AND
+DB_Players(_User) // used to be checking for DB_PartyMembers, problem with this is that if a familiar/summon was used, it'll be treated like whole party is following a companion into the hole - which isn't expected behavior.
+AND
+IsControlled(_User, 1)
+AND
+IsTagged(_Blueprint, (TAG)KELABLUEPRINT_4b893df5-9dc8-4ded-a238-28a82b14c891, 1)
+AND 
+GetStatString(_Blueprint, _BlueprintStatName)
+AND
+DB_KELA_Blueprints(_BlueprintStatName, _ItemStatName_X)
+AND
+NOT DB_KELA_Blueprints_Known(_BlueprintStatName)
+AND
+DB_KELA_Log_Book_Names(_Bookname)
+THEN
+AddEntryToCustomBook(_Bookname, _BlueprintStatName);
+DB_KELA_Blueprints_Known(_BlueprintStatName);
+ApplyStatus(_User, "KELA_MESSAGE_BLUEPRINT_HAS_BEEN_REVIEWED", 15.0, 1);
+//
+//END_REGION
+EXITSECTION
+
+ENDEXITSECTION
+ParentTargetEdge "GLO_KelaCraftProject"

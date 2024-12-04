@@ -1,0 +1,7 @@
+game.configs.KELA_WeaponCreateTool = Config{
+    params={
+    },
+    root=StateRef{game.roots.DefaultItem,
+        idle = StateRef{game.states.KELA_WeaponCreateTool},
+    }
+}

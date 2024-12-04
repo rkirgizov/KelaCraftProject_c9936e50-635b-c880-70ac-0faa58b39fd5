@@ -7,8 +7,7 @@
                 <node id="Feat">
                     <attribute id="CanBeTakenMultipleTimes" type="bool" value="false"/>
                     <attribute id="Name" type="FixedString" value="Blacksmith"/>
-                    <attribute id="PassivesAdded" type="LSString" value="PassiveFeature_Blacksmith;Proficiency_LightHammers"/>
-                    <attribute id="PassivesRemoved" type="LSString" value="PassiveFeature_Blacksmith_Apprentice"/>
+                    <attribute id="PassivesAdded" type="LSString" value="PassiveFeature_Blacksmith;Proficiency_Warhammers;Proficiency_LightHammers"/>
                     <attribute id="Selectors" type="LSString" value="SelectAbilities(53c1f5d5-8288-43fd-b550-301d50133c43,1,1)"/>
                     <attribute id="UUID" type="guid" value="64231215-a22a-4cc5-b456-7a476b7d00da"/>
                 </node>

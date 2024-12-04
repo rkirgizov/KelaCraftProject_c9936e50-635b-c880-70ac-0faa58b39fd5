@@ -3,11 +3,6 @@ function CanUseDebug()
     return ConditionResult(result)
 end
 
--- function CanBePickapedIntoBlacksmithChest ()
---     local entity = entity or context.Source
---     return IsTagged(entity, Tag("KELASMITHOIL_b45cf712-6f66-4cf0-ab52-c8baeb27f8c6"))
--- end
-
 function HasBackgroundGuildArtisan(entity)
     local entity = entity or context.target
     return IsTagged(entity, Tag("GUILD_ARTISAN_baf9fb0e-f535-40a0-bb78-3ec289d84e66"))

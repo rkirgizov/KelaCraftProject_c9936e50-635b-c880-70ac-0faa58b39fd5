@@ -6,10 +6,9 @@
         <field name="Name" type="NameTableFieldDefinition" value="New_Stat_0" />
         <field name="UUID" type="IdTableFieldDefinition" value="64231215-a22a-4cc5-b456-7a476b7d00da" />
         <field name="NameFS" type="FixedStringTableFieldDefinition" value="Blacksmith" />
-        <field name="PassivesAdded" type="StringTableFieldDefinition" value="PassiveFeature_Blacksmith;Proficiency_LightHammers" />
+        <field name="PassivesAdded" type="StringTableFieldDefinition" value="PassiveFeature_Blacksmith;Proficiency_Warhammers;Proficiency_LightHammers" />
         <field name="Selectors" type="StringTableFieldDefinition" value="SelectAbilities(53c1f5d5-8288-43fd-b550-301d50133c43,1,1)" />
         <field name="CanBeTakenMultipleTimes" type="BoolTableFieldDefinition" value="False" />
-        <field name="PassivesRemoved" type="StringTableFieldDefinition" value="PassiveFeature_Blacksmith_Apprentice" />
       </fields>
     </stat_object>
   </stat_objects>

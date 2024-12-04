@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <contentList xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <content contentuid="h7b1c0fcag0704gd3bdg7b83g1d04e350470e" version="1">Anvil</content>
-  <content contentuid="hcd2aa42dgfd80g40d6gb65fg9c8cd4a2a7d1" version="15">KELA Anvil</content>
+  <content contentuid="hcd2aa42dgfd80g40d6gb65fg9c8cd4a2a7d1" version="24">KELA Anvil</content>
   <content contentuid="h32fe5703g6d4cg9e63g5623g27acd8adfa58" version="1">VO_POSTPROCESS</content>
   <content contentuid="h7128ab3dg508eg4819g4bfcg1d67d5110029" version="1">VO_POSTPROCESS tooltip</content>
   <content contentuid="hf253fe29g0131gbebeg40ddg88591372a74a" version="1">TORCH</content>
@@ -951,8 +951,8 @@
   <content contentuid="h64f6603agb728g4284g64c7g991cc09b870a" version="2">KELAWORKBENCH tooltip</content>
   <content contentuid="h8344e68eg4e00g07d2g6521g1c3a9a834080" version="2">KELAWHETSTONE</content>
   <content contentuid="h2f49abf1g9515gc4c9g4091g8c6e55751ee5" version="2">KELAWHETSTONE tooltip</content>
-  <content contentuid="h40f55ab4g1998g4dfagae4dgc0857f167d3f" version="52">Kela Workbench</content>
-  <content contentuid="h02ada5begfce9g4138g9e64g8159047f035c" version="53">Though scratched and stained, the sturdy wood provides a perfect working space.</content>
+  <content contentuid="h40f55ab4g1998g4dfagae4dgc0857f167d3f" version="57">Kela Workbench</content>
+  <content contentuid="h02ada5begfce9g4138g9e64g8159047f035c" version="58">Though scratched and stained, the sturdy wood provides a perfect working space.</content>
   <content contentuid="hc3980eceg2297g4132g9a64g3c1b1f40b90c" version="31">Whetstone</content>
   <content contentuid="hd7510306g5a37g4948g8e4ag0930d0cd11c6" version="16">Whetstone</content>
   <content contentuid="hc4525474g5654gb0f2gfb25g1ec77a17b424" version="1">Silence Aura</content>
@@ -969,7 +969,7 @@
   <content contentuid="h5184bf01g7309gbdc0g544ag3e526df1d380" version="1">LORE Description</content>
   <content contentuid="h783f8b63gfb08ge62agab3dg9a623ce67f86" version="1">Blacksmith</content>
   <content contentuid="h785090b2g42aag3393gd34eg3b2d3f5893bf" version="3">Gains access to work in the forge and carpentry workshop. &lt;br&gt;Makes &lt;LSTag Tooltip="SavingThrow"&gt;saving throws&lt;/LSTag&gt; when upgrading a weapon. &lt;br&gt;&lt;LSTag Tooltip="Proficiency"&gt;Proficient&lt;/LSTag&gt; with light hammers. &lt;br&gt;The value of &lt;LSTag Tooltip="Strength"&gt;Strength&lt;/LSTag&gt;, &lt;LSTag Tooltip="Constitution"&gt;Constitution&lt;/LSTag&gt; or &lt;LSTag Tooltip="Dexterity"&gt;Dexterity&lt;/LSTag&gt; increases by 1, up to a maximum of 20.</content>
-  <content contentuid="h6a182398gf00ag8716g1a80g9f4001e9c1d1" version="9">Notes of a Blacksmith's Apprentice</content>
+  <content contentuid="h6a182398gf00ag8716g1a80g9f4001e9c1d1" version="13">Notes of a Blacksmith's Apprentice</content>
   <content contentuid="h4d52a884gfc0cg051eg0997g9f30882f3241" version="2">Debug book passive blacksmith Inventory</content>
   <content contentuid="h794eac64gaeb1gb9bcg76e3g31281d74120a" version="26">Use</content>
   <content contentuid="h8c15dc28gd4dagdb54g8eaagc5dc68a738d2" version="2">Blacksmith's oil</content>
@@ -989,9 +989,9 @@
   <content contentuid="h6f571adeg6f1cgfc27g74e5gcc5dd3c6ad45" version="21">A viscous dark green liquid slowly flows in a bottle.</content>
   <content contentuid="hbe6e860egabaegbe74g8944ga8834e1290bf" version="1">Use</content>
   <content contentuid="h3aaec276g8efcg4378gd136gbe6d05547535" version="6">KELA useful tool</content>
-  <content contentuid="h75837053g1ab6g0396ge570g568248766b73" version="7">KELA Whetstone A</content>
-  <content contentuid="hc0470050ge70eg4f6eg764bg4589a33dd073" version="53">KELA Whetstone B</content>
-  <content contentuid="hef370917ged4ag82e9g7e7bg58d2dcaf15a5" version="51">Use</content>
+  <content contentuid="h75837053g1ab6g0396ge570g568248766b73" version="8">KELA Whetstone A</content>
+  <content contentuid="hc0470050ge70eg4f6eg764bg4589a33dd073" version="65">KELA Whetstone B</content>
+  <content contentuid="hef370917ged4ag82e9g7e7bg58d2dcaf15a5" version="63">Use</content>
   <content contentuid="hff21d79eg2959g29e5g0b4cge84428891a53" version="2">Upgrade Weapon</content>
   <content contentuid="hb2717552ge793g4804g04a3ge6d1c80f421b" version="2">Can upgrade your weapon</content>
   <content contentuid="h87f84af8g6de5g2b68g7c72gdebc9ea52d0b" version="2">Craft</content>
@@ -1245,10 +1245,10 @@
   <content contentuid="h67d07222g6f02g1532g3a7cg43750267f4c5" version="5">KELABLACKSMITH tooltip</content>
   <content contentuid="ha834709bg70c6g4b6ag6813g59a14b5e101c" version="2">KELA Weapon Proficiency</content>
   <content contentuid="h39f6c6a1ga920g2d1egc966g61157cd9cf7c" version="2">KELA Weapon Proficiency allows you to work on upgrading it with more confidence: it gives a bonus [1] when checking crafting skills and allows you to improve a weapon to a higher level if you pass an additional sleight of hand check.</content>
-  <content contentuid="ha4e306edg5c95gd3a8g8830g50a7bb2aa644" version="10">KELA Blacksmith's Chest</content>
-  <content contentuid="h5e1ecb1dg222cgf21fgaf72g63ebfc80d40c" version="10">KELA An old, worn chest that is ideal for storing various craft tools and materials.</content>
-  <content contentuid="h828112e8gd487g347cg3ab6g7fb6f4d82fe5" version="8">KELA Short</content>
-  <content contentuid="hecca53b9g8ea0g5875ge58dge60917d1068b" version="8">KELA Automatically collects matching items from your inventory.</content>
+  <content contentuid="ha4e306edg5c95gd3a8g8830g50a7bb2aa644" version="12">KELA Blacksmith's Chest</content>
+  <content contentuid="h5e1ecb1dg222cgf21fgaf72g63ebfc80d40c" version="12">KELA An old, worn chest that is ideal for storing various craft tools and materials.</content>
+  <content contentuid="h828112e8gd487g347cg3ab6g7fb6f4d82fe5" version="10">KELA Short</content>
+  <content contentuid="hecca53b9g8ea0g5875ge58dge60917d1068b" version="10">KELA Automatically collects matching items from your inventory.</content>
   <content contentuid="h4d2b55f3g4a98gbbc7gecddg6b488c42afa7" version="1">KELABLACKSMITHAPPRENTICE</content>
   <content contentuid="h40cb5ffbg23b5g8f12g44bfgc4ed3ed12fe5" version="1">KELABLACKSMITHAPPRENTICE tooltip</content>
   <content contentuid="h0586d512gc8a6gd192g1f5agc6d90d2d3c01" version="1">Blacksmith Apprentice</content>
@@ -1257,8 +1257,8 @@
   <content contentuid="h1a8cf37dga2b7g8f93g748dgef4dcf8774d1" version="3">KELA You have gained access to weapon upgrades in forges and workbenches, but the upgrade level is limited to the minimum. &lt;br&gt;Forging new weapons and tempering are only available to the blacksmith.</content>
   <content contentuid="h556bd450ga0d7g5642g6373gcdfbe4796bd0" version="1">KELABLACKSMITHLOOT</content>
   <content contentuid="hac75bd97g3095g8898g2232gbc5b97db9b3e" version="1">KELABLACKSMITHLOOT tooltip</content>
-  <content contentuid="h7c4fb3dbg26a5g9e84ge4d5g4da7b60b2c3c" version="4">&lt;b&gt;Notes of a blacksmith's apprentice.&lt;/b&gt;&lt;br&gt;You won't learn much, only about upgrading weapons to a minimum level, but at least it says how to work with a workbench and a forge...&lt;br&gt;It's worth trying to upgrade some weapons.&lt;br&gt;&lt;br&gt;&lt;b&gt;Weapon upgrading&lt;/b&gt;&lt;br&gt;1. The Blacksmith passive must be in the Off state.&lt;br&gt;2. Take the weapon to be upgraded in your Main hand.&lt;br&gt;3. Use a tool. If no one in the party has Blacksmith's Oil, then click on the tool again while the warning is active.&lt;br&gt;3. The difficulty of the rolls and the upgrade level are affected by the use of Blacksmith's Oil, the presence of the feat Blacksmith or background Guild Artisan, the Player's level, and proficiency with weapon.&lt;br&gt;&lt;br&gt;&lt;b&gt;Tools and upgradeable weapons:&lt;/b&gt;&lt;br&gt;Whetstone - piercing and slashing weapons&lt;br&gt;Anvil - blunt weapons&lt;br&gt;Workbench - ranged weapons</content>
-  <content contentuid="h3e3c7493g124dgae22g4d2bg6c9d7dfe1543" version="2">KELA The pages of this book are written in large, sloppy handwriting.</content>
+  <content contentuid="h7c4fb3dbg26a5g9e84ge4d5g4da7b60b2c3c" version="10">&lt;b&gt;Notes of a blacksmith's apprentice.&lt;/b&gt;&lt;br&gt;You won't learn much, only about upgrading weapons to a minimum level, but at least it says how to work with a workbench and a forge...&lt;br&gt;It's worth trying to upgrade some weapons.&lt;br&gt;&lt;br&gt;&lt;b&gt;Weapon upgrading&lt;/b&gt;&lt;br&gt;1. The Blacksmith passive must be in the Off state.&lt;br&gt;2. Take the weapon to be upgraded in your Main hand.&lt;br&gt;3. Use a tool. If no one in the party has Blacksmith's Oil, then click on the tool again while the warning is active.&lt;br&gt;3. The difficulty of the rolls and the upgrade level are affected by the use of Blacksmith's Oil, the presence of the feat Blacksmith or background Guild Artisan, the Player's level, and proficiency with weapon.&lt;br&gt;&lt;br&gt;&lt;b&gt;Tools and upgradeable weapons:&lt;/b&gt;&lt;br&gt;Whetstone - piercing and slashing weapons&lt;br&gt;Anvil - blunt weapons&lt;br&gt;Workbench - ranged weapons &lt;br&gt;</content>
+  <content contentuid="h3e3c7493g124dgae22g4d2bg6c9d7dfe1543" version="6">KELA The pages of this book are written in large, sloppy handwriting.</content>
   <content contentuid="hac77effegd241gdd53g80f0gead914e1fa50" version="1">Daredevil Proximity</content>
   <content contentuid="h8f508851g9fe7g56e3g0ecfg33ebfe6c500f" version="1">Your &lt;LSTag Tooltip="RangedSpellAttack"&gt;Ranged Spell Attacks&lt;/LSTag&gt; are made as melee spell attacks when you are adjacent to a hostile creature. This effect can be toggled off.</content>
   <content contentuid="hdb14b1fbg6f2egebedg3691gdf30d70c3603" version="1">%%% EMPTY</content>
@@ -1275,7 +1275,7 @@
   <content contentuid="h91d2ac0cg267ag8d0agb745g70ed7b080f59" version="2">KELATOOLNEEDFAKE tooltip</content>
   <content contentuid="h50c52600g56e2g63cbg73fdg90bc584cfed7" version="1">%%% EMPTY</content>
   <content contentuid="h4ed60d8cg6293ge685g797age29444f8d39a" version="1">KELA_CRAFT_UPGRADE_MOD</content>
-  <content contentuid="ha9de6f01g19eeg9558g30eag0e1293edd09a" version="1">KELA_CRAFT_CREATION_MOD</content>
+  <content contentuid="ha9de6f01g19eeg9558g30eag0e1293edd09a" version="2">KELA_CRAFT_CREATION_MOD_1</content>
   <content contentuid="h2e259001g92eagf32cgd7adgf70798feaaba" version="1">KELA_WHETSTONE_AURA</content>
   <content contentuid="h52c9af49ge0cfgd74ag9c1fgc0efdb0a6433" version="1">KELA_WHETSTONE_AURA_ACTIVE</content>
   <content contentuid="he28e181bge352ge018ga470g15e8622d9461" version="2">KELAWEAPONUPGRADETOOL</content>
@@ -1289,23 +1289,170 @@
   <content contentuid="hc8b6a212ga81eg4566gb6a4g6dd4b1926173" version="3">Though scratched and stained, the sturdy wood provides a perfect working space.</content>
   <content contentuid="h1fc60a24geaecg4a09gb731g94b73338aeb0" version="3">Kela Workbench</content>
   <content contentuid="hf76aeb71g4492g4556g8d5bgef462e44c87b" version="3">Though scratched and stained, the sturdy wood provides a perfect working space.</content>
-  <content contentuid="hca4ada95gf7c5g43a3g9094g4ddf13996b20" version="3">Kela Workbench</content>
-  <content contentuid="h40fec372g267cg4902g9ebeg73633fe8d070" version="3">Though scratched and stained, the sturdy wood provides a perfect working space.</content>
+  <content contentuid="hca4ada95gf7c5g43a3g9094g4ddf13996b20" version="5">Kela Workbench</content>
+  <content contentuid="h40fec372g267cg4902g9ebeg73633fe8d070" version="5">Though scratched and stained, the sturdy wood provides a perfect working space.</content>
   <content contentuid="h53781230geaf0g4fbbg990bg28fde29791fe" version="5">Bench</content>
   <content contentuid="h8d1aafedgbb29g492aga917g3ba3a8f878a0" version="5">Though scratched and stained, the sturdy wood provides a perfect working space.</content>
   <content contentuid="h7ea0f425g1ac7g4a40g9e00ge8c0afb02dbb" version="3">Kela Workbench</content>
   <content contentuid="hb6e2050fg86c4g42c1g91c4g019f6814ac0e" version="3">Though scratched and stained, the sturdy wood provides a perfect working space.</content>
-  <content contentuid="hf9a74a2fg6e4dg4717gae5cg4b295c28dfe0" version="4">Anvil</content>
+  <content contentuid="hf9a74a2fg6e4dg4717gae5cg4b295c28dfe0" version="7">Anvil</content>
   <content contentuid="h7e21f5a0g4669g09d4g9715g3c56ff440683" version="3">KELAWEAPONCREATETOOL</content>
   <content contentuid="h0bd3d97bgb63eg583ag9de2ga80d36c42326" version="3">KELAWEAPONCREATETOOL</content>
   <content contentuid="h9c1eb0d8g8193g92bcg171dgad8234de53e0" version="2">KELADEBUG</content>
   <content contentuid="h5bdf2bbeg81fcg4515g81aeg1f107c127f66" version="2">KELADEBUG</content>
   <content contentuid="h41e453edg4db9g8380g7cfdg343f0571ad30" version="2">KELAMESSAGE</content>
   <content contentuid="h6482ff79gf820g9811g25e9gce52428895a2" version="2">KELAMESSAGE</content>
-  <content contentuid="h9eba6f35gdb8fg7bd3gf2c3g90fa8f5c4e69" version="1">KELA No one in your party nearby has &lt;LSTag Type="Status" Tooltip="KELA_ITEM_TOOLTIP_SMITH_OIL"&gt;Blacksmith Oil&lt;/LSTag&gt;.</content>
+  <content contentuid="h9eba6f35gdb8fg7bd3gf2c3g90fa8f5c4e69" version="7">KELA No one in your party nearby has &lt;LSTag Type="Status" Tooltip="KELA_ITEM_TOOLTIP_SMITH_OIL"&gt;Blacksmith Oil&lt;/LSTag&gt;.</content>
   <content contentuid="hb43fe8bdg067eg9a93g943eg0be980edae00" version="1">%%% EMPTY</content>
   <content contentuid="h62e83eb6ga37bg605eg1f29g30a56cb31e9b" version="1">KELA Upgrade in process</content>
   <content contentuid="hb0952471g57edgd7e4gf4acgb1769cbda2be" version="1">KELA Improvement in process, need to wait for completion.</content>
   <content contentuid="h5002ae53ge95dg1003gbb87g818d38daf1e4" version="1">KELA Upgrade in process</content>
   <content contentuid="h83c6314bgf468g2f1ag7f8fg6de823bc902b" version="1">KELA Improvement in process, need to wait for completion.</content>
+  <content contentuid="hab5806abg83f1g826bg2d93gd2504c92779b" version="1">KELA_SMELTINGFORGE_AURA</content>
+  <content contentuid="h551b82acg90fegd5b5g4406ge7de40045391" version="1">KELA_SMELTINGFORGE_AURA_STAGE_1</content>
+  <content contentuid="h73a46f37gb404gf74fg00ccg18bc21e872ad" version="2">KELA Increased heat</content>
+  <content contentuid="h89610a6fg27adg7070g16b6gb5221fe5c434" version="1">KELA Burning</content>
+  <content contentuid="hd775f5f8g3906g6045g10e2g6a74bab787dd" version="2">KELA Forging</content>
+  <content contentuid="he659ea2bgdd97gcb77g6abfgb6e0c18ccb3d" version="1">DESC KELA_SMELTINGFORGE_AURA_STAGE_2_ANVIL</content>
+  <content contentuid="h2cf52989g719eg8685g87d8g81c64b48e60c" version="2">KELA Upgrade</content>
+  <content contentuid="h43f84387g404bgab75g890agc373d51baf19" version="2">KELA While the smelting furnace is burning, weapons can be upgraded or forged at the anvil, depending on the strength of the fire in the furnace.</content>
+  <content contentuid="hcc50b4fag5ba5gfd41gfb4ag0f6b0dded0ee" version="1">KELA The furnace is blazing hot, and the forge, if the anvil is intact, is ready for work.</content>
+  <content contentuid="h85000710ge5f0gf728g622cg8008e6b3a3e4" version="1">KELA No knowledge to work with the tool</content>
+  <content contentuid="h7fee0d61g91bbga8b3gf870g5680897383dd" version="1">KELA The character does not know how to work in a forge</content>
+  <content contentuid="h054ec240g915dg30c6g8429gd6cb219345b4" version="1">KELA The character has no knowledge of working in a forge. &lt;br&gt;A blacksmith or his apprentice, as well as a member of the Guild Artisan, may have such knowledge.</content>
+  <content contentuid="h4fbf0966g09bfgad8dg61cbg6b0baf4bcb5d" version="1">KELA No knowledge to work with the tool</content>
+  <content contentuid="hc860596bgfd3fg2eb8gf651g2ea20ad366d0" version="1">KELA The character has no knowledge of working at a workbench. &lt;br&gt;A blacksmith or his apprentice, any of the elven race, as well as a member of the Guild Artisan, may have such knowledge.</content>
+  <content contentuid="hd242be78gf5cag5cebg5997g76c9ba68c752" version="2">KELA No fire in the smelter</content>
+  <content contentuid="h31c01f82g3f0egd808ga803g715427da1091" version="2">KELA To work with the forge, you need to light a fire in the smelter.</content>
+  <content contentuid="hea93aa5eg3d8eg822eg353cgab6eafbc73d3" version="2">KELA The fire in the smelter is too hot for upgrade</content>
+  <content contentuid="h88370da4g6bc3g191fga4cdgc24e3c60e309" version="1">KELA The hot fire in the smelter is needed for forging, but for upgrading, regular fire is better suited</content>
+  <content contentuid="hbf87fc15g5e73g4c34gf735gc30f45d0f045" version="1">KELA Creation Mode</content>
+  <content contentuid="h5cf02511g175fg03a6g6d26gbfbc221cb60c" version="1">KELA Creation Mode Description</content>
+  <content contentuid="h24eceac6gd31ega6b5gf250gcf41e94b7c46" version="7">Anvil</content>
+  <content contentuid="haea32f2cg26fcg8520g8315gb52257fa59fd" version="12">KELA Blueprint: Trap Disarm Toolkit</content>
+  <content contentuid="h48ac2b31g960ag7418g3200g10bbe4acc083" version="12">This parchment is unread.</content>
+  <content contentuid="hbfef80e1g20f0g0e8cg586bg358ba9e8f0be" version="23">Workbench</content>
+  <content contentuid="h006b64f6g52a7ga96fge065g240a01caa6ce" version="1">KELABLUEPRINT</content>
+  <content contentuid="he217b87agb8fdge437g4053gb54141d1f49b" version="1">KELABLUEPRINT</content>
+  <content contentuid="ha87b0364g1656g46fbgbff6g5d7b54c6a6b1" version="2">Trap Disarm Toolkit</content>
+  <content contentuid="h8a74a67cgc842g4255gaf9fgf4f22e517f80" version="2">This kit enables you to disarm traps, based on a Sleight of Hand &lt;LSTag Tooltip="AbilityCheck"&gt;Check&lt;/LSTag&gt;. The kit breaks on an unsuccessful attempt.</content>
+  <content contentuid="hb824ecfcgbd52g419dgaa50g900bd6149883" version="2">A collection of hooks, blades, shears, and everything else needed to deal with potentially deadly traps.</content>
+  <content contentuid="hb115d6feg4a27gb5eeg9146gd1c4b25aee12" version="51">&lt;br&gt;&lt;br&gt;Trap Disarm Toolkit&lt;br&gt;&lt;i&gt;To make it, all you need to do is add tong and shear to the thieves' tools - everything else is there (Workbench).&lt;/i&gt;</content>
+  <content contentuid="h664d9a41g6761g4b4ega8e2gc7cdba06d895" version="6">&lt;br&gt;&lt;br&gt;Content: KELA Blueprint Debug</content>
+  <content contentuid="h7e376cb7g772ag55d9g0d30g4ff70ac4e6cb" version="1">&lt;b&gt;Armorer's notebook&lt;/b&gt; &lt;br&gt;To record blueprints of weapons, armor, and tools found during travels</content>
+  <content contentuid="hb2086da1gbc71g303dgc516g2168ad4c8fcc" version="4">&lt;b&gt;Armorer's notebook&lt;/b&gt; &lt;br&gt;&lt;i&gt;To record blueprints of weapons, armor, and tools found during travels.&lt;/i&gt;</content>
+  <content contentuid="hf6500141g6b2cgd69fg8c81g3f227794eb3c" version="3">Notes of a Blacksmith</content>
+  <content contentuid="h2b88ef56g243bgf170ge51cg1a749d8598fa" version="3">KELA DESC Notes of a Blacksmith</content>
+  <content contentuid="h90e12f1ag8919g1dd3g2818gf5e1f36d6634" version="2">&lt;b&gt;Notes of a Blacksmith's.&lt;/b&gt;&lt;br&gt;</content>
+  <content contentuid="h9b14418bg6d89g1fe1g65feg06db095f54c9" version="2">&lt;b&gt;Notes of a blacksmith's apprentice.&lt;/b&gt;&lt;br&gt;You won't learn much, only about upgrading weapons to a minimum level, but at least it says how to work with a workbench and a forge...&lt;br&gt;It's worth trying to upgrade some weapons.&lt;br&gt;&lt;br&gt;&lt;b&gt;Weapon upgrading&lt;/b&gt;&lt;br&gt;1. The Blacksmith passive must be in the Off state.&lt;br&gt;2. Take the weapon to be upgraded in your Main hand.&lt;br&gt;3. Use a tool. If no one in the party has Blacksmith's Oil, then click on the tool again while the warning is active.&lt;br&gt;3. The difficulty of the rolls and the upgrade level are affected by the use of Blacksmith's Oil, the presence of the feat Blacksmith or background Guild Artisan, the Player's level, and proficiency with weapon.&lt;br&gt;&lt;br&gt;&lt;b&gt;Tools and upgradeable weapons:&lt;/b&gt;&lt;br&gt;Whetstone - piercing and slashing weapons&lt;br&gt;Anvil - blunt weapons&lt;br&gt;Workbench - ranged weapons &lt;br&gt;</content>
+  <content contentuid="h7d248c17gd0e6g03fcg4e03ged656ef1dce9" version="3">&lt;b&gt;Journal of alchemical recipes&lt;/b&gt; </content>
+  <content contentuid="hec1f065dg37ddg6784g9382g78f4d1145cd1" version="1">&lt;br&gt;&lt;br&gt;Content: KELA Blueprint Debug</content>
+  <content contentuid="h1c9f3d2cg9325g55e6g6ac2g66b018103546" version="4">&lt;b&gt;Armorer's notebook&lt;/b&gt; &lt;br&gt;&lt;i&gt;To record blueprints of weapons, armor, and tools found during travels.&lt;/i&gt;</content>
+  <content contentuid="h0349c060g0458gbfb7g1474gf4d0803daf35" version="2">&lt;b&gt;Notes of a Blacksmith's.&lt;/b&gt;&lt;br&gt;</content>
+  <content contentuid="h3190c11ag876bgb91bga64eg9b3df98fd96e" version="1">&lt;br&gt;&lt;br&gt;Content: KELA Blueprint Debug</content>
+  <content contentuid="h26db48a8gd57ag16cfg7a6ag34a1689e308f" version="2">&lt;b&gt;Notes of a blacksmith's apprentice.&lt;/b&gt;&lt;br&gt;You won't learn much, only about upgrading weapons to a minimum level, but at least it says how to work with a workbench and a forge...&lt;br&gt;It's worth trying to upgrade some weapons.&lt;br&gt;&lt;br&gt;&lt;b&gt;Weapon upgrading&lt;/b&gt;&lt;br&gt;1. The Blacksmith passive must be in the Off state.&lt;br&gt;2. Take the weapon to be upgraded in your Main hand.&lt;br&gt;3. Use a tool. If no one in the party has Blacksmith's Oil, then click on the tool again while the warning is active.&lt;br&gt;3. The difficulty of the rolls and the upgrade level are affected by the use of Blacksmith's Oil, the presence of the feat Blacksmith or background Guild Artisan, the Player's level, and proficiency with weapon.&lt;br&gt;&lt;br&gt;&lt;b&gt;Tools and upgradeable weapons:&lt;/b&gt;&lt;br&gt;Whetstone - piercing and slashing weapons&lt;br&gt;Anvil - blunt weapons&lt;br&gt;Workbench - ranged weapons &lt;br&gt;</content>
+  <content contentuid="hf6443554g1a5fgac5bge9c5gf61b4c797747" version="27">&lt;br&gt;&lt;br&gt;&lt;b&gt;Weapon upgrading&lt;/b&gt;&lt;br&gt;&lt;br&gt;1. The weapon being upgraded must be active and in the main hand.&lt;br&gt;2. If no one in the party has blacksmith's oil, a warning will appear, which can be skipped by clicking on the tool again.&lt;br&gt;3. The difficulty of the rolls and the upgrade level are affected by the use of Blacksmith's Oil, the presence of the feat Blacksmith or background Guild Artisan, the Player's level, and proficiency with weapon.&lt;br&gt;&lt;br&gt;&lt;b&gt;Tools and upgradeable weapons:&lt;/b&gt;&lt;br&gt;Whetstone - piercing and slashing weapons&lt;br&gt;Anvil - impact weapons&lt;br&gt;Workbench - ranged weapons</content>
+  <content contentuid="he3e6fc78g8008g4e77gcaeege12b84b2de49" version="2">&lt;b&gt;Notes of a Blacksmith's.&lt;/b&gt;&lt;br&gt;</content>
+  <content contentuid="hfcfcfa45gbd03gf780g4d0eg59761ea6283d" version="1">&lt;b&gt;Journal of alchemical recipes&lt;/b&gt; </content>
+  <content contentuid="h524c1fa2g73cagcaaag9a45g01f72b949d03" version="41">&lt;b&gt;Notes of a blacksmith's apprentice.&lt;/b&gt;&lt;br&gt;&lt;br&gt;You won't learn much, only about upgrading weapons to a minimum level, but at least it says how to work with a workbench and a forge...&lt;br&gt;&lt;br&gt;It's worth trying to upgrade some weapons.&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;Weapon upgrading&lt;/b&gt;&lt;br&gt;&lt;br&gt;1. The Blacksmith passive must be in the Off state.&lt;br&gt;&lt;br&gt;2. Take the weapon to be upgraded in your Main hand.&lt;br&gt;&lt;br&gt;3. Use a tool. If no one in the party has Blacksmith's Oil, then click on the tool again while the warning is active.&lt;br&gt;&lt;br&gt;4. The difficulty of the rolls and the upgrade level are affected by the use of Blacksmith's Oil, the presence of the feat Blacksmith or background Guild Artisan, the Player's level, and proficiency with weapon.&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;Tools and upgradeable weapons:&lt;/b&gt;&lt;br&gt;&lt;br&gt;Whetstone - piercing and slashing weapons&lt;br&gt;&lt;br&gt;Anvil - blunt weapons&lt;br&gt;&lt;br&gt;Workbench - ranged weapons &lt;br&gt;</content>
+  <content contentuid="h9273f901gcbccgb6abg0ff4g0856ff166540" version="41">&lt;b&gt;Journal of alchemical recipes&lt;/b&gt; </content>
+  <content contentuid="hf1bb5797g1959g9e14g38efgcbb59ff580ce" version="3">&lt;b&gt;Blacksmith Notebook&lt;/b&gt; &lt;br&gt;&lt;i&gt;For records about crafting, about blueprints of weapons, armor and tools found during travels.&lt;/i&gt;</content>
+  <content contentuid="he8f7b76cgdf9bg70b5g29ddga43c2e223a4e" version="4">&lt;b&gt;Notes of a Blacksmith's.&lt;/b&gt;&lt;br&gt;</content>
+  <content contentuid="h0f2207cfgff07ga9b1g2e51g1ce689eef4a0" version="24">&lt;br&gt;&lt;br&gt;&lt;b&gt;Weapon Making&lt;/b&gt; ...</content>
+  <content contentuid="he8f119bdgff01g9037g2eccg7177f5775c66" version="3">&lt;b&gt;Blacksmith Notebook&lt;/b&gt; &lt;br&gt;&lt;i&gt;For records about crafting, about blueprints of weapons, armor and tools found during travels.&lt;/i&gt;</content>
+  <content contentuid="h4fc5cfd1g43e3gd0fdg3b94g807cb1a2d8a6" version="2">&lt;b&gt;Blacksmith Notebook&lt;/b&gt; &lt;br&gt;&lt;i&gt;For records about crafting, about blueprints of weapons, armor and tools found during travels.&lt;/i&gt;</content>
+  <content contentuid="hfdeb086dg24c8g92e7gcd99g7ffd93951a95" version="35">&lt;b&gt;Elf Craft Notebook&lt;/b&gt; &lt;br&gt;&lt;i&gt;For records about crafting, about blueprints of weapons, armor and tools found during travels.&lt;/i&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;Weapon Upgrade&lt;/b&gt;&lt;br&gt;&lt;br&gt;1. Take the suitable weapon in your Main hand.&lt;br&gt;&lt;br&gt;2. Use a tool. If no one in the party has Blacksmith's Oil, then click on the tool again while the warning is active.&lt;br&gt;&lt;br&gt;3. The difficulty of the rolls and the upgrade level are affected by the use of Blacksmith's Oil, the presence of the feat Blacksmith or background Guild Artisan, the Player's level, and proficiency with weapon.&lt;br&gt;&lt;br&gt;&lt;b&gt;Tools and upgradeable weapons:&lt;/b&gt;&lt;br&gt;Whetstone - piercing and slashing weapons&lt;br&gt;Anvil - impact weapons&lt;br&gt;Workbench - ranged weapons</content>
+  <content contentuid="h8a47f2f7gd6d2ga5dag7c2eg4bbde452a1ef" version="35">&lt;b&gt;Blacksmith Notebook&lt;/b&gt; &lt;br&gt;&lt;i&gt;For records about crafting, about blueprints of weapons, armor and tools found during travels.&lt;/i&gt;</content>
+  <content contentuid="h5484e60fg80e4g313fg1455g67d7d9e12042" version="35">&lt;b&gt;Blacksmith Notebook&lt;/b&gt; &lt;br&gt;&lt;i&gt;For records about crafting, about blueprints of weapons, armor and tools found during travels.&lt;/i&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;Weapon Upgrade&lt;/b&gt;&lt;br&gt;&lt;br&gt;1. Take the suitable weapon in your Main hand.&lt;br&gt;&lt;br&gt;2. Use a tool. If no one in the party has Blacksmith's Oil, then click on the tool again while the warning is active.&lt;br&gt;&lt;br&gt;3. The difficulty of the rolls and the upgrade level are affected by the use of Blacksmith's Oil, the presence of the feat Blacksmith or background Guild Artisan, the Player's level, and proficiency with weapon.&lt;br&gt;&lt;br&gt;&lt;b&gt;Tools and upgradeable weapons:&lt;/b&gt;&lt;br&gt;Whetstone - piercing and slashing weapons&lt;br&gt;Anvil - impact weapons&lt;br&gt;Workbench - ranged weapons&lt;br&gt;&lt;br&gt;&lt;b&gt;Weapon Making&lt;/b&gt; ...</content>
+  <content contentuid="hcccfc7b5g9cf7gf01eg24c1g4d473a54ef88" version="35">&lt;b&gt;Blacksmith Apprentice Notebook&lt;/b&gt; &lt;br&gt;&lt;i&gt;For records about crafting, about blueprints of weapons, armor and tools found during travels.&lt;/i&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;Weapon Upgrade&lt;/b&gt;&lt;br&gt;&lt;br&gt;1. Take the suitable weapon in your Main hand.&lt;br&gt;&lt;br&gt;2. Use a tool. If no one in the party has Blacksmith's Oil, then click on the tool again while the warning is active.&lt;br&gt;&lt;br&gt;3. The difficulty of the rolls and the upgrade level are affected by the use of Blacksmith's Oil, the presence of the feat Blacksmith or background Guild Artisan, the Player's level, and proficiency with weapon.&lt;br&gt;&lt;br&gt;&lt;b&gt;Tools and upgradeable weapons:&lt;/b&gt;&lt;br&gt;Whetstone - piercing and slashing weapons&lt;br&gt;Anvil - impact weapons&lt;br&gt;Workbench - ranged weapons</content>
+  <content contentuid="hdb2705d7gcf26gd134g5a23gd46b3dc654f1" version="1">KELA_CRAFT_CREATION_MOD</content>
+  <content contentuid="h02f31ab3g0f7bgd5bcg552cg921cb4047b9f" version="1">KELA_CRAFT_CREATION_MOD_2</content>
+  <content contentuid="h44082bf8g3236ge59eg06eag0591dbcff6a5" version="1">KELA_CRAFT_CREATION_MOD_3</content>
+  <content contentuid="h16f1d63bgf741g6089g2d8fg4a0f0a80830d" version="1">KELA_CRAFT_CREATION_MOD_4</content>
+  <content contentuid="h81fc245bgdb94g0fe7g10aag429e788d7544" version="1">KELA Creation Mode 1</content>
+  <content contentuid="hab89cd1fg277fgb3d4ge627g0798577a940a" version="1">KELA Creation Mode 1 Description</content>
+  <content contentuid="hbd570865gbb35g2c0bg1205g8600d2e29be6" version="1">KELA Creation Mode 2</content>
+  <content contentuid="h92dbcadcg7983ge6f2g1610g3e037125fe75" version="1">KELA Creation Mode 2 Description</content>
+  <content contentuid="h9341ea05g36eeg11e4gedbbg7c07dfde761b" version="1">KELA Creation Mode 3</content>
+  <content contentuid="hc5528e8ag44a3gf432g8683gea4b618479bb" version="1">KELA Creation Mode 3 Description</content>
+  <content contentuid="h0579ccd4g9117g900fgd0aeg4b49b4da89de" version="1">KELA Creation Mode 4</content>
+  <content contentuid="hba370477g2dd5gd58eg04c4gff089e842574" version="1">KELA Creation Mode 4 Description</content>
+  <content contentuid="h8bd24a66ga70eg9eacg4055gdfcadeb2354b" version="1">KELA Creation Mode 4</content>
+  <content contentuid="hd06f2c1fg3110ga708g94d5g19deae0e7619" version="1">KELA Creation Mode 4 Description</content>
+  <content contentuid="h1ff4d201g0bf7ge9f1gf225g7c178e21ff6f" version="1">KELA Creation Mode 3</content>
+  <content contentuid="h51dbe124g07d3g35bega1c6g9332d1cb480b" version="1">KELA Creation Mode 3 Description</content>
+  <content contentuid="h1aabe863gac23g1821g46f9g12c6d2a954b9" version="1">KELA Creation Mode 2</content>
+  <content contentuid="h69cb6ffag9201ga886gd792gfed6d6d37463" version="1">KELA Creation Mode 2 Description</content>
+  <content contentuid="h5eb725e6gc83fgf86dg4be1gb309d07a3b9a" version="1">KELA Creation Mode 1</content>
+  <content contentuid="h29fb03a3g6dbcg9d40gb0b9gbce5758f2ec7" version="1">KELA Creation Mode 1 Description</content>
+  <content contentuid="h48580331g3a14g8727gca6eg1aeea4525f2b" version="1">KELA Creation Mode</content>
+  <content contentuid="h26cb2a7egcb9cg3980ge298g5b0d393d8661" version="1">Replenish expended &lt;LSTag Tooltip="SpellSlot"&gt;spell slots&lt;/LSTag&gt; while out of combat.</content>
+  <content contentuid="h047f6185g47cdgf7a5g978dgc3a7a3f11e13" version="1">KELA_Craft_Creation_Mod_Exit</content>
+  <content contentuid="hf30bad62g35f1geaf0g5f70g47ee4f016c86" version="1">KELA_Craft_Creation_Mod_Exit Description</content>
+  <content contentuid="hd3ae2f8dgda6egf88fgd060g66d0998bda89" version="1">PassiveTechnical_KelaCraftProject_Creation_Spell</content>
+  <content contentuid="h12c22a35g6bc4gacc8g592agb118a02039ce" version="1">PassiveTechnical_KelaCraftProject_Creation_Spell</content>
+  <content contentuid="hcbf15579ga2e6g43f7g50c0gaeb26ad22f96" version="34">&lt;b&gt;Guild Artisan Notebook&lt;/b&gt; &lt;br&gt;&lt;i&gt;For records about crafting, about blueprints of weapons, armor and tools found during travels.&lt;/i&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;Weapon Upgrade&lt;/b&gt;&lt;br&gt;&lt;br&gt;1. Take the suitable weapon in your Main hand.&lt;br&gt;&lt;br&gt;2. Use a tool. If no one in the party has Blacksmith's Oil, then click on the tool again while the warning is active.&lt;br&gt;&lt;br&gt;3. The difficulty of the rolls and the upgrade level are affected by the use of Blacksmith's Oil, the presence of the feat Blacksmith or background Guild Artisan, the Player's level, and proficiency with weapon.&lt;br&gt;&lt;br&gt;&lt;b&gt;Tools and upgradeable weapons:&lt;/b&gt;&lt;br&gt;Whetstone - piercing and slashing weapons&lt;br&gt;Anvil - impact weapons&lt;br&gt;Workbench - ranged weapons</content>
+  <content contentuid="hec1ddde3gbe1fg31a9g9f7dg4a3210065b1d" version="33">&lt;b&gt;Elf Craft Notebook&lt;/b&gt; &lt;br&gt;&lt;i&gt;For records about crafting, about blueprints of weapons, armor and tools found during travels.&lt;/i&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;Weapon Upgrade&lt;/b&gt;&lt;br&gt;&lt;br&gt;1. Take the suitable weapon in your Main hand.&lt;br&gt;&lt;br&gt;2. Use a tool. If no one in the party has Blacksmith's Oil, then click on the tool again while the warning is active.&lt;br&gt;&lt;br&gt;3. The difficulty of the rolls and the upgrade level are affected by the use of Blacksmith's Oil, the presence of the feat Blacksmith or background Guild Artisan, the Player's level, and proficiency with weapon.&lt;br&gt;&lt;br&gt;&lt;b&gt;Tools and upgradeable weapons:&lt;/b&gt;&lt;br&gt;Whetstone - piercing and slashing weapons&lt;br&gt;Anvil - impact weapons&lt;br&gt;Workbench - ranged weapons</content>
+  <content contentuid="hc89b387bgcb3fge063g418bgbe865710da02" version="9">&lt;b&gt;Crafting Notebook&lt;/b&gt; &lt;br&gt;&lt;i&gt;For records about crafting, about blueprints of weapons, armor and tools found during travels.&lt;/i&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;Weapon Upgrade&lt;/b&gt;&lt;br&gt;&lt;br&gt;1. Take the suitable weapon in your Main hand.&lt;br&gt;&lt;br&gt;2. Use a tool. If no one in the party has Blacksmith's Oil, then click on the tool again while the warning is active.&lt;br&gt;&lt;br&gt;3. The difficulty of the rolls and the upgrade level are affected by the use of Blacksmith's Oil, the presence of the feat Blacksmith or background Guild Artisan, the Player's level, and proficiency with weapon.&lt;br&gt;&lt;br&gt;&lt;b&gt;Tools and upgradeable weapons:&lt;/b&gt;&lt;br&gt;Whetstone - piercing and slashing weapons&lt;br&gt;Anvil - impact weapons&lt;br&gt;Workbench - ranged weapons</content>
+  <content contentuid="ha87c7d7ag4d64g0b28g0387g65fad5285062" version="1">KELA No ranged weapon in main hand</content>
+  <content contentuid="h3c4df88cgebf7g0aa5g1d3bga9d8f11ccb2b" version="1">KELA No ranged weapon in main hand</content>
+  <content contentuid="hd93935a1g617fg5c7dgbb3bga0eb64ca3515" version="3">KELA Blueprint: Simple Longbow</content>
+  <content contentuid="h9ecdff67gc23bga632gd442gcf9d715025d5" version="3">This parchment is unread.</content>
+  <content contentuid="hb788c043g5ff1g0452g9c0cg71671819041b" version="2">&lt;br&gt;&lt;br&gt;Content: KELA_Blueprint_Kit_Trap_Disarm_TEMPO_5</content>
+  <content contentuid="h6c877605g6c4eg4281g9d7bge02765db056a" version="3">Blacksmith's Tongs</content>
+  <content contentuid="h79333e24g0927g4925g8f1dg085a0c7dd954" version="3">Numerous dips into fire and oil have given the tips of these tongs a coppery sheen.</content>
+  <content contentuid="h16018409g1b46g4f9dg8938g7f33b21c0f4d" version="3">Blacksmith's Tongs</content>
+  <content contentuid="h55a68978g04e8g4c9agb82bg638be04ac769" version="3">Numerous dips into fire and oil have given the tips of these tongs a coppery sheen.</content>
+  <content contentuid="hc3a810c2g4b42g4a0ag9a9dgf5bf5aa677c1" version="3">Blacksmith's Tongs</content>
+  <content contentuid="h1547585ag30c8g47c3gbf45g09d441200cb3" version="3">Numerous dips into fire and oil have given the tips of these tongs a coppery sheen.</content>
+  <content contentuid="h258098a6g6c81g4a44gbc12gd36c46a28716" version="3">Blacksmith's Tongs</content>
+  <content contentuid="h0b3095efgbf80g4900ga232g7fc7b8350a3f" version="3">Numerous dips into fire and oil have given the tips of these tongs a coppery sheen.</content>
+  <content contentuid="hacf6e0e2gf296g4878gaae7g680b7f02d8f2" version="3">Blacksmith's Tongs</content>
+  <content contentuid="h25a0acf7g8b37g4753g818dg47ec5b3c7a01" version="3">Numerous dips into fire and oil have given the tips of these tongs a coppery sheen.</content>
+  <content contentuid="ha464b82cg7bc2g47abg879dg4e85f3521d65" version="3">Barber Shears</content>
+  <content contentuid="hf0480f88gc6dag4067gad2eg9ed501afe5ae" version="3">Its blades have been worn dull from years of use.</content>
+  <content contentuid="h60766a17gab54g421bg89e4g75878a88d345" version="3">Shears</content>
+  <content contentuid="h91ef3f1cg790ag433dga57egb741fcb2e885" version="4">Its blades have been worn dull from years of use.</content>
+  <content contentuid="h834c84dbg011fg4b16g8c12g05c4391cc3f4" version="3">Broom</content>
+  <content contentuid="h30d4745agb356g4d3fg9049gf8925b2d0fee" version="3">This broom's stiff bristles are frayed from use.</content>
+  <content contentuid="hdb464a72g1033g626eg89fcgd084a090de81" version="3">KELA Blueprint: Simple Shortbow</content>
+  <content contentuid="h7fad8b6fg6ba0gec85gfac7g62337a6a7ec3" version="3">This parchment is unread.</content>
+  <content contentuid="h80ec00fag8b43gc442g1638gd976738fd4cd" version="2">&lt;br&gt;&lt;br&gt;Content: KELA_Blueprint_WPN_Quarterstaff</content>
+  <content contentuid="h6e021861gae3cg18e4ge2d1g015ec0056eb5" version="29">&lt;br&gt;&lt;br&gt;Longbow&lt;br&gt;&lt;i&gt;To make a simple longbow, you will need two wooden sticks, suitable rope, and grease for soaking (Workbench) (Level 3) (Elf or Blacksmith).&lt;/i&gt;</content>
+  <content contentuid="h5004b9d9g0279gcdf0g7deag780a30147bde" version="28">&lt;br&gt;&lt;br&gt;Shortbow&lt;br&gt;&lt;i&gt;To make a simple short bow, you only need a wooden stick and a suitable rope (Workbench) (Elf or Blacksmith).&lt;/i&gt;</content>
+  <content contentuid="h829dfa77gb27cg2c62g0d96gb3640412fe8f" version="27">&lt;br&gt;&lt;br&gt;Quarterstaff&lt;br&gt;&lt;i&gt;What is a simple Quarterstaff - a strong and straight wooden stick... Even a broom will do (Workbench).&lt;/i&gt;</content>
+  <content contentuid="hd3a4f81fg2554g62e4g9ba3g32439bd8fa2e" version="2">KELA Blueprint: Simple Quarterstaff</content>
+  <content contentuid="hcf1b73d0gab52g1650g525bg6692fb1bd9cb" version="2">This parchment is unread.</content>
+  <content contentuid="h33564d65g8c54ga085g822fg4b9ba9fc70ce" version="26">&lt;br&gt;&lt;br&gt;&lt;b&gt;Alchemy&lt;/b&gt; ...</content>
+  <content contentuid="h3338266aga332g2e4fg68c6g4688b73111ae" version="26">&lt;b&gt;Armourer's Book&lt;/b&gt;&lt;br&gt;&lt;i&gt;For notes on weaponry and on blueprints of weapons, armor and tools found during travels.&lt;/i&gt;</content>
+  <content contentuid="he0f6c34dg360ag21f4gb020gf172da910b7e" version="26">&lt;br&gt;&lt;br&gt;&lt;b&gt;Elven Roots&lt;/b&gt;&lt;br&gt;Your Elven heritage allows you to use workbenches to craft and improve ranged weapons, and to do so more easily and better than others.</content>
+  <content contentuid="h0e0ae117ge893gc100g4af4g9ca0a398240c" version="26">&lt;br&gt;&lt;br&gt;&lt;b&gt;The Artisan's Past&lt;/b&gt;&lt;br&gt;Experience gained in the Guild Artisan allows you to use the Workbench to upgrade and create weapons. When upgrading a weapon, you pass the check with advantage.</content>
+  <content contentuid="hdcde75a3g30e0g7d1eg3ab8g36e76c410ae6" version="25">&lt;br&gt;&lt;br&gt;&lt;b&gt;Blacksmith's Apprentice&lt;/b&gt;&lt;br&gt;You didn't learn much from the notes of the blacksmith's apprentice in the Blighted Village, but at least you can now upgrade weapons at the workbench and anvil, at least to a minimum level.</content>
+  <content contentuid="h16affc66g78a7g75a5g447fg6ae27fe63180" version="25">&lt;br&gt;&lt;br&gt;&lt;b&gt;Blacksmith&lt;/b&gt;&lt;br&gt;You have reached certain heights in weaponry and can improve weapons to a level inaccessible to others, as well as forge new weapons and armor in the Forge. And with every second new level - your skill will increase!</content>
+  <content contentuid="h9f1143e3g4925gff22gd019g6fb42f877e2a" version="7">&lt;br&gt;&lt;br&gt;&lt;b&gt;KELA_Log_Entry_Upgrade_Elf&lt;/b&gt; ...</content>
+  <content contentuid="h1f534984g2842g6df7gd716g80875d45f67c" version="7">&lt;br&gt;&lt;br&gt;&lt;b&gt;KELA_Log_Entry_Upgrade_Guild_Artisan&lt;/b&gt; ...</content>
+  <content contentuid="h1a9b9c75g6346gc6feg5832gedac93456e30" version="23">&lt;b&gt;KELA_Log_No_Crafting_Abilities&lt;/b&gt;</content>
+  <content contentuid="heca15b8bg92adg6e96g4fc4gbbbeffe9b487" version="21">&lt;br&gt;&lt;br&gt;&lt;b&gt;Notes&lt;/b&gt;&lt;br&gt;------------------------------------------------------------------------------&lt;br&gt;* &lt;i&gt;Blueprints are available to the entire team&lt;/i&gt;</content>
+  <content contentuid="ha1ea8b31g8e97gdf2dg74b8ge69436adda0e" version="7">&lt;br&gt;&lt;br&gt;&lt;b&gt;KELA_Log_Entry_Not_Known_Blueprints&lt;/b&gt;</content>
+  <content contentuid="h643bd425gc051g66ceg5067ga66f35e91ed2" version="17">&lt;br&gt;&lt;br&gt;&lt;b&gt;KELA_Log_Entry_Upgrade_Elf&lt;/b&gt; ...&lt;br&gt;Weapon upgrading&lt;/b&gt;&lt;br&gt;&lt;br&gt;1. The Blacksmith passive must be in the Off state.&lt;br&gt;&lt;br&gt;2. Take the weapon to be upgraded in your Main hand.&lt;br&gt;&lt;br&gt;3. Use a tool. If no one in the party has Blacksmith's Oil, then click on the tool again while the warning is active.&lt;br&gt;&lt;br&gt;4. The difficulty of the rolls and the upgrade level are affected by the use of Blacksmith's Oil, the presence of the feat Blacksmith or background Guild Artisan, the Player's level, and proficiency with weapon.&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;Tools and upgradeable weapons:&lt;/b&gt;&lt;br&gt;&lt;br&gt;Whetstone - piercing and slashing weapons&lt;br&gt;&lt;br&gt;Anvil - blunt weapons&lt;br&gt;&lt;br&gt;Workbench - ranged weapons &lt;br&gt;</content>
+  <content contentuid="had60aaa6g9179g4695ga97eg8feddd502905" version="17">&lt;br&gt;&lt;br&gt;&lt;b&gt;Weapon upgrading&lt;/b&gt;&lt;br&gt;&lt;br&gt;1. The weapon being upgraded must be active and in the main hand.&lt;br&gt;2. If no one in the party has blacksmith's oil, a warning will appear, which can be skipped by clicking on the tool again.&lt;br&gt;3. The difficulty of the rolls and the upgrade level are affected by the use of Blacksmith's Oil, the presence of the feat Blacksmith or background Guild Artisan, the Player's level, and proficiency with weapon.&lt;br&gt;&lt;br&gt;&lt;b&gt;Tools and upgradeable weapons:&lt;/b&gt;&lt;br&gt;Whetstone - piercing and slashing weapons&lt;br&gt;Anvil - impact weapons&lt;br&gt;Workbench - ranged weapons</content>
+  <content contentuid="h63877521g665cg64edgeb26g5d513347cfc5" version="16">&lt;br&gt;&lt;br&gt;&lt;b&gt;Weapon upgrading&lt;/b&gt;&lt;br&gt;&lt;br&gt;1. The weapon being upgraded must be active and in the main hand.&lt;br&gt;2. If no one in the party has blacksmith's oil, a warning will appear, which can be skipped by clicking on the tool again.&lt;br&gt;3. The difficulty of the rolls and the upgrade level are affected by the use of Blacksmith's Oil, the presence of the feat Blacksmith or background Guild Artisan, the Player's level, and proficiency with weapon.&lt;br&gt;&lt;br&gt;&lt;b&gt;Tools and upgradeable weapons:&lt;/b&gt;&lt;br&gt;Whetstone - piercing and slashing weapons&lt;br&gt;Anvil - impact weapons&lt;br&gt;Workbench - ranged weapons</content>
+  <content contentuid="hc644c040gfd82gb629g3d33gd5c999b6f1a5" version="16">&lt;br&gt;&lt;br&gt;&lt;b&gt;Weapon Making&lt;/b&gt; ...</content>
+  <content contentuid="hb4834b7fg3146ga7dbg1d56g477ecc572dee" version="14">&lt;br&gt;&lt;br&gt;&lt;b&gt;KELA_Log_Entry_Not_Known_Blueprints&lt;/b&gt;</content>
+  <content contentuid="h3e0ad4cbgb388g7530g2b22g5c6cf48191f5" version="1">KELA Short</content>
+  <content contentuid="h4d350763g6c70g8a6dgfc63gcc78110866d7" version="1">KELA Tech</content>
+  <content contentuid="h63e6f01dg5571g8a23gd08dg812f62f9b7b2" version="2">KELA After reading the blueprint, the creation of the corresponding item will become available to any team member if he has enough skills.</content>
+  <content contentuid="hdef98641g1a20ga96dge0cegdfa3b2522bd1" version="1">KELA After reading the blueprint, the creation of the corresponding item will become available to any team member if he has enough skills.</content>
+  <content contentuid="haebd9e2ag092eg6f60g4312g129cfccaaf2f" version="1">KELA After reading the blueprint, the creation of the corresponding item will become available to any team member if he has enough skills.</content>
+  <content contentuid="h61576878gbf11gf13cg9b07g18ac942fa20e" version="1">KELA After reading the blueprint, the creation of the corresponding item will become available to any team member if he has enough skills.</content>
+  <content contentuid="h7dfb0160gc921g3ee0gfaa3g1b63ff5e041a" version="1">KELA Blueprint has been reviewed</content>
+  <content contentuid="h3f1e8453gb3bfgf2e7g951agb68fb7d7057d" version="1">KELA You have reviewed the blueprint and entered the necessary information into the Armourer's Book.</content>
+  <content contentuid="h07331bcagacf5g50abga823g3730dcb31dd0" version="1">KELA Only a Blacksmith can forge</content>
+  <content contentuid="h110b592cgb216g3dcfg19f4g30362cc627e0" version="1">KELA Forging is only available to a character with the Blacksmith feat.</content>
+  <content contentuid="hea9e1e27g965cgbe4fgf6dag064f0ab18429" version="2">KELA The fire in the smelter is too cold for forging</content>
+  <content contentuid="h8768bf52ga426g2cbcgb4b9g986c7403f67a" version="1">KELA The regular fire in the smelter is needed for upgrading, but forging requires more heat.</content>
+  <content contentuid="hecd4ee12gb7bfg3280ga0cfg87fad2d19ff5" version="1">KELA You don't have a suitable known blueprint</content>
+  <content contentuid="hfc4b8c7dgd35fgbe33g1d3cgd0367494de2e" version="1">KELA These ingredients don't match any blueprint you know. It seems like you can't create anything like this.</content>
+  <content contentuid="h885090eagac03g143bga91dg9952f658313e" version="1">KELA The necessary requirements are not met</content>
+  <content contentuid="h402cf9a5gc793g300dgdb7fg59d424944663" version="1">KELA The character does not meet the necessary requirements. Check what was written in the blueprint.</content>
 </contentList>

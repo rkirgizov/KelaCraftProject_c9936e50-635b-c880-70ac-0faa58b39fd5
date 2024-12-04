@@ -9,10 +9,8 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc2fab1a5g8248g4828gfa35gd32f68c7feef" version="5" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Blacksmith" />
         <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="1" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsToggled;ToggledDefaultAddToHotbar;Highlighted;ToggledDefaultOn" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="Tag(KELABLACKSMITH)" />
-        <field name="ToggleOnFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(KELA_CRAFT_CREATION_MOD, 100, -1)" />
-        <field name="ToggleOffFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(KELA_CRAFT_UPGRADE_MOD, 100, -1)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -25,6 +23,19 @@
         <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="Tag(KELABLACKSMITHAPPRENTICE)" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="5f743e93-2c15-4cf1-a90d-3cb2d106127f" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5c721d1f-d8a9-41dc-9776-f42139f063e5" />
+        <field name="Name" type="NameTableFieldDefinition" value="PassiveTechnical_KelaCraftProject_Creation_Spell" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd3ae2f8dgda6egf88fgd060g66d0998bda89" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h12c22a35g6bc4gacc8g592agb118a02039ce" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Blacksmith" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="BoostConditions" type="StringTableFieldDefinition" value="Tagged('KELABLACKSMITH') or Tagged('KELABLACKSMITHAPPRENTICE') or Tagged('GUILD_ARTISAN') or Tagged('REALLY_ELF') or Tagged('REALLY_DROWELF') or Tagged('REALLY_HIGHELF') or Tagged('REALLY_WOODELF') or Tagged('REALLY_HALFELF') or Tagged('REALLY_DROWHALFELF') or Tagged('REALLY_WOODHALFELF') or Tagged('REALLY_HIGHHALFELF') " />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_KELA_Craft_Creation_Mod)" />
       </fields>
     </stat_object>
   </stat_objects>

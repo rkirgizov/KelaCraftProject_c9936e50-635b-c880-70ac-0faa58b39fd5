@@ -1,65 +1,114 @@
 Version 1
 SubGoalCombiner SGC_AND
 INITSECTION
-DB_KelaCraftProject_Initialized(0);
+DB_KELA_Initialized(0);
 
-DB_KELA_Tools((TAG)KELAANVIL_01dc7295-d16e-4d98-afe2-ea39c5f1ba43, "KELAANVIL");
-DB_KELA_Tools((TAG)KELAWHETSTONE_80b11843-186f-4b78-bd17-850d5c7ec4d9, "KELAWHETSTONE");
-DB_KELA_Tools((TAG)KELAWORKBENCH_d2eedda0-c4ce-4602-960e-c57b4989b420, "KELAWORKBENCH");
+DB_KELA_UpgradeTools_Tags((TAG)KELAANVIL_01dc7295-d16e-4d98-afe2-ea39c5f1ba43, "KELAANVIL");
+DB_KELA_UpgradeTools_Tags((TAG)KELAWHETSTONE_80b11843-186f-4b78-bd17-850d5c7ec4d9, "KELAWHETSTONE");
+DB_KELA_UpgradeTools_Tags((TAG)KELAWORKBENCH_d2eedda0-c4ce-4602-960e-c57b4989b420, "KELAWORKBENCH");
+
+DB_KELA_Workbench_User_Tags((TAG)GUILD_ARTISAN_baf9fb0e-f535-40a0-bb78-3ec289d84e66);
+DB_KELA_Workbench_User_Tags((TAG)KELABLACKSMITH_c78b77b9-b33c-43fb-8dec-a91bacebb1bf);
+DB_KELA_Workbench_User_Tags((TAG)KELABLACKSMITHAPPRENTICE_5c77c6bf-22f7-4109-b9f8-21e3bd7a2634);
+DB_KELA_Workbench_User_Tags((TAG)REALLY_ELF_772b1dc6-14be-417f-afa3-c6cf364f45b4);
+DB_KELA_Workbench_User_Tags((TAG)REALLY_DROWELF_676e854b-d74b-44f3-8363-3ef27164a54d);
+DB_KELA_Workbench_User_Tags((TAG)REALLY_HIGHELF_78884c5f-9504-41af-912d-ce212df0ebea);
+DB_KELA_Workbench_User_Tags((TAG)REALLY_WOODELF_b12e8dff-c1f0-4e9c-9ec0-1cafd22bb637);
+DB_KELA_Workbench_User_Tags((TAG)REALLY_HALFELF_277f9609-ad0c-4883-b56d-0850904e88df);
+//DB_KELA_Workbench_User_Tags((TAG)REALLY_DROWHALFELF_3dbe23e0-2c9f-4a81-b586-ec6e50f720e1);
+//DB_KELA_Workbench_User_Tags((TAG)REALLY_WOODHALFELF_8ac1b27c-c5c4-4a2c-95dd-256e4349e483);
+//DB_KELA_Workbench_User_Tags((TAG)REALLY_HIGHHALFELF_bb7c731c-7af7-4c2d-b3d7-b4e8bd86a244);
+
+
+DB_KELA_CoreToolTag_CreateToolTemplate((TAG)KELAANVIL_01dc7295-d16e-4d98-afe2-ea39c5f1ba43, (ITEMROOT)KELA_Helper_Invisible_WeaponCreateTool_Anvil_ea982ccb-29b6-4fc5-af73-ac162e31cf78);
+DB_KELA_CoreToolTag_CreateToolTemplate((TAG)KELAWORKBENCH_d2eedda0-c4ce-4602-960e-c57b4989b420, (ITEMROOT)KELA_Helper_Invisible_WeaponCreateTool_Workbench_194e5626-78b0-4f04-8556-8e74d787e1b8);
 KBSECTION
-//REGION DEBUG region
-
-// DEBUG MESSAGE
-IF
-DualEntityEvent(_Main, _Debug, _EventMessage)
-AND
-GetHostCharacter(_Player)
-AND 
-_Main == _Debug
-AND
-GUIDToString(_Main, _ItemString)
-AND
-GetDisplayName(_Main,_TranslatedStringKey)
-AND
-ResolveTranslatedString(_TranslatedStringKey,_Name)
-AND
-Concatenate("KELA DEBUG (Entity ",_Name,_FirstResult)
-//AND
-//Concatenate(_FirstResult," GUID ",_SecondResult)
-//AND
-//Concatenate(_SecondResult,_ItemString,_ThirdResult)
-AND
-Concatenate(_FirstResult,"): ",_FourthResult)
-AND
-Concatenate(_FourthResult,_EventMessage,_FinalResult)
-THEN
-//ShowNotification((CHARACTER)_Player, _FinalResult);
-DebugBreak(_FinalResult);
-DebugText(_Player, _FinalResult);
-
-//END_REGION
-
-
+// -----------------------------------------------------------------------------------
+// PROJECT INIT 
+// -----------------------------------------------------------------------------------
 //REGION Kela Craft Project Initialization
 
 IF
 LevelLoaded(_)
 AND
-DB_KelaCraftProject_Initialized(0)
+DB_KELA_Initialized(0)
 THEN
 TimerLaunch("KelaCraftProject_InitDelay", 0);
 
 IF
 TimerFinished("KelaCraftProject_InitDelay")
 THEN
-NOT DB_KelaCraftProject_Initialized(0);
-DB_KelaCraftProject_Initialized(1);
+NOT DB_KELA_Initialized(0);
+DB_KELA_Initialized(1);
 TimerLaunch("KELA_Wait_Game_Loaded", 2000);
 
 IF
 TimerFinished("KELA_Wait_Game_Loaded")
 THEN
-SetFlag(GLO_KELA_KelaCraftProject_Initialized_a344df28-2bed-42da-8862-4b7b363b3d27,NULL_00000000-0000-0000-0000-000000000000, 0); // flagType: Global
+// Init log books
+// Blacksmith only
+AddEntryToCustomBook("KELA_Log_Book_Blacksmith", "KELA_Log_Header");
+AddEntryToCustomBook("KELA_Log_Book_Blacksmith", "KELA_Log_Passive_Blacksmith");
+AddEntryToCustomBook("KELA_Log_Book_Blacksmith", "KELA_Log_Header_Blueprints");
+// Blacksmith Apprentice only
+AddEntryToCustomBook("KELA_Log_Book_Apprentice", "KELA_Log_Header");
+AddEntryToCustomBook("KELA_Log_Book_Apprentice", "KELA_Log_Passive_Apprentice");
+AddEntryToCustomBook("KELA_Log_Book_Apprentice", "KELA_Log_Header_Blueprints");
+// Elf only
+AddEntryToCustomBook("KELA_Log_Book_Elf", "KELA_Log_Header");
+AddEntryToCustomBook("KELA_Log_Book_Elf", "KELA_Log_Origin_Elf");
+AddEntryToCustomBook("KELA_Log_Book_Elf", "KELA_Log_Header_Blueprints");
+// Elf Apprentice
+AddEntryToCustomBook("KELA_Log_Book_Elf_Apprentice", "KELA_Log_Header");
+AddEntryToCustomBook("KELA_Log_Book_Elf_Apprentice", "KELA_Log_Origin_Elf");
+AddEntryToCustomBook("KELA_Log_Book_Elf_Apprentice", "KELA_Log_Passive_Apprentice");
+AddEntryToCustomBook("KELA_Log_Book_Elf_Apprentice", "KELA_Log_Header_Blueprints");
+// Elf Blacksmith
+AddEntryToCustomBook("KELA_Log_Book_Elf_Blacksmith", "KELA_Log_Header");
+AddEntryToCustomBook("KELA_Log_Book_Elf_Blacksmith", "KELA_Log_Origin_Elf");
+AddEntryToCustomBook("KELA_Log_Book_Elf_Blacksmith", "KELA_Log_Passive_Blacksmith");
+AddEntryToCustomBook("KELA_Log_Book_Elf_Blacksmith", "KELA_Log_Header_Blueprints");
+// Elf Guild Artisan Apprentice
+AddEntryToCustomBook("KELA_Log_Book_Elf_Guild_Artisan_Apprentice", "KELA_Log_Header");
+AddEntryToCustomBook("KELA_Log_Book_Elf_Guild_Artisan_Apprentice", "KELA_Log_Origin_Elf");
+AddEntryToCustomBook("KELA_Log_Book_Elf_Guild_Artisan_Apprentice", "KELA_Log_Origin_Guild_Artisan");
+AddEntryToCustomBook("KELA_Log_Book_Elf_Guild_Artisan_Apprentice", "KELA_Log_Passive_Apprentice");
+AddEntryToCustomBook("KELA_Log_Book_Elf_Guild_Artisan_Apprentice", "KELA_Log_Header_Blueprints");
+// Elf Guild Artisan Blacksmith
+AddEntryToCustomBook("KELA_Log_Book_Elf_Guild_Artisan_Blacksmith", "KELA_Log_Header");
+AddEntryToCustomBook("KELA_Log_Book_Elf_Guild_Artisan_Blacksmith", "KELA_Log_Origin_Elf");
+AddEntryToCustomBook("KELA_Log_Book_Elf_Guild_Artisan_Blacksmith", "KELA_Log_Origin_Guild_Artisan");
+AddEntryToCustomBook("KELA_Log_Book_Elf_Guild_Artisan_Blacksmith", "KELA_Log_Passive_Blacksmith");
+AddEntryToCustomBook("KELA_Log_Book_Elf_Guild_Artisan_Blacksmith", "KELA_Log_Header_Blueprints");
+// Guild Artisan only
+AddEntryToCustomBook("KELA_Log_Book_Guild_Artisan", "KELA_Log_Header");
+AddEntryToCustomBook("KELA_Log_Book_Guild_Artisan", "KELA_Log_Origin_Guild_Artisan");
+AddEntryToCustomBook("KELA_Log_Book_Guild_Artisan", "KELA_Log_Header_Blueprints");
+// Guild Artisan Apprentice
+AddEntryToCustomBook("KELA_Log_Book_Guild_Artisan_Apprentice", "KELA_Log_Header");
+AddEntryToCustomBook("KELA_Log_Book_Guild_Artisan_Apprentice", "KELA_Log_Origin_Guild_Artisan");
+AddEntryToCustomBook("KELA_Log_Book_Guild_Artisan_Apprentice", "KELA_Log_Passive_Apprentice");
+AddEntryToCustomBook("KELA_Log_Book_Guild_Artisan_Apprentice", "KELA_Log_Header_Blueprints");
+// Guild Artisan Blacksmith
+AddEntryToCustomBook("KELA_Log_Book_Guild_Artisan_Blacksmith", "KELA_Log_Header");
+AddEntryToCustomBook("KELA_Log_Book_Guild_Artisan_Blacksmith", "KELA_Log_Origin_Guild_Artisan");
+AddEntryToCustomBook("KELA_Log_Book_Guild_Artisan_Blacksmith", "KELA_Log_Passive_Blacksmith");
+AddEntryToCustomBook("KELA_Log_Book_Guild_Artisan_Blacksmith", "KELA_Log_Header_Blueprints");
+// No Crafting Abilities
+AddEntryToCustomBook("KELA_Log_Book_No_Crafting_Abilities", "KELA_Log_No_Crafting_Abilities");
+
+// INIT finish
+SetFlag(GLO_KELA_KelaCraftProject_Initialized_a344df28-2bed-42da-8862-4b7b363b3d27,NULL_00000000-0000-0000-0000-000000000000, 1); // flagType: Global
+
+// Add Technical Passive for Creation mod spell
+IF
+TimerFinished("KELA_Wait_Game_Loaded")
+AND
+DB_Players(_User)
+AND
+HasPassive(_User, "PassiveTechnical_KelaCraftProject_Creation_Spell", 0)
+THEN
+AddPassive(_User, "PassiveTechnical_KelaCraftProject_Creation_Spell");
 
 //Add-on initialized
 IF
@@ -68,204 +117,11 @@ AND
 DB_Players((CHARACTER)_Player)
 THEN
 ShowNotification((CHARACTER)_Player, "Kela Craft Project Succesfully Initialized");
-
+GoalCompleted;
 //END_REGION
-
-//REGION Books 
-
-// Adding the blacksmith's apprentice passive after reading his notes
-IF
-GameBookInterfaceClosed(S_KELA_Blacksmith_Apprentice_Notes_001_a1cde797-9585-47a8-be13-e83fd24da558,_Char)
-AND
-HasPassive(_Char,"PassiveFeature_Blacksmith",0)
-AND
-HasPassive(_Char,"PassiveFeature_Blacksmith_Apprentice",0)
-THEN
-ApplyStatus(_Char, "KELA_MESSAGE_GET_BLACKSMITH_APPRENTICE_PASSIVE", 15.0, 1);
-AddPassive(_Char,"PassiveFeature_Blacksmith_Apprentice");
-
-//END_REGION
-
-//REGION Use craft tool 
-
-// NOT PASS Check Upgrade in Process
-IF
-UseStarted(_User,_Tool)
-AND
-DB_KELA_Tools(_Tag, _TagName)
-AND
-IsTagged(_Tool, _Tag, 1)
-AND
-Concatenate("KELA_MESSAGE_UPGRADE_IN_PROCESS_",_TagName,_InProcessStatus)
-AND
-HasActiveStatus(_Tool, _InProcessStatus, 1)
-THEN
-PROC_PlayCantUseItemAD((CHARACTER)_User);
-
-// PASS Check Upgrade in Process with Oil Owner
-IF
-UseStarted(_User,_Tool)
-AND
-DB_KELA_Tools(_Tag, _TagName)
-AND
-IsTagged(_Tool, _Tag, 1)
-AND
-GetItemByTagInInventory("KELAWEAPONUPGRADETOOL_4c6fe143-48cc-4613-9da3-2ed62440c902", _Tool, _UpgradeTool)
-AND
-Concatenate("KELA_MESSAGE_UPGRADE_IN_PROCESS_",_TagName,_InProcessStatus)
-AND
-NOT HasActiveStatus(_Tool, _InProcessStatus, 1)
-AND
-GetLevel(_User,_Level)
-AND
-IntegerToReal(_Level,_LevelRealValue)
-AND
-GetItemByTagInPartyInventory("KELASMITHOIL_b45cf712-6f66-4cf0-ab52-c8baeb27f8c6", (CHARACTER)_User, (ITEM)_Oil)
-AND
-GetInventoryOwner(_Oil, _OilOwner)
-THEN
-SetDualEntityEvent(_UpgradeTool, _Tool, _TagName); // set coretool and coretooltag
-SetEntityEventReal(_UpgradeTool,"KELA_SetUserLevel",_LevelRealValue); // set user level
-SetDualEntityEvent(_UpgradeTool, _OilOwner, "KELA_SetOwnerOfSmithOil"); // set oil owner
-SetDualEntityEvent(_User, _UpgradeTool, "KELA_CheckProficiencyWithWeapon");
-Use((CHARACTER)_User, (ITEM)_UpgradeTool, "");
-
-// PASS Check Upgrade in Process Without Oil Owner, but with status KELA_MESSAGE_PLAYER_HAS_NOT_SMITH_OIL
-IF
-UseStarted(_User,_Tool)
-AND
-DB_KELA_Tools(_Tag, _TagName)
-AND
-IsTagged(_Tool, _Tag, 1)
-AND
-GetItemByTagInInventory("KELAWEAPONUPGRADETOOL_4c6fe143-48cc-4613-9da3-2ed62440c902", _Tool, _UpgradeTool)
-AND
-Concatenate("KELA_MESSAGE_UPGRADE_IN_PROCESS_",_TagName,_InProcessStatus)
-AND
-NOT HasActiveStatus(_Tool, _InProcessStatus, 1)
-AND
-GetLevel(_User,_Level)
-AND
-IntegerToReal(_Level,_LevelRealValue)
-AND
-NOT GetItemByTagInPartyInventory("KELASMITHOIL_b45cf712-6f66-4cf0-ab52-c8baeb27f8c6", (CHARACTER)_User, _)
-THEN
-SetDualEntityEvent(_UpgradeTool, _Tool, _TagName); // set coretool and coretooltag
-SetEntityEventReal(_UpgradeTool,"KELA_SetUserLevel",_LevelRealValue); // set user level
-SetDualEntityEvent(_UpgradeTool, NULL_00000000-0000-0000-0000-000000000000, "KELA_SetOwnerOfSmithOil"); // set NULL oil owner
-SetDualEntityEvent(_User, _UpgradeTool, "KELA_CheckProficiencyWithWeapon"); // check proficiency
-Use((CHARACTER)_User, (ITEM)_UpgradeTool, "");
-
-// ----------------------------------------------------------------
-// EXTRA CHECKS
-// ----------------------------------------------------------------
-//
-// Check Proficiency With Weapon
-IF
-DualEntityEvent(_User, _UpgradeTool, "KELA_CheckProficiencyWithWeapon")
-AND
-GetEquippedWeapon((CHARACTER)_User, _Weapon)
-AND
-IsProficientWith(_User, _Weapon, 1)
-THEN
-SetEntityEventReal(_UpgradeTool,"KELA_SetProficiencyWithWeapon",1.0);
-// ELSE
-IF
-DualEntityEvent(_User, _UpgradeTool, "KELA_CheckProficiencyWithWeapon")
-AND
-GetEquippedWeapon((CHARACTER)_User, _Weapon)
-AND
-NOT IsProficientWith(_User, _Weapon, 1)
-THEN
-SetEntityEventReal(_UpgradeTool,"KELA_SetProficiencyWithWeapon",0.0);
-// ----------------------------------------------------------------
-
-// ----------------------------------------------------------------
-// ROLL RESULTS
-// RollResult((STRING)_EventName, (CHARACTER)_Roller, (GUIDSTRING)_RollSubject, (INTEGER)_ResultType, (INTEGER)_IsActiveRoll, (CRITICALITYTYPE)_Criticality)
-// ----------------------------------------------------------------
-
-// NOT Critical
-IF
-RollResult("KELA_Upgrading_RollEvent", _User, _RollSubject, _ResultType, _, _Criticality)
-AND
-NOT _Criticality == CRITICALITYTYPE.Success
-AND
-NOT _Criticality == CRITICALITYTYPE.Fail
-AND
-IntegerToReal(_ResultType,_ResultTypeRealValue)
-THEN
-SetEntityEventReal(_RollSubject,"KELA_RollResultCriticalNot",_ResultTypeRealValue);
-
-// Critical Success
-IF
-RollResult("KELA_Upgrading_RollEvent", _User, _RollSubject, _ResultType, _, _Criticality)
-AND
-_Criticality == CRITICALITYTYPE.Success
-AND
-IntegerToReal(_ResultType,_ResultTypeRealValue)
-THEN
-SetEntityEventReal(_RollSubject,"KELA_RollResultCriticalSuccess",_ResultTypeRealValue);
-
-// Critical Fail
-IF
-RollResult("KELA_Upgrading_RollEvent", _User, _RollSubject, _ResultType, _, _Criticality)
-AND
-_Criticality == CRITICALITYTYPE.Fail
-AND
-IntegerToReal(_ResultType,_ResultTypeRealValue)
-THEN
-SetEntityEventReal(_RollSubject,"KELA_RollResultCriticalFail",_ResultTypeRealValue);
-
-// ----------------------------------------------------------------
-// HANDLINGS
-// ----------------------------------------------------------------
-
-// Need apply effect on tool
-IF
-EntityEvent(_Tool,"KELA_Apply_Craft_Effect")
-THEN
-PlayEffect(_Tool,(EFFECTRESOURCE)VFX_Status_MagicWeapon_ApplyFX_01_1a366c75-a573-78e0-e667-1f615703fcc7);
-
-// Oil used
-IF
-EntityEvent(_User,"KELA_Blacksmiths_Oil_Used")
-THEN
-TemplateRemoveFrom((ITEMROOT)LOOT_KELA_Smith_Oil_3486ab6b-a396-4f39-a5cf-16dee0f873fd, _User, 1);
-
-// Because for the item in the inventory the timer in Anubis does not end
-// Timer before request roll
-IF
-EntityEvent(_Item,"KELA_Start_Upgrade_Timer")
-THEN
-ObjectTimerLaunch(_Item, "KELA_Upgrade_Timer", 2500);
-IF
-ObjectTimerFinished(_Item, "KELA_Upgrade_Timer")
-THEN
-SetEntityEvent(_Item,"KELA_Stop_Upgrade_Timer");
-//-------------------------------------------------
-// Timer for completing status calculations
-IF
-EntityEvent(_Item,"KELA_Start_ApplyStatus_Timer")
-THEN
-ObjectTimerLaunch(_Item, "KELA_ApplyStatus_Timer", 500);
-IF
-ObjectTimerFinished(_Item, "KELA_ApplyStatus_Timer")
-THEN
-SetEntityEvent(_Item,"KELA_Stop_ApplyStatus_Timer");
-//-------------------------------------------------
-
-// Finishing Use Tool
-//IF
-//UseFinished(_User, _Tool, 1)
-//AND
-//DB_KELA_Tools(_Tag, _TagName)
-//AND
-//IsTagged(_Tool, _Tag, 1)
-//THEN
-//SetDualEntityEvent(_Tool, _Tool, "UseFinished");
-
-//END_REGION
+// -----------------------------------------------------------------------------------
+// PROJECT INIT 
+// -----------------------------------------------------------------------------------
 EXITSECTION
 
 ENDEXITSECTION

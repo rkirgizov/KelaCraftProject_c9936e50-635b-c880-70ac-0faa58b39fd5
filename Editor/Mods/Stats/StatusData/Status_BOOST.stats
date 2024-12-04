@@ -3,24 +3,48 @@
   <stat_objects>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="39d9985d-1292-4a7f-8d90-346ea24d0550" />
-        <field name="Name" type="NameTableFieldDefinition" value="KELA_CRAFT_UPGRADE_MOD" />
-        <field name="StackId" type="StringTableFieldDefinition" value="KELA_CRAFT_UPGRADE_MOD" />
-        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="HasStatus('KELA_CRAFT_CREATION_MOD')" />
-        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnStatusApplied" enumeration_type_name="StatusEvent" version="1" />
-        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="IgnoreResting" enumeration_type_name="StatusPropertyFlags" version="1" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h4ed60d8cg6293ge685g797age29444f8d39a" version="1" />
+        <field name="UUID" type="IdTableFieldDefinition" value="bc560cfe-ed81-43d2-acb9-4be0943f4f42" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_CRAFT_CREATION_MOD" />
+        <field name="StackId" type="StringTableFieldDefinition" value="KELA_CRAFT_CREATION_MOD" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hdb2705d7gcf26gd134g5a23gd46b3dc654f1" version="1" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not HasStatus('KELA_CRAFT_CREATION_MOD_1') and not HasStatus('KELA_CRAFT_CREATION_MOD_2') and not HasStatus('KELA_CRAFT_CREATION_MOD_3') and not HasStatus('KELA_CRAFT_CREATION_MOD_4')" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnStatusRemoved" enumeration_type_name="StatusEvent" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="916912a0-8db6-427d-9e22-fd0356275d96" />
-        <field name="Name" type="NameTableFieldDefinition" value="KELA_CRAFT_CREATION_MOD" />
-        <field name="StackId" type="StringTableFieldDefinition" value="KELA_CRAFT_CREATION_MOD" />
-        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="HasStatus('KELA_CRAFT_UPGRADE_MOD')" />
-        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnStatusApplied" enumeration_type_name="StatusEvent" version="1" />
-        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="IgnoreResting" enumeration_type_name="StatusPropertyFlags" version="1" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="ha9de6f01g19eeg9558g30eag0e1293edd09a" version="1" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_CRAFT_CREATION_MOD_1" />
+        <field name="StackId" type="StringTableFieldDefinition" value="KELA_CRAFT_CREATION_MOD_1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="ha9de6f01g19eeg9558g30eag0e1293edd09a" version="2" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(KELA_CRAFT_CREATION_MOD_2);RemoveStatus(KELA_CRAFT_CREATION_MOD_3);RemoveStatus(KELA_CRAFT_CREATION_MOD_4)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6cb1d65e-0a09-4e94-b36e-ff93b77957d6" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_CRAFT_CREATION_MOD_2" />
+        <field name="StackId" type="StringTableFieldDefinition" value="KELA_CRAFT_CREATION_MOD_2" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h02f31ab3g0f7bgd5bcg552cg921cb4047b9f" version="1" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(KELA_CRAFT_CREATION_MOD_1);RemoveStatus(KELA_CRAFT_CREATION_MOD_3);RemoveStatus(KELA_CRAFT_CREATION_MOD_4)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4a477ed3-db26-4317-a408-d7ddf416bdf7" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_CRAFT_CREATION_MOD_3" />
+        <field name="StackId" type="StringTableFieldDefinition" value="KELA_CRAFT_CREATION_MOD_3" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h44082bf8g3236ge59eg06eag0591dbcff6a5" version="1" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(KELA_CRAFT_CREATION_MOD_1);RemoveStatus(KELA_CRAFT_CREATION_MOD_2);RemoveStatus(KELA_CRAFT_CREATION_MOD_4)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ca83360b-b8ae-4cd9-a95b-a279ed7069ea" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_CRAFT_CREATION_MOD_4" />
+        <field name="StackId" type="StringTableFieldDefinition" value="KELA_CRAFT_CREATION_MOD_4" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h16f1d63bgf741g6089g2d8fg4a0f0a80830d" version="1" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(KELA_CRAFT_CREATION_MOD_1);RemoveStatus(KELA_CRAFT_CREATION_MOD_2);RemoveStatus(KELA_CRAFT_CREATION_MOD_3)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -86,6 +110,53 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0e287dd2-154a-4cfa-87fe-b83b537b29fd" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_SMELTINGFORGE_AURA_STAGE_1" />
+        <field name="AuraRadius" type="IntegerTableFieldDefinition" value="7" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="TARGET:IF(Item() and Tagged('KELAANVIL')):ApplyStatus(KELA_SMELTINGFORGE_AURA_STAGE_1_ANVIL,100,-1)" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h551b82acg90fegd5b5g4406ge7de40045391" version="1" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="HasStatus('KELA_SMELTINGFORGE_AURA_STAGE_2')" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnStatusApplied" enumeration_type_name="StatusEvent" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Status_Burning" />
+        <field name="StackId" type="StringTableFieldDefinition" value="KELA_SMELTINGFORGE_AURA_STAGE_1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;IgnoreResting;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="97c6d051-e332-4ae9-844c-b69daefd2be7" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_SMELTINGFORGE_AURA_STAGE_1_ANVIL" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2cf52989g719eg8685g87d8g81c64b48e60c" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h43f84387g404bgab75g890agc373d51baf19" version="2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Item_TOOL_Smith_Anvil_B" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="ForceOverhead;IgnoreResting" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c1213add-641f-43da-a563-9e4b266d30f8" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_SMELTINGFORGE_AURA_STAGE_2" />
+        <field name="AuraRadius" type="IntegerTableFieldDefinition" value="7" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="TARGET:IF(Item() and Tagged('KELAANVIL')):ApplyStatus(KELA_SMELTINGFORGE_AURA_STAGE_2_ANVIL,100,-1)" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h73a46f37gb404gf74fg00ccg18bc21e872ad" version="2" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="HasStatus('KELA_SMELTINGFORGE_AURA_STAGE_1')" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Status_Burning" />
+        <field name="StackId" type="StringTableFieldDefinition" value="KELA_SMELTINGFORGE_AURA_STAGE_2" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnStatusApplied" enumeration_type_name="StatusEvent" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;IgnoreResting" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hcc50b4fag5ba5gfd41gfb4ag0f6b0dded0ee" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="629a9f1a-2867-4129-85af-dd56c2178b6e" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_SMELTINGFORGE_AURA_STAGE_2_ANVIL" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd775f5f8g3906g6045g10e2g6a74bab787dd" version="2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="97c6d051-e332-4ae9-844c-b69daefd2be7" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="974e1ba7-bd86-4efb-8c89-2b2fd09e2d88" />
         <field name="Name" type="NameTableFieldDefinition" value="KELA_USER_BLOCK_MOVEMENT" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ActionResourceBlock(Movement)" />
@@ -140,6 +211,17 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h31f94fb0gcf9dg6c8ag8ef5g8f7718ff0374" version="3" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c916bd5b-2097-415f-81ac-4ec5000bb7bd" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_MESSAGE_NO_SUITABLE_WEAPON_RANGED" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="0bb992e7-43ca-4531-94f3-d8680d09e1be" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="ha87c7d7ag4d64g0b28g0387g65fad5285062" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Weapon_Tool_Workbench_Ranged" />
+        <field name="StackId" type="StringTableFieldDefinition" value="KELA_MESSAGE_NO_SUITABLE_WEAPON_RANGED" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3c4df88cgebf7g0aa5g1d3bga9d8f11ccb2b" version="1" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF5F9EA0" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="9e469b6a-06a7-481d-83f8-69c7101b2794" />
@@ -162,6 +244,110 @@
         <field name="FormatColor" type="EnumerationTableFieldDefinition" value="Red" enumeration_type_name="FormatStringColor" version="1" />
         <field name="SoundStart" type="StringTableFieldDefinition" value="UI_Shared_Error" />
         <field name="StackId" type="StringTableFieldDefinition" value="KELA_MESSAGE_SUITABLE_WEAPON_TOO_DAMAGED" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="570325dd-bb2a-47b3-894e-f749a1e533cb" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_MESSAGE_ANVIL_NOT_FIRE" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2eeaa94d-a407-4dbe-a88a-122188a810d5" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd242be78gf5cag5cebg5997g76c9ba68c752" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h31c01f82g3f0egd808ga803g715427da1091" version="2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Tooltip_Error_Cross" />
+        <field name="FormatColor" type="EnumerationTableFieldDefinition" value="Red" enumeration_type_name="FormatStringColor" version="1" />
+        <field name="SoundStart" type="StringTableFieldDefinition" value="UI_Shared_Error" />
+        <field name="StackId" type="StringTableFieldDefinition" value="KELA_MESSAGE_ANVIL_NOT_FIRE" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="08039dd9-26e7-489e-ab48-b994146bd52a" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_MESSAGE_ANVIL_FIRE_TOO_HOT" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2eeaa94d-a407-4dbe-a88a-122188a810d5" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hea93aa5eg3d8eg822eg353cgab6eafbc73d3" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h88370da4g6bc3g191fga4cdgc24e3c60e309" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Tooltip_Error_Cross" />
+        <field name="FormatColor" type="EnumerationTableFieldDefinition" value="Red" enumeration_type_name="FormatStringColor" version="1" />
+        <field name="SoundStart" type="StringTableFieldDefinition" value="UI_Shared_Error" />
+        <field name="StackId" type="StringTableFieldDefinition" value="KELA_MESSAGE_ANVIL_FIRE_TOO_HOT" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="dbee4373-c9b2-434b-aeb6-df7445f4f4c9" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_MESSAGE_ANVIL_FIRE_TOO_COLD" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2eeaa94d-a407-4dbe-a88a-122188a810d5" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hea9e1e27g965cgbe4fgf6dag064f0ab18429" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h8768bf52ga426g2cbcgb4b9g986c7403f67a" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Tooltip_Error_Cross" />
+        <field name="FormatColor" type="EnumerationTableFieldDefinition" value="Red" enumeration_type_name="FormatStringColor" version="1" />
+        <field name="SoundStart" type="StringTableFieldDefinition" value="UI_Shared_Error" />
+        <field name="StackId" type="StringTableFieldDefinition" value="KELA_MESSAGE_ANVIL_FIRE_TOO_COLD" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6f1bbb09-56a0-4253-b69f-b1dea5225ad8" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_MESSAGE_NO_KNOWLEDGE_ANVIL" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2eeaa94d-a407-4dbe-a88a-122188a810d5" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h85000710ge5f0gf728g622cg8008e6b3a3e4" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h054ec240g915dg30c6g8429gd6cb219345b4" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Tooltip_Error_Cross" />
+        <field name="FormatColor" type="EnumerationTableFieldDefinition" value="Red" enumeration_type_name="FormatStringColor" version="1" />
+        <field name="SoundStart" type="StringTableFieldDefinition" value="UI_Shared_Error" />
+        <field name="StackId" type="StringTableFieldDefinition" value="KELA_MESSAGE_NO_KNOWLEDGE_ANVIL" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5d7f5d22-3642-4c17-b8d5-76c2a1c51c90" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_MESSAGE_NO_KNOWLEDGE_ANVIL_BLACKSMITH" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2eeaa94d-a407-4dbe-a88a-122188a810d5" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h07331bcagacf5g50abga823g3730dcb31dd0" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h110b592cgb216g3dcfg19f4g30362cc627e0" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Tooltip_Error_Cross" />
+        <field name="FormatColor" type="EnumerationTableFieldDefinition" value="Red" enumeration_type_name="FormatStringColor" version="1" />
+        <field name="SoundStart" type="StringTableFieldDefinition" value="UI_Shared_Error" />
+        <field name="StackId" type="StringTableFieldDefinition" value="KELA_MESSAGE_NO_KNOWLEDGE_ANVIL_BLACKSMITH" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f24a3d20-8156-4639-96ae-9036a61a3c1e" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_MESSAGE_NO_KNOWLEDGE_WORKBENCH" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2eeaa94d-a407-4dbe-a88a-122188a810d5" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h4fbf0966g09bfgad8dg61cbg6b0baf4bcb5d" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc860596bgfd3fg2eb8gf651g2ea20ad366d0" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Tooltip_Error_Cross" />
+        <field name="FormatColor" type="EnumerationTableFieldDefinition" value="Red" enumeration_type_name="FormatStringColor" version="1" />
+        <field name="SoundStart" type="StringTableFieldDefinition" value="UI_Shared_Error" />
+        <field name="StackId" type="StringTableFieldDefinition" value="KELA_MESSAGE_NO_KNOWLEDGE_WORKBENCH" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="55d33daf-8913-40bf-8937-57389eede4fa" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_MESSAGE_BLUEPRINT_NO_KNOWLEDGE" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2eeaa94d-a407-4dbe-a88a-122188a810d5" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hecd4ee12gb7bfg3280ga0cfg87fad2d19ff5" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hfc4b8c7dgd35fgbe33g1d3cgd0367494de2e" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Tooltip_Error_Cross" />
+        <field name="FormatColor" type="EnumerationTableFieldDefinition" value="Red" enumeration_type_name="FormatStringColor" version="1" />
+        <field name="SoundStart" type="StringTableFieldDefinition" value="UI_Shared_Error" />
+        <field name="StackId" type="StringTableFieldDefinition" value="KELA_MESSAGE_BLUEPRINT_NO_KNOWLEDGE" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="cd27dca4-579b-4d6a-943e-6a059dc43baa" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_MESSAGE_BLUEPRINT_NO_REQUIREMENTS" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2eeaa94d-a407-4dbe-a88a-122188a810d5" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h885090eagac03g143bga91dg9952f658313e" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h402cf9a5gc793g300dgdb7fg59d424944663" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Tooltip_Error_Cross" />
+        <field name="FormatColor" type="EnumerationTableFieldDefinition" value="Red" enumeration_type_name="FormatStringColor" version="1" />
+        <field name="SoundStart" type="StringTableFieldDefinition" value="UI_Shared_Error" />
+        <field name="StackId" type="StringTableFieldDefinition" value="KELA_MESSAGE_BLUEPRINT_NO_REQUIREMENTS" />
       </fields>
     </stat_object>
     <stat_object color="#FF5F9EA0" is_substat="false">
@@ -204,6 +390,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h62e83eb6ga37bg605eg1f29g30a56cb31e9b" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hb0952471g57edgd7e4gf4acgb1769cbda2be" version="1" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="ForceOverhead;DisableCombatlog" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2eeaa94d-a407-4dbe-a88a-122188a810d5" />
       </fields>
     </stat_object>
     <stat_object color="#FF5F9EA0" is_substat="false">
@@ -218,6 +405,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h5002ae53ge95dg1003gbb87g818d38daf1e4" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h83c6314bgf468g2f1ag7f8fg6de823bc902b" version="1" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="ForceOverhead;DisableCombatlog" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2eeaa94d-a407-4dbe-a88a-122188a810d5" />
       </fields>
     </stat_object>
     <stat_object color="#FF5F9EA0" is_substat="false">
@@ -231,6 +419,21 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="2eeaa94d-a407-4dbe-a88a-122188a810d5" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Blacksmith_Apprentice" />
         <field name="ApplyEffect" type="GuidObjectTableFieldDefinition" value="af4bcec0-229d-447c-8513-3e85363a67e7" />
+        <field name="SoundStart" type="StringTableFieldDefinition" value="HAG_Well_Buff" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a3b66e49-5a5e-44bb-9ebf-0bf290d17d88" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_MESSAGE_BLUEPRINT_HAS_BEEN_REVIEWED" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7dfb0160gc921g3ee0gfaa3g1b63ff5e041a" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h3f1e8453gb3bfgf2e7g951agb68fb7d7057d" version="1" />
+        <field name="StackId" type="StringTableFieldDefinition" value="KELA_MESSAGE_BLUEPRINT_HAS_BEEN_REVIEWED" />
+        <field name="FormatColor" type="EnumerationTableFieldDefinition" value="Green" enumeration_type_name="FormatStringColor" version="1" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2eeaa94d-a407-4dbe-a88a-122188a810d5" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Item_BOOK_GEN_Paper_Sheet_C" />
+        <field name="ApplyEffect" type="GuidObjectTableFieldDefinition" value="af4bcec0-229d-447c-8513-3e85363a67e7" />
+        <field name="SoundStart" type="StringTableFieldDefinition" value="HAG_Well_Buff" />
       </fields>
     </stat_object>
     <stat_object color="#FF008000" is_substat="false">

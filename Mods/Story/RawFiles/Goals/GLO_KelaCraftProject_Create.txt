@@ -1,0 +1,501 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+
+KBSECTION
+// -----------------------------------------------------------------------------------
+// CRAFT ON CREATE TOOLS
+// -----------------------------------------------------------------------------------
+//REGION
+//
+// IF Tool has CreateTool
+// If you do not delete it, the context of the previous user is saved on the tool.
+IF
+UseStarted(_User,_Tool)
+AND
+HasActiveStatus(_User, "KELA_CRAFT_CREATION_MOD", 1)
+AND
+DB_KELA_CoreToolTag_CreateToolTemplate(_Tag, _CreateToolTemplate)
+AND
+IsTagged(_Tool, _Tag, 1)
+AND
+GetItemByTemplateInInventory(_CreateToolTemplate, _Tool, _)
+THEN
+TemplateRemoveFrom(_CreateToolTemplate, _Tool, 1);
+TemplateAddTo(_CreateToolTemplate,_Tool,1,0);
+DB_KELA_Create_Tool_User(_Tool,_User);
+TimerLaunch("KELA_Wait_For_Adding_CreateTool", 50);
+//
+// IF Tool has not CreateTool, then we must add it
+IF
+UseStarted(_User,_Tool)
+AND
+HasActiveStatus(_User, "KELA_CRAFT_CREATION_MOD", 1)
+AND
+DB_KELA_CoreToolTag_CreateToolTemplate(_Tag, _CreateToolTemplate)
+AND
+IsTagged(_Tool, _Tag, 1)
+AND
+NOT GetItemByTemplateInInventory(_CreateToolTemplate, _Tool, _)
+THEN
+TemplateAddTo(_CreateToolTemplate,_Tool,1,0);
+DB_KELA_Create_Tool_User(_Tool,_User);
+TimerLaunch("KELA_Wait_For_Adding_CreateTool", 50);
+//
+// And wait until it is added
+IF
+TimerFinished("KELA_Wait_For_Adding_CreateTool")
+AND
+DB_KELA_Create_Tool_User(_Tool,_User)
+//AND
+//DB_KELA_Tool_Tool(_Tool)
+THEN
+SetDualEntityEvent(_User, _Tool, "KELA_CreationStarted");
+TimerLaunch("KELA_Wait_Tool_User_Clear", 100);
+//
+// Open Crafting Menu
+// ANVIL - only Blacksmith
+IF
+DualEntityEvent(_User, _Tool, "KELA_CreationStarted")
+AND
+DB_KELA_CoreToolTag_CreateToolTemplate(_Tag, _CreateToolTemplate)
+AND
+IsTagged(_Tool, _Tag, 1)
+AND 
+_Tag == KELAANVIL_01dc7295-d16e-4d98-afe2-ea39c5f1ba43
+AND 
+HasActiveStatus(_Tool,"KELA_SMELTINGFORGE_AURA_STAGE_2_ANVIL",1)
+AND
+IsTagged(_User, (TAG)KELABLACKSMITH_c78b77b9-b33c-43fb-8dec-a91bacebb1bf, 1)
+AND
+GetItemByTemplateInInventory(_CreateToolTemplate, _Tool, _CreateTool)
+THEN
+DB_KELA_Create_Tool_Start_Use(_User);
+Use((CHARACTER)_User, (ITEM)_CreateTool, "");
+//
+// ANVIL - Block Not Fire Forge
+IF
+DualEntityEvent(_User, _Tool, "KELA_CreationStarted")
+AND
+DB_KELA_CoreToolTag_CreateToolTemplate(_Tag, _CreateToolTemplate)
+AND
+IsTagged(_Tool, _Tag, 1)
+AND 
+_Tag == KELAANVIL_01dc7295-d16e-4d98-afe2-ea39c5f1ba43
+AND
+NOT DB_KELA_Create_Tool_Start_Use(_User)
+AND
+NOT HasActiveStatus(_Tool,"KELA_SMELTINGFORGE_AURA_STAGE_1_ANVIL",1)
+AND
+NOT HasActiveStatus(_Tool,"KELA_SMELTINGFORGE_AURA_STAGE_2_ANVIL",1)
+THEN
+ApplyStatus(_Tool, "KELA_MESSAGE_ANVIL_NOT_FIRE", 5.0, 1);
+PROC_PlayCantUseItemAD((CHARACTER)_User);
+//
+// ANVIL - Block Low Temper Forge
+IF
+DualEntityEvent(_User, _Tool, "KELA_CreationStarted")
+AND
+DB_KELA_CoreToolTag_CreateToolTemplate(_Tag, _CreateToolTemplate)
+AND
+IsTagged(_Tool, _Tag, 1)
+AND 
+_Tag == KELAANVIL_01dc7295-d16e-4d98-afe2-ea39c5f1ba43
+AND
+NOT DB_KELA_Create_Tool_Start_Use(_User)
+AND
+HasActiveStatus(_Tool,"KELA_SMELTINGFORGE_AURA_STAGE_1_ANVIL",1)
+AND
+NOT HasActiveStatus(_Tool,"KELA_SMELTINGFORGE_AURA_STAGE_2_ANVIL",1)
+THEN
+ApplyStatus(_Tool, "KELA_MESSAGE_ANVIL_FIRE_TOO_COLD", 5.0, 1);
+PROC_PlayCantUseItemAD((CHARACTER)_User);
+//
+// ANVIL - Block Not Blacksmith
+IF
+DualEntityEvent(_User, _Tool, "KELA_CreationStarted")
+AND
+DB_KELA_CoreToolTag_CreateToolTemplate(_Tag, _CreateToolTemplate)
+AND
+IsTagged(_Tool, _Tag, 1)
+AND 
+_Tag == KELAANVIL_01dc7295-d16e-4d98-afe2-ea39c5f1ba43
+AND
+NOT DB_KELA_Create_Tool_Start_Use(_User)
+AND
+NOT IsTagged(_User, (TAG)KELABLACKSMITH_c78b77b9-b33c-43fb-8dec-a91bacebb1bf, 1)
+THEN
+ApplyStatus(_Tool, "KELA_MESSAGE_NO_KNOWLEDGE_ANVIL_BLACKSMITH", 5.0, 1);
+PROC_PlayCantUseItemAD((CHARACTER)_User);
+//
+// WORKBENCH - Blacksmith, Apprentice, Artisan, Elf
+IF
+DualEntityEvent(_User, _Tool, "KELA_CreationStarted")
+AND
+DB_KELA_CoreToolTag_CreateToolTemplate(_Tag, _CreateToolTemplate)
+AND
+IsTagged(_Tool, _Tag, 1)
+AND 
+_Tag == KELAWORKBENCH_d2eedda0-c4ce-4602-960e-c57b4989b420
+AND 
+DB_KELA_Workbench_User_Tags(_UserTag)
+AND 
+IsTagged(_User, _UserTag, 1)
+AND
+GetItemByTemplateInInventory(_CreateToolTemplate, _Tool, _CreateTool)
+THEN
+DB_KELA_Create_Tool_Start_Use(_User);
+Use((CHARACTER)_User, (ITEM)_CreateTool, "");
+//NOT DB_KELA_Create_Tool_User(_User);
+//NOT DB_KELA_Tool_Tool((ITEM)_Tool);
+//
+// WORKBENCH - Block NOT Blacksmith, Apprentice, Artisan, Elf
+IF
+DualEntityEvent(_User, _Tool, "KELA_CreationStarted")
+AND
+DB_KELA_CoreToolTag_CreateToolTemplate(_Tag, _CreateToolTemplate)
+AND
+IsTagged(_Tool, _Tag, 1)
+AND 
+_Tag == KELAWORKBENCH_d2eedda0-c4ce-4602-960e-c57b4989b420
+AND
+NOT DB_KELA_Create_Tool_Start_Use(_User) 
+AND
+DB_KELA_Workbench_User_Tags(_UserTag)
+AND 
+NOT IsTagged(_User, _UserTag, 1)
+THEN
+ApplyStatus(_Tool, "KELA_MESSAGE_NO_KNOWLEDGE_WORKBENCH", 5.0, 1);
+PROC_PlayCantUseItemAD((CHARACTER)_User);
+//
+// Clear technical entries
+IF
+TimerFinished("KELA_Wait_Tool_User_Clear")
+AND
+DB_KELA_Create_Tool_User(_Tool,_User)
+THEN
+NOT DB_KELA_Create_Tool_User(_Tool,_User);
+//
+IF
+TimerFinished("KELA_Wait_Tool_User_Clear")
+AND
+DB_KELA_Create_Tool_Start_Use(_User) 
+THEN
+NOT DB_KELA_Create_Tool_Start_Use(_User);
+//
+// -----------------------------------------------------------------------------------
+// COMBINING BLUEPRINT IN CRAFTING TOOLS 
+// -----------------------------------------------------------------------------------
+//
+// CLEAR old combinations vars on start use
+IF
+UseStarted(_User,_Tool)
+AND
+HasActiveStatus(_User, "KELA_CRAFT_CREATION_MOD", 1)
+AND
+DB_KELA_CoreToolTag_CreateToolTemplate(_Tag, _CreateToolTemplate)
+AND
+IsTagged(_Tool, _Tag, 1)
+THEN
+ObjectTimerLaunch(_User, "KELA_Wait_Combine_Clear", 0);
+//
+// -----------------------------------------------------------------------------------
+//
+// COLLECT combination stats
+//
+//    5rd ingredient
+PROC
+PROC_BlockCombineItem(_User,_ItemX)
+AND 
+GetStatString(_ItemX, _StatName)
+AND
+DB_KELA_ITEM_COUNT(4)
+THEN
+NOT DB_KELA_ITEM_COUNT(4);
+DB_KELA_ITEM_COUNT(5);
+DB_KELA_Current_Combination("Current_Blueprint", 5, _StatName);
+//
+PROC
+PROC_BlockCombineItem(_User,_ItemX)
+AND 
+NOT GetStatString(_ItemX, _)
+AND
+DB_KELA_ITEM_COUNT(4)
+THEN
+NOT DB_KELA_ITEM_COUNT(4);
+DB_KELA_ITEM_COUNT(5);
+DB_KELA_Current_Combination("Current_Blueprint", 5, "EMPTY_5");
+//
+//    Get blueprint
+PROC
+PROC_BlockCombineItem(_User,_ItemX)
+AND
+DB_KELA_ITEM_COUNT(5)
+AND
+DB_KELA_Current_Combination("Current_Blueprint", 1, _ItemStatName1)
+AND
+DB_KELA_Current_Combination("Current_Blueprint", 2, _ItemStatName2)
+AND
+DB_KELA_Current_Combination("Current_Blueprint", 3, _ItemStatName3)
+AND
+DB_KELA_Current_Combination("Current_Blueprint", 4, _ItemStatName4)
+AND
+DB_KELA_Current_Combination("Current_Blueprint", 5, _ItemStatName5)
+AND
+DB_KELA_Blueprints(_BlueprintStatName, _ItemStatName1)
+AND
+DB_KELA_Blueprints(_BlueprintStatName, _ItemStatName2)
+AND
+DB_KELA_Blueprints(_BlueprintStatName, _ItemStatName3)
+AND
+DB_KELA_Blueprints(_BlueprintStatName, _ItemStatName4)
+AND
+DB_KELA_Blueprints(_BlueprintStatName, _ItemStatName5)
+THEN
+DB_KELA_Current_Blueprint(_BlueprintStatName);
+//
+//    Get has tag if need
+PROC
+PROC_BlockCombineItem(_User,_ItemX)
+AND
+DB_KELA_ITEM_COUNT(5)
+AND
+NOT DB_KELA_Current_Has_Need_Tag(_)
+AND
+DB_KELA_Current_Blueprint(_BlueprintStatName)
+AND
+DB_KELA_Blueprints_Need_Tag(_BlueprintStatName, _NeedTag)
+AND
+IsTagged(_User, _NeedTag, 1)
+THEN
+DB_KELA_Current_Has_Need_Tag(1);
+//
+//    Get has status if need
+PROC
+PROC_BlockCombineItem(_User,_ItemX)
+AND
+DB_KELA_ITEM_COUNT(5)
+AND
+NOT DB_KELA_Current_Has_Need_Status(_)
+AND
+DB_KELA_Current_Blueprint(_BlueprintStatName)
+AND
+DB_KELA_Blueprints_Need_Status(_BlueprintStatName, _NeedStatus)
+AND
+HasActiveStatus(_User, _NeedStatus, 1)
+THEN
+DB_KELA_Current_Has_Need_Status(1);
+//
+//    BLOCK COMBINING
+//    Unknown blueprint
+PROC
+PROC_BlockCombineItem(_User,_ItemX)
+AND
+DB_KELA_ITEM_COUNT(5)
+AND
+DB_KELA_Current_Blueprint(_BlueprintStatName)
+AND
+NOT DB_KELA_Blueprints_Known(_BlueprintStatName)
+AND
+DB_KELA_Item_For_Block(_ItemForBlock)
+THEN
+DB_CustomCombineItemResponse(_User,_ItemForBlock,1);
+NOT DB_KELA_ITEM_COUNT(5);
+DB_KELA_ITEM_COUNT(-1);
+ObjectTimerLaunch(_User, "KELA_Wait_Combine_Clear", 100);
+ApplyStatus(_User, "KELA_MESSAGE_BLUEPRINT_NO_KNOWLEDGE", 5.0, 1);
+PROC_PlayCantUseItemAD((CHARACTER)_User);
+//
+//    BLOCK COMBINING
+//    No required tags
+PROC
+PROC_BlockCombineItem(_User,_ItemX)
+AND
+DB_KELA_ITEM_COUNT(5)
+AND
+DB_KELA_Current_Blueprint(_BlueprintStatName)
+AND
+DB_KELA_Blueprints_Need_Tag(_BlueprintStatName, _NeedTag)
+AND
+NOT DB_KELA_Current_Has_Need_Tag(_)
+AND
+DB_KELA_Item_For_Block(_ItemForBlock)
+THEN
+DB_CustomCombineItemResponse(_User,_ItemForBlock,1);
+NOT DB_KELA_ITEM_COUNT(5);
+DB_KELA_ITEM_COUNT(-1);
+ObjectTimerLaunch(_User, "KELA_Wait_Combine_Clear", 100);
+ApplyStatus(_User, "KELA_MESSAGE_BLUEPRINT_NO_REQUIREMENTS", 5.0, 1);
+PROC_PlayCantUseItemAD((CHARACTER)_User);
+//
+//    BLOCK COMBINING
+//    Not enough level
+PROC
+PROC_BlockCombineItem(_User,_ItemX)
+AND
+DB_KELA_ITEM_COUNT(5)
+AND
+DB_KELA_Current_Blueprint(_BlueprintStatName)
+AND 
+DB_KELA_Blueprints_Need_Level(_BlueprintStatName,_IntLevel)
+AND
+GetLevel(_User, _UserLevel)
+AND
+IntegerSubtract(_IntLevel, _UserLevel, _LevelDiff)
+AND
+_LevelDiff > 0
+AND
+DB_KELA_Item_For_Block(_ItemForBlock)
+THEN
+DB_CustomCombineItemResponse(_User,_ItemForBlock,1);
+NOT DB_KELA_ITEM_COUNT(5);
+DB_KELA_ITEM_COUNT(-1);
+ObjectTimerLaunch(_User, "KELA_Wait_Combine_Clear", 100);
+ApplyStatus(_User, "KELA_MESSAGE_BLUEPRINT_NO_REQUIREMENTS", 5.0, 1);
+PROC_PlayCantUseItemAD((CHARACTER)_User);
+//
+//    BLOCK COMBINING
+//    No required statuses
+PROC
+PROC_BlockCombineItem(_User,_ItemX)
+AND
+DB_KELA_ITEM_COUNT(5)
+AND
+DB_KELA_Current_Blueprint(_BlueprintStatName)
+AND
+DB_KELA_Blueprints_Need_Status(_BlueprintStatName, _NeedStatus)
+AND
+NOT DB_KELA_Current_Has_Need_Status(_)
+AND
+DB_KELA_Item_For_Block(_ItemForBlock)
+THEN
+DB_CustomCombineItemResponse(_User,_ItemForBlock,1);
+NOT DB_KELA_ITEM_COUNT(5);
+DB_KELA_ITEM_COUNT(-1);
+ObjectTimerLaunch(_User, "KELA_Wait_Combine_Clear", 100);
+ApplyStatus(_User, "KELA_MESSAGE_BLUEPRINT_NO_REQUIREMENTS", 5.0, 1);
+PROC_PlayCantUseItemAD((CHARACTER)_User);
+//
+// CLEARING VARIABLES
+//
+IF
+ObjectTimerFinished(_User, "KELA_Wait_Combine_Clear")
+AND
+DB_KELA_Item_For_Block(_ItemForBlock)
+THEN
+NOT DB_CustomCombineItemResponse((CHARACTER)_User,_ItemForBlock,1);
+NOT DB_KELA_Item_For_Block(_ItemForBlock);
+//
+IF
+ObjectTimerFinished(_User, "KELA_Wait_Combine_Clear")
+AND
+DB_KELA_Current_Combination("Current_Blueprint", _Num, _ItemX)
+THEN
+NOT DB_KELA_Current_Combination("Current_Blueprint", _Num, _ItemX);
+//
+IF
+ObjectTimerFinished(_User, "KELA_Wait_Combine_Clear")
+AND
+DB_KELA_Current_Blueprint(_BlueprintStatName)
+THEN
+NOT DB_KELA_Current_Blueprint(_BlueprintStatName);
+//
+IF
+ObjectTimerFinished(_User, "KELA_Wait_Combine_Clear")
+AND
+DB_KELA_Current_Has_Need_Tag(_Result)
+THEN
+NOT DB_KELA_Current_Has_Need_Tag(_Result);
+//
+IF
+ObjectTimerFinished(_User, "KELA_Wait_Combine_Clear")
+AND
+DB_KELA_Current_Has_Need_Status(_Result)
+THEN
+NOT DB_KELA_Current_Has_Need_Status(_Result);
+//
+IF
+ObjectTimerFinished(_User, "KELA_Wait_Combine_Clear")
+AND
+DB_KELA_ITEM_COUNT(_Count)
+THEN
+NOT DB_KELA_ITEM_COUNT(_Count);
+//
+//    4rd ingredient
+PROC
+PROC_BlockCombineItem(_User,_ItemX)
+AND 
+GetStatString(_ItemX, _StatName)
+AND
+DB_KELA_ITEM_COUNT(3)
+THEN
+NOT DB_KELA_ITEM_COUNT(3);
+DB_KELA_ITEM_COUNT(4);
+DB_KELA_Current_Combination("Current_Blueprint", 4, _StatName);
+//
+PROC
+PROC_BlockCombineItem(_User,_ItemX)
+AND 
+NOT GetStatString(_ItemX, _)
+AND
+DB_KELA_ITEM_COUNT(3)
+THEN
+NOT DB_KELA_ITEM_COUNT(3);
+DB_KELA_ITEM_COUNT(4);
+DB_KELA_Current_Combination("Current_Blueprint", 4, "EMPTY_4");
+//
+//    3rd ingredient
+PROC
+PROC_BlockCombineItem(_User,_ItemX)
+AND 
+GetStatString(_ItemX, _StatName)
+AND
+DB_KELA_ITEM_COUNT(2)
+THEN
+NOT DB_KELA_ITEM_COUNT(2);
+DB_KELA_ITEM_COUNT(3);
+DB_KELA_Current_Combination("Current_Blueprint", 3, _StatName);
+//
+PROC
+PROC_BlockCombineItem(_User,_ItemX)
+AND 
+NOT GetStatString(_ItemX, _)
+AND
+DB_KELA_ITEM_COUNT(2)
+THEN
+NOT DB_KELA_ITEM_COUNT(2);
+DB_KELA_ITEM_COUNT(3);
+DB_KELA_Current_Combination("Current_Blueprint", 3, "EMPTY_3");
+//
+//    2st ingredient
+PROC
+PROC_BlockCombineItem(_User,_ItemX)
+AND 
+GetStatString(_ItemX, _StatName)
+AND
+DB_KELA_ITEM_COUNT(1)
+THEN
+NOT DB_KELA_ITEM_COUNT(1);
+DB_KELA_ITEM_COUNT(2);
+DB_KELA_Current_Combination("Current_Blueprint", 2, _StatName);
+//
+//    1st ingredient
+PROC
+PROC_BlockCombineItem(_User,_ItemX)
+AND 
+GetStatString(_ItemX, _StatName)
+AND
+NOT DB_KELA_ITEM_COUNT(_)
+THEN
+DB_KELA_ITEM_COUNT(1);
+DB_KELA_Item_For_Block(_ItemX);
+DB_KELA_Current_Combination("Current_Blueprint", 1, _StatName);
+//
+//END_REGION
+// -----------------------------------------------------------------------------------
+// CRAFT ON CREATE TOOLS
+// -----------------------------------------------------------------------------------
+EXITSECTION
+
+ENDEXITSECTION
+ParentTargetEdge "GLO_KelaCraftProject"
