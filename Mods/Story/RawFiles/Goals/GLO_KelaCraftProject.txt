@@ -95,7 +95,9 @@ AddEntryToCustomBook("KELA_Log_Book_Guild_Artisan_Blacksmith", "KELA_Log_Origin_
 AddEntryToCustomBook("KELA_Log_Book_Guild_Artisan_Blacksmith", "KELA_Log_Passive_Blacksmith");
 AddEntryToCustomBook("KELA_Log_Book_Guild_Artisan_Blacksmith", "KELA_Log_Header_Blueprints");
 // No Crafting Abilities
+AddEntryToCustomBook("KELA_Log_Book_No_Crafting_Abilities", "KELA_Log_Header");
 AddEntryToCustomBook("KELA_Log_Book_No_Crafting_Abilities", "KELA_Log_No_Crafting_Abilities");
+AddEntryToCustomBook("KELA_Log_Book_No_Crafting_Abilities", "KELA_Log_Header_Blueprints");
 
 // INIT finish
 SetFlag(GLO_KELA_KelaCraftProject_Initialized_a344df28-2bed-42da-8862-4b7b363b3d27,NULL_00000000-0000-0000-0000-000000000000, 1); // flagType: Global

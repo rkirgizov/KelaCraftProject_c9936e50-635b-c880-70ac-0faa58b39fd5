@@ -26,6 +26,7 @@ DB_KELA_Log_Book_Names("KELA_Log_Book_Guild_Artisan");
 DB_KELA_Log_Book_Names("KELA_Log_Book_Elf");
 DB_KELA_Log_Book_Names("KELA_Log_Book_Apprentice");
 DB_KELA_Log_Book_Names("KELA_Log_Book_Blacksmith");
+DB_KELA_Log_Book_Names("KELA_Log_Book_No_Crafting_Abilities");
 
 DB_KELA_Elf_Tags((TAG)REALLY_ELF_772b1dc6-14be-417f-afa3-c6cf364f45b4);
 DB_KELA_Elf_Tags((TAG)REALLY_DROWELF_676e854b-d74b-44f3-8363-3ef27164a54d);
@@ -74,6 +75,7 @@ DebugBreak(_FinalResult);
 IF 
 TagSet(_User,(TAG)KELABLACKSMITH_c78b77b9-b33c-43fb-8dec-a91bacebb1bf)
 THEN
+TemplateAddTo((ITEMROOT)KELA_Blacksmith_Notes_2025c056-f6d5-4de4-b5ee-97ff04af7dcb,_User,1,1);
 RemovePassive(_User, "PassiveFeature_Blacksmith_Apprentice");
 ClearTag(_User,(TAG)KELABLACKSMITHAPPRENTICE_5c77c6bf-22f7-4109-b9f8-21e3bd7a2634);
 
@@ -140,6 +142,25 @@ AddSpell(_User, "Shout_KELA_Craft_Creation_Mod");
 // KELA_Log_Book_Apprentice
 // KELA_Log_Book_Blacksmith
 
+// KELA_Log_Book_Elf_Guild_Artisan_Blacksmith
+IF
+TemplateUseStarted(_User, _Template, _Item)
+AND 
+NOT DB_OnlyOnce("KELA_Open_Log_Book")
+AND
+DB_KELA_Log_Book(_Template)
+AND
+DB_KELA_Elf_Tags(_ElfTag)
+AND
+IsTagged(_User, _ElfTag, 1)
+AND
+IsTagged(_User, (TAG)GUILD_ARTISAN_baf9fb0e-f535-40a0-bb78-3ec289d84e66, 1)
+AND
+IsTagged(_User, (TAG)KELABLACKSMITH_c78b77b9-b33c-43fb-8dec-a91bacebb1bf, 1)
+THEN
+DB_OnlyOnce("KELA_Open_Log_Book");
+OpenCustomBookUI(_User,"KELA_Log_Book_Elf_Guild_Artisan_Blacksmith");
+TimerLaunch("KELA_Wait_Open_Log_Book", 100);
 
 // KELA_Log_Book_Elf_Guild_Artisan_Apprentice
 IF
@@ -161,7 +182,7 @@ DB_OnlyOnce("KELA_Open_Log_Book");
 OpenCustomBookUI(_User,"KELA_Log_Book_Elf_Guild_Artisan_Apprentice");
 TimerLaunch("KELA_Wait_Open_Log_Book", 100);
 
-// KELA_Log_Book_Elf_Guild_Artisan_Blacksmith
+// KELA_Log_Book_Guild_Artisan_Blacksmith
 IF
 TemplateUseStarted(_User, _Template, _Item)
 AND 
@@ -169,16 +190,12 @@ NOT DB_OnlyOnce("KELA_Open_Log_Book")
 AND
 DB_KELA_Log_Book(_Template)
 AND
-DB_KELA_Elf_Tags(_ElfTag)
-AND
-IsTagged(_User, _ElfTag, 1)
-AND
 IsTagged(_User, (TAG)GUILD_ARTISAN_baf9fb0e-f535-40a0-bb78-3ec289d84e66, 1)
 AND
 IsTagged(_User, (TAG)KELABLACKSMITH_c78b77b9-b33c-43fb-8dec-a91bacebb1bf, 1)
 THEN
 DB_OnlyOnce("KELA_Open_Log_Book");
-OpenCustomBookUI(_User,"KELA_Log_Book_Elf_Guild_Artisan_Blacksmith");
+OpenCustomBookUI(_User,"KELA_Log_Book_Guild_Artisan_Blacksmith");
 TimerLaunch("KELA_Wait_Open_Log_Book", 100);
 
 // KELA_Log_Book_Guild_Artisan_Apprentice
@@ -197,7 +214,7 @@ DB_OnlyOnce("KELA_Open_Log_Book");
 OpenCustomBookUI(_User,"KELA_Log_Book_Guild_Artisan_Apprentice");
 TimerLaunch("KELA_Wait_Open_Log_Book", 100);
 
-// KELA_Log_Book_Guild_Artisan_Blacksmith
+// KELA_Log_Book_Elf_Blacksmith
 IF
 TemplateUseStarted(_User, _Template, _Item)
 AND 
@@ -205,12 +222,14 @@ NOT DB_OnlyOnce("KELA_Open_Log_Book")
 AND
 DB_KELA_Log_Book(_Template)
 AND
-IsTagged(_User, (TAG)GUILD_ARTISAN_baf9fb0e-f535-40a0-bb78-3ec289d84e66, 1)
+DB_KELA_Elf_Tags(_ElfTag)
+AND
+IsTagged(_User, _ElfTag, 1)
 AND
 IsTagged(_User, (TAG)KELABLACKSMITH_c78b77b9-b33c-43fb-8dec-a91bacebb1bf, 1)
 THEN
 DB_OnlyOnce("KELA_Open_Log_Book");
-OpenCustomBookUI(_User,"KELA_Log_Book_Guild_Artisan_Blacksmith");
+OpenCustomBookUI(_User,"KELA_Log_Book_Elf_Blacksmith");
 TimerLaunch("KELA_Wait_Open_Log_Book", 100);
 
 // KELA_Log_Book_Elf_Apprentice
@@ -229,24 +248,6 @@ IsTagged(_User, (TAG)KELABLACKSMITHAPPRENTICE_5c77c6bf-22f7-4109-b9f8-21e3bd7a26
 THEN
 DB_OnlyOnce("KELA_Open_Log_Book");
 OpenCustomBookUI(_User,"KELA_Log_Book_Elf_Apprentice");
-TimerLaunch("KELA_Wait_Open_Log_Book", 100);
-
-// KELA_Log_Book_Elf_Blacksmith
-IF
-TemplateUseStarted(_User, _Template, _Item)
-AND 
-NOT DB_OnlyOnce("KELA_Open_Log_Book")
-AND
-DB_KELA_Log_Book(_Template)
-AND
-DB_KELA_Elf_Tags(_ElfTag)
-AND
-IsTagged(_User, _ElfTag, 1)
-AND
-IsTagged(_User, (TAG)KELABLACKSMITH_c78b77b9-b33c-43fb-8dec-a91bacebb1bf, 1)
-THEN
-DB_OnlyOnce("KELA_Open_Log_Book");
-OpenCustomBookUI(_User,"KELA_Log_Book_Elf_Blacksmith");
 TimerLaunch("KELA_Wait_Open_Log_Book", 100);
 
 // KELA_Log_Book_Guild_Artisan
@@ -279,20 +280,6 @@ DB_OnlyOnce("KELA_Open_Log_Book");
 OpenCustomBookUI(_User,"KELA_Log_Book_Elf");
 TimerLaunch("KELA_Wait_Open_Log_Book", 100);
 
-// KELA_Log_Book_Apprentice
-IF
-TemplateUseStarted(_User, _Template, _Item)
-AND 
-NOT DB_OnlyOnce("KELA_Open_Log_Book")
-AND
-DB_KELA_Log_Book(_Template)
-AND
-IsTagged(_User, (TAG)KELABLACKSMITHAPPRENTICE_5c77c6bf-22f7-4109-b9f8-21e3bd7a2634, 1)
-THEN
-DB_OnlyOnce("KELA_Open_Log_Book");
-OpenCustomBookUI(_User,"KELA_Log_Book_Apprentice");
-TimerLaunch("KELA_Wait_Open_Log_Book", 100);
-
 // KELA_Log_Book_Blacksmith
 IF
 TemplateUseStarted(_User, _Template, _Item)
@@ -307,6 +294,20 @@ DB_OnlyOnce("KELA_Open_Log_Book");
 OpenCustomBookUI(_User,"KELA_Log_Book_Blacksmith");
 TimerLaunch("KELA_Wait_Open_Log_Book", 100);
 
+// KELA_Log_Book_Apprentice
+IF
+TemplateUseStarted(_User, _Template, _Item)
+AND 
+NOT DB_OnlyOnce("KELA_Open_Log_Book")
+AND
+DB_KELA_Log_Book(_Template)
+AND
+IsTagged(_User, (TAG)KELABLACKSMITHAPPRENTICE_5c77c6bf-22f7-4109-b9f8-21e3bd7a2634, 1)
+THEN
+DB_OnlyOnce("KELA_Open_Log_Book");
+OpenCustomBookUI(_User,"KELA_Log_Book_Apprentice");
+TimerLaunch("KELA_Wait_Open_Log_Book", 100);
+
 //
 // Can not read blacksmith book log
 IF
@@ -316,8 +317,9 @@ NOT DB_OnlyOnce("KELA_Open_Log_Book")
 AND
 DB_KELA_Log_Book(_Template)
 THEN
+DB_OnlyOnce("KELA_Open_Log_Book");
 OpenCustomBookUI(_User,"KELA_Log_Book_No_Crafting_Abilities");
-SetDualEntityEvent(_User, _User, "Can not read blacksmith book log");
+TimerLaunch("KELA_Wait_Open_Log_Book", 100);
 //
 //
 // Clear book reading check
