@@ -1,0 +1,1258 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+DB_KELA_Valid_Creator_For_Any_Item_Tags((TAG)GUILD_ARTISAN_baf9fb0e-f535-40a0-bb78-3ec289d84e66);
+DB_KELA_Valid_Creator_For_Any_Item_Tags((TAG)KELABLACKSMITH_c78b77b9-b33c-43fb-8dec-a91bacebb1bf);
+
+DB_KELA_ReforgeTools_Tags((TAG)KELAANVIL_01dc7295-d16e-4d98-afe2-ea39c5f1ba43);
+DB_KELA_ReforgeTools_Tags((TAG)KELAWORKBENCH_d2eedda0-c4ce-4602-960e-c57b4989b420);
+
+DB_KELA_ReforgeToolHelper_By_Level("WLD_Main_A",S_KELA_CONT_Forging_Helper_fccc0bea-c645-4e71-bdf1-14e074bb6a34);
+DB_KELA_ReforgeToolHelper_By_Level("SCL_Main_A",S_KELA_CONT_Forging_Helper_b4eea60e-ee48-418f-89f7-b5a29f761bdd);
+DB_KELA_ReforgeToolHelper_By_Level("BGO_WyrmsCrossing_C",S_KELA_CONT_Forging_Helper_f43334d1-766e-443f-9bc7-d37b40a66703);
+DB_KELA_ReforgeToolHelper_By_Level("BGO_Main_A",S_KELA_CONT_Forging_Helper_f43334d1-766e-443f-9bc7-d37b40a66703);
+DB_KELA_ReforgeToolHelper_By_Level("BGO_BlacksmithCellar_A",S_KELA_CONT_Forging_Helper_002_9ae549bc-def3-44dd-8619-1de67ef82f8d);
+DB_KELA_ReforgeToolHelper_By_Level_LowerCity(TOOL_Smith_Anvil_B_002_850f2a0f-50c4-4e41-bb33-704f3a5c5b4d,S_KELA_CONT_Forging_Helper_3ee0d5ef-f4fd-42b2-b969-d5adbde091a5);
+DB_KELA_ReforgeToolHelper_By_Level_LowerCity(FUR_Smith_Workbench_A_Table_E_002_9db4b292-a408-43fa-9368-426330f4fe17,S_KELA_CONT_Forging_Helper_3ee0d5ef-f4fd-42b2-b969-d5adbde091a5);
+DB_KELA_ReforgeToolHelper_By_Level_LowerCity(TOOL_Smith_Anvil_B_001_dd97f96c-721f-4f48-98a8-2f80096bd4e0,S_KELA_CONT_Forging_Helper_001_fbf4f2d8-eb3d-4fda-80f7-c50e33d57f9d);
+DB_KELA_ReforgeToolHelper_By_Level_LowerCity(FUR_Smith_Workbench_A_Table_E_004_9d9bc4fe-ba84-4cac-b48a-8f4f8e86dcd7,S_KELA_CONT_Forging_Helper_001_fbf4f2d8-eb3d-4fda-80f7-c50e33d57f9d);
+
+DB_KELA_Reforge_Ingredients((ITEMROOT)LOOT_KELA_Branch_A_8d49ae84-e4bf-4525-8a63-4fe3cc72ea26,(ITEMROOT)LOOT_GEN_Metalbar_Bronze_A_5b386575-5836-40cd-8548-e5c27fd105a1,(ITEMROOT)LOOT_KELA_Plank_A_7d159582-c9eb-4e08-971c-375e14d0df7d,
+(ITEMROOT)LOOT_KELA_Leather_A_179c4493-f7b1-4786-9aff-27b5ed2a3589,(ITEMROOT)LOOT_KELA_Leather_Strips_A_e1680c9d-9fc8-4bb6-8b1d-09037577992c,(ITEMROOT)DEC_GEN_Ink_Pot_Quill_A_4e0647d7-baec-46c2-bca2-86596ecbf1ed,(ITEMROOT)TOOL_Rope_A_63400c5f-cc10-4009-8d8f-b01dbb47060a,
+(ITEMROOT)DEC_HAR_Pier_Rope_A_df2f61bb-be7c-48d0-a9fd-1bfe8d5be73a,(ITEMROOT)LOOT_KELA_Carpet_Skin_Wolf_A_f59d0888-3b3a-49a9-ab2c-e5a214930db4);
+
+// WORKBENCH WEAPON TEMPLATES FOR RECRAFTING
+DB_KELA_Item_Stat_Templates_Workbench("Branch",(ITEMROOT)WPN_HUM_Shortbow_A_0_c5403c1d-f372-43e1-927a-9189e9e3545d,(ITEMROOT)WPN_HUM_Shortbow_A_0_c5403c1d-f372-43e1-927a-9189e9e3545d,(ITEMROOT)WPN_HUM_Shortbow_A_1_a46173b7-afd6-48e0-9c76-817acd027574,(ITEMROOT)WPN_HUM_Shortbow_A_2_NOT_APPROVED_d9a98dce-1027-4324-939c-3c9cfe776731); // not rusty
+DB_KELA_Item_Stat_Templates_Workbench("Branch_Branch",(ITEMROOT)WPN_HUM_Longbow_Broken_A_9160904e-0c71-49df-8f9e-b1e232a2421d,(ITEMROOT)WPN_HUM_Longbow_A_0_86e3d864-309c-4c17-ba38-877ce487d481,(ITEMROOT)WPN_HUM_Longbow_A_1_049173ec-636a-487e-a9ed-bfafeadf6bb7,(ITEMROOT)WPN_HUM_Longbow_A_2_NOT_APPROVED_118967f7-14de-41fa-bec8-3ba383252e9a);
+DB_KELA_Item_Stat_Templates_Workbench("Branch_Bronze",(ITEMROOT)WPN_HUM_Club_Broken_A_0ca0e540-dabe-4bf4-9e23-c006f03ffae2,(ITEMROOT)WPN_HUM_Club_A_0_d9c87013-1f41-4c17-b71d-f353ec0d64e8,(ITEMROOT)WPN_HUM_Club_A_1_b30dca22-22bc-496e-b3b6-dd5744b73869,(ITEMROOT)WPN_HUM_Club_A_2_Kela_b8462034-3ca5-464a-ade0-99d61d70ffa5); //  _2_Kela
+DB_KELA_Item_Stat_Templates_Workbench("Branch_Bronze",(ITEMROOT)WPN_HUM_Javelin_A_0_0a7adc8d-b561-4f81-a8f2-ec07b5d54955,(ITEMROOT)WPN_HUM_Javelin_A_0_0a7adc8d-b561-4f81-a8f2-ec07b5d54955,(ITEMROOT)WPN_HUM_Javelin_A_1_b908f109-b379-4a49-8f41-5b7f154d9b76,(ITEMROOT)WPN_HUM_Javelin_A_2_d8461adb-44f5-49b3-87ff-ea652f6d4081); // not rusty
+DB_KELA_Item_Stat_Templates_Workbench("Branch_Bronze",(ITEMROOT)WPN_HUM_Pike_A_0_Rusty_A_0eddcd68-36fb-4c9f-8cbb-66513d8d718e,(ITEMROOT)WPN_HUM_Pike_A_0_baa5b139-42ad-40fd-b6c3-6b52b092c48e,(ITEMROOT)WPN_HUM_Pike_A_1_40fa8049-b6c1-4463-b212-52ad13b5d687,(ITEMROOT)WPN_HUM_Pike_A_2_50ffcd8e-eaa2-479c-b8ed-117ef5436b49);
+DB_KELA_Item_Stat_Templates_Workbench("Branch_Bronze",(ITEMROOT)WPN_HUM_Spear_A_0_Rusty_A_86450ec8-d876-457f-92c0-7bb11e8f38f8,(ITEMROOT)WPN_HUM_Spear_A_0_9f0f1c0e-012d-44e1-9b29-86c64d2bf675,(ITEMROOT)WPN_HUM_Spear_A_1_158e6f29-89e9-4279-8f8f-85078f047225,(ITEMROOT)WPN_HUM_Spear_A_2_74d9758a-84e9-4244-9ae8-14acee76acb3);
+DB_KELA_Item_Stat_Templates_Workbench("Branch_Bronze",(ITEMROOT)WPN_HUM_Trident_A_0_Rusty_A_27ef84b1-ea40-4f06-a013-f6281511f0e9,(ITEMROOT)WPN_HUM_Trident_A_0_d3807461-7c32-44ae-9aba-49ef4d3bf35e,(ITEMROOT)WPN_HUM_Trident_A_1_2fab5801-76b1-4669-95d9-7df76bed12dd,(ITEMROOT)WPN_HUM_Trident_A_2_6cf827d6-5bae-480a-a1b4-d7fdb0e68801);
+DB_KELA_Item_Stat_Templates_Workbench("Branch_Bronze",(ITEMROOT)WPN_HUM_Warpick_A_0_Rusty_A_1d6d5983-4546-4eba-b9e6-d23021d08805,(ITEMROOT)WPN_HUM_Warpick_A_0_a088775a-8f75-42f2-aa74-76a3f80701fa,(ITEMROOT)WPN_HUM_Warpick_A_1_75586d3e-21b2-4d94-ac99-99a6b0e8c3dd,(ITEMROOT)WPN_HUM_Warpick_A_2_a5012da9-9cfa-467b-901a-61e33db55516);
+DB_KELA_Item_Stat_Templates_Workbench("Branch_Bronze_Bronze",(ITEMROOT)WPN_HUM_Halberd_A_0_Rusty_A_7addb7c0-f428-4033-9065-f4ad6e4c7e81,(ITEMROOT)WPN_HUM_Halberd_A_0_f928a70d-5b23-4605-9cae-5342f9ed206e,(ITEMROOT)WPN_HUM_Halberd_A_1_d1019d9d-e5ae-4601-8a63-1b33421926e1,(ITEMROOT)WPN_HUM_Halberd_A_2_0e3b29e8-572f-459d-b382-234ec53b1c08);
+DB_KELA_Item_Stat_Templates_Workbench("Branch_Bronze_Strips",(ITEMROOT)WPN_HUM_Quarterstaff_Broken_A_45c9d3a2-8ea5-4bbf-b1cf-e0acaa0f23b2,(ITEMROOT)WPN_HUM_Quarterstaff_A_0_96e2abaf-78ff-4dcb-a6a3-a5f0c348bd9f,(ITEMROOT)WPN_HUM_Quarterstaff_A_1_2fa18ee4-92df-486f-97d2-dd0a720b6fad,(ITEMROOT)WPN_HUM_Quarterstaff_A_2_e1e112b2-5465-4e37-acdc-372666ec1521);
+DB_KELA_Item_Stat_Templates_Workbench("Branch_Bronze_Strips",(ITEMROOT)WPN_HUM_Glaive_A_0_Rusty_A_be861724-206e-483e-a42d-9dd131030ad6,(ITEMROOT)WPN_HUM_Glaive_A_0_99f3b2d9-e03d-4cd5-9a67-5435a95682da,(ITEMROOT)WPN_HUM_Glaive_A_1_15d2830c-ac76-4b5b-969d-05197875b1c2,(ITEMROOT)WPN_HUM_Glaive_A_2_bc1c2a84-27f5-46e4-b4b4-0f5ca534469c);
+DB_KELA_Item_Stat_Templates_Workbench("Wood_Bronze_Rope",(ITEMROOT)WPN_HUM_HandCrossbow_A_0_Rusty_A_794f58a7-4bc5-4c98-8e66-7a8e242fb7ef,(ITEMROOT)WPN_HUM_HandCrossbow_A_0_a5d843ab-c3af-4e60-a925-bb2e15828938,(ITEMROOT)WPN_HUM_HandCrossbow_A_1_d2f396c2-9b1b-4eea-bf21-2f25934f092d,(ITEMROOT)WPN_HUM_HandCrossbow_A_2_NOT_APPROVED_ab150a98-0a8e-4ee2-9dca-580d77f99be3);
+DB_KELA_Item_Stat_Templates_Workbench("Wood_Bronze_Rope",(ITEMROOT)WPN_HUM_LightCrossbow_A_0_Rusty_A_6f0568b1-86ac-4039-8d3a-5db844b55fe8,(ITEMROOT)WPN_HUM_LightCrossbow_A_0_43b7fbf5-7f6e-4e9e-bce7-c679eea44593,(ITEMROOT)WPN_HUM_LightCrossbow_A_1_509dd5c3-7c72-4335-9b23-19a14a884f2e,(ITEMROOT)WPN_HUM_LightCrossbow_A_2_NOT_APPROVED_fa9b6992-dbfc-4265-996b-73d9836cf7fe);
+DB_KELA_Item_Stat_Templates_Workbench("Wood_Bronze_Bronze_Rope",(ITEMROOT)WPN_HUM_HeavyCrossbow_A_0_Rusty_A_181104f6-6423-42de-b624-e225e5fb8a4d,(ITEMROOT)WPN_HUM_HeavyCrossbow_A_0_04622e3d-5b3f-4f2c-a0db-513a717d911f,(ITEMROOT)WPN_HUM_HeavyCrossbow_A_1_6af59cba-cc38-4511-9c3b-75caac4b96b5,(ITEMROOT)WPN_HUM_HeavyCrossbow_A_2_NOT_APPROVED_59c190d2-4b91-44f5-a720-f75d338dd341);
+DB_KELA_Item_Stat_Templates_Workbench("Wood_Bronze_Strips",(ITEMROOT)WPN_HUM_Greatclub_A_0_19ce6720-03b6-4d22-bf35-4963b510d1da,(ITEMROOT)WPN_HUM_Greatclub_A_0_19ce6720-03b6-4d22-bf35-4963b510d1da,(ITEMROOT)WPN_HUM_Greatclub_A_1_d64e1a13-18a5-4cdc-ac02-977523435f8f,(ITEMROOT)WPN_HUM_Greatclub_A_2_adf0ef57-7811-40ed-9d29-05c6336f9e1f); // not rusty
+DB_KELA_Item_Stat_Templates_Workbench("Bronze_Feather",(ITEMROOT)WPN_HUM_Dart_A_0_fb08eef6-f6a0-454e-ab14-c1470f3ba18d,(ITEMROOT)WPN_HUM_Dart_A_0_fb08eef6-f6a0-454e-ab14-c1470f3ba18d,(ITEMROOT)WPN_HUM_Dart_A_1_5557cbf6-ce24-48de-beed-3be1a77e1c82,(ITEMROOT)WPN_HUM_Dart_A_2_NOT_APPROVED_e292c502-b116-4a46-a232-dd53f7838f6f); // not rusty
+
+// WORKBENCH ARMOR TEMPLATES FOR RECRAFTING
+DB_KELA_Item_Stat_Templates_Workbench("Leather_Strips",(ITEMROOT)ARM_Padded_Broken_357db089-630f-437d-9a04-88c0d5d3c0ff,(ITEMROOT)ARM_Padded_63cc7723-245d-4b62-b9e6-5a47283cf777,(ITEMROOT)ARM_Padded_1_f5faa6c5-a43c-4edd-a77f-6e7536a7e683,(ITEMROOT)ARM_Padded_2_96613037-cbac-4f43-a39b-584e6f2629c7);
+DB_KELA_Item_Stat_Templates_Workbench("Leather_Leather_Strips",(ITEMROOT)ARM_Leather_Destroyed_Crash_91d8e57d-4c73-47ca-87dc-252ab0a3aa95,(ITEMROOT)ARM_Leather_02ae5d88-8044-43df-8363-02a2900776db,(ITEMROOT)ARM_Leather_1_90a79e46-e327-41f4-a349-8e4dd70b1892,(ITEMROOT)ARM_Leather_2_ac71c753-c207-465c-b28b-c10f95ed0745);
+DB_KELA_Item_Stat_Templates_Workbench("Bronze_Leather_Strips",(ITEMROOT)ARM_StuddedLeather_19451420-13f6-444c-a15b-7abb6dde3f91,(ITEMROOT)ARM_StuddedLeather_19451420-13f6-444c-a15b-7abb6dde3f91,(ITEMROOT)ARM_StuddedLeather_1_58d7927f-c6eb-4635-85b6-70265c621b3d,(ITEMROOT)ARM_StuddedLeather_2_83603f36-d158-4a0e-b9c9-358413ba3a92); // not broken
+DB_KELA_Item_Stat_Templates_Workbench("WolfHide_Leather_Leather_Strips",(ITEMROOT)ARM_Hide_b78fabcc-d2df-4c74-b5d4-1eda6dc4c071,(ITEMROOT)ARM_Hide_b78fabcc-d2df-4c74-b5d4-1eda6dc4c071,(ITEMROOT)ARM_Hide_1_94ed8ec8-93a4-4a8c-bc47-55cb3faae7c0,(ITEMROOT)ARM_Hide_2_fd4ab5b0-67e6-4a8b-8745-2003f2f5ada3); // not broken
+DB_KELA_Item_Stat_Templates_Workbench("Bronze_Leather_Leather_Strips",(ITEMROOT)ARM_ScaleMail_Destroyed_Crash_ddf6982a-72d4-44db-a152-4dd2b816e836,(ITEMROOT)ARM_ScaleMail_ca0aafad-0f1e-4d76-8e3b-925397bb436b,(ITEMROOT)ARM_ScaleMail_1_dc748177-8590-4a99-a446-feccbd8d8eb4,(ITEMROOT)ARM_ScaleMail_2_21f0dd84-6f02-4be9-8654-4cebd00dcbaf);
+DB_KELA_Item_Stat_Templates_Workbench("Bronze_Leather_Strips",(ITEMROOT)ARM_RingMail_e3a5099a-397a-4bbc-932c-cd0a00043b79,(ITEMROOT)ARM_RingMail_e3a5099a-397a-4bbc-932c-cd0a00043b79,(ITEMROOT)ARM_RingMail_1_4837915c-080b-491f-813e-be5a71571a17,(ITEMROOT)ARM_RingMail_2_339c2d50-af1b-45d4-af96-cf2d27e1e11d); // not broken
+
+// ANVIL WEAPON TEMPLATES FOR RECRAFTING
+DB_KELA_Item_Stat_Templates_Anvil("Bronze",(ITEMROOT)WPN_HUM_Dagger_A_0_Rusty_A_6a321455-d00f-4164-ab12-3601fef2ae6e,(ITEMROOT)WPN_HUM_Dagger_A_0_569b0f3d-abcd-4b01-aaf0-979091288163,(ITEMROOT)WPN_HUM_Dagger_A_1_1eab180b-5bf9-48ea-aece-7ba20d1deb78,(ITEMROOT)WPN_HUM_Dagger_A_2_c68026c8-8af9-4a05-b77a-246a01bafe61);
+DB_KELA_Item_Stat_Templates_Anvil("Wood_Bronze_Strips",(ITEMROOT)WPN_HUM_Battleaxe_A_0_Rusty_A_3030f1f1-74fc-4008-9317-80c71075c8e3,(ITEMROOT)WPN_HUM_Battleaxe_A_0_a086b825-8f17-4f0e-855b-178f8cdc515a,(ITEMROOT)WPN_HUM_Battleaxe_A_1_c17ee133-cbb5-418f-88be-5ef27991cf50,(ITEMROOT)WPN_HUM_Battleaxe_A_2_NOT_APPROVED_7faff867-9cb3-432b-aa27-8de281b7428e);
+DB_KELA_Item_Stat_Templates_Anvil("Wood_Bronze_Strips",(ITEMROOT)WPN_HUM_Flail_A_0_Rusty_A_04ae8618-3f49-453a-91f2-e5ac68cf366f,(ITEMROOT)WPN_HUM_Flail_A_0_9eadef92-5dd0-408e-9b55-1cf791cafe9d,(ITEMROOT)WPN_HUM_Flail_A_1_9076abf1-1029-4be9-a7cf-428d2b6fdea5,(ITEMROOT)WPN_HUM_Flail_A_2_23ab9011-ef66-463e-a8ee-012321be6d1c);
+DB_KELA_Item_Stat_Templates_Anvil("Branch_Bronze_Bronze_Strips",(ITEMROOT)WPN_HUM_Greataxe_A_0_Rusty_A_a8f37e10-8590-4a65-85d1-29bf8ef5bd64,(ITEMROOT)WPN_HUM_Greataxe_A_0_d5712e24-ce9e-42ce-8fad-6e049b62c28c,(ITEMROOT)WPN_HUM_Greataxe_A_1_afbfaee7-e2cd-48e7-8c46-d2377c7320e3,(ITEMROOT)WPN_HUM_Greataxe_A_2_NOT_APPROVED_ce8a894c-3dc6-48dc-bb8f-af5390890d43);
+DB_KELA_Item_Stat_Templates_Anvil("Bronze_Bronze_Bronze_Strips",(ITEMROOT)WPN_HUM_Greatsword_A_0_Rusty_A_82311843-dae9-4bda-86fb-40b722daf82e,(ITEMROOT)WPN_HUM_Greatsword_A_0_ecfb9f69-5bc3-402e-acd8-c91d57e28403,(ITEMROOT)WPN_HUM_Greatsword_A_1_1a2a58b7-4bd5-44d5-b1fe-8cd7e5b53def,(ITEMROOT)WPN_HUM_Greatsword_A_2_2741505a-9d0b-4c9e-adcd-2e6339491e95);
+DB_KELA_Item_Stat_Templates_Anvil("Wood_Bronze",(ITEMROOT)WPN_HUM_Handaxe_A_0_Rusty_A_2c362536-7ffa-43f4-926c-70dc682ffbff,(ITEMROOT)WPN_HUM_Handaxe_A_0_46b64a36-8446-45bd-98e8-ee81e3136baa,(ITEMROOT)WPN_HUM_Handaxe_A_1_7a05135d-b285-4186-8a32-a870f1684b60,(ITEMROOT)WPN_HUM_Handaxe_A_2_Kela_b49dd8db-e83e-40ab-a92a-38ae582d1239);
+DB_KELA_Item_Stat_Templates_Anvil("Branch_Bronze",(ITEMROOT)WPN_HUM_LightHammer_A_0_Rusty_A_0c8a9530-273d-4f64-81b9-0d169d890483,(ITEMROOT)WPN_HUM_LightHammer_A_0_494f21ac-5a1b-4e91-bd30-551b79532516,(ITEMROOT)WPN_HUM_LightHammer_A_1_d0419aaf-9e20-4029-b8e9-9e1a62661b13,(ITEMROOT)WPN_HUM_LightHammer_A_2_647f2f89-f10f-4def-ba9e-9078e49b6157);
+DB_KELA_Item_Stat_Templates_Anvil("Branch_Bronze_Bronze",(ITEMROOT)WPN_HUM_LightHammer_B_0_d0bf4aef-e423-49ab-9177-c86b2a8efc9a,(ITEMROOT)WPN_HUM_LightHammer_B_0_d0bf4aef-e423-49ab-9177-c86b2a8efc9a,(ITEMROOT)WPN_HUM_LightHammer_B_1_20e6fc7e-a9d1-403b-a725-e3fe781521bb,(ITEMROOT)WPN_HUM_LightHammer_B_2_Kela_f51fa61d-ec01-432c-a454-975ef62e1bee); // not rusty and _2_Kela
+DB_KELA_Item_Stat_Templates_Anvil("Bronze_Bronze_Strips",(ITEMROOT)WPN_HUM_Longsword_A_0_Rusty_A_dddd2204-0ee3-47b0-a7ea-6b5216a65e89,(ITEMROOT)WPN_HUM_Longsword_A_0_1865323f-b428-4791-a0a9-578841e57463,(ITEMROOT)WPN_HUM_Longsword_A_1_3fc2ba50-3070-4caa-abe8-3bf885969bde,(ITEMROOT)WPN_HUM_Longsword_A_2_e3b2adb6-7493-466e-9c65-4281fb74e83f);
+DB_KELA_Item_Stat_Templates_Anvil("Branch_Bronze",(ITEMROOT)WPN_HUM_Mace_A_0_Rusty_A_ce1c45a5-5606-4604-9afa-beca19fd03e1,(ITEMROOT)WPN_HUM_Mace_A_0_3186796d-3ab3-4d49-bfc2-cba1aff0cf5a,(ITEMROOT)WPN_HUM_Mace_A_1_5a948b12-ca43-4256-9821-0d151036dbd1,(ITEMROOT)WPN_HUM_Mace_A_2_f203a318-ea9a-4117-8d27-299dabafd1d3);
+DB_KELA_Item_Stat_Templates_Anvil("Branch_Bronze_Bronze",(ITEMROOT)WPN_HUM_Maul_A_0_Rusty_A_67e97333-2225-4797-9c06-0a0e08e6edd7,(ITEMROOT)WPN_HUM_Maul_A_0_5487ceb4-b009-46ae-8ed6-cd3baaf0a18d,(ITEMROOT)WPN_HUM_Maul_A_1_7e8ef269-0e7b-4352-8828-89c5fced943c,(ITEMROOT)WPN_HUM_Maul_A_2_904286be-03fc-4755-adf0-9fd5f44942f4);
+DB_KELA_Item_Stat_Templates_Anvil("Branch_Bronze",(ITEMROOT)WPN_HUM_Morningstar_A_0_Rusty_A_f8856d2d-ffda-417c-b7a8-c7aa757903b7,(ITEMROOT)WPN_HUM_Morningstar_A_0_26a9fba6-1a60-4691-84ea-da7ffcb304e0,(ITEMROOT)WPN_HUM_Morningstar_A_1_deea755b-5335-49d9-bd0e-dbaab9eaf94c,(ITEMROOT)WPN_HUM_Morningstar_A_2_9e2c45b2-0411-42cc-bac6-6222c1334cb0);
+DB_KELA_Item_Stat_Templates_Anvil("Bronze_Strips",(ITEMROOT)WPN_HUM_Rapier_A_0_Rusty_A_1958c259-3772-46ac-9de3-741806f18703,(ITEMROOT)WPN_HUM_Rapier_A_0_7061f489-4b13-4982-aa09-cf0ad961e75f,(ITEMROOT)WPN_HUM_Rapier_A_1_5a6cea10-b3f6-4370-8eed-0b69b4ba531a,(ITEMROOT)WPN_HUM_Rapier_A_2_5c572e8e-8693-48cf-b494-2df0341f7ced);
+DB_KELA_Item_Stat_Templates_Anvil("Bronze_Strips",(ITEMROOT)WPN_HUM_Scimitar_A_0_Rusty_A_134cca90-23ea-497d-8698-b7a66bab59d3,(ITEMROOT)WPN_HUM_Scimitar_A_0_868217db-9dcb-414c-bb88-e321ab3e0349,(ITEMROOT)WPN_HUM_Scimitar_A_1_7cc7a0e1-d0b8-4569-afb2-d538e8941894,(ITEMROOT)WPN_HUM_Scimitar_A_2_5193af64-48c1-406f-90bf-87f7f01b4684);
+DB_KELA_Item_Stat_Templates_Anvil("Bronze_Strips",(ITEMROOT)WPN_HUM_Shortsword_A_0_Rusty_A_9d66df2d-8e8f-4798-8684-77b738d26704,(ITEMROOT)WPN_HUM_Shortsword_A_0_467ddb4f-6791-41fa-99f7-ee8620d63bbe,(ITEMROOT)WPN_HUM_Shortsword_A_1_261b946f-154b-4f75-8985-cab6531034a2,(ITEMROOT)WPN_HUM_Shortsword_A_2_0839fb15-24ab-4c3a-b168-413a47ed710a);
+DB_KELA_Item_Stat_Templates_Anvil("Bronze_Strips",(ITEMROOT)WPN_HUM_Sickle_A_0_Rusty_A_1d75dc84-b276-47b0-a0be-a5b25dfcb086,(ITEMROOT)WPN_HUM_Sickle_A_0_50d677ed-3a0e-40e9-8291-ee6823af5672,(ITEMROOT)WPN_HUM_Sickle_A_1_Kela_79e6e451-49c5-4e8c-beab-4a543f437dfd,(ITEMROOT)WPN_HUM_Sickle_A_2_Kela_8e616c05-3be7-47fb-a0fc-3edcabc53348); // _1_Kela and _2_Kela
+DB_KELA_Item_Stat_Templates_Anvil("Branch_Bronze_Bronze_Strips",(ITEMROOT)WPN_HUM_Warhammer_A_0_Rusty_A_ed53c828-d185-408e-8381-9b042849de8e,(ITEMROOT)WPN_HUM_Warhammer_A_0_6b17998d-2e79-405d-8b1f-beb53658312f,(ITEMROOT)WPN_HUM_Warhammer_A_1_3e1b3db9-036e-4931-ab92-c3730a1c3d5f,(ITEMROOT)WPN_HUM_Warhammer_A_2_e6b027a7-40bb-445e-b199-38b08d2b4832);
+
+// ANVIL ARMOR TEMPLATES FOR RECRAFTING
+DB_KELA_Item_Stat_Templates_Anvil("Bronze_Bronze_Leather_Strips",(ITEMROOT)ARM_ChainShirt_Destroyed_Crash_82f4d3d6-c2c8-47ee-8fcb-7b093deff6e9,(ITEMROOT)ARM_ChainShirt_921cd1e1-c39c-44c3-a090-b667322af7f8,(ITEMROOT)ARM_ChainShirt_1_eac652ed-ecf7-4505-bf64-0fec29e7d677,(ITEMROOT)ARM_ChainShirt_2_461f1cbe-6d0d-40ee-8bf6-8a68e0570d6f);
+DB_KELA_Item_Stat_Templates_Anvil("Bronze_Bronze_Leather_Strips",(ITEMROOT)ARM_Breastplate_4814825e-23ee-41ed-9784-d9963434150d,(ITEMROOT)ARM_Breastplate_4814825e-23ee-41ed-9784-d9963434150d,(ITEMROOT)ARM_BreastPlate_1_ad912cef-8bfb-4bf3-98f0-f2c5e3b45915,(ITEMROOT)ARM_BreastPlate_2_4842e9ec-95ba-4168-81a9-f184b08d6c2c); // not broken
+DB_KELA_Item_Stat_Templates_Anvil("Bronze_Bronze_Leather_Strips",(ITEMROOT)ARM_HalfPlate_34a71679-0ab5-4fd4-bba8-d6ad341ee490,(ITEMROOT)ARM_HalfPlate_34a71679-0ab5-4fd4-bba8-d6ad341ee490,(ITEMROOT)ARM_HalfPlate_1_c3407c8d-0180-4f5a-9530-e1167e7290b3,(ITEMROOT)ARM_HalfPlate_2_15338da1-c4f8-4b43-912c-c14e7d9a8579); // not broken
+DB_KELA_Item_Stat_Templates_Anvil("Bronze_Bronze_Bronze_Leather_Strips",(ITEMROOT)ARM_ChainMail_b973e3cb-c18d-4514-ba01-ebcabbf26968,(ITEMROOT)ARM_ChainMail_b973e3cb-c18d-4514-ba01-ebcabbf26968,(ITEMROOT)ARM_ChainMail_1_ed7a8055-cf36-42c8-ad77-15a80d19744f,(ITEMROOT)ARM_ChainMail_2_d8120501-e5bb-4eb1-b5cf-120b8bfd2ab2); // not broken
+DB_KELA_Item_Stat_Templates_Anvil("Bronze_Bronze_Bronze_Leather_Strips",(ITEMROOT)ARM_Splint_8ed82f7e-fdd4-4a9f-94b6-f256c599bfdd,(ITEMROOT)ARM_Splint_8ed82f7e-fdd4-4a9f-94b6-f256c599bfdd,(ITEMROOT)ARM_Splint_1_ecfb1364-b1a0-4d0e-b82a-0becd8c291fd,(ITEMROOT)ARM_Splint_2_2e8dfe32-cd6e-475b-98b5-5e2d9c42a7df); // not broken
+DB_KELA_Item_Stat_Templates_Anvil("Bronze_Bronze_Bronze_Leather_Strips",(ITEMROOT)ARM_Plate_95b4e2c4-759a-4d33-a2d1-4e0ee6ed4f29,(ITEMROOT)ARM_Plate_95b4e2c4-759a-4d33-a2d1-4e0ee6ed4f29,(ITEMROOT)ARM_Plate_1_dd905194-9a67-4c61-b26d-5b4da4725cde,(ITEMROOT)ARM_Plate_2_fdb8ce53-51dc-4ccb-9e29-d1d99040e60b); // not broken
+
+// WORKBENCH SHIELDS
+DB_KELA_Item_Stat_Templates_Workbench("Wood_Wood_Wood_Bronze_Strips",(ITEMROOT)WPN_HUM_Shield_B_0_24fa28d4-f679-44bf-865e-c7e70dcb9588,(ITEMROOT)WPN_HUM_Shield_A_0_d2af60ea-1b72-4d25-a188-6d8bc4fe255b,(ITEMROOT)WPN_HUM_Shield_A_1_cb2d6c27-ec29-4555-adf2-41e8c1952439,(ITEMROOT)WPN_HUM_Shield_A_2_NOT_APPROVED_49979c37-1a3a-46f8-af5b-2ea63fc11722);
+DB_KELA_Item_Stat_Templates_Workbench("Wood_Wood_Wood_Bronze_Strips",(ITEMROOT)WPN_HUM_Shield_D_0_Rusty_A_8c02c87f-955d-4cc2-b547-f22462ad7106,(ITEMROOT)WPN_HUM_Shield_D_0_c069f1f2-1040-4c71-b796-5a95eecfa711,(ITEMROOT)WPN_HUM_Shield_A_1_cb2d6c27-ec29-4555-adf2-41e8c1952439,(ITEMROOT)WPN_HUM_Shield_A_2_NOT_APPROVED_49979c37-1a3a-46f8-af5b-2ea63fc11722);
+DB_KELA_Item_Stat_Templates_Workbench("Wood_Wood_Wood_Wood_Bronze_Bronze_Strips",(ITEMROOT)WPN_HUM_Shield_C_0_4491fcaf-03bf-4087-baf3-b638657080f6,(ITEMROOT)WPN_HUM_Shield_C_1_badf2418-01ac-410d-931e-72b1dac071c7,(ITEMROOT)WPN_HUM_Shield_E_1_89792dc1-221b-462e-adcb-026f2cafbb95,(ITEMROOT)WPN_HUM_Shield_E_2_23957b7d-d466-4241-996b-63ce2f6df678);
+KBSECTION
+//REGION Forging next level item by template
+//-------------------------------------------------------------------------------
+// START REWORKING
+//-------------------------------------------------------------------------------
+//
+// WORKBENCH - only Blacksmith or Artisan
+IF
+UseStarted(_User,_Tool)
+AND
+HasActiveStatus(_User,"KELA_CRAFT_REFORGING",1)
+AND
+IsTagged(_Tool,(TAG)KELAWORKBENCH_d2eedda0-c4ce-4602-960e-c57b4989b420,1)
+AND 
+DB_KELA_Workbench_User_Tags(_Tag)
+AND
+IsTagged(_User,_Tag,1)
+AND
+GetLevel(_User,_UserLevel)
+AND
+IntegerSubtract(_UserLevel,4,_LevelDiff)
+AND
+_LevelDiff >= 0
+AND
+QRY_KELA_Get_ReforgeToolHelper_By_Level((ITEM)_Tool)
+AND 
+DB_KELA_ReforgeToolHelper(_ReforgeHelper)
+AND
+NOT IsInventoryEmpty(_ReforgeHelper,1)
+AND
+NOT DB_OnlyOnce("KELA_Reforge_Iterate_Started")
+THEN
+// SetDualEntityEvent(_User,_User,"UseStarted");
+DB_OnlyOnce("KELA_Reforge_Iterate_Started");
+DB_KELA_Forging_Tool_User(_Tool,_User);
+IterateInventory(_ReforgeHelper,"KELA_Try_Reforge_Item","KELA_Try_Reforge_Item_Finish");
+//
+// ANVIL - only Blacksmith
+IF
+UseStarted(_User,_Tool)
+AND
+HasActiveStatus(_User,"KELA_CRAFT_REFORGING",1)
+AND
+IsTagged(_Tool,(TAG)KELAANVIL_01dc7295-d16e-4d98-afe2-ea39c5f1ba43,1)
+AND
+IsTagged(_User,(TAG)KELABLACKSMITH_c78b77b9-b33c-43fb-8dec-a91bacebb1bf,1)
+AND
+QRY_KELA_Get_ReforgeToolHelper_By_Level((ITEM)_Tool)
+AND 
+DB_KELA_ReforgeToolHelper(_ReforgeHelper)
+AND 
+HasActiveStatus(_Tool,"KELA_SMELTINGFORGE_AURA_STAGE_2_ANVIL",1)
+AND
+NOT IsInventoryEmpty(_ReforgeHelper,1)
+AND
+NOT DB_OnlyOnce("KELA_Reforge_Iterate_Started")
+THEN
+// SetDualEntityEvent(_User,_User,"UseStarted");
+DB_OnlyOnce("KELA_Reforge_Iterate_Started");
+DB_KELA_Forging_Tool_User(_Tool,_User);
+IterateInventory(_ReforgeHelper,"KELA_Try_Reforge_Item","KELA_Try_Reforge_Item_Finish");
+//
+//-------------------------------------------------------------------------------
+// ERRORS ON START
+//-------------------------------------------------------------------------------
+//
+// ANVIL BLOCK - not fire
+IF
+UseStarted(_User,_Tool)
+AND
+HasActiveStatus(_User,"KELA_CRAFT_REFORGING",1)
+AND
+NOT DB_KELA_Forging_Tool_User(_,_User)
+AND
+IsTagged(_Tool,(TAG)KELAANVIL_01dc7295-d16e-4d98-afe2-ea39c5f1ba43,1)
+AND
+IsTagged(_User,(TAG)KELABLACKSMITH_c78b77b9-b33c-43fb-8dec-a91bacebb1bf,1)
+AND
+NOT HasActiveStatus(_Tool,"KELA_SMELTINGFORGE_AURA_STAGE_1_ANVIL",1)
+AND
+NOT HasActiveStatus(_Tool,"KELA_SMELTINGFORGE_AURA_STAGE_2_ANVIL",1)
+THEN
+ApplyStatus(_User,"KELA_MESSAGE_ANVIL_NOT_FIRE",5.0,1);
+PROC_PlayCantUseItemAD((CHARACTER)_User);
+//
+// ANVIL BLOCK - regular fire
+IF
+UseStarted(_User,_Tool)
+AND
+HasActiveStatus(_User,"KELA_CRAFT_REFORGING",1)
+AND
+NOT DB_KELA_Forging_Tool_User(_,_User)
+AND
+IsTagged(_Tool,(TAG)KELAANVIL_01dc7295-d16e-4d98-afe2-ea39c5f1ba43,1)
+AND
+IsTagged(_User,(TAG)KELABLACKSMITH_c78b77b9-b33c-43fb-8dec-a91bacebb1bf,1)
+AND
+HasActiveStatus(_Tool,"KELA_SMELTINGFORGE_AURA_STAGE_1_ANVIL",1)
+AND
+NOT HasActiveStatus(_Tool,"KELA_SMELTINGFORGE_AURA_STAGE_2_ANVIL",1)
+THEN
+ApplyStatus(_User,"KELA_MESSAGE_ANVIL_FIRE_TOO_COLD",5.0,1);
+PROC_PlayCantUseItemAD((CHARACTER)_User);
+//
+// ANVIL BLOCK - not Blacksmith
+IF
+UseStarted(_User,_Tool)
+AND
+HasActiveStatus(_User,"KELA_CRAFT_REFORGING",1)
+AND
+NOT DB_KELA_Forging_Tool_User(_,_User)
+AND
+IsTagged(_Tool,(TAG)KELAANVIL_01dc7295-d16e-4d98-afe2-ea39c5f1ba43,1)
+AND
+NOT IsTagged(_User,(TAG)KELABLACKSMITH_c78b77b9-b33c-43fb-8dec-a91bacebb1bf,1)
+THEN
+ApplyStatus(_User,"KELA_MESSAGE_NO_KNOWLEDGE_ANVIL_BLACKSMITH",5.0,1);
+PROC_PlayCantUseItemAD((CHARACTER)_User);
+//
+// BLOCK - ReforgeHelper Inventory Empty
+IF
+UseStarted(_User,_Tool)
+AND
+HasActiveStatus(_User,"KELA_CRAFT_REFORGING",1)
+AND
+NOT DB_KELA_Forging_Tool_User(_,_User)
+AND
+DB_KELA_ReforgeTools_Tags(_Tag)
+AND
+IsTagged(_Tool,_Tag,1)
+AND 
+DB_KELA_ReforgeToolHelper(_ReforgeHelper)
+AND
+IsInventoryEmpty(_ReforgeHelper,1)
+THEN
+// SetDualEntityEvent(_User,_User,"BLOCK - ReforgeHelper Inventory Empty");
+ApplyStatus(_User,"KELA_MESSAGE_REFORGE_INVENTORY_EMPTY",5.0,1);
+PROC_PlayCantUseItemAD((CHARACTER)_User);
+//
+//-------------------------------------------------------------------------------
+// TRY REWORK
+//-------------------------------------------------------------------------------
+//
+// KELA_Try_Reforge_Item
+IF
+EntityEvent((ITEM)_Item,"KELA_Try_Reforge_Item")
+AND
+DB_KELA_Forging_Tool_User(_Tool,_User)
+AND 
+DB_KELA_ReforgeToolHelper(_ReforgeHelper)
+AND
+GetTemplate(_Item,_ItemTemplate)
+AND
+QRY_KELA_Get_Current_Item_Templates((ITEM)_Tool,(ITEMROOT)_ItemTemplate)
+AND
+QRY_KELA_Get_Template_By_Level((CHARACTER)_User)
+AND
+DB_KELA_Template_By_Level(_NewTemplate)
+AND
+QRY_IsCreatorValidForItem((CHARACTER)_User,(ITEM)_Item)
+AND
+DB_KELA_Is_Creator_Valid_For_Item(1)
+AND
+QRY_KELA_Get_Ingredients_For_Forging((ITEM)_ReforgeHelper)
+AND 
+NOT DB_KELA_Reforge_Success(1)
+AND
+CreateAtObject(_NewTemplate,_User,0,0,"",0,_Result)
+THEN
+PROC_KELA_Set_Craft_Effect(_Tool);
+SetDualEntityEvent(_Tool,_Result,"KELA_Try_Apply_Additional_Status");
+ToInventory(_Result,_User,1,1,1);
+TemplateRemoveFrom((ITEMROOT)_ItemTemplate,_ReforgeHelper,1);
+NOT DB_KELA_Template_By_Level(_NewTemplate);
+PROC_KELA_Remove_Ingredients(_ReforgeHelper);
+DB_KELA_Reforge_Success(1);
+
+PROC
+PROC_KELA_Set_Craft_Effect((ITEM)_Tool)
+AND
+IsTagged(_Tool,(TAG)KELAANVIL_01dc7295-d16e-4d98-afe2-ea39c5f1ba43,1)
+THEN
+PlayEffect(_Tool,(EFFECTRESOURCE)VFX_Status_MagicWeapon_ApplyFX_01_1a366c75-a573-78e0-e667-1f615703fcc7);
+PlaySound(_Tool, "HAV_Tieflingsurvivors_Weaponsmith_Forging_Loop");
+
+PROC
+PROC_KELA_Set_Craft_Effect((ITEM)_Tool)
+AND
+IsTagged(_Tool,(TAG)KELAWORKBENCH_d2eedda0-c4ce-4602-960e-c57b4989b420,1)
+THEN
+PlayEffect(_Tool,(EFFECTRESOURCE)VFX_Status_MagicWeapon_ApplyFX_01_1a366c75-a573-78e0-e667-1f615703fcc7);
+PlaySound(_Tool, "Item_Container_Wood_Open");
+
+PROC
+PROC_KELA_Remove_Ingredients((ITEM)_ReforgeHelper)
+AND
+DB_KELA_Reforge_Ingredient_Templates(_Count,_IngredientTemplate)
+THEN
+//SetDualEntityEvent(_ReforgeHelper,_ReforgeHelper,"PROC KELA Remove Ingredients");
+TemplateRemoveFrom(_IngredientTemplate,_ReforgeHelper,_Count);
+NOT DB_KELA_Reforge_Ingredient_Templates(_Count,_IngredientTemplate);
+
+
+
+//
+//-------------------------------------------------------------------------------
+// ERRORS ON REWORK
+//-------------------------------------------------------------------------------
+//
+// KELA_MESSAGE_REFORGE_NOT_VALID_TEMPLATE
+IF
+EntityEvent((ITEM)_Item,"KELA_Try_Reforge_Item_Finish")
+AND
+NOT DB_KELA_Current_Templates(_,_,_,_,_)
+AND
+DB_KELA_Forging_Tool_User(_,_User)
+AND 
+NOT DB_KELA_Reforge_Success(1)
+AND
+NOT DB_OnlyOnce("KELA_Error_Message_Only_Once")
+THEN
+DB_OnlyOnce("KELA_Error_Message_Only_Once");
+ApplyStatus(_User,"KELA_MESSAGE_REFORGE_NOT_VALID_TEMPLATE",5.0,1);
+//
+// KELA_MESSAGE_REFORGE_ELVEN_ONLY_RANGED 
+IF
+EntityEvent((ITEM)_Item,"KELA_Try_Reforge_Item_Finish")
+AND
+DB_KELA_Forging_Tool_User(_,_User)
+AND
+DB_KELA_Template_By_Level(_)
+AND 
+DB_KELA_Not_Ranged_For_Elven(1)
+AND 
+NOT DB_KELA_Reforge_Success(1)
+AND
+NOT DB_OnlyOnce("KELA_Error_Message_Only_Once")
+THEN
+DB_OnlyOnce("KELA_Error_Message_Only_Once");
+ApplyStatus(_User,"KELA_MESSAGE_REFORGE_ELVEN_ONLY_RANGED",5.0,1);
+//
+// KELA_MESSAGE_REFORGE_NOT_INGREDIENTS
+IF
+EntityEvent((ITEM)_Item,"KELA_Try_Reforge_Item_Finish")
+AND
+DB_KELA_Forging_Tool_User(_,_User)
+AND
+DB_KELA_Template_By_Level(_)
+AND 
+NOT DB_KELA_Get_Ingredients_For_Forging(1)
+AND 
+NOT DB_KELA_Reforge_Success(1)
+AND
+NOT DB_OnlyOnce("KELA_Error_Message_Only_Once")
+THEN
+DB_OnlyOnce("KELA_Error_Message_Only_Once");
+ApplyStatus(_User,"KELA_MESSAGE_REFORGE_NOT_INGREDIENTS",5.0,1);
+//
+// KELA_MESSAGE_REFORGE_FAILED
+IF
+EntityEvent((ITEM)_Item,"KELA_Try_Reforge_Item_Finish")
+AND
+GetHostCharacter(_User)
+AND 
+NOT DB_KELA_Reforge_Success(1)
+AND
+NOT DB_OnlyOnce("KELA_Error_Message_Only_Once")
+THEN
+DB_OnlyOnce("KELA_Error_Message_Only_Once");
+ApplyStatus(_User,"KELA_MESSAGE_REFORGE_FAILED",5.0,1);
+//
+//-------------------------------------------------------------------------------
+// FINISH REWORK
+//-------------------------------------------------------------------------------
+//
+IF
+EntityEvent((ITEM)_Item,"KELA_Try_Reforge_Item_Finish")
+AND
+DB_KELA_Forging_Tool_User(_,_User)
+THEN
+RealtimeObjectTimerLaunch(_User,"KELA_Wait_Reforge_Tool_User_Clear",1000);
+//
+//-------------------------------------------------------------------------------
+// CLEAR VARIABLES
+//-------------------------------------------------------------------------------
+//
+IF
+ObjectTimerFinished(_,"KELA_Wait_Reforge_Tool_User_Clear")
+AND 
+DB_KELA_Forging_Tool_User(_Tool,_User)
+THEN
+NOT DB_KELA_Forging_Tool_User(_Tool,_User);
+//
+IF
+ObjectTimerFinished(_,"KELA_Wait_Reforge_Tool_User_Clear")
+AND 
+DB_KELA_Current_Templates(_Ingredients,_TemplateBroken,_Template0,_Template1,_Template2)
+THEN
+NOT DB_KELA_Current_Templates(_Ingredients,_TemplateBroken,_Template0,_Template1,_Template2);
+//
+IF
+ObjectTimerFinished(_,"KELA_Wait_Reforge_Tool_User_Clear")
+AND 
+DB_KELA_Template_By_Level(_NewTemplate)
+THEN
+NOT DB_KELA_Template_By_Level(_NewTemplate);
+//
+IF
+ObjectTimerFinished(_,"KELA_Wait_Reforge_Tool_User_Clear")
+AND 
+DB_KELA_Reforge_Ingredient_Templates(_Count,_BranchTemplate)
+THEN
+NOT DB_KELA_Reforge_Ingredient_Templates(_Count,_BranchTemplate);
+//
+IF
+ObjectTimerFinished(_,"KELA_Wait_Reforge_Tool_User_Clear")
+AND 
+DB_KELA_ReforgeToolHelper(_Tool)
+THEN
+NOT DB_KELA_ReforgeToolHelper(_Tool);
+//
+IF
+ObjectTimerFinished(_,"KELA_Wait_Reforge_Tool_User_Clear")
+THEN
+NOT DB_KELA_Reforge_Success(1);
+NOT DB_OnlyOnce("KELA_Reforge_Iterate_Started");
+NOT DB_OnlyOnce("KELA_Error_Message_Only_Once");
+NOT DB_KELA_Get_Ingredients_For_Forging(1);
+NOT DB_KELA_Is_Creator_Valid_For_Item(1);
+NOT DB_KELA_Not_Ranged_For_Elven(0);
+NOT DB_KELA_Not_Ranged_For_Elven(1);
+//
+//----------------------------------------------------------------
+// QUERIES
+//----------------------------------------------------------------
+//
+// Get ReforgeToolHelper By Level
+//
+QRY
+QRY_KELA_Get_ReforgeToolHelper_By_Level((ITEM)_UsedTool)
+AND 
+NOT DB_ActiveLevel("CTY_LowerCity_A")
+AND
+DB_ActiveLevel(_LevelName)
+AND
+DB_KELA_ReforgeToolHelper_By_Level(_LevelName,_Tool)
+THEN
+// SetDualEntityEvent(_Tool,_Tool,_LevelName);
+DB_KELA_ReforgeToolHelper(_Tool);
+//
+QRY
+QRY_KELA_Get_ReforgeToolHelper_By_Level((ITEM)_UsedTool)
+AND 
+DB_ActiveLevel("CTY_LowerCity_A")
+AND
+DB_KELA_ReforgeToolHelper_By_Level_LowerCity(_UsedTool,_Tool)
+THEN
+// SetDualEntityEvent(_Tool,_Tool,"CTY_LowerCity_A");
+DB_KELA_ReforgeToolHelper(_Tool);
+//
+// If creator only Elven Roots then he can reforge only ranged weapon
+//
+QRY
+QRY_IsCreatorValidForItem((CHARACTER)_User,(ITEM)_Item)
+AND
+NOT IsTagged(_User,(TAG)GUILD_ARTISAN_baf9fb0e-f535-40a0-bb78-3ec289d84e66,1)
+AND
+NOT IsTagged(_User,(TAG)KELABLACKSMITH_c78b77b9-b33c-43fb-8dec-a91bacebb1bf,1)
+//AND
+//DB_KELA_Elf_Tags(_ElvenTags)
+//AND
+//IsTagged(_User,_ElvenTags,1)
+AND
+QRY_KELA_Char_Has_Elven_Root(_User)
+AND
+IsRangedWeapon(_Item,0,1)
+THEN
+// SetDualEntityEvent(_User,_User,"QRY_IsCreatorValidForItem IsRangedWeapon");
+DB_KELA_Is_Creator_Valid_For_Item(1);
+DB_KELA_Not_Ranged_For_Elven(0);
+DB_NOOP(1);
+//
+// For error message - If creator only Elven Roots then he can reforge only ranged weapon
+//
+QRY
+QRY_IsCreatorValidForItem((CHARACTER)_User,(ITEM)_Item)
+AND
+NOT IsTagged(_User,(TAG)GUILD_ARTISAN_baf9fb0e-f535-40a0-bb78-3ec289d84e66,1)
+AND
+NOT IsTagged(_User,(TAG)KELABLACKSMITH_c78b77b9-b33c-43fb-8dec-a91bacebb1bf,1)
+//AND
+//DB_KELA_Elf_Tags(_ElvenTags)
+//AND
+//IsTagged(_User,_ElvenTags,1)
+AND
+QRY_KELA_Char_Has_Elven_Root(_User)
+AND
+NOT IsRangedWeapon(_Item,0,1)
+THEN
+// SetDualEntityEvent(_User,_User,"QRY_IsCreatorValidForItem NOT IsRangedWeapon");
+DB_KELA_Not_Ranged_For_Elven(1);
+//
+// If creator is Artisan or Blacksmith he can reforge any item
+//
+QRY
+QRY_IsCreatorValidForItem((CHARACTER)_User,(ITEM)_Item)
+AND
+DB_KELA_Valid_Creator_For_Any_Item_Tags(_AnyTags)
+AND
+IsTagged(_User,_AnyTags,1)
+THEN
+DB_KELA_Is_Creator_Valid_For_Item(1);
+DB_NOOP(1);
+//
+// Get current templates Workbench
+// broken and rusty
+QRY
+QRY_KELA_Get_Current_Item_Templates((ITEM)_Tool,(ITEMROOT)_ItemTemplate)
+AND
+IsTagged(_Tool,(TAG)KELAWORKBENCH_d2eedda0-c4ce-4602-960e-c57b4989b420,1)
+AND
+DB_KELA_Item_Stat_Templates_Workbench(_Ingredients,_ItemTemplate,_Template0,_Template1,_Template2)
+THEN
+DB_KELA_Current_Templates(_Ingredients,_ItemTemplate,_Template0,_Template1,_Template2);
+DB_NOOP(1);
+// _0
+QRY
+QRY_KELA_Get_Current_Item_Templates((ITEM)_Tool,(ITEMROOT)_ItemTemplate)
+AND
+IsTagged(_Tool,(TAG)KELAWORKBENCH_d2eedda0-c4ce-4602-960e-c57b4989b420,1)
+AND
+DB_KELA_Item_Stat_Templates_Workbench(_Ingredients,_TemplateBroken,_ItemTemplate,_Template1,_Template2)
+THEN
+DB_KELA_Current_Templates(_Ingredients,_TemplateBroken,_ItemTemplate,_Template1,_Template2);
+DB_NOOP(1);
+// _1
+QRY
+QRY_KELA_Get_Current_Item_Templates((ITEM)_Tool,(ITEMROOT)_ItemTemplate)
+AND
+IsTagged(_Tool,(TAG)KELAWORKBENCH_d2eedda0-c4ce-4602-960e-c57b4989b420,1)
+AND
+DB_KELA_Item_Stat_Templates_Workbench(_Ingredients,_TemplateBroken,_Template0,_ItemTemplate,_Template2)
+THEN
+DB_KELA_Current_Templates(_Ingredients,_TemplateBroken,_Template0,_ItemTemplate,_Template2);
+DB_NOOP(1);
+// _2
+QRY
+QRY_KELA_Get_Current_Item_Templates((ITEM)_Tool,(ITEMROOT)_ItemTemplate)
+AND
+IsTagged(_Tool,(TAG)KELAWORKBENCH_d2eedda0-c4ce-4602-960e-c57b4989b420,1)
+AND
+DB_KELA_Item_Stat_Templates_Workbench(_Ingredients,_TemplateBroken,_Template0,_Template1,_ItemTemplate)
+THEN
+DB_KELA_Current_Templates(_Ingredients,_TemplateBroken,_Template0,_Template1,_ItemTemplate);
+DB_NOOP(1);
+//
+// Get current templates Anvil
+// Rusty and Broken
+QRY
+QRY_KELA_Get_Current_Item_Templates((ITEM)_Tool,(ITEMROOT)_ItemTemplate)
+AND
+IsTagged(_Tool,(TAG)KELAANVIL_01dc7295-d16e-4d98-afe2-ea39c5f1ba43,1)
+AND
+DB_KELA_Item_Stat_Templates_Anvil(_Ingredients,_ItemTemplate,_Template0,_Template1,_Template2)
+THEN
+DB_KELA_Current_Templates(_Ingredients,_ItemTemplate,_Template0,_Template1,_Template2);
+DB_NOOP(1);
+// _0
+QRY
+QRY_KELA_Get_Current_Item_Templates((ITEM)_Tool,(ITEMROOT)_ItemTemplate)
+AND
+IsTagged(_Tool,(TAG)KELAANVIL_01dc7295-d16e-4d98-afe2-ea39c5f1ba43,1)
+AND
+DB_KELA_Item_Stat_Templates_Anvil(_Ingredients,_TemplateBroken,_ItemTemplate,_Template1,_Template2)
+THEN
+DB_KELA_Current_Templates(_Ingredients,_TemplateBroken,_ItemTemplate,_Template1,_Template2);
+DB_NOOP(1);
+// _1
+QRY
+QRY_KELA_Get_Current_Item_Templates((ITEM)_Tool,(ITEMROOT)_ItemTemplate)
+AND
+IsTagged(_Tool,(TAG)KELAANVIL_01dc7295-d16e-4d98-afe2-ea39c5f1ba43,1)
+AND
+DB_KELA_Item_Stat_Templates_Anvil(_Ingredients,_TemplateBroken,_Template0,_ItemTemplate,_Template2)
+THEN
+DB_KELA_Current_Templates(_Ingredients,_TemplateBroken,_Template0,_ItemTemplate,_Template2);
+DB_NOOP(1);
+// _2
+QRY
+QRY_KELA_Get_Current_Item_Templates((ITEM)_Tool,(ITEMROOT)_ItemTemplate)
+AND
+IsTagged(_Tool,(TAG)KELAANVIL_01dc7295-d16e-4d98-afe2-ea39c5f1ba43,1)
+AND
+DB_KELA_Item_Stat_Templates_Anvil(_Ingredients,_TemplateBroken,_Template0,_Template1,_ItemTemplate)
+THEN
+DB_KELA_Current_Templates(_Ingredients,_TemplateBroken,_Template0,_Template1,_ItemTemplate);
+DB_NOOP(1);
+//----------------------------------------------------------------
+//
+// Get Template By Level
+//
+// Level 4
+QRY
+QRY_KELA_Get_Template_By_Level((CHARACTER)_User)
+AND
+DB_KELA_Current_Templates(_,_,_Template0,_,_)
+AND
+GetLevel(_User,_UserLevel)
+AND
+IntegerSubtract(_UserLevel,4,_LevelDiff)
+AND
+_LevelDiff >= 0
+THEN
+// SetDualEntityEvent(_User,_User,"QRY_KELA_Get_Template_By_Level 4");
+DB_KELA_Template_By_Level(_Template0);
+DB_NOOP(1);
+//
+// Level 6
+QRY
+QRY_KELA_Get_Template_By_Level((CHARACTER)_User)
+AND
+DB_KELA_Current_Templates(_,_,_,_Template1,_)
+AND
+GetLevel(_User,_UserLevel)
+AND
+IntegerSubtract(_UserLevel,6,_LevelDiff)
+AND
+_LevelDiff >= 0
+THEN
+// SetDualEntityEvent(_User,_User,"QRY_KELA_Get_Template_By_Level 6");
+DB_KELA_Template_By_Level(_Template1);
+DB_NOOP(1);
+//
+// Level 8
+QRY
+QRY_KELA_Get_Template_By_Level((CHARACTER)_User)
+AND
+DB_KELA_Current_Templates(_,_,_,_,_Template2)
+AND
+GetLevel(_User,_UserLevel)
+AND
+IntegerSubtract(_UserLevel,8,_LevelDiff)
+AND
+_LevelDiff >= 0
+THEN
+// SetDualEntityEvent(_User,_User,"QRY_KELA_Get_Template_By_Level 8");
+DB_KELA_Template_By_Level(_Template2);
+DB_NOOP(1);
+
+//----------------------------------------------------------------
+//
+// Ingredients,if has then set
+// 
+// BRONZE
+QRY
+QRY_KELA_Get_Ingredients_For_Forging((ITEM)_ReforgeHelper)
+AND
+GetHostCharacter(_Player)
+AND
+DB_KELA_Current_Templates(_Ingredients,_,_,_,_)
+AND
+_Ingredients == "Bronze"
+AND
+DB_KELA_Reforge_Ingredients(_,_BronzeTemplate,_,_,_,_,_,_,_)
+AND
+GetItemByTemplateInInventory(_BronzeTemplate,_ReforgeHelper,_)
+THEN
+DB_KELA_Reforge_Ingredient_Templates(1,_BronzeTemplate);
+DB_KELA_Get_Ingredients_For_Forging(1);
+DB_NOOP(1);
+// 
+// BRANCH
+QRY
+QRY_KELA_Get_Ingredients_For_Forging((ITEM)_ReforgeHelper)
+AND
+GetHostCharacter(_Player)
+AND
+DB_KELA_Current_Templates(_Ingredients,_,_,_,_)
+AND
+_Ingredients == "Branch"
+AND
+DB_KELA_Reforge_Ingredients(_BranchTemplate,_,_,_,_,_,_,_,_)
+AND
+GetItemByTemplateInInventory(_BranchTemplate,_ReforgeHelper,_)
+THEN
+DB_KELA_Reforge_Ingredient_Templates(1,_BranchTemplate);
+DB_KELA_Get_Ingredients_For_Forging(1);
+DB_NOOP(1);
+// 
+// BRANCH BRANCH
+QRY
+QRY_KELA_Get_Ingredients_For_Forging((ITEM)_ReforgeHelper)
+AND
+GetHostCharacter(_Player)
+AND
+DB_KELA_Current_Templates(_Ingredients,_,_,_,_)
+AND
+_Ingredients == "Branch_Branch"
+AND
+DB_KELA_Reforge_Ingredients(_BranchTemplate,_,_,_,_,_,_,_,_)
+AND
+TemplateIsInInventory(_BranchTemplate,_ReforgeHelper,_Count)
+AND 
+_Count >= 2
+AND
+GetItemByTemplateInInventory(_BranchTemplate,_ReforgeHelper,_)
+THEN
+DB_KELA_Reforge_Ingredient_Templates(2,_BranchTemplate);
+DB_KELA_Get_Ingredients_For_Forging(1);
+DB_NOOP(1);
+// 
+// BRANCH BRONZE
+QRY
+QRY_KELA_Get_Ingredients_For_Forging((ITEM)_ReforgeHelper)
+AND
+GetHostCharacter(_Player)
+AND
+DB_KELA_Current_Templates(_Ingredients,_,_,_,_)
+AND
+_Ingredients == "Branch_Bronze"
+AND
+DB_KELA_Reforge_Ingredients(_BranchTemplate,_BronzeTemplate,_,_,_,_,_,_,_)
+AND
+GetItemByTemplateInInventory(_BranchTemplate,_ReforgeHelper,_)
+AND
+GetItemByTemplateInInventory(_BronzeTemplate,_ReforgeHelper,_)
+THEN
+DB_KELA_Reforge_Ingredient_Templates(1,_BranchTemplate);
+DB_KELA_Reforge_Ingredient_Templates(1,_BronzeTemplate);
+DB_KELA_Get_Ingredients_For_Forging(1);
+DB_NOOP(1);
+// 
+// BRANCH BRONZE BRONZE
+QRY
+QRY_KELA_Get_Ingredients_For_Forging((ITEM)_ReforgeHelper)
+AND
+GetHostCharacter(_Player)
+AND
+DB_KELA_Current_Templates(_Ingredients,_,_,_,_)
+AND
+_Ingredients == "Branch_Bronze_Bronze"
+AND
+DB_KELA_Reforge_Ingredients(_BranchTemplate,_BronzeTemplate,_,_,_,_,_,_,_)
+AND
+GetItemByTemplateInInventory(_BranchTemplate,_ReforgeHelper,_)
+AND
+GetItemByTemplateInInventory(_BronzeTemplate,_ReforgeHelper,_)
+THEN
+DB_KELA_Reforge_Ingredient_Templates(2,_BranchTemplate);
+DB_KELA_Reforge_Ingredient_Templates(1,_BronzeTemplate);
+DB_KELA_Get_Ingredients_For_Forging(1);
+DB_NOOP(1);
+// 
+// BRANCH BRONZE STRIPS
+QRY
+QRY_KELA_Get_Ingredients_For_Forging((ITEM)_ReforgeHelper)
+AND
+GetHostCharacter(_Player)
+AND
+DB_KELA_Current_Templates(_Ingredients,_,_,_,_)
+AND
+_Ingredients == "Branch_Bronze_Strips"
+AND
+DB_KELA_Reforge_Ingredients(_BranchTemplate_,_BronzeTemplate,_,_,_StripsTemplate,_,_,_,_)
+AND
+GetItemByTemplateInInventory(_BranchTemplate_,_ReforgeHelper,_)
+AND
+GetItemByTemplateInInventory(_BronzeTemplate,_ReforgeHelper,_)
+AND
+GetItemByTemplateInInventory(_StripsTemplate,_ReforgeHelper,_)
+THEN
+DB_KELA_Reforge_Ingredient_Templates(1,_BranchTemplate_);
+DB_KELA_Reforge_Ingredient_Templates(1,_BronzeTemplate);
+DB_KELA_Reforge_Ingredient_Templates(1,_StripsTemplate);
+DB_KELA_Get_Ingredients_For_Forging(1);
+DB_NOOP(1);
+// 
+// BRONZE STRIPS
+QRY
+QRY_KELA_Get_Ingredients_For_Forging((ITEM)_ReforgeHelper)
+AND
+GetHostCharacter(_Player)
+AND
+DB_KELA_Current_Templates(_Ingredients,_,_,_,_)
+AND
+_Ingredients == "Bronze_Strips"
+AND
+DB_KELA_Reforge_Ingredients(_,_BronzeTemplate,_,_,_StripsTemplate,_,_,_,_)
+AND
+GetItemByTemplateInInventory(_BronzeTemplate,_ReforgeHelper,_)
+AND
+GetItemByTemplateInInventory(_StripsTemplate,_ReforgeHelper,_)
+THEN
+DB_KELA_Reforge_Ingredient_Templates(1,_BronzeTemplate);
+DB_KELA_Reforge_Ingredient_Templates(1,_StripsTemplate);
+DB_KELA_Get_Ingredients_For_Forging(1);
+DB_NOOP(1);
+// 
+// BRONZE BRONZE STRIPS
+QRY
+QRY_KELA_Get_Ingredients_For_Forging((ITEM)_ReforgeHelper)
+AND
+GetHostCharacter(_Player)
+AND
+DB_KELA_Current_Templates(_Ingredients,_,_,_,_)
+AND
+_Ingredients == "Bronze_Bronze_Strips"
+AND
+DB_KELA_Reforge_Ingredients(_,_BronzeTemplate,_,_,_StripsTemplate,_,_,_,_)
+AND
+GetItemByTemplateInInventory(_BronzeTemplate,_ReforgeHelper,_)
+AND
+GetItemByTemplateInInventory(_StripsTemplate,_ReforgeHelper,_)
+THEN
+DB_KELA_Reforge_Ingredient_Templates(2,_BronzeTemplate);
+DB_KELA_Reforge_Ingredient_Templates(1,_StripsTemplate);
+DB_KELA_Get_Ingredients_For_Forging(1);
+DB_NOOP(1);
+// 
+// BRANCH BRONZE BRONZE STRIPS
+QRY
+QRY_KELA_Get_Ingredients_For_Forging((ITEM)_ReforgeHelper)
+AND
+GetHostCharacter(_Player)
+AND
+DB_KELA_Current_Templates(_Ingredients,_,_,_,_)
+AND
+_Ingredients == "Branch_Bronze_Bronze_Strips"
+AND
+DB_KELA_Reforge_Ingredients(_BranchTemplate_,_BronzeTemplate,_,_,_StripsTemplate,_,_,_,_)
+AND
+GetItemByTemplateInInventory(_BranchTemplate_,_ReforgeHelper,_)
+AND
+GetItemByTemplateInInventory(_BronzeTemplate,_ReforgeHelper,_)
+AND
+GetItemByTemplateInInventory(_StripsTemplate,_ReforgeHelper,_)
+THEN
+DB_KELA_Reforge_Ingredient_Templates(1,_BranchTemplate_);
+DB_KELA_Reforge_Ingredient_Templates(2,_BronzeTemplate);
+DB_KELA_Reforge_Ingredient_Templates(1,_StripsTemplate);
+DB_KELA_Get_Ingredients_For_Forging(1);
+DB_NOOP(1);
+// 
+// BRONZE BRONZE BRONZE STRIPS
+QRY
+QRY_KELA_Get_Ingredients_For_Forging((ITEM)_ReforgeHelper)
+AND
+GetHostCharacter(_Player)
+AND
+DB_KELA_Current_Templates(_Ingredients,_,_,_,_)
+AND
+_Ingredients == "Bronze_Bronze_Bronze_Strips"
+AND
+DB_KELA_Reforge_Ingredients(_,_BronzeTemplate,_,_,_StripsTemplate,_,_,_,_)
+AND
+GetItemByTemplateInInventory(_BronzeTemplate,_ReforgeHelper,_)
+AND
+GetItemByTemplateInInventory(_StripsTemplate,_ReforgeHelper,_)
+THEN
+DB_KELA_Reforge_Ingredient_Templates(3,_BronzeTemplate);
+DB_KELA_Reforge_Ingredient_Templates(1,_StripsTemplate);
+DB_KELA_Get_Ingredients_For_Forging(1);
+DB_NOOP(1);
+// 
+// WOOD BRONZE STRIPS
+QRY
+QRY_KELA_Get_Ingredients_For_Forging((ITEM)_ReforgeHelper)
+AND
+GetHostCharacter(_Player)
+AND
+DB_KELA_Current_Templates(_Ingredients,_,_,_,_)
+AND
+_Ingredients == "Wood_Bronze_Strips"
+AND
+DB_KELA_Reforge_Ingredients(_,_BronzeTemplate,_WoodTemplate,_,_StripsTemplate,_,_,_,_)
+AND
+GetItemByTemplateInInventory(_BronzeTemplate,_ReforgeHelper,_)
+AND
+GetItemByTemplateInInventory(_WoodTemplate,_ReforgeHelper,_)
+AND
+GetItemByTemplateInInventory(_StripsTemplate,_ReforgeHelper,_)
+THEN
+DB_KELA_Reforge_Ingredient_Templates(1,_BronzeTemplate);
+DB_KELA_Reforge_Ingredient_Templates(1,_WoodTemplate);
+DB_KELA_Reforge_Ingredient_Templates(1,_StripsTemplate);
+DB_KELA_Get_Ingredients_For_Forging(1);
+DB_NOOP(1);
+// 
+// WOOD WOOD WOOD BRONZE STRIPS
+QRY
+QRY_KELA_Get_Ingredients_For_Forging((ITEM)_ReforgeHelper)
+AND
+GetHostCharacter(_Player)
+AND
+DB_KELA_Current_Templates(_Ingredients,_,_,_,_)
+AND
+_Ingredients == "Wood_Wood_Wood_Bronze_Strips"
+AND
+DB_KELA_Reforge_Ingredients(_,_BronzeTemplate,_WoodTemplate,_,_StripsTemplate,_,_,_,_)
+AND
+GetItemByTemplateInInventory(_BronzeTemplate,_ReforgeHelper,_)
+AND
+GetItemByTemplateInInventory(_WoodTemplate,_ReforgeHelper,_)
+AND
+GetItemByTemplateInInventory(_StripsTemplate,_ReforgeHelper,_)
+THEN
+DB_KELA_Reforge_Ingredient_Templates(1,_BronzeTemplate);
+DB_KELA_Reforge_Ingredient_Templates(3,_WoodTemplate);
+DB_KELA_Reforge_Ingredient_Templates(1,_StripsTemplate);
+DB_KELA_Get_Ingredients_For_Forging(1);
+DB_NOOP(1);
+// 
+// WOOD WOOD WOOD WOOD BRONZE BRONZE STRIPS
+QRY
+QRY_KELA_Get_Ingredients_For_Forging((ITEM)_ReforgeHelper)
+AND
+GetHostCharacter(_Player)
+AND
+DB_KELA_Current_Templates(_Ingredients,_,_,_,_)
+AND
+_Ingredients == "Wood_Wood_Wood_Wood_Bronze_Bronze_Strips"
+AND
+DB_KELA_Reforge_Ingredients(_,_BronzeTemplate,_WoodTemplate,_,_StripsTemplate,_,_,_,_)
+AND
+GetItemByTemplateInInventory(_BronzeTemplate,_ReforgeHelper,_)
+AND
+GetItemByTemplateInInventory(_WoodTemplate,_ReforgeHelper,_)
+AND
+GetItemByTemplateInInventory(_StripsTemplate,_ReforgeHelper,_)
+THEN
+DB_KELA_Reforge_Ingredient_Templates(2,_BronzeTemplate);
+DB_KELA_Reforge_Ingredient_Templates(4,_WoodTemplate);
+DB_KELA_Reforge_Ingredient_Templates(1,_StripsTemplate);
+DB_KELA_Get_Ingredients_For_Forging(1);
+DB_NOOP(1);
+// 
+// WOOD BRONZE 
+QRY
+QRY_KELA_Get_Ingredients_For_Forging((ITEM)_ReforgeHelper)
+AND
+GetHostCharacter(_Player)
+AND
+DB_KELA_Current_Templates(_Ingredients,_,_,_,_)
+AND
+_Ingredients == "Wood_Bronze"
+AND
+DB_KELA_Reforge_Ingredients(_,_BronzeTemplate,_WoodTemplate,_,_,_,_,_,_)
+AND
+GetItemByTemplateInInventory(_BronzeTemplate,_ReforgeHelper,_)
+AND
+GetItemByTemplateInInventory(_WoodTemplate,_ReforgeHelper,_)
+THEN
+DB_KELA_Reforge_Ingredient_Templates(1,_BronzeTemplate);
+DB_KELA_Reforge_Ingredient_Templates(1,_WoodTemplate);
+DB_KELA_Get_Ingredients_For_Forging(1);
+DB_NOOP(1);
+// 
+// WOOD BRONZE ROPE 1
+QRY
+QRY_KELA_Get_Ingredients_For_Forging((ITEM)_ReforgeHelper)
+AND
+GetHostCharacter(_Player)
+AND
+DB_KELA_Current_Templates(_Ingredients,_,_,_,_)
+AND
+_Ingredients == "Wood_Bronze_Rope"
+AND
+DB_KELA_Reforge_Ingredients(_,_BronzeTemplate,_WoodTemplate,_,_,_,_RopeTemplate,_,_)
+AND
+GetItemByTemplateInInventory(_BronzeTemplate,_ReforgeHelper,_)
+AND
+GetItemByTemplateInInventory(_WoodTemplate,_ReforgeHelper,_)
+AND
+GetItemByTemplateInInventory(_RopeTemplate,_ReforgeHelper,_)
+THEN
+DB_KELA_Reforge_Ingredient_Templates(1,_BronzeTemplate);
+DB_KELA_Reforge_Ingredient_Templates(1,_WoodTemplate);
+DB_KELA_Reforge_Ingredient_Templates(1,_RopeTemplate);
+DB_KELA_Get_Ingredients_For_Forging(1);
+DB_NOOP(1);
+// 
+// WOOD BRONZE ROPE 2
+QRY
+QRY_KELA_Get_Ingredients_For_Forging((ITEM)_ReforgeHelper)
+AND
+GetHostCharacter(_Player)
+AND
+DB_KELA_Current_Templates(_Ingredients,_,_,_,_)
+AND
+_Ingredients == "Wood_Bronze_Rope"
+AND
+DB_KELA_Reforge_Ingredients(_,_BronzeTemplate,_WoodTemplate,_,_,_,_,_RopeTemplate,_)
+AND
+GetItemByTemplateInInventory(_BronzeTemplate,_ReforgeHelper,_)
+AND
+GetItemByTemplateInInventory(_WoodTemplate,_ReforgeHelper,_)
+AND
+GetItemByTemplateInInventory(_RopeTemplate,_ReforgeHelper,_)
+AND
+NOT DB_KELA_Get_Ingredients_For_Forging(1)
+THEN
+DB_KELA_Reforge_Ingredient_Templates(1,_BronzeTemplate);
+DB_KELA_Reforge_Ingredient_Templates(1,_WoodTemplate);
+DB_KELA_Reforge_Ingredient_Templates(1,_RopeTemplate);
+DB_KELA_Get_Ingredients_For_Forging(1);
+DB_NOOP(1);
+// 
+// WOOD BRONZE BRONZE ROPE 1
+QRY
+QRY_KELA_Get_Ingredients_For_Forging((ITEM)_ReforgeHelper)
+AND
+GetHostCharacter(_Player)
+AND
+DB_KELA_Current_Templates(_Ingredients,_,_,_,_)
+AND
+_Ingredients == "Wood_Bronze_Bronze_Rope"
+AND
+DB_KELA_Reforge_Ingredients(_,_BronzeTemplate,_WoodTemplate,_,_,_,_RopeTemplate,_,_)
+AND
+GetItemByTemplateInInventory(_BronzeTemplate,_ReforgeHelper,_)
+AND
+GetItemByTemplateInInventory(_WoodTemplate,_ReforgeHelper,_)
+AND
+GetItemByTemplateInInventory(_RopeTemplate,_ReforgeHelper,_)
+THEN
+DB_KELA_Reforge_Ingredient_Templates(2,_BronzeTemplate);
+DB_KELA_Reforge_Ingredient_Templates(1,_WoodTemplate);
+DB_KELA_Reforge_Ingredient_Templates(1,_RopeTemplate);
+DB_KELA_Get_Ingredients_For_Forging(1);
+DB_NOOP(1);
+// 
+// WOOD BRONZE BRONZE ROPE 2
+QRY
+QRY_KELA_Get_Ingredients_For_Forging((ITEM)_ReforgeHelper)
+AND
+GetHostCharacter(_Player)
+AND
+DB_KELA_Current_Templates(_Ingredients,_,_,_,_)
+AND
+_Ingredients == "Wood_Bronze_Bronze_Rope"
+AND
+DB_KELA_Reforge_Ingredients(_,_BronzeTemplate,_WoodTemplate,_,_,_,_,_RopeTemplate,_)
+AND
+GetItemByTemplateInInventory(_BronzeTemplate,_ReforgeHelper,_)
+AND
+GetItemByTemplateInInventory(_WoodTemplate,_ReforgeHelper,_)
+AND
+GetItemByTemplateInInventory(_RopeTemplate,_ReforgeHelper,_)
+AND
+NOT DB_KELA_Get_Ingredients_For_Forging(1)
+THEN
+DB_KELA_Reforge_Ingredient_Templates(2,_BronzeTemplate);
+DB_KELA_Reforge_Ingredient_Templates(1,_WoodTemplate);
+DB_KELA_Reforge_Ingredient_Templates(1,_RopeTemplate);
+DB_KELA_Get_Ingredients_For_Forging(1);
+DB_NOOP(1);
+// 
+// BRONZE FEATHER
+QRY
+QRY_KELA_Get_Ingredients_For_Forging((ITEM)_ReforgeHelper)
+AND
+GetHostCharacter(_Player)
+AND
+DB_KELA_Current_Templates(_Ingredients,_,_,_,_)
+AND
+_Ingredients == "Bronze_Feather"
+AND
+DB_KELA_Reforge_Ingredients(_,_BronzeTemplate,_,_,_,_FeatherTemplate,_,_,_)
+AND
+GetItemByTemplateInInventory(_BronzeTemplate,_ReforgeHelper,_)
+AND
+GetItemByTemplateInInventory(_FeatherTemplate,_ReforgeHelper,_)
+THEN
+DB_KELA_Reforge_Ingredient_Templates(1,_BronzeTemplate);
+DB_KELA_Reforge_Ingredient_Templates(1,_FeatherTemplate);
+DB_KELA_Get_Ingredients_For_Forging(1);
+DB_NOOP(1);
+// 
+// LEATHER STRIPS
+QRY
+QRY_KELA_Get_Ingredients_For_Forging((ITEM)_ReforgeHelper)
+AND
+GetHostCharacter(_Player)
+AND
+DB_KELA_Current_Templates(_Ingredients,_,_,_,_)
+AND
+_Ingredients == "Leather_Strips"
+AND
+DB_KELA_Reforge_Ingredients(_,_,_,_LeatherTempalte,_StripsTemplate,_,_,_,_)
+AND
+GetItemByTemplateInInventory(_LeatherTempalte,_ReforgeHelper,_)
+AND
+GetItemByTemplateInInventory(_StripsTemplate,_ReforgeHelper,_)
+THEN
+DB_KELA_Reforge_Ingredient_Templates(1,_LeatherTempalte);
+DB_KELA_Reforge_Ingredient_Templates(1,_StripsTemplate);
+DB_KELA_Get_Ingredients_For_Forging(1);
+DB_NOOP(1);
+// 
+// LEATHER LEATHER STRIPS
+QRY
+QRY_KELA_Get_Ingredients_For_Forging((ITEM)_ReforgeHelper)
+AND
+GetHostCharacter(_Player)
+AND
+DB_KELA_Current_Templates(_Ingredients,_,_,_,_)
+AND
+_Ingredients == "Leather_Leather_Strips"
+AND
+DB_KELA_Reforge_Ingredients(_,_,_,_LeatherTempalte,_StripsTemplate,_,_,_,_)
+AND
+GetItemByTemplateInInventory(_LeatherTempalte,_ReforgeHelper,_)
+AND
+GetItemByTemplateInInventory(_StripsTemplate,_ReforgeHelper,_)
+THEN
+DB_KELA_Reforge_Ingredient_Templates(2,_LeatherTempalte);
+DB_KELA_Reforge_Ingredient_Templates(1,_StripsTemplate);
+DB_KELA_Get_Ingredients_For_Forging(1);
+DB_NOOP(1);
+// 
+// WOLFHIDE LEATHER LEATHER STRIPS
+QRY
+QRY_KELA_Get_Ingredients_For_Forging((ITEM)_ReforgeHelper)
+AND
+GetHostCharacter(_Player)
+AND
+DB_KELA_Current_Templates(_Ingredients,_,_,_,_)
+AND
+_Ingredients == "WolfHide_Leather_Leather_Strips"
+AND
+DB_KELA_Reforge_Ingredients(_,_,_,_LeatherTempalte,_StripsTemplate,_,_,_,_WolfHideTemplate)
+AND
+GetItemByTemplateInInventory(_LeatherTempalte,_ReforgeHelper,_)
+AND
+GetItemByTemplateInInventory(_StripsTemplate,_ReforgeHelper,_)
+AND
+GetItemByTemplateInInventory(_WolfHideTemplate,_ReforgeHelper,_)
+THEN
+DB_KELA_Reforge_Ingredient_Templates(2,_LeatherTempalte);
+DB_KELA_Reforge_Ingredient_Templates(1,_StripsTemplate);
+DB_KELA_Reforge_Ingredient_Templates(1,_WolfHideTemplate);
+DB_KELA_Get_Ingredients_For_Forging(1);
+DB_NOOP(1);
+// 
+// BRONZE LEATHER STRIPS
+QRY
+QRY_KELA_Get_Ingredients_For_Forging((ITEM)_ReforgeHelper)
+AND
+GetHostCharacter(_Player)
+AND
+DB_KELA_Current_Templates(_Ingredients,_,_,_,_)
+AND
+_Ingredients == "Bronze_Leather_Strips"
+AND
+DB_KELA_Reforge_Ingredients(_,_BronzeTemplate,_,_LeatherTempalte,_StripsTemplate,_,_,_,_)
+AND
+GetItemByTemplateInInventory(_BronzeTemplate,_ReforgeHelper,_)
+AND
+GetItemByTemplateInInventory(_LeatherTempalte,_ReforgeHelper,_)
+AND
+GetItemByTemplateInInventory(_StripsTemplate,_ReforgeHelper,_)
+THEN
+DB_KELA_Reforge_Ingredient_Templates(1,_BronzeTemplate);
+DB_KELA_Reforge_Ingredient_Templates(1,_LeatherTempalte);
+DB_KELA_Reforge_Ingredient_Templates(1,_StripsTemplate);
+DB_KELA_Get_Ingredients_For_Forging(1);
+DB_NOOP(1);
+// 
+// BRONZE BRONZE LEATHER STRIPS
+QRY
+QRY_KELA_Get_Ingredients_For_Forging((ITEM)_ReforgeHelper)
+AND
+GetHostCharacter(_Player)
+AND
+DB_KELA_Current_Templates(_Ingredients,_,_,_,_)
+AND
+_Ingredients == "Bronze_Bronze_Leather_Strips"
+AND
+DB_KELA_Reforge_Ingredients(_,_BronzeTemplate,_,_LeatherTempalte,_StripsTemplate,_,_,_,_)
+AND
+GetItemByTemplateInInventory(_BronzeTemplate,_ReforgeHelper,_)
+AND
+GetItemByTemplateInInventory(_LeatherTempalte,_ReforgeHelper,_)
+AND
+GetItemByTemplateInInventory(_StripsTemplate,_ReforgeHelper,_)
+THEN
+DB_KELA_Reforge_Ingredient_Templates(2,_BronzeTemplate);
+DB_KELA_Reforge_Ingredient_Templates(1,_LeatherTempalte);
+DB_KELA_Reforge_Ingredient_Templates(1,_StripsTemplate);
+DB_KELA_Get_Ingredients_For_Forging(1);
+DB_NOOP(1);
+// 
+// BRONZE BRONZE BRONZE LEATHER STRIPS
+QRY
+QRY_KELA_Get_Ingredients_For_Forging((ITEM)_ReforgeHelper)
+AND
+GetHostCharacter(_Player)
+AND
+DB_KELA_Current_Templates(_Ingredients,_,_,_,_)
+AND
+_Ingredients == "Bronze_Bronze_Bronze_Leather_Strips"
+AND
+DB_KELA_Reforge_Ingredients(_,_BronzeTemplate,_,_LeatherTempalte,_StripsTemplate,_,_,_,_)
+AND
+GetItemByTemplateInInventory(_BronzeTemplate,_ReforgeHelper,_)
+AND
+GetItemByTemplateInInventory(_LeatherTempalte,_ReforgeHelper,_)
+AND
+GetItemByTemplateInInventory(_StripsTemplate,_ReforgeHelper,_)
+THEN
+DB_KELA_Reforge_Ingredient_Templates(3,_BronzeTemplate);
+DB_KELA_Reforge_Ingredient_Templates(1,_LeatherTempalte);
+DB_KELA_Reforge_Ingredient_Templates(1,_StripsTemplate);
+DB_KELA_Get_Ingredients_For_Forging(1);
+DB_NOOP(1);
+// 
+// BRONZE LEATHER LEATHER STRIPS
+QRY
+QRY_KELA_Get_Ingredients_For_Forging((ITEM)_ReforgeHelper)
+AND
+GetHostCharacter(_Player)
+AND
+DB_KELA_Current_Templates(_Ingredients,_,_,_,_)
+AND
+_Ingredients == "Bronze_Leather_Leather_Strips"
+AND
+DB_KELA_Reforge_Ingredients(_,_BronzeTemplate,_,_LeatherTempalte,_StripsTemplate,_,_,_,_)
+AND
+GetItemByTemplateInInventory(_BronzeTemplate,_ReforgeHelper,_)
+AND
+GetItemByTemplateInInventory(_LeatherTempalte,_ReforgeHelper,_)
+AND
+GetItemByTemplateInInventory(_StripsTemplate,_ReforgeHelper,_)
+THEN
+DB_KELA_Reforge_Ingredient_Templates(1,_BronzeTemplate);
+DB_KELA_Reforge_Ingredient_Templates(2,_LeatherTempalte);
+DB_KELA_Reforge_Ingredient_Templates(1,_StripsTemplate);
+DB_KELA_Get_Ingredients_For_Forging(1);
+DB_NOOP(1);
+//
+//----------------------------------------------------------------
+// TECHNICAL 
+//----------------------------------------------------------------
+//
+// Singleton for tracking not ranged for elven
+IF
+DB_KELA_Not_Ranged_For_Elven(_NewState)
+AND
+DB_KELA_Not_Ranged_For_Elven(_OldState)
+AND
+_NewState != _OldState
+AND 
+_NewState != 0 // If 0 then found elven tag
+THEN
+NOT DB_KELA_Not_Ranged_For_Elven(_OldState);
+//
+//----------------------------------------------------------------
+//
+// Singleton for tracking template by level
+IF
+DB_KELA_Template_By_Level(_NewState)
+AND
+DB_KELA_Template_By_Level(_OldState)
+AND
+_NewState != _OldState
+THEN
+NOT DB_KELA_Template_By_Level(_OldState);
+//
+//----------------------------------------------------------------
+//
+//
+//----------------------------------------------------------------
+//
+//END_REGION
+EXITSECTION
+
+ENDEXITSECTION
+ParentTargetEdge "GLO_KelaCraftProject"

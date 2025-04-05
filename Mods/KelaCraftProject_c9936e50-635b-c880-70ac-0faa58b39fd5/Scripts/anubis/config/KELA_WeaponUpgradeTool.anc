@@ -1,0 +1,5 @@
+game.configs.KELA_WeaponUpgradeTool = Config{
+    root=StateRef{game.roots.DefaultItem,
+        idle = StateRef{game.states.KELA_WeaponUpgradeTool},
+    }
+}

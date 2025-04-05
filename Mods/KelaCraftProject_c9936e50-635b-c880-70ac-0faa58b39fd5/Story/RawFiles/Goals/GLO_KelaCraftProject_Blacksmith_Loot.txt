@@ -1,0 +1,465 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+//------------------------------------------
+// PLANKS SOURCE
+//------------------------------------------
+DB_KELA_Loot_WoodenPlankSimple((ITEMROOT)LOOT_KELA_Plank_Simple_A_7d159582-c9eb-4e08-971c-375e14d0df7d);
+
+// Simple barrels
+// (Min Chances for simple, durable, hard planks, item template)
+DB_KELA_Planks_ItemRoots(1,50,(ITEMROOT)CONT_Barrel_A_1849ce97-45ac-43ea-9518-9f80aaa0c005);
+DB_KELA_Planks_ItemRoots(1,50,(ITEMROOT)CONT_Barrel_D_9aa7cfd1-11d2-4ff7-8bab-7589b99c506b);
+DB_KELA_Planks_ItemRoots(1,50,(ITEMROOT)CONT_Emerald_Enclave_Barrel_A_a33821bb-c608-451c-8048-7d4dedf24b83);
+DB_KELA_Planks_ItemRoots(1,50,(ITEMROOT)CONT_Barrel_D_9aa7cfd1-11d2-4ff7-8bab-7589b99c506b);
+DB_KELA_Planks_ItemRoots(1,50,(ITEMROOT)CONT_Barrel_A_1849ce97-45ac-43ea-9518-9f80aaa0c005);
+DB_KELA_Planks_ItemRoots(1,50,(ITEMROOT)DEC_HAR_Fish_Barrel_B_ca57029e-5fdb-476f-ba55-1a6ebad00f29);
+DB_KELA_Planks_ItemRoots(1,50,(ITEMROOT)DEC_HAR_Fish_Barrel_A_868930ee-6352-4071-8939-7f6a9a8498c5);
+
+// Simple chests
+DB_KELA_Planks_ItemRoots(1,30,(ITEMROOT)CONT_GEN_Chest_Wood_A_5f089bb9-1816-43b8-8e44-f2d58804ea23);
+DB_KELA_Planks_ItemRoots(1,30,(ITEMROOT)CONT_GEN_Chest_Wood_B_bcab5511-8b7a-4f15-be35-e7f1771caf70);
+
+// Hard chests
+DB_KELA_Planks_ItemRoots(1,30,(ITEMROOT)CONT_GEN_Chest_Common_A_abc4056e-f96d-473c-bfa8-0da70b8d2d8a);
+DB_KELA_Planks_ItemRoots(1,30,(ITEMROOT)CONT_GEN_Chest_Common_A_Digging_338e7253-5336-4b73-9dad-328f3ce5f9bb);
+DB_KELA_Planks_ItemRoots(1,30,(ITEMROOT)CONT_GEN_Chest_Common_A_small_A_8c5f95d0-64d7-48ce-a871-48cd43c1e019);
+DB_KELA_Planks_ItemRoots(1,30,(ITEMROOT)CONT_GEN_Chest_Common_B_335571b1-0d14-49df-bf02-af286c99ad97);
+DB_KELA_Planks_ItemRoots(1,30,(ITEMROOT)CONT_GEN_Chest_Common_B_Small_A_3339e045-a078-407b-9fb8-2af0d297e62a);
+DB_KELA_Planks_ItemRoots(2,30,(ITEMROOT)CONT_GEN_Chest_Heavy_A_0b90bf9d-66fd-4741-be1f-39181efca97a);
+DB_KELA_Planks_ItemRoots(1,30,(ITEMROOT)CONT_GEN_Chest_Heavy_A_Small_A_e08b2a75-424d-4827-a9c8-adf00a314f2b);
+
+// Benches
+DB_KELA_Planks_ItemRoots(2,50,(ITEMROOT)FUR_GEN_Tavern_Bench_Wood_Old_A_8610207c-1744-462d-96ee-a13bf1eae186);
+DB_KELA_Planks_ItemRoots(2,50,(ITEMROOT)FUR_GEN_Tavern_Bench_Wood_A_0c45283d-7bd9-4e27-9c27-2028f6f71771);
+DB_KELA_Planks_ItemRoots(2,50,(ITEMROOT)FUR_GEN_Bench_Wood_Poor_A_179cbd4f-71ec-4dbf-8746-be050b03408b);
+
+// Walls and Gates
+DB_KELA_Planks_ItemRoots(3,50,(ITEMROOT)QUEST_PLA_Platform_Wood_4W4D_A_1dcc46e4-ca45-4ca6-b7ad-0158847290c1);
+DB_KELA_Planks_ItemRoots(3,40,(ITEMROOT)DOOR_Double_Medium_Village_House_A_b7b43bfd-bf29-4862-ab60-b7adb8713804);
+DB_KELA_Planks_ItemRoots(3,45,(ITEMROOT)DOOR_Double_Medium_Village_Gate_A_d165af14-9d3a-456b-9783-48b5660bb6c7);
+DB_KELA_Planks_ItemRoots(5,40,(ITEMROOT)DOOR_City_Wooden_House_Secret_Sliding_A_2db289b0-bad5-4145-b35a-938ee93ba90e);
+DB_KELA_Planks_ItemRoots(3,50,(ITEMROOT)BLD_Goblins_Scaffolding_Wood_Boulder_A_0ba6dd19-ba11-4aec-9ef3-ac52ad00bf6b);
+
+// Rare
+DB_KELA_Planks_ItemRoots(2,30,(ITEMROOT)CONT_Alchemy_Machine_Barrel_A_66d35c3c-1d04-4a39-97b2-00c7ec03dec4);
+DB_KELA_Planks_ItemRoots(5,30,(ITEMROOT)BLD_Tavern_Barrel_Wine_A_Dirty_A_ea88e966-92fb-4dba-9059-61289eae8c70);
+DB_KELA_Planks_ItemRoots(5,30,(ITEMROOT)FUR_GEN_Tavern_Barrel_Wine_A_Dirty_A_Broken_A_1f9f165c-9b67-4b62-b188-e6ff4225f371);
+DB_KELA_Planks_ItemRoots(1,30,(ITEMROOT)CONT_GTY_Chest_B_c8829f73-f92e-4b59-88a9-8e186b667836);
+DB_KELA_Planks_ItemRoots(1,30,(ITEMROOT)CONT_GTY_Chest_C_3a4997c3-a1b7-4afd-8bc4-c74d9f1f8cee);
+DB_KELA_Planks_ItemRoots(1,30,(ITEMROOT)CONT_GTY_Barrel_A_4964192d-2cf5-4099-9d78-ee6ce48b40f7);
+DB_KELA_Planks_ItemRoots(1,30,(ITEMROOT)CONT_Barrel_Oil_A_72e3f454-5a68-4bb2-acef-7b8d595b5015);
+DB_KELA_Planks_ItemRoots(1,30,(ITEMROOT)CONT_Barrel_Oil_Trapped_A_9e23c365-e86c-4980-bf2a-812fcb1fdc7a);
+DB_KELA_Planks_ItemRoots(1,30,(ITEMROOT)CONT_Barrel_Alcohol_A_79050068-7ce3-43f9-a9a3-1646f5eb39c3);
+
+//------------------------------------------
+// BRACHES SOURCE
+//------------------------------------------
+DB_KELA_Loot_WoodenBranchSimple((ITEMROOT)LOOT_KELA_Branch_Simple_A_8d49ae84-e4bf-4525-8a63-4fe3cc72ea26);
+
+DB_KELA_Branches_ItemRoots(2,40,(ITEMROOT)BLD_Goblins_Scaffolding_Wood_Boulder_A_0ba6dd19-ba11-4aec-9ef3-ac52ad00bf6b);
+DB_KELA_Branches_ItemRoots(1,40,(ITEMROOT)BLD_Goblins_Scaffolding_Wood_12H_4W_A_Destruct_Target_96b6edfc-e1c7-4349-b3ac-ef3ca63440c2);
+DB_KELA_Branches_ItemRoots(1,40,(ITEMROOT)BLD_Goblins_Scaffolding_Wood_12H_5W_A_Destruct_Target_9965ef72-5c67-4ed8-9bf2-0d0b1359e6a7);
+DB_KELA_Branches_ItemRoots(1,40,(ITEMROOT)BLD_Goblins_Scaffolding_Wood_4H_4W_A_Destruct_Target_2493ce27-1bf3-473b-821a-f0eebddd34a2);
+KBSECTION
+//-----------------------------------------
+// BY DB_KELA
+//-----------------------------------------
+//
+// Planks
+IF
+TemplateDestroyedBy(_DestroyedItemRoot, _DestroyedItem, _, _Destroyer, _)
+AND 
+DB_KELA_Planks_ItemRoots(_Count,_MinSimple,_DestroyedItemRoot)
+AND
+_Count == 1
+AND
+Random(100,_Chance)
+THEN
+//SetDualEntityEvent(_Destroyer,_Destroyer,"TemplateDestroyedBy");
+DB_KELA_WoodenPlank_Chance(_Chance);
+PROC_KELA_Give_WoodenPlank_By_Chance(_MinSimple,_DestroyedItem);
+//
+IF
+TemplateDestroyedBy(_DestroyedItemRoot, _DestroyedItem, _, _Destroyer, _)
+AND 
+DB_KELA_Planks_ItemRoots(_Count,_MinSimple,_DestroyedItemRoot)
+AND
+_Count == 2
+AND
+Random(100,_Chance1)
+AND
+Random(100,_Chance2)
+THEN
+//SetDualEntityEvent(_Destroyer,_Destroyer,"TemplateDestroyedBy");
+DB_KELA_WoodenPlank_Chance(_Chance1);
+DB_KELA_WoodenPlank_Chance(_Chance2);
+PROC_KELA_Give_WoodenPlank_By_Chance(_MinSimple,_DestroyedItem);
+//
+IF
+TemplateDestroyedBy(_DestroyedItemRoot, _DestroyedItem, _, _Destroyer, _)
+AND 
+DB_KELA_Planks_ItemRoots(_Count,_MinSimple,_DestroyedItemRoot)
+AND
+_Count == 3
+AND
+Random(100,_Chance1)
+AND
+Random(100,_Chance2)
+AND
+Random(100,_Chance3)
+THEN
+//SetDualEntityEvent(_Destroyer,_Destroyer,"TemplateDestroyedBy");
+DB_KELA_WoodenPlank_Chance(_Chance1);
+DB_KELA_WoodenPlank_Chance(_Chance2);
+DB_KELA_WoodenPlank_Chance(_Chance3);
+PROC_KELA_Give_WoodenPlank_By_Chance(_MinSimple,_DestroyedItem);
+//
+IF
+TemplateDestroyedBy(_DestroyedItemRoot, _DestroyedItem, _, _Destroyer, _)
+AND 
+DB_KELA_Planks_ItemRoots(_Count,_MinSimple,_DestroyedItemRoot)
+AND
+_Count == 4
+AND
+Random(100,_Chance1)
+AND
+Random(100,_Chance2)
+AND
+Random(100,_Chance3)
+AND
+Random(100,_Chance4)
+THEN
+//SetDualEntityEvent(_Destroyer,_Destroyer,"TemplateDestroyedBy");
+DB_KELA_WoodenPlank_Chance(_Chance1);
+DB_KELA_WoodenPlank_Chance(_Chance2);
+DB_KELA_WoodenPlank_Chance(_Chance3);
+DB_KELA_WoodenPlank_Chance(_Chance4);
+PROC_KELA_Give_WoodenPlank_By_Chance(_MinSimple,_DestroyedItem);
+//
+IF
+TemplateDestroyedBy(_DestroyedItemRoot, _DestroyedItem, _, _Destroyer, _)
+AND 
+DB_KELA_Planks_ItemRoots(_Count,_MinSimple,_DestroyedItemRoot)
+AND
+_Count == 5
+AND
+Random(100,_Chance1)
+AND
+Random(100,_Chance2)
+AND
+Random(100,_Chance3)
+AND
+Random(100,_Chance4)
+AND
+Random(100,_Chance5)
+THEN
+//SetDualEntityEvent(_Destroyer,_Destroyer,"TemplateDestroyedBy");
+DB_KELA_WoodenPlank_Chance(_Chance1);
+DB_KELA_WoodenPlank_Chance(_Chance2);
+DB_KELA_WoodenPlank_Chance(_Chance3);
+DB_KELA_WoodenPlank_Chance(_Chance4);
+DB_KELA_WoodenPlank_Chance(_Chance5);
+PROC_KELA_Give_WoodenPlank_By_Chance(_MinSimple,_DestroyedItem);
+//
+// Branches
+IF
+TemplateDestroyedBy(_DestroyedItemRoot, _DestroyedItem, _, _Destroyer, _)
+AND 
+DB_KELA_Branches_ItemRoots(_Count,_MinSimple,_DestroyedItemRoot)
+AND
+_Count == 1
+AND
+Random(100,_Chance)
+THEN
+//SetDualEntityEvent(_Destroyer,_Destroyer,"TemplateDestroyedBy 1");
+DB_KELA_WoodenBranch_Chance(_Chance);
+PROC_KELA_Give_WoodenBranch_By_Chance(_MinSimple,_DestroyedItem);
+//
+IF
+TemplateDestroyedBy(_DestroyedItemRoot, _DestroyedItem, _, _Destroyer, _)
+AND 
+DB_KELA_Branches_ItemRoots(_Count,_MinSimple,_DestroyedItemRoot)
+AND
+_Count == 2
+AND
+Random(100,_Chance1)
+AND
+Random(100,_Chance2)
+THEN
+//SetDualEntityEvent(_Destroyer,_Destroyer,"TemplateDestroyedBy 2");
+DB_KELA_WoodenBranch_Chance(_Chance1);
+DB_KELA_WoodenBranch_Chance(_Chance2);
+PROC_KELA_Give_WoodenBranch_By_Chance(_MinSimple,_DestroyedItem);
+//
+IF
+TemplateDestroyedBy(_DestroyedItemRoot, _DestroyedItem, _, _Destroyer, _)
+AND 
+DB_KELA_Branches_ItemRoots(_Count,_MinSimple,_DestroyedItemRoot)
+AND
+_Count == 3
+AND
+Random(100,_Chance1)
+AND
+Random(100,_Chance2)
+AND
+Random(100,_Chance3)
+THEN
+//SetDualEntityEvent(_Destroyer,_Destroyer,"TemplateDestroyedBy 3");
+DB_KELA_WoodenBranch_Chance(_Chance1);
+DB_KELA_WoodenBranch_Chance(_Chance2);
+DB_KELA_WoodenBranch_Chance(_Chance3);
+PROC_KELA_Give_WoodenBranch_By_Chance(_MinSimple,_DestroyedItem);
+//
+IF
+TemplateDestroyedBy(_DestroyedItemRoot, _DestroyedItem, _, _Destroyer, _)
+AND 
+DB_KELA_Branches_ItemRoots(_Count,_MinSimple,_DestroyedItemRoot)
+AND
+_Count == 4
+AND
+Random(100,_Chance1)
+AND
+Random(100,_Chance2)
+AND
+Random(100,_Chance3)
+AND
+Random(100,_Chance4)
+THEN
+//SetDualEntityEvent(_Destroyer,_Destroyer,"TemplateDestroyedBy 3");
+DB_KELA_WoodenBranch_Chance(_Chance1);
+DB_KELA_WoodenBranch_Chance(_Chance2);
+DB_KELA_WoodenBranch_Chance(_Chance3);
+DB_KELA_WoodenBranch_Chance(_Chance4);
+PROC_KELA_Give_WoodenBranch_By_Chance(_MinSimple,_DestroyedItem);
+//
+IF
+TemplateDestroyedBy(_DestroyedItemRoot, _DestroyedItem, _, _Destroyer, _)
+AND 
+DB_KELA_Branches_ItemRoots(_Count,_MinSimple,_DestroyedItemRoot)
+AND
+_Count == 5
+AND
+Random(100,_Chance1)
+AND
+Random(100,_Chance2)
+AND
+Random(100,_Chance3)
+AND
+Random(100,_Chance4)
+AND
+Random(100,_Chance5)
+THEN
+//SetDualEntityEvent(_Destroyer,_Destroyer,"TemplateDestroyedBy 3");
+DB_KELA_WoodenBranch_Chance(_Chance1);
+DB_KELA_WoodenBranch_Chance(_Chance2);
+DB_KELA_WoodenBranch_Chance(_Chance3);
+DB_KELA_WoodenBranch_Chance(_Chance4);
+DB_KELA_WoodenBranch_Chance(_Chance5);
+PROC_KELA_Give_WoodenBranch_By_Chance(_MinSimple,_DestroyedItem);
+
+
+//-----------------------------------------
+// BY stats 
+//-----------------------------------------
+//
+// BARRICADES
+//
+IF
+DestroyedBy(_DestroyedItem, (CHARACTER)_Destroyer, _, _)
+AND
+GetStatString(_DestroyedItem, _Stats)
+AND 
+_Stats == "OBJ_Barricade_Wood"
+AND
+Random(100,_Chance1)
+AND
+Random(100,_Chance2)
+AND
+Random(100,_Chance3)
+THEN
+//SetDualEntityEvent(_Destroyer,_Destroyer,"DestroyedBy OBJ_Barricade_Wood");
+DB_KELA_WoodenPlank_Chance(_Chance1);
+DB_KELA_WoodenPlank_Chance(_Chance2);
+DB_KELA_WoodenPlank_Chance(_Chance3);
+PROC_KELA_Give_WoodenPlank_By_Chance(40,_DestroyedItem);
+DB_KELA_WoodenBranch_Chance(_Chance2);
+DB_KELA_WoodenBranch_Chance(_Chance3);
+PROC_KELA_Give_WoodenBranch_By_Chance(40,_DestroyedItem);
+//
+IF
+DestroyedBy(_DestroyedItem, (CHARACTER)_Destroyer, _, _)
+AND
+GetStatString(_DestroyedItem, _Stats)
+AND 
+_Stats == "OBJ_Barricade_Wood_Small"
+AND
+Random(100,_Chance1)
+AND
+Random(100,_Chance2)
+THEN
+//SetDualEntityEvent(_Destroyer,_Destroyer,"DestroyedBy OBJ_Barricade_Wood_Small");
+DB_KELA_WoodenPlank_Chance(_Chance1);
+DB_KELA_WoodenPlank_Chance(_Chance2);
+PROC_KELA_Give_WoodenPlank_By_Chance(40,_DestroyedItem);
+DB_KELA_WoodenBranch_Chance(_Chance2);
+PROC_KELA_Give_WoodenBranch_By_Chance(40,_DestroyedItem);
+//
+// COFFINS
+//
+IF
+DestroyedBy(_DestroyedItem, (CHARACTER)_Destroyer, _, _)
+AND
+GetStatString(_DestroyedItem, _Stats)
+AND 
+_Stats == "OBJ_Coffin"
+AND
+Random(100,_Chance1)
+THEN
+//SetDualEntityEvent(_Destroyer,_Destroyer,"DestroyedBy OBJ_Coffin");
+DB_KELA_WoodenPlank_Chance(_Chance1);
+PROC_KELA_Give_WoodenPlank_By_Chance(40,_DestroyedItem);
+//
+// CRATES
+//
+IF
+DestroyedBy(_DestroyedItem, (CHARACTER)_Destroyer, _, _)
+AND
+GetStatString(_DestroyedItem, _Stats)
+AND 
+_Stats == "OBJ_Crate"
+AND
+Random(100,_Chance1)
+THEN
+//SetDualEntityEvent(_Destroyer,_Destroyer,"DestroyedBy OBJ_Crate");
+DB_KELA_WoodenPlank_Chance(_Chance1);
+PROC_KELA_Give_WoodenPlank_By_Chance(60,_DestroyedItem);
+//
+IF
+DestroyedBy(_DestroyedItem, (CHARACTER)_Destroyer, _, _)
+AND
+GetStatString(_DestroyedItem, _Stats)
+AND 
+_Stats == "OBJ_Crate_Big"
+AND
+Random(100,_Chance1)
+AND
+Random(100,_Chance2)
+THEN
+//SetDualEntityEvent(_Destroyer,_Destroyer,"DestroyedBy OBJ_Crate_Big");
+DB_KELA_WoodenPlank_Chance(_Chance1);
+DB_KELA_WoodenPlank_Chance(_Chance2);
+PROC_KELA_Give_WoodenPlank_By_Chance(50,_DestroyedItem);
+//
+// BEDS
+//
+IF
+DestroyedBy(_DestroyedItem, (CHARACTER)_Destroyer, _, _)
+AND
+GetStatString(_DestroyedItem, _Stats)
+AND 
+_Stats == "OBJ_Bed"
+AND
+Random(100,_Chance1)
+THEN
+//SetDualEntityEvent(_Destroyer,_Destroyer,"DestroyedBy OBJ_Bed");
+DB_KELA_WoodenPlank_Chance(_Chance1);
+PROC_KELA_Give_WoodenPlank_By_Chance(50,_DestroyedItem);
+//
+// FALLEN TRUNKS
+//
+IF
+DestroyedBy(_DestroyedItem, (CHARACTER)_Destroyer, _, _)
+AND
+GetStatString(_DestroyedItem, _Stats)
+AND 
+_Stats == "OBJ_Bench_FallenTrunk"
+AND
+Random(100,_Chance1)
+AND
+Random(100,_Chance2)
+AND
+Random(100,_Chance3)
+THEN
+//SetDualEntityEvent(_Destroyer,_Destroyer,"DestroyedBy OBJ_Bench_FallenTrunk");
+DB_KELA_WoodenPlank_Chance(_Chance1);
+DB_KELA_WoodenPlank_Chance(_Chance2);
+PROC_KELA_Give_WoodenPlank_By_Chance(30,_DestroyedItem);
+DB_KELA_WoodenBranch_Chance(_Chance1);
+DB_KELA_WoodenBranch_Chance(_Chance2);
+DB_KELA_WoodenBranch_Chance(_Chance3);
+PROC_KELA_Give_WoodenBranch_By_Chance(30,_DestroyedItem);
+
+
+
+//-----------------------------------------
+// PLANKS
+//-----------------------------------------
+//
+// Simple plank
+PROC 
+PROC_KELA_Give_WoodenPlank_By_Chance((INTEGER)_MinSimple,(ITEM)_DestroyedItem)
+AND 
+DB_KELA_WoodenPlank_Chance(_Chance)
+AND
+DB_KELA_Loot_WoodenPlankSimple(_WoodenPlankTemplate)
+AND
+_Chance > _MinSimple
+AND
+CreateAtObject(_WoodenPlankTemplate,_DestroyedItem,0,0,"",0,_Plank)
+THEN
+NOT DB_KELA_WoodenPlank_Chance(_Chance);
+//
+// Clear chance
+PROC 
+PROC_KELA_Give_WoodenPlank_By_Chance((INTEGER)_MinSimple,(ITEM)_DestroyedItem)
+AND 
+DB_KELA_WoodenPlank_Chance(_Chance)
+THEN
+NOT DB_KELA_WoodenPlank_Chance(_Chance);
+//
+//
+//-----------------------------------------
+// PLANKS
+//-----------------------------------------
+
+//-----------------------------------------
+// BRANCHES
+//-----------------------------------------
+//
+// Simple branch
+PROC 
+PROC_KELA_Give_WoodenBranch_By_Chance((INTEGER)_MinSimple,(ITEM)_DestroyedItem)
+AND 
+DB_KELA_WoodenBranch_Chance(_Chance)
+AND
+DB_KELA_Loot_WoodenBranchSimple(_WoodenBranchTemplate)
+AND
+_Chance > _MinSimple
+AND
+CreateAtObject(_WoodenBranchTemplate,_DestroyedItem,0,0,"",0,_Branch)
+THEN
+NOT DB_KELA_WoodenBranch_Chance(_Chance);
+//
+// Clear chance
+PROC 
+PROC_KELA_Give_WoodenBranch_By_Chance((INTEGER)_MinSimple,(ITEM)_DestroyedItem)
+AND 
+DB_KELA_WoodenBranch_Chance(_Chance)
+THEN
+NOT DB_KELA_WoodenBranch_Chance(_Chance);
+//
+//
+//-----------------------------------------
+// BRANCHES
+//-----------------------------------------
+
+
+
+
+
+
+EXITSECTION
+
+ENDEXITSECTION
+ParentTargetEdge "GLO_KelaCraftProject"

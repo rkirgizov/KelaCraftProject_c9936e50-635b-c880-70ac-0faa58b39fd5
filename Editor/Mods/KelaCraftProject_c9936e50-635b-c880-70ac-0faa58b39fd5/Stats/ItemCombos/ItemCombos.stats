@@ -1,0 +1,1744 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="21465eb6-ebaf-4455-9f29-369759e000a9">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3818a7ce-ad00-4cd3-88c2-7c8fc01c2785" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_Combo_Anvil_TEMPO" />
+        <field name="Type 1" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 1" type="StringTableFieldDefinition" value="KELA_CreateTool_Anvil" />
+        <field name="Combine 1" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 1" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="Type 2" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 2" type="StringTableFieldDefinition" value="OBJ_Potion_Healing" />
+        <field name="Combine 2" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 2" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="ResultAmount 1" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Result 1" type="StringTableFieldDefinition" value="OBJ_Kit_TrapDisarm" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="205df9c3-f5cd-44c9-ba65-7b92b5896a2a" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_Combo_Workbench_Tempo" />
+        <field name="Type 1" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 1" type="StringTableFieldDefinition" value="KELA_CreateTool_Workbench" />
+        <field name="Combine 1" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 1" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="Type 2" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 2" type="StringTableFieldDefinition" value="OBJ_Potion_Healing" />
+        <field name="Combine 2" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 2" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="Type 3" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 3" type="StringTableFieldDefinition" value="OBJ_Potion_Healing" />
+        <field name="Combine 3" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 3" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="Type 4" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 4" type="StringTableFieldDefinition" value="OBJ_Potion_Healing" />
+        <field name="Combine 4" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 4" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="ResultAmount 1" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Result 1" type="StringTableFieldDefinition" value="OBJ_Kit_TrapDisarm" />
+        <field name="PreviewStatsID" type="StringTableFieldDefinition" value="OBJ_Kit_TrapDisarm" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6980819b-9c18-4167-9273-6d74a3553d39" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_Blueprint_WPN_Shortbow" />
+        <field name="Type 1" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 1" type="StringTableFieldDefinition" value="KELA_CreateTool_Workbench" />
+        <field name="Combine 1" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 1" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="Type 2" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 2" type="StringTableFieldDefinition" value="KELA_LOOT_Branch_Simple" />
+        <field name="Combine 2" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 2" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="ResultAmount 1" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Result 1" type="StringTableFieldDefinition" value="WPN_Shortbow" />
+        <field name="PreviewStatsID" type="StringTableFieldDefinition" value="WPN_Shortbow" />
+        <field name="Type 3" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 3" type="StringTableFieldDefinition" value="OBJ_Rope" />
+        <field name="Combine 3" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 3" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3fb49dab-28cc-4b33-9eea-3a43bd1831e9" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_Blueprint_WPN_Shortbow_Pier" />
+        <field name="Type 1" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 1" type="StringTableFieldDefinition" value="KELA_CreateTool_Workbench" />
+        <field name="Combine 1" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 1" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="Type 2" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 2" type="StringTableFieldDefinition" value="KELA_LOOT_Branch_Simple" />
+        <field name="Combine 2" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 2" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="ResultAmount 1" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Result 1" type="StringTableFieldDefinition" value="WPN_Shortbow" />
+        <field name="PreviewStatsID" type="StringTableFieldDefinition" value="WPN_Shortbow" />
+        <field name="Type 3" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 3" type="StringTableFieldDefinition" value="OBJ_Rope_Pier" />
+        <field name="Combine 3" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 3" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1db6141e-f122-40ce-bd9f-c8c06e96de10" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_Blueprint_Trap_Disarm" />
+        <field name="Type 1" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 1" type="StringTableFieldDefinition" value="KELA_CreateTool_Workbench" />
+        <field name="Combine 1" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 1" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="Type 2" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 2" type="StringTableFieldDefinition" value="OBJ_Kit_ThievesTools" />
+        <field name="Combine 2" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 2" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="Type 3" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 3" type="StringTableFieldDefinition" value="OBJ_Tool_Tong" />
+        <field name="Combine 3" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 3" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="ResultAmount 1" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Result 1" type="StringTableFieldDefinition" value="OBJ_Kit_TrapDisarm" />
+        <field name="PreviewStatsID" type="StringTableFieldDefinition" value="OBJ_Kit_TrapDisarm" />
+        <field name="Type 4" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 4" type="StringTableFieldDefinition" value="OBJ_Tool_Shears" />
+        <field name="Combine 4" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 4" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF5F9EA0" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c8e80acf-36f6-48ea-8322-898ddf379720" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_REFORGING" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="83cccd31-c70a-41b8-b7a2-5f7ed9dbebd5" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_Oil_Barrel_To_Bottle" />
+        <field name="Type 1" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 1" type="StringTableFieldDefinition" value="OBJ_Barrel_Filled_Oil" />
+        <field name="Combine 1" type="EnumerationTableFieldDefinition" value="Base" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 1" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="Type 2" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 2" type="StringTableFieldDefinition" value="OBJ_Bottle_For_Grease" />
+        <field name="Combine 2" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 2" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="Type 3" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 3" type="StringTableFieldDefinition" value="OBJ_Bottle_For_Grease" />
+        <field name="Combine 3" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 3" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="Type 4" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 4" type="StringTableFieldDefinition" value="OBJ_Bottle_For_Grease" />
+        <field name="Combine 4" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 4" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="Type 5" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 5" type="StringTableFieldDefinition" value="OBJ_Bottle_For_Grease" />
+        <field name="Combine 5" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 5" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="ResultAmount 1" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Result 1" type="StringTableFieldDefinition" value="OBJ_GreaseBottle" />
+        <field name="PreviewStatsID" type="StringTableFieldDefinition" value="OBJ_GreaseBottle" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c7eea4ba-e6ca-466c-bcea-b5fe0df26628" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_Tanning_Bedroll" />
+        <field name="Type 1" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 1" type="StringTableFieldDefinition" value="KELA_Tanning_Frame" />
+        <field name="Combine 1" type="EnumerationTableFieldDefinition" value="Base" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 1" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="Type 2" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 2" type="StringTableFieldDefinition" value="OBJ_GreaseBottle" />
+        <field name="Combine 2" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 2" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="ResultAmount 1" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Result 1" type="StringTableFieldDefinition" value="KELA_LOOT_Leather" />
+        <field name="Type 3" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 3" type="StringTableFieldDefinition" value="KELA_LOOT_CharCoal" />
+        <field name="Combine 3" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 3" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="Type 4" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 4" type="StringTableFieldDefinition" value="OBJ_Bedroll" />
+        <field name="Combine 4" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 4" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="PreviewStatsID" type="StringTableFieldDefinition" value="KELA_LOOT_Leather" />
+        <field name="PreviewIcon" type="StringTableFieldDefinition" value="Item_LOOT_KELA_Leather_Strips_Crafted" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6971efa3-eb5c-4c53-a81f-f675fdf7731c" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_Tanning_Cow_Hide" />
+        <field name="Type 1" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 1" type="StringTableFieldDefinition" value="KELA_Tanning_Frame" />
+        <field name="Combine 1" type="EnumerationTableFieldDefinition" value="Base" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 1" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="Type 2" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 2" type="StringTableFieldDefinition" value="OBJ_GreaseBottle" />
+        <field name="Combine 2" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 2" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="ResultAmount 1" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Result 1" type="StringTableFieldDefinition" value="KELA_LOOT_Leather" />
+        <field name="Type 3" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 3" type="StringTableFieldDefinition" value="KELA_LOOT_CharCoal" />
+        <field name="Combine 3" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 3" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="Type 4" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 4" type="StringTableFieldDefinition" value="KELA_LOOT_Cow_Hide" />
+        <field name="Combine 4" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 4" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="PreviewStatsID" type="StringTableFieldDefinition" value="KELA_LOOT_Leather" />
+        <field name="PreviewIcon" type="StringTableFieldDefinition" value="Item_LOOT_KELA_Leather_Strips_Crafted" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a63624bc-814e-489e-908a-8bac26154d6f" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_Tanning_Sheep_Hide" />
+        <field name="Type 1" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 1" type="StringTableFieldDefinition" value="KELA_Tanning_Frame" />
+        <field name="Combine 1" type="EnumerationTableFieldDefinition" value="Base" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 1" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="Type 2" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 2" type="StringTableFieldDefinition" value="OBJ_GreaseBottle" />
+        <field name="Combine 2" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 2" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="ResultAmount 1" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Result 1" type="StringTableFieldDefinition" value="KELA_LOOT_Leather" />
+        <field name="Type 3" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 3" type="StringTableFieldDefinition" value="KELA_LOOT_CharCoal" />
+        <field name="Combine 3" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 3" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="Type 4" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 4" type="StringTableFieldDefinition" value="KELA_LOOT_Sheep_Hide" />
+        <field name="Combine 4" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 4" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="PreviewStatsID" type="StringTableFieldDefinition" value="KELA_LOOT_Leather" />
+        <field name="PreviewIcon" type="StringTableFieldDefinition" value="Item_LOOT_KELA_Leather_Strips_Crafted" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3461fa93-ae60-4439-ba8a-7adac719b579" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_Tanning_Deer_Hide" />
+        <field name="Type 1" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 1" type="StringTableFieldDefinition" value="KELA_Tanning_Frame" />
+        <field name="Combine 1" type="EnumerationTableFieldDefinition" value="Base" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 1" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="Type 2" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 2" type="StringTableFieldDefinition" value="OBJ_GreaseBottle" />
+        <field name="Combine 2" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 2" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="ResultAmount 1" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Result 1" type="StringTableFieldDefinition" value="KELA_LOOT_Leather" />
+        <field name="Type 3" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 3" type="StringTableFieldDefinition" value="KELA_LOOT_CharCoal" />
+        <field name="Combine 3" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 3" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="Type 4" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 4" type="StringTableFieldDefinition" value="KELA_LOOT_Deer_Hide" />
+        <field name="Combine 4" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 4" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="PreviewStatsID" type="StringTableFieldDefinition" value="KELA_LOOT_Leather" />
+        <field name="PreviewIcon" type="StringTableFieldDefinition" value="Item_LOOT_KELA_Leather_Strips_Crafted" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4a1ba78a-641a-4f6d-a828-ffd1f8fb1eaa" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_Tanning_Wolf_Hide" />
+        <field name="Type 1" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 1" type="StringTableFieldDefinition" value="KELA_Tanning_Frame" />
+        <field name="Combine 1" type="EnumerationTableFieldDefinition" value="Base" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 1" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="Type 2" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 2" type="StringTableFieldDefinition" value="OBJ_GreaseBottle" />
+        <field name="Combine 2" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 2" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="ResultAmount 1" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Result 1" type="StringTableFieldDefinition" value="KELA_LOOT_Leather" />
+        <field name="Type 3" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 3" type="StringTableFieldDefinition" value="KELA_LOOT_CharCoal" />
+        <field name="Combine 3" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 3" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="Type 4" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 4" type="StringTableFieldDefinition" value="KELA_LOOT_Wolf_Hide" />
+        <field name="Combine 4" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 4" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="PreviewStatsID" type="StringTableFieldDefinition" value="KELA_LOOT_Leather" />
+        <field name="PreviewIcon" type="StringTableFieldDefinition" value="Item_LOOT_KELA_Leather_Strips_Crafted" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="370c0ea2-6222-4091-b0fb-224b2bb97d9f" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_Tanning_Bear_Hide" />
+        <field name="Type 1" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 1" type="StringTableFieldDefinition" value="KELA_Tanning_Frame" />
+        <field name="Combine 1" type="EnumerationTableFieldDefinition" value="Base" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 1" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="Type 2" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 2" type="StringTableFieldDefinition" value="OBJ_GreaseBottle" />
+        <field name="Combine 2" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 2" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="ResultAmount 1" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Result 1" type="StringTableFieldDefinition" value="KELA_LOOT_Leather" />
+        <field name="Type 3" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 3" type="StringTableFieldDefinition" value="KELA_LOOT_CharCoal" />
+        <field name="Combine 3" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 3" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="Type 4" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 4" type="StringTableFieldDefinition" value="KELA_LOOT_Bear_Hide" />
+        <field name="Combine 4" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 4" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="PreviewStatsID" type="StringTableFieldDefinition" value="KELA_LOOT_Leather" />
+        <field name="PreviewIcon" type="StringTableFieldDefinition" value="Item_LOOT_KELA_Leather_Strips_Crafted" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6c14cb94-9bdd-48c2-a552-b479dcf49f75" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_Tanning_Rabbit_Hide" />
+        <field name="Type 1" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 1" type="StringTableFieldDefinition" value="KELA_Tanning_Frame" />
+        <field name="Combine 1" type="EnumerationTableFieldDefinition" value="Base" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 1" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="Type 2" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 2" type="StringTableFieldDefinition" value="OBJ_GreaseBottle" />
+        <field name="Combine 2" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 2" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="ResultAmount 1" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Result 1" type="StringTableFieldDefinition" value="KELA_LOOT_Leather_Strips" />
+        <field name="Type 3" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 3" type="StringTableFieldDefinition" value="KELA_LOOT_CharCoal" />
+        <field name="Combine 3" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 3" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="Type 4" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 4" type="StringTableFieldDefinition" value="KELA_LOOT_Rabbit_Hide" />
+        <field name="Combine 4" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 4" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="PreviewStatsID" type="StringTableFieldDefinition" value="KELA_LOOT_Leather_Strips" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF808000" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="78e736d4-4fe5-43ab-866e-0c97a2eee853" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_ALCHEMY" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="63cf5d6d-57df-42c2-9918-99f218d3572f" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_Potion_Healing_Greater" />
+        <field name="Type 1" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 1" type="StringTableFieldDefinition" value="OBJ_Laboratory_Installation" />
+        <field name="Combine 1" type="EnumerationTableFieldDefinition" value="Base" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 1" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="Type 2" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 2" type="StringTableFieldDefinition" value="OBJ_Potion_Healing" />
+        <field name="Combine 2" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 2" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="ResultAmount 1" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Result 1" type="StringTableFieldDefinition" value="OBJ_Potion_Healing_Greater" />
+        <field name="PreviewStatsID" type="StringTableFieldDefinition" value="OBJ_Potion_Healing_Greater" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="eb1767e9-1b7e-47e1-942a-2ec60275d4d8" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_Potion_Healing_Superior" />
+        <field name="Type 1" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 1" type="StringTableFieldDefinition" value="OBJ_Laboratory_Installation" />
+        <field name="Combine 1" type="EnumerationTableFieldDefinition" value="Base" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 1" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="Type 2" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 2" type="StringTableFieldDefinition" value="OBJ_Potion_Healing_Greater" />
+        <field name="Combine 2" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 2" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="ResultAmount 1" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Result 1" type="StringTableFieldDefinition" value="OBJ_Potion_Healing_Superior" />
+        <field name="PreviewStatsID" type="StringTableFieldDefinition" value="OBJ_Potion_Healing_Superior" />
+        <field name="Type 3" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 3" type="StringTableFieldDefinition" value="OBJ_Potion_Healing_Greater" />
+        <field name="Combine 3" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 3" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2ae8d4ad-a112-4470-ba10-fd229743a453" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_Potion_Healing_Supreme" />
+        <field name="Type 1" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 1" type="StringTableFieldDefinition" value="OBJ_Laboratory_Installation" />
+        <field name="Combine 1" type="EnumerationTableFieldDefinition" value="Base" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 1" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="Type 2" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 2" type="StringTableFieldDefinition" value="OBJ_Potion_Healing_Superior" />
+        <field name="Combine 2" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 2" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="ResultAmount 1" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Result 1" type="StringTableFieldDefinition" value="OBJ_Potion_Healing_Supreme" />
+        <field name="PreviewStatsID" type="StringTableFieldDefinition" value="OBJ_Potion_Healing_Supreme" />
+        <field name="Type 3" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 3" type="StringTableFieldDefinition" value="OBJ_Potion_Healing_Superior" />
+        <field name="Combine 3" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 3" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF808000" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e3f4b645-5abd-42bf-936e-6a1ef40e64f6" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_ALCHEMY_OVERRIDE" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7ad51b58-e493-4a16-807d-e2114db9098f" />
+        <field name="Name" type="NameTableFieldDefinition" value="ALCH_Potion_AnimalSpeaking_AcornTruffle_KELA" />
+        <field name="Type 1" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 1" type="StringTableFieldDefinition" value="OBJ_Laboratory_Installation" />
+        <field name="Combine 1" type="EnumerationTableFieldDefinition" value="Base" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 1" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="Type 2" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 2" type="StringTableFieldDefinition" value="ALCH_Extract_AcornTruffle" />
+        <field name="Combine 2" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 2" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="ResultAmount 1" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Result 1" type="StringTableFieldDefinition" value="OBJ_Potion_Of_Animal_Speaking" />
+        <field name="PreviewStatsID" type="StringTableFieldDefinition" value="OBJ_Potion_Of_Animal_Speaking" />
+        <field name="Type 3" type="EnumerationTableFieldDefinition" value="Category" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 3" type="StringTableFieldDefinition" value="ALCH_Affinity_Earth" />
+        <field name="Combine 3" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 3" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9e828897-d017-469e-b4f4-7c2e907da343" />
+        <field name="Name" type="NameTableFieldDefinition" value="ALCH_Potion_DetectThoughts_Mergrass_KELA" />
+        <field name="Type 1" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 1" type="StringTableFieldDefinition" value="OBJ_Laboratory_Installation" />
+        <field name="Combine 1" type="EnumerationTableFieldDefinition" value="Base" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 1" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="Type 2" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 2" type="StringTableFieldDefinition" value="ALCH_Extract_Mergrass" />
+        <field name="Combine 2" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 2" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="ResultAmount 1" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Result 1" type="StringTableFieldDefinition" value="ALCH_Solution_Potion_DetectThoughts" />
+        <field name="PreviewStatsID" type="StringTableFieldDefinition" value="ALCH_Solution_Potion_DetectThoughts" />
+        <field name="Type 3" type="EnumerationTableFieldDefinition" value="Category" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 3" type="StringTableFieldDefinition" value="ALCH_Affinity_Air" />
+        <field name="Combine 3" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 3" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="bdc27fd5-78d5-455c-81d0-67c2122bc496" />
+        <field name="Name" type="NameTableFieldDefinition" value="ALCH_Potion_Antidote_Mugwort_KELA" />
+        <field name="Type 1" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 1" type="StringTableFieldDefinition" value="OBJ_Laboratory_Installation" />
+        <field name="Combine 1" type="EnumerationTableFieldDefinition" value="Base" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 1" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="Type 2" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 2" type="StringTableFieldDefinition" value="ALCH_Extract_Mugwort" />
+        <field name="Combine 2" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 2" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="ResultAmount 1" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Result 1" type="StringTableFieldDefinition" value="OBJ_Antitoxin" />
+        <field name="PreviewStatsID" type="StringTableFieldDefinition" value="OBJ_Antitoxin" />
+        <field name="Type 3" type="EnumerationTableFieldDefinition" value="Category" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 3" type="StringTableFieldDefinition" value="ALCH_Affinity_Water" />
+        <field name="Combine 3" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 3" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e2c788ca-db0b-404f-9797-88d387059313" />
+        <field name="Name" type="NameTableFieldDefinition" value="ALCH_Potion_FeatherFall_AutumnCrocus_KELA" />
+        <field name="Type 1" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 1" type="StringTableFieldDefinition" value="OBJ_Laboratory_Installation" />
+        <field name="Combine 1" type="EnumerationTableFieldDefinition" value="Base" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 1" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="Type 2" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 2" type="StringTableFieldDefinition" value="ALCH_Extract_AutumnCrocus" />
+        <field name="Combine 2" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 2" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="ResultAmount 1" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Result 1" type="StringTableFieldDefinition" value="ALCH_Solution_Potion_FeatherFall" />
+        <field name="PreviewStatsID" type="StringTableFieldDefinition" value="ALCH_Solution_Potion_FeatherFall" />
+        <field name="Type 3" type="EnumerationTableFieldDefinition" value="Category" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 3" type="StringTableFieldDefinition" value="ALCH_Affinity_Fey" />
+        <field name="Combine 3" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 3" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d5121edb-833a-4a82-806f-425dd73b5e94" />
+        <field name="Name" type="NameTableFieldDefinition" value="ALCH_Potion_Flying_EagleFeather_KELA" />
+        <field name="Type 1" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 1" type="StringTableFieldDefinition" value="OBJ_Laboratory_Installation" />
+        <field name="Combine 1" type="EnumerationTableFieldDefinition" value="Base" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 1" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="Type 2" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 2" type="StringTableFieldDefinition" value="ALCH_Extract_EagleFeather" />
+        <field name="Combine 2" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 2" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="ResultAmount 1" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Result 1" type="StringTableFieldDefinition" value="ALCH_Solution_Potion_Flying" />
+        <field name="PreviewStatsID" type="StringTableFieldDefinition" value="ALCH_Solution_Potion_Flying" />
+        <field name="Type 3" type="EnumerationTableFieldDefinition" value="Category" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 3" type="StringTableFieldDefinition" value="ALCH_Affinity_Fey" />
+        <field name="Combine 3" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 3" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c0dc44a7-1d74-4c7c-a161-c2e53abb525b" />
+        <field name="Name" type="NameTableFieldDefinition" value="ALCH_Potion_Healing_RoguesMorsel_KELA" />
+        <field name="Type 1" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 1" type="StringTableFieldDefinition" value="OBJ_Laboratory_Installation" />
+        <field name="Combine 1" type="EnumerationTableFieldDefinition" value="Base" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 1" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="Type 2" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 2" type="StringTableFieldDefinition" value="ALCH_Extract_RoguesMorsel" />
+        <field name="Combine 2" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 2" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="ResultAmount 1" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Result 1" type="StringTableFieldDefinition" value="OBJ_Potion_Healing" />
+        <field name="PreviewStatsID" type="StringTableFieldDefinition" value="OBJ_Potion_Healing" />
+        <field name="Type 3" type="EnumerationTableFieldDefinition" value="Category" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 3" type="StringTableFieldDefinition" value="ALCH_Affinity_Water" />
+        <field name="Combine 3" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 3" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="20a44c18-4ede-4f46-b77d-52b089bba806" />
+        <field name="Name" type="NameTableFieldDefinition" value="ALCH_Potion_HealingGreater_Balsam_KELA" />
+        <field name="Type 1" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 1" type="StringTableFieldDefinition" value="OBJ_Laboratory_Installation" />
+        <field name="Combine 1" type="EnumerationTableFieldDefinition" value="Base" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 1" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="Type 2" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 2" type="StringTableFieldDefinition" value="ALCH_Extract_Balsam" />
+        <field name="Combine 2" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 2" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="ResultAmount 1" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Result 1" type="StringTableFieldDefinition" value="OBJ_Potion_Healing_Greater" />
+        <field name="PreviewStatsID" type="StringTableFieldDefinition" value="OBJ_Potion_Healing_Greater" />
+        <field name="Type 3" type="EnumerationTableFieldDefinition" value="Category" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 3" type="StringTableFieldDefinition" value="ALCH_Affinity_Earth" />
+        <field name="Combine 3" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 3" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="df5f5eec-e541-4672-81af-760ffa64fa75" />
+        <field name="Name" type="NameTableFieldDefinition" value="ALCH_Potion_HealingSuperior_YellowMuskCreeper_KELA" />
+        <field name="Type 1" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 1" type="StringTableFieldDefinition" value="OBJ_Laboratory_Installation" />
+        <field name="Combine 1" type="EnumerationTableFieldDefinition" value="Base" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 1" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="Type 2" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 2" type="StringTableFieldDefinition" value="ALCH_Extract_YellowMuskCreeper" />
+        <field name="Combine 2" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 2" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="ResultAmount 1" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Result 1" type="StringTableFieldDefinition" value="OBJ_Potion_Healing_Superior" />
+        <field name="PreviewStatsID" type="StringTableFieldDefinition" value="OBJ_Potion_Healing_Superior" />
+        <field name="Type 3" type="EnumerationTableFieldDefinition" value="Category" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 3" type="StringTableFieldDefinition" value="ALCH_Affinity_Water" />
+        <field name="Combine 3" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 3" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7cbef3ba-d5d9-43ca-b9b0-8f9a24bbdce5" />
+        <field name="Name" type="NameTableFieldDefinition" value="ALCH_Potion_HealingSupreme_KiRinHair_KELA" />
+        <field name="Type 1" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 1" type="StringTableFieldDefinition" value="OBJ_Laboratory_Installation" />
+        <field name="Combine 1" type="EnumerationTableFieldDefinition" value="Base" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 1" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="Type 2" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 2" type="StringTableFieldDefinition" value="ALCH_Extract_KiRinHair" />
+        <field name="Combine 2" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 2" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="ResultAmount 1" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Result 1" type="StringTableFieldDefinition" value="OBJ_Potion_Healing_Supreme" />
+        <field name="PreviewStatsID" type="StringTableFieldDefinition" value="OBJ_Potion_Healing_Supreme" />
+        <field name="Type 3" type="EnumerationTableFieldDefinition" value="Category" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 3" type="StringTableFieldDefinition" value="ALCH_Affinity_Fire" />
+        <field name="Combine 3" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 3" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="495abe63-7672-467a-9e10-6a51fe2252a1" />
+        <field name="Name" type="NameTableFieldDefinition" value="ALCH_Potion_Invisibility_ImpPatagium_KELA" />
+        <field name="Type 1" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 1" type="StringTableFieldDefinition" value="OBJ_Laboratory_Installation" />
+        <field name="Combine 1" type="EnumerationTableFieldDefinition" value="Base" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 1" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="Type 2" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 2" type="StringTableFieldDefinition" value="ALCH_Extract_ImpPatagium" />
+        <field name="Combine 2" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 2" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="ResultAmount 1" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Result 1" type="StringTableFieldDefinition" value="OBJ_Potion_Of_Invisibility" />
+        <field name="PreviewStatsID" type="StringTableFieldDefinition" value="OBJ_Potion_Of_Invisibility" />
+        <field name="Type 3" type="EnumerationTableFieldDefinition" value="Category" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 3" type="StringTableFieldDefinition" value="ALCH_Affinity_Fey" />
+        <field name="Combine 3" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 3" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="09912035-f21f-4b74-aaf3-a94faef8cc18" />
+        <field name="Name" type="NameTableFieldDefinition" value="ALCH_Potion_Invulnerability_DivineBoneShard_KELA" />
+        <field name="Type 1" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 1" type="StringTableFieldDefinition" value="OBJ_Laboratory_Installation" />
+        <field name="Combine 1" type="EnumerationTableFieldDefinition" value="Base" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 1" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="Type 2" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 2" type="StringTableFieldDefinition" value="ALCH_Extract_DivineBoneShard" />
+        <field name="Combine 2" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 2" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="ResultAmount 1" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Result 1" type="StringTableFieldDefinition" value="OBJ_Potion_Of_Invulnerability" />
+        <field name="PreviewStatsID" type="StringTableFieldDefinition" value="OBJ_Potion_Of_Invulnerability" />
+        <field name="Type 3" type="EnumerationTableFieldDefinition" value="Category" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 3" type="StringTableFieldDefinition" value="ALCH_Affinity_Air" />
+        <field name="Combine 3" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 3" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8df85df5-27d6-4dec-ad49-6e79914aec5e" />
+        <field name="Name" type="NameTableFieldDefinition" value="ALCH_Potion_Jump_Wispweed_KELA" />
+        <field name="Type 1" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 1" type="StringTableFieldDefinition" value="OBJ_Laboratory_Installation" />
+        <field name="Combine 1" type="EnumerationTableFieldDefinition" value="Base" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 1" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="Type 2" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 2" type="StringTableFieldDefinition" value="ALCH_Extract_Wispweed" />
+        <field name="Combine 2" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 2" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="ResultAmount 1" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Result 1" type="StringTableFieldDefinition" value="ALCH_Solution_Potion_Jump" />
+        <field name="PreviewStatsID" type="StringTableFieldDefinition" value="ALCH_Solution_Potion_Jump" />
+        <field name="Type 3" type="EnumerationTableFieldDefinition" value="Category" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 3" type="StringTableFieldDefinition" value="ALCH_Affinity_Fire" />
+        <field name="Combine 3" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 3" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="96f07f8e-05f2-4cb5-b767-8eb0890ada1b" />
+        <field name="Name" type="NameTableFieldDefinition" value="ALCH_Potion_Remedy_KELA" />
+        <field name="Type 1" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 1" type="StringTableFieldDefinition" value="OBJ_Laboratory_Installation" />
+        <field name="Combine 1" type="EnumerationTableFieldDefinition" value="Base" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 1" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="Type 2" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 2" type="StringTableFieldDefinition" value="ALCH_Extract_XornScales" />
+        <field name="Combine 2" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 2" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="ResultAmount 1" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Result 1" type="StringTableFieldDefinition" value="ALCH_Solution_Potion_Remedy" />
+        <field name="PreviewStatsID" type="StringTableFieldDefinition" value="ALCH_Solution_Potion_Remedy" />
+        <field name="Type 3" type="EnumerationTableFieldDefinition" value="Category" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 3" type="StringTableFieldDefinition" value="ALCH_Affinity_Water" />
+        <field name="Combine 3" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 3" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="efeca152-b560-4df8-a0c8-2de9726376e0" />
+        <field name="Name" type="NameTableFieldDefinition" value="ALCH_Potion_RestLesser_UnicornHorn_KELA" />
+        <field name="Type 1" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 1" type="StringTableFieldDefinition" value="OBJ_Laboratory_Installation" />
+        <field name="Combine 1" type="EnumerationTableFieldDefinition" value="Base" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 1" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="Type 2" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 2" type="StringTableFieldDefinition" value="ALCH_Extract_UnicornHorn" />
+        <field name="Combine 2" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 2" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="ResultAmount 1" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Result 1" type="StringTableFieldDefinition" value="ALCH_Solution_Potion_Rest_Lesser" />
+        <field name="PreviewStatsID" type="StringTableFieldDefinition" value="ALCH_Solution_Potion_Rest_Lesser" />
+        <field name="Type 3" type="EnumerationTableFieldDefinition" value="Category" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 3" type="StringTableFieldDefinition" value="ALCH_Affinity_Earth" />
+        <field name="Combine 3" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 3" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="99aa6e2c-83d2-4a19-b2bc-8e3eae34e264" />
+        <field name="Name" type="NameTableFieldDefinition" value="ALCH_Potion_RestGreater_PlanetarFeather_KELA" />
+        <field name="Type 1" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 1" type="StringTableFieldDefinition" value="OBJ_Laboratory_Installation" />
+        <field name="Combine 1" type="EnumerationTableFieldDefinition" value="Base" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 1" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="Type 2" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 2" type="StringTableFieldDefinition" value="ALCH_Extract_PlanetarFeather" />
+        <field name="Combine 2" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 2" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="ResultAmount 1" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Result 1" type="StringTableFieldDefinition" value="ALCH_Solution_Potion_Rest_Greater" />
+        <field name="PreviewStatsID" type="StringTableFieldDefinition" value="ALCH_Solution_Potion_Rest_Greater" />
+        <field name="Type 3" type="EnumerationTableFieldDefinition" value="Category" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 3" type="StringTableFieldDefinition" value="ALCH_Affinity_Water" />
+        <field name="Combine 3" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 3" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0f431211-3da0-4b42-ab9d-06b758dc127c" />
+        <field name="Name" type="NameTableFieldDefinition" value="ALCH_Potion_Speed_HyenaEar_KELA" />
+        <field name="Type 1" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 1" type="StringTableFieldDefinition" value="OBJ_Laboratory_Installation" />
+        <field name="Combine 1" type="EnumerationTableFieldDefinition" value="Base" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 1" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="Type 2" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 2" type="StringTableFieldDefinition" value="ALCH_Extract_HyenaEar" />
+        <field name="Combine 2" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 2" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="ResultAmount 1" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Result 1" type="StringTableFieldDefinition" value="OBJ_Potion_Of_Speed" />
+        <field name="PreviewStatsID" type="StringTableFieldDefinition" value="OBJ_Potion_Of_Speed" />
+        <field name="Type 3" type="EnumerationTableFieldDefinition" value="Category" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 3" type="StringTableFieldDefinition" value="ALCH_Affinity_Earth" />
+        <field name="Combine 3" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 3" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b73228c0-fdba-4e12-8074-3f6ad35d246a" />
+        <field name="Name" type="NameTableFieldDefinition" value="ALCH_Elixir_Alertness_HookHorrorClaw_KELA" />
+        <field name="Type 1" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 1" type="StringTableFieldDefinition" value="OBJ_Laboratory_Installation" />
+        <field name="Combine 1" type="EnumerationTableFieldDefinition" value="Base" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Type 2" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 2" type="StringTableFieldDefinition" value="ALCH_Extract_HookHorrorClaw" />
+        <field name="Combine 2" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="ResultAmount 1" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Result 1" type="StringTableFieldDefinition" value="ALCH_Solution_Elixir_Alertness" />
+        <field name="Transform 1" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="Transform 2" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="PreviewStatsID" type="StringTableFieldDefinition" value="ALCH_Solution_Elixir_Alertness" />
+        <field name="Type 3" type="EnumerationTableFieldDefinition" value="Category" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 3" type="StringTableFieldDefinition" value="ALCH_Affinity_Fire" />
+        <field name="Combine 3" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 3" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9d55c34b-bd98-427e-b534-fd9f6f3d993f" />
+        <field name="Name" type="NameTableFieldDefinition" value="ALCH_Elixir_ArcaneAcuity_GauthEye_KELA" />
+        <field name="Type 1" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 1" type="StringTableFieldDefinition" value="OBJ_Laboratory_Installation" />
+        <field name="Combine 1" type="EnumerationTableFieldDefinition" value="Base" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Type 2" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 2" type="StringTableFieldDefinition" value="ALCH_Extract_GauthEye" />
+        <field name="Combine 2" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="ResultAmount 1" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Result 1" type="StringTableFieldDefinition" value="ALCH_Solution_Elixir_ArcaneAcuity" />
+        <field name="Transform 1" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="Transform 2" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="PreviewStatsID" type="StringTableFieldDefinition" value="ALCH_Solution_Elixir_ArcaneAcuity" />
+        <field name="Type 3" type="EnumerationTableFieldDefinition" value="Category" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 3" type="StringTableFieldDefinition" value="ALCH_Affinity_Air" />
+        <field name="Combine 3" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 3" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="66c07db2-4fa2-46b1-a477-285b7a0ffc2e" />
+        <field name="Name" type="NameTableFieldDefinition" value="ALCH_Elixir_Bloodlust_WorgFang_KELA" />
+        <field name="Type 1" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 1" type="StringTableFieldDefinition" value="OBJ_Laboratory_Installation" />
+        <field name="Combine 1" type="EnumerationTableFieldDefinition" value="Base" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Type 2" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 2" type="StringTableFieldDefinition" value="ALCH_Extract_WorgFang" />
+        <field name="Combine 2" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="ResultAmount 1" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Result 1" type="StringTableFieldDefinition" value="ALCH_Solution_Elixir_Bloodlust" />
+        <field name="Transform 1" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="Transform 2" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="PreviewStatsID" type="StringTableFieldDefinition" value="ALCH_Solution_Elixir_Bloodlust" />
+        <field name="Type 3" type="EnumerationTableFieldDefinition" value="Category" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 3" type="StringTableFieldDefinition" value="ALCH_Affinity_Earth" />
+        <field name="Combine 3" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 3" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="be5ccb54-bf2b-4d40-89ee-b00e6380749a" />
+        <field name="Name" type="NameTableFieldDefinition" value="ALCH_Elixir_Barkskin_WoodBark_KELA" />
+        <field name="Type 1" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 1" type="StringTableFieldDefinition" value="OBJ_Laboratory_Installation" />
+        <field name="Combine 1" type="EnumerationTableFieldDefinition" value="Base" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Type 2" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 2" type="StringTableFieldDefinition" value="ALCH_Extract_WoodBark" />
+        <field name="Combine 2" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="ResultAmount 1" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Result 1" type="StringTableFieldDefinition" value="ALCH_Solution_Elixir_Barkskin" />
+        <field name="Transform 1" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="Transform 2" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="PreviewStatsID" type="StringTableFieldDefinition" value="ALCH_Solution_Elixir_Barkskin" />
+        <field name="Type 3" type="EnumerationTableFieldDefinition" value="Category" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 3" type="StringTableFieldDefinition" value="ALCH_Affinity_Water" />
+        <field name="Combine 3" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 3" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="43559848-f8ff-4afc-9c5a-1d200c574c7f" />
+        <field name="Name" type="NameTableFieldDefinition" value="ALCH_Elixir_GiantStregthCloud_CloudGiantFinger_KELA" />
+        <field name="Type 1" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 1" type="StringTableFieldDefinition" value="OBJ_Laboratory_Installation" />
+        <field name="Combine 1" type="EnumerationTableFieldDefinition" value="Base" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 1" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="Type 2" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 2" type="StringTableFieldDefinition" value="ALCH_Extract_CloudGiantFinger" />
+        <field name="Combine 2" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 2" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="ResultAmount 1" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Result 1" type="StringTableFieldDefinition" value="OBJ_Potion_Of_Cloud_Giant_Strength" />
+        <field name="PreviewStatsID" type="StringTableFieldDefinition" value="OBJ_Potion_Of_Cloud_Giant_Strength" />
+        <field name="Type 3" type="EnumerationTableFieldDefinition" value="Category" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 3" type="StringTableFieldDefinition" value="ALCH_Affinity_Water" />
+        <field name="Combine 3" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 3" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c15440a2-2c33-4b25-8bc9-d1ea01cc9ae5" />
+        <field name="Name" type="NameTableFieldDefinition" value="ALCH_Elixir_Criticals_ShadowrootSac_KELA" />
+        <field name="Type 1" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 1" type="StringTableFieldDefinition" value="OBJ_Laboratory_Installation" />
+        <field name="Combine 1" type="EnumerationTableFieldDefinition" value="Base" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Type 2" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 2" type="StringTableFieldDefinition" value="ALCH_Extract_ShadowrootSac" />
+        <field name="Combine 2" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="ResultAmount 1" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Result 1" type="StringTableFieldDefinition" value="ALCH_Solution_Elixir_Criticals" />
+        <field name="Transform 1" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="Transform 2" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="PreviewStatsID" type="StringTableFieldDefinition" value="ALCH_Solution_Elixir_Criticals" />
+        <field name="Type 3" type="EnumerationTableFieldDefinition" value="Category" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 3" type="StringTableFieldDefinition" value="ALCH_Affinity_Fire" />
+        <field name="Combine 3" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 3" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f0b6bc57-01f9-41a8-9565-f7ada672a0c2" />
+        <field name="Name" type="NameTableFieldDefinition" value="ALCH_Elixir_Concentration_Belladonna_KELA" />
+        <field name="Type 1" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 1" type="StringTableFieldDefinition" value="OBJ_Laboratory_Installation" />
+        <field name="Combine 1" type="EnumerationTableFieldDefinition" value="Base" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Type 2" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 2" type="StringTableFieldDefinition" value="ALCH_Extract_Belladonna" />
+        <field name="Combine 2" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="ResultAmount 1" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Result 1" type="StringTableFieldDefinition" value="ALCH_Solution_Elixir_Concentration" />
+        <field name="Transform 1" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="Transform 2" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="PreviewStatsID" type="StringTableFieldDefinition" value="ALCH_Solution_Elixir_Concentration" />
+        <field name="Type 3" type="EnumerationTableFieldDefinition" value="Category" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 3" type="StringTableFieldDefinition" value="ALCH_Affinity_Fire" />
+        <field name="Combine 3" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 3" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c1b06b1c-3db3-4f2f-8ac5-daf27374a3e7" />
+        <field name="Name" type="NameTableFieldDefinition" value="ALCH_Elixir_Darkvision_ScryingEye_KELA" />
+        <field name="Type 1" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 1" type="StringTableFieldDefinition" value="OBJ_Laboratory_Installation" />
+        <field name="Combine 1" type="EnumerationTableFieldDefinition" value="Base" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Type 2" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 2" type="StringTableFieldDefinition" value="ALCH_Extract_ScryingEye" />
+        <field name="Combine 2" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="ResultAmount 1" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Result 1" type="StringTableFieldDefinition" value="ALCH_Solution_Elixir_Darkvision" />
+        <field name="Transform 1" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="Transform 2" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="PreviewStatsID" type="StringTableFieldDefinition" value="ALCH_Solution_Elixir_Darkvision" />
+        <field name="Type 3" type="EnumerationTableFieldDefinition" value="Category" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 3" type="StringTableFieldDefinition" value="ALCH_Affinity_Earth" />
+        <field name="Combine 3" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 3" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2b7f48d9-468e-4529-919a-2b88ae7ec89d" />
+        <field name="Name" type="NameTableFieldDefinition" value="ALCH_Elixir_Enlarge_ChasmCreeper_KELA" />
+        <field name="Type 1" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 1" type="StringTableFieldDefinition" value="OBJ_Laboratory_Installation" />
+        <field name="Combine 1" type="EnumerationTableFieldDefinition" value="Base" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Type 2" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 2" type="StringTableFieldDefinition" value="ALCH_Extract_ChasmCreeper" />
+        <field name="Combine 2" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="ResultAmount 1" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Result 1" type="StringTableFieldDefinition" value="ALCH_Solution_Elixir_Enlarge" />
+        <field name="Transform 1" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="Transform 2" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="PreviewStatsID" type="StringTableFieldDefinition" value="ALCH_Solution_Elixir_Enlarge" />
+        <field name="Type 3" type="EnumerationTableFieldDefinition" value="Category" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 3" type="StringTableFieldDefinition" value="ALCH_Affinity_Water" />
+        <field name="Combine 3" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 3" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="94160189-5b54-4c6c-a489-689af10ee09c" />
+        <field name="Name" type="NameTableFieldDefinition" value="ALCH_Elixir_Freedom_OchreJellySlime_KELA" />
+        <field name="Type 1" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 1" type="StringTableFieldDefinition" value="OBJ_Laboratory_Installation" />
+        <field name="Combine 1" type="EnumerationTableFieldDefinition" value="Base" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Type 2" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 2" type="StringTableFieldDefinition" value="ALCH_Extract_OchreJellySlime" />
+        <field name="Combine 2" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="ResultAmount 1" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Result 1" type="StringTableFieldDefinition" value="ALCH_Solution_Elixir_Freedom" />
+        <field name="Transform 1" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="Transform 2" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="PreviewStatsID" type="StringTableFieldDefinition" value="ALCH_Solution_Elixir_Freedom" />
+        <field name="Type 3" type="EnumerationTableFieldDefinition" value="Category" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 3" type="StringTableFieldDefinition" value="ALCH_Affinity_Air" />
+        <field name="Combine 3" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 3" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e3b7bab7-097d-46ff-b961-b2ab33f445e0" />
+        <field name="Name" type="NameTableFieldDefinition" value="ALCH_Elixir_GiantStregthHill_HillGiantFinger_KELA" />
+        <field name="Type 1" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 1" type="StringTableFieldDefinition" value="OBJ_Laboratory_Installation" />
+        <field name="Combine 1" type="EnumerationTableFieldDefinition" value="Base" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 1" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="Type 2" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 2" type="StringTableFieldDefinition" value="ALCH_Extract_HillGiantFinger" />
+        <field name="Combine 2" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 2" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="ResultAmount 1" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Result 1" type="StringTableFieldDefinition" value="OBJ_Potion_Of_Hill_Giant_Strength" />
+        <field name="PreviewStatsID" type="StringTableFieldDefinition" value="OBJ_Potion_Of_Hill_Giant_Strength" />
+        <field name="Type 3" type="EnumerationTableFieldDefinition" value="Category" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 3" type="StringTableFieldDefinition" value="ALCH_Affinity_Water" />
+        <field name="Combine 3" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 3" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="21913e49-87f3-4b6e-877c-b4ad61b526a2" />
+        <field name="Name" type="NameTableFieldDefinition" value="ALCH_Elixir_Heroism_PegasusFeather_KELA" />
+        <field name="Type 1" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 1" type="StringTableFieldDefinition" value="OBJ_Laboratory_Installation" />
+        <field name="Combine 1" type="EnumerationTableFieldDefinition" value="Base" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 1" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="Type 2" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 2" type="StringTableFieldDefinition" value="ALCH_Extract_PegasusFeather" />
+        <field name="Combine 2" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 2" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="ResultAmount 1" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Result 1" type="StringTableFieldDefinition" value="OBJ_Potion_Of_Heroism" />
+        <field name="PreviewStatsID" type="StringTableFieldDefinition" value="OBJ_Potion_Of_Heroism" />
+        <field name="Type 3" type="EnumerationTableFieldDefinition" value="Category" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 3" type="StringTableFieldDefinition" value="ALCH_Affinity_Fire" />
+        <field name="Combine 3" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 3" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b1470331-e897-4103-a52f-9b80e6ee9ad4" />
+        <field name="Name" type="NameTableFieldDefinition" value="ALCH_Elixir_Meditation_Weavemoss_KELA" />
+        <field name="Type 1" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 1" type="StringTableFieldDefinition" value="OBJ_Laboratory_Installation" />
+        <field name="Combine 1" type="EnumerationTableFieldDefinition" value="Base" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 1" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="Type 2" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 2" type="StringTableFieldDefinition" value="ALCH_Extract_Weavemoss" />
+        <field name="Combine 2" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 2" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="ResultAmount 1" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Result 1" type="StringTableFieldDefinition" value="ALCH_Solution_Elixir_Meditation" />
+        <field name="PreviewStatsID" type="StringTableFieldDefinition" value="ALCH_Solution_Elixir_Meditation" />
+        <field name="Type 3" type="EnumerationTableFieldDefinition" value="Category" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 3" type="StringTableFieldDefinition" value="ALCH_Affinity_Air" />
+        <field name="Combine 3" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 3" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5100eeaa-f77b-426e-b733-681cc8b055e9" />
+        <field name="Name" type="NameTableFieldDefinition" value="ALCH_Elixir_Meditation_Greater_Laculite_KELA" />
+        <field name="Type 1" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 1" type="StringTableFieldDefinition" value="OBJ_Laboratory_Installation" />
+        <field name="Combine 1" type="EnumerationTableFieldDefinition" value="Base" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 1" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="Type 2" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 2" type="StringTableFieldDefinition" value="ALCH_Extract_Laculite" />
+        <field name="Combine 2" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 2" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="ResultAmount 1" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Result 1" type="StringTableFieldDefinition" value="ALCH_Solution_Elixir_Meditation_Greater" />
+        <field name="PreviewStatsID" type="StringTableFieldDefinition" value="ALCH_Solution_Elixir_Meditation_Greater" />
+        <field name="Type 3" type="EnumerationTableFieldDefinition" value="Category" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 3" type="StringTableFieldDefinition" value="ALCH_Affinity_Shadow" />
+        <field name="Combine 3" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 3" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9223a690-c895-4c51-8aff-f93885ebe788" />
+        <field name="Name" type="NameTableFieldDefinition" value="ALCH_Elixir_Meditation_Superior_NightOrchid_KELA" />
+        <field name="Type 1" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 1" type="StringTableFieldDefinition" value="OBJ_Laboratory_Installation" />
+        <field name="Combine 1" type="EnumerationTableFieldDefinition" value="Base" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 1" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="Type 2" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 2" type="StringTableFieldDefinition" value="ALCH_Extract_NightOrchid" />
+        <field name="Combine 2" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 2" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="ResultAmount 1" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Result 1" type="StringTableFieldDefinition" value="ALCH_Solution_Elixir_Meditation_Superior" />
+        <field name="PreviewStatsID" type="StringTableFieldDefinition" value="ALCH_Solution_Elixir_Meditation_Superior" />
+        <field name="Type 3" type="EnumerationTableFieldDefinition" value="Category" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 3" type="StringTableFieldDefinition" value="ALCH_Affinity_Shadow" />
+        <field name="Combine 3" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 3" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7047569c-5fed-488a-8287-3610a32c7014" />
+        <field name="Name" type="NameTableFieldDefinition" value="ALCH_Elixir_Meditation_Supreme_BeholderEye_KELA" />
+        <field name="Type 1" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 1" type="StringTableFieldDefinition" value="OBJ_Laboratory_Installation" />
+        <field name="Combine 1" type="EnumerationTableFieldDefinition" value="Base" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 1" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="Type 2" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 2" type="StringTableFieldDefinition" value="ALCH_Extract_BeholderEye" />
+        <field name="Combine 2" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 2" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="ResultAmount 1" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Result 1" type="StringTableFieldDefinition" value="ALCH_Solution_Elixir_Meditation_Supreme" />
+        <field name="PreviewStatsID" type="StringTableFieldDefinition" value="ALCH_Solution_Elixir_Meditation_Supreme" />
+        <field name="Type 3" type="EnumerationTableFieldDefinition" value="Category" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 3" type="StringTableFieldDefinition" value="ALCH_Affinity_Water" />
+        <field name="Combine 3" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 3" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="25d2de64-41fa-4334-a447-3d4479585947" />
+        <field name="Name" type="NameTableFieldDefinition" value="ALCH_Elixir_SeeInvisible_NothicEye_KELA" />
+        <field name="Type 1" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 1" type="StringTableFieldDefinition" value="OBJ_Laboratory_Installation" />
+        <field name="Combine 1" type="EnumerationTableFieldDefinition" value="Base" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 1" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="Type 2" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 2" type="StringTableFieldDefinition" value="ALCH_Extract_NothicEye" />
+        <field name="Combine 2" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 2" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="ResultAmount 1" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Result 1" type="StringTableFieldDefinition" value="ALCH_Solution_Elixir_SeeInvisible" />
+        <field name="PreviewStatsID" type="StringTableFieldDefinition" value="ALCH_Solution_Elixir_SeeInvisible" />
+        <field name="Type 3" type="EnumerationTableFieldDefinition" value="Category" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 3" type="StringTableFieldDefinition" value="ALCH_Affinity_Shadow" />
+        <field name="Combine 3" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 3" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="008b4af0-1194-4f4e-987a-f34f6887ca69" />
+        <field name="Name" type="NameTableFieldDefinition" value="ALCH_Elixir_Tadpole_TongueOfMadness_KELA" />
+        <field name="Type 1" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 1" type="StringTableFieldDefinition" value="OBJ_Laboratory_Installation" />
+        <field name="Combine 1" type="EnumerationTableFieldDefinition" value="Base" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 1" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="Type 2" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 2" type="StringTableFieldDefinition" value="ALCH_Extract_TongueOfMadness" />
+        <field name="Combine 2" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 2" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="ResultAmount 1" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Result 1" type="StringTableFieldDefinition" value="ALCH_Solution_Elixir_Tadpole" />
+        <field name="PreviewStatsID" type="StringTableFieldDefinition" value="ALCH_Solution_Elixir_Tadpole" />
+        <field name="Type 3" type="EnumerationTableFieldDefinition" value="Category" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 3" type="StringTableFieldDefinition" value="ALCH_Affinity_Fey" />
+        <field name="Combine 3" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 3" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6f28ff7f-8d73-48fe-808f-b384a6c9fe33" />
+        <field name="Name" type="NameTableFieldDefinition" value="ALCH_Elixir_Resistance_Fire_DragonEggMushroom_KELA" />
+        <field name="Type 1" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 1" type="StringTableFieldDefinition" value="OBJ_Laboratory_Installation" />
+        <field name="Combine 1" type="EnumerationTableFieldDefinition" value="Base" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 1" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="Type 2" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 2" type="StringTableFieldDefinition" value="ALCH_Extract_DragonEggMushroom" />
+        <field name="Combine 2" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 2" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="ResultAmount 1" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Result 1" type="StringTableFieldDefinition" value="OBJ_Potion_Of_Fire_Resistance" />
+        <field name="PreviewStatsID" type="StringTableFieldDefinition" value="OBJ_Potion_Of_Fire_Resistance" />
+        <field name="Type 3" type="EnumerationTableFieldDefinition" value="Category" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 3" type="StringTableFieldDefinition" value="ALCH_Affinity_Earth" />
+        <field name="Combine 3" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 3" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="cfc6896b-39c7-44ff-be20-572898269a4b" />
+        <field name="Name" type="NameTableFieldDefinition" value="ALCH_Elixir_Resistance_Lightning_ConstructPart_KELA" />
+        <field name="Type 1" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 1" type="StringTableFieldDefinition" value="OBJ_Laboratory_Installation" />
+        <field name="Combine 1" type="EnumerationTableFieldDefinition" value="Base" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 1" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="Type 2" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 2" type="StringTableFieldDefinition" value="ALCH_Extract_ConstructPart" />
+        <field name="Combine 2" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 2" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="ResultAmount 1" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Result 1" type="StringTableFieldDefinition" value="OBJ_Potion_Of_Lightning_Resistance" />
+        <field name="PreviewStatsID" type="StringTableFieldDefinition" value="OBJ_Potion_Of_Lightning_Resistance" />
+        <field name="Type 3" type="EnumerationTableFieldDefinition" value="Category" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 3" type="StringTableFieldDefinition" value="ALCH_Affinity_Water" />
+        <field name="Combine 3" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 3" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0ac264c9-9959-4a7f-ac15-969840322036" />
+        <field name="Name" type="NameTableFieldDefinition" value="ALCH_Elixir_Resistance_Necrotic_BlackOleander_KELA" />
+        <field name="Type 1" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="ResultAmount 1" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Result 1" type="StringTableFieldDefinition" value="OBJ_Potion_Of_Necrotic_Resistance" />
+        <field name="Object 1" type="StringTableFieldDefinition" value="OBJ_Laboratory_Installation" />
+        <field name="Combine 1" type="EnumerationTableFieldDefinition" value="Base" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 1" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="Type 2" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 2" type="StringTableFieldDefinition" value="ALCH_Extract_BlackOleander" />
+        <field name="Combine 2" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 2" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="PreviewStatsID" type="StringTableFieldDefinition" value="OBJ_Potion_Of_Necrotic_Resistance" />
+        <field name="Type 3" type="EnumerationTableFieldDefinition" value="Category" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 3" type="StringTableFieldDefinition" value="ALCH_Affinity_Air" />
+        <field name="Combine 3" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 3" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4b20e820-831c-4b05-847e-3d5d8aa31d3f" />
+        <field name="Name" type="NameTableFieldDefinition" value="ALCH_Elixir_Resistance_Poison_MudMephitWing_KELA" />
+        <field name="Type 1" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 1" type="StringTableFieldDefinition" value="OBJ_Laboratory_Installation" />
+        <field name="Combine 1" type="EnumerationTableFieldDefinition" value="Base" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 1" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="Type 2" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 2" type="StringTableFieldDefinition" value="ALCH_Extract_MudMephitWing" />
+        <field name="Combine 2" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 2" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="ResultAmount 1" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Result 1" type="StringTableFieldDefinition" value="OBJ_Potion_Of_Poison_Resistance" />
+        <field name="PreviewStatsID" type="StringTableFieldDefinition" value="OBJ_Potion_Of_Poison_Resistance" />
+        <field name="Type 3" type="EnumerationTableFieldDefinition" value="Category" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 3" type="StringTableFieldDefinition" value="ALCH_Affinity_Air" />
+        <field name="Combine 3" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 3" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a485a847-fd8c-4fe3-b3c7-1e45c4f0a132" />
+        <field name="Name" type="NameTableFieldDefinition" value="ALCH_Elixir_Resistance_Psychic_IntellectDevourer_KELA" />
+        <field name="Type 1" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 1" type="StringTableFieldDefinition" value="OBJ_Laboratory_Installation" />
+        <field name="Combine 1" type="EnumerationTableFieldDefinition" value="Base" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 1" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="Type 2" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 2" type="StringTableFieldDefinition" value="ALCH_Extract_IntellectDevourer" />
+        <field name="Combine 2" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 2" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="ResultAmount 1" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Result 1" type="StringTableFieldDefinition" value="OBJ_Potion_Of_Psychic_Resistance" />
+        <field name="PreviewStatsID" type="StringTableFieldDefinition" value="OBJ_Potion_Of_Psychic_Resistance" />
+        <field name="Type 3" type="EnumerationTableFieldDefinition" value="Category" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 3" type="StringTableFieldDefinition" value="ALCH_Affinity_Air" />
+        <field name="Combine 3" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 3" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3e1eecc4-9f7f-4db5-b191-afe7b5071f0e" />
+        <field name="Name" type="NameTableFieldDefinition" value="ALCH_Grenade_Light_KELA" />
+        <field name="Type 1" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 1" type="StringTableFieldDefinition" value="OBJ_Laboratory_Installation" />
+        <field name="Combine 1" type="EnumerationTableFieldDefinition" value="Base" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 1" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="Type 2" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 2" type="StringTableFieldDefinition" value="ALCH_Extract_Nightlight" />
+        <field name="Combine 2" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 2" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="ResultAmount 1" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Result 1" type="StringTableFieldDefinition" value="ALCH_Solution_Grenade_Light" />
+        <field name="PreviewStatsID" type="StringTableFieldDefinition" value="ALCH_Solution_Grenade_Light" />
+        <field name="Type 3" type="EnumerationTableFieldDefinition" value="Category" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 3" type="StringTableFieldDefinition" value="ALCH_Affinity_Water" />
+        <field name="Combine 3" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 3" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="33ead29d-aa15-4889-bd51-a8126a7e4675" />
+        <field name="Name" type="NameTableFieldDefinition" value="ALCH_Grenade_SporesConfusion_KELA" />
+        <field name="Type 1" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 1" type="StringTableFieldDefinition" value="OBJ_Laboratory_Installation" />
+        <field name="Combine 1" type="EnumerationTableFieldDefinition" value="Base" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 1" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="Type 2" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 2" type="StringTableFieldDefinition" value="ALCH_Extract_MyconidSpore_Confusion" />
+        <field name="Combine 2" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 2" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="ResultAmount 1" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Result 1" type="StringTableFieldDefinition" value="ALCH_Solution_Grenade_SporesConfusion" />
+        <field name="PreviewStatsID" type="StringTableFieldDefinition" value="ALCH_Solution_Grenade_SporesConfusion" />
+        <field name="Type 3" type="EnumerationTableFieldDefinition" value="Category" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 3" type="StringTableFieldDefinition" value="ALCH_Affinity_Earth" />
+        <field name="Combine 3" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 3" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="efc0bf51-2a76-4a9e-bd33-1caf86b1749a" />
+        <field name="Name" type="NameTableFieldDefinition" value="ALCH_Grenade_SporesHaste_KELA" />
+        <field name="Type 1" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 1" type="StringTableFieldDefinition" value="OBJ_Laboratory_Installation" />
+        <field name="Combine 1" type="EnumerationTableFieldDefinition" value="Base" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 1" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="Type 2" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 2" type="StringTableFieldDefinition" value="ALCH_Extract_MyconidSpore_Haste" />
+        <field name="Combine 2" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 2" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="ResultAmount 1" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Result 1" type="StringTableFieldDefinition" value="ALCH_Solution_Grenade_SporesHaste" />
+        <field name="PreviewStatsID" type="StringTableFieldDefinition" value="ALCH_Solution_Grenade_SporesHaste" />
+        <field name="Type 3" type="EnumerationTableFieldDefinition" value="Category" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 3" type="StringTableFieldDefinition" value="ALCH_Affinity_Fey" />
+        <field name="Combine 3" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 3" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ff6dd549-6e5a-49ac-b78c-712b2542a241" />
+        <field name="Name" type="NameTableFieldDefinition" value="ALCH_Grenade_SporesToxic_KELA" />
+        <field name="Type 1" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 1" type="StringTableFieldDefinition" value="OBJ_Laboratory_Installation" />
+        <field name="Combine 1" type="EnumerationTableFieldDefinition" value="Base" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 1" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="Type 2" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 2" type="StringTableFieldDefinition" value="ALCH_Extract_MyconidSpore_Poison" />
+        <field name="Combine 2" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 2" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="ResultAmount 1" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Result 1" type="StringTableFieldDefinition" value="ALCH_Solution_Grenade_SporesToxic" />
+        <field name="PreviewStatsID" type="StringTableFieldDefinition" value="ALCH_Solution_Grenade_SporesToxic" />
+        <field name="Type 3" type="EnumerationTableFieldDefinition" value="Category" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 3" type="StringTableFieldDefinition" value="ALCH_Affinity_Fire" />
+        <field name="Combine 3" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 3" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c51a859f-d40d-423e-b974-85044ff05c58" />
+        <field name="Name" type="NameTableFieldDefinition" value="ALCH_Grenade_Sunflash_BehirScales_KELA" />
+        <field name="Type 1" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 1" type="StringTableFieldDefinition" value="OBJ_Laboratory_Installation" />
+        <field name="Combine 1" type="EnumerationTableFieldDefinition" value="Base" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 1" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="Type 2" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 2" type="StringTableFieldDefinition" value="ALCH_Extract_BehirScales" />
+        <field name="Combine 2" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 2" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="ResultAmount 1" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Result 1" type="StringTableFieldDefinition" value="OBJ_Bomb_Sunflash" />
+        <field name="PreviewStatsID" type="StringTableFieldDefinition" value="OBJ_Bomb_Sunflash" />
+        <field name="Type 3" type="EnumerationTableFieldDefinition" value="Category" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 3" type="StringTableFieldDefinition" value="ALCH_Affinity_Fire" />
+        <field name="Combine 3" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 3" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d68806e2-738d-46b5-ae92-073b62ec2629" />
+        <field name="Name" type="NameTableFieldDefinition" value="ALCH_Grenade_Web_SpiderGland_KELA" />
+        <field name="Type 1" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 1" type="StringTableFieldDefinition" value="OBJ_Laboratory_Installation" />
+        <field name="Combine 1" type="EnumerationTableFieldDefinition" value="Base" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 1" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="Type 2" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 2" type="StringTableFieldDefinition" value="ALCH_Extract_SpiderGland" />
+        <field name="Combine 2" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 2" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="ResultAmount 1" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Result 1" type="StringTableFieldDefinition" value="ALCH_Solution_Grenade_Web" />
+        <field name="PreviewStatsID" type="StringTableFieldDefinition" value="ALCH_Solution_Grenade_Web" />
+        <field name="Type 3" type="EnumerationTableFieldDefinition" value="Category" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 3" type="StringTableFieldDefinition" value="ALCH_Affinity_Shadow" />
+        <field name="Combine 3" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 3" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0386b22e-7bff-46e0-9dc0-95ee9604efa4" />
+        <field name="Name" type="NameTableFieldDefinition" value="ALCH_Oil_AttackBuff_Daggeroot_KELA" />
+        <field name="Type 1" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 1" type="StringTableFieldDefinition" value="OBJ_Laboratory_Installation" />
+        <field name="Combine 1" type="EnumerationTableFieldDefinition" value="Base" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 1" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="Type 2" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 2" type="StringTableFieldDefinition" value="ALCH_Extract_Daggeroot" />
+        <field name="Combine 2" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 2" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="ResultAmount 1" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Result 1" type="StringTableFieldDefinition" value="ALCH_Solution_Oil_AttackBuff" />
+        <field name="PreviewStatsID" type="StringTableFieldDefinition" value="ALCH_Solution_Oil_AttackBuff" />
+        <field name="Type 3" type="EnumerationTableFieldDefinition" value="Category" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 3" type="StringTableFieldDefinition" value="ALCH_Affinity_Earth" />
+        <field name="Combine 3" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 3" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="18f65eb8-40b8-4d15-a6d5-4e4991b2f579" />
+        <field name="Name" type="NameTableFieldDefinition" value="ALCH_Oil_Bane_Shadowcursed_KELA" />
+        <field name="Type 1" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 1" type="StringTableFieldDefinition" value="OBJ_Laboratory_Installation" />
+        <field name="Combine 1" type="EnumerationTableFieldDefinition" value="Base" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 1" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="Type 2" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 2" type="StringTableFieldDefinition" value="ALCH_Extract_Shadowcursed" />
+        <field name="Combine 2" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 2" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="ResultAmount 1" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Result 1" type="StringTableFieldDefinition" value="ALCH_Solution_Oil_Bane" />
+        <field name="PreviewStatsID" type="StringTableFieldDefinition" value="ALCH_Solution_Oil_Bane" />
+        <field name="Type 3" type="EnumerationTableFieldDefinition" value="Category" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 3" type="StringTableFieldDefinition" value="ALCH_Affinity_Air" />
+        <field name="Combine 3" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 3" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d1246037-5696-43b2-9d27-605ac57a26b2" />
+        <field name="Name" type="NameTableFieldDefinition" value="ALCH_Oil_Combustion_MagmaMephitHeart_KELA" />
+        <field name="Type 1" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 1" type="StringTableFieldDefinition" value="OBJ_Laboratory_Installation" />
+        <field name="Combine 1" type="EnumerationTableFieldDefinition" value="Base" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 1" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="Type 2" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 2" type="StringTableFieldDefinition" value="ALCH_Extract_MagmaMephitHeart" />
+        <field name="Combine 2" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 2" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="ResultAmount 1" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Result 1" type="StringTableFieldDefinition" value="ALCH_Solution_Oil_Combustion" />
+        <field name="PreviewStatsID" type="StringTableFieldDefinition" value="ALCH_Solution_Oil_Combustion" />
+        <field name="Type 3" type="EnumerationTableFieldDefinition" value="Category" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 3" type="StringTableFieldDefinition" value="ALCH_Affinity_Fey" />
+        <field name="Combine 3" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 3" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3693a3c3-dc0f-4fec-8a1d-113731e92bbc" />
+        <field name="Name" type="NameTableFieldDefinition" value="ALCH_Oil_DamageAttackBuff_ViridianCrystal_KELA" />
+        <field name="Type 1" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 1" type="StringTableFieldDefinition" value="OBJ_Laboratory_Installation" />
+        <field name="Combine 1" type="EnumerationTableFieldDefinition" value="Base" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 1" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="Type 2" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 2" type="StringTableFieldDefinition" value="ALCH_Extract_ViridianCrystal" />
+        <field name="Combine 2" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 2" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="ResultAmount 1" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Result 1" type="StringTableFieldDefinition" value="ALCH_Solution_Oil_DamageAttackBuff" />
+        <field name="PreviewStatsID" type="StringTableFieldDefinition" value="ALCH_Solution_Oil_DamageAttackBuff" />
+        <field name="Type 3" type="EnumerationTableFieldDefinition" value="Category" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 3" type="StringTableFieldDefinition" value="ALCH_Affinity_Shadow" />
+        <field name="Combine 3" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 3" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="183173b1-6ba0-47f3-ba04-0a4519387ec7" />
+        <field name="Name" type="NameTableFieldDefinition" value="ALCH_Oil_Frost_KELA" />
+        <field name="Type 1" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 1" type="StringTableFieldDefinition" value="OBJ_Laboratory_Installation" />
+        <field name="Combine 1" type="EnumerationTableFieldDefinition" value="Base" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 1" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="Type 2" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 2" type="StringTableFieldDefinition" value="ALCH_Extract_FrostSalamander" />
+        <field name="Combine 2" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 2" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="ResultAmount 1" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Result 1" type="StringTableFieldDefinition" value="ALCH_Solution_Oil_Frost" />
+        <field name="PreviewStatsID" type="StringTableFieldDefinition" value="ALCH_Solution_Oil_Frost" />
+        <field name="Type 3" type="EnumerationTableFieldDefinition" value="Category" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 3" type="StringTableFieldDefinition" value="ALCH_Affinity_Air" />
+        <field name="Combine 3" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 3" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6fd10333-0ce8-4bf9-a305-ffd3c9793590" />
+        <field name="Name" type="NameTableFieldDefinition" value="ALCH_Oil_Reduce_SylvanStone_KELA" />
+        <field name="Type 1" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 1" type="StringTableFieldDefinition" value="OBJ_Laboratory_Installation" />
+        <field name="Combine 1" type="EnumerationTableFieldDefinition" value="Base" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 1" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="Type 2" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 2" type="StringTableFieldDefinition" value="ALCH_Extract_SylvanStone" />
+        <field name="Combine 2" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 2" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="ResultAmount 1" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Result 1" type="StringTableFieldDefinition" value="ALCH_Solution_Oil_Reduce" />
+        <field name="PreviewStatsID" type="StringTableFieldDefinition" value="ALCH_Solution_Oil_Reduce" />
+        <field name="Type 3" type="EnumerationTableFieldDefinition" value="Category" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 3" type="StringTableFieldDefinition" value="ALCH_Affinity_Water" />
+        <field name="Combine 3" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 3" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="85293349-c210-4341-a5df-b9a537bc3f41" />
+        <field name="Name" type="NameTableFieldDefinition" value="ALCH_Oil_RemoveResistanceFire_IceMephitEar_KELA" />
+        <field name="Type 1" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 1" type="StringTableFieldDefinition" value="OBJ_Laboratory_Installation" />
+        <field name="Combine 1" type="EnumerationTableFieldDefinition" value="Base" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 1" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="Type 2" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 2" type="StringTableFieldDefinition" value="ALCH_Extract_IceMephitHeart" />
+        <field name="Combine 2" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 2" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="ResultAmount 1" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Result 1" type="StringTableFieldDefinition" value="ALCH_Solution_Oil_RemoveResistanceFire" />
+        <field name="PreviewStatsID" type="StringTableFieldDefinition" value="ALCH_Solution_Oil_RemoveResistanceFire" />
+        <field name="Type 3" type="EnumerationTableFieldDefinition" value="Category" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 3" type="StringTableFieldDefinition" value="ALCH_Affinity_Fire" />
+        <field name="Combine 3" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 3" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6a519c56-acfc-4286-81c6-028338b8e86d" />
+        <field name="Name" type="NameTableFieldDefinition" value="ALCH_Oil_Wizardsbane_GremishkaTail_KELA" />
+        <field name="Type 1" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 1" type="StringTableFieldDefinition" value="OBJ_Laboratory_Installation" />
+        <field name="Combine 1" type="EnumerationTableFieldDefinition" value="Base" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 1" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="Type 2" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 2" type="StringTableFieldDefinition" value="ALCH_Extract_GremishkaTail" />
+        <field name="Combine 2" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 2" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="ResultAmount 1" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Result 1" type="StringTableFieldDefinition" value="ALCH_Solution_Oil_Wizardsbane" />
+        <field name="PreviewStatsID" type="StringTableFieldDefinition" value="ALCH_Solution_Oil_Wizardsbane" />
+        <field name="Type 3" type="EnumerationTableFieldDefinition" value="Category" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 3" type="StringTableFieldDefinition" value="ALCH_Affinity_Water" />
+        <field name="Combine 3" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 3" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="cb41356c-e399-450a-89a8-4b40eaae53a0" />
+        <field name="Name" type="NameTableFieldDefinition" value="ALCH_Poison_Simple_Bonecap_KELA" />
+        <field name="Type 1" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 1" type="StringTableFieldDefinition" value="OBJ_Laboratory_Installation" />
+        <field name="Combine 1" type="EnumerationTableFieldDefinition" value="Base" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 1" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="Type 2" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 2" type="StringTableFieldDefinition" value="ALCH_Extract_Bonecap" />
+        <field name="Combine 2" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 2" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="ResultAmount 1" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Result 1" type="StringTableFieldDefinition" value="OBJ_BasicPoison" />
+        <field name="PreviewStatsID" type="StringTableFieldDefinition" value="OBJ_BasicPoison" />
+        <field name="Type 3" type="EnumerationTableFieldDefinition" value="Category" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 3" type="StringTableFieldDefinition" value="ALCH_Affinity_Fire" />
+        <field name="Combine 3" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 3" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f0edeab8-92e0-4cb3-8920-5a19543e0075" />
+        <field name="Name" type="NameTableFieldDefinition" value="ALCH_Poison_Sleep_SwarmingToadstool_KELA" />
+        <field name="Type 1" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 1" type="StringTableFieldDefinition" value="OBJ_Laboratory_Installation" />
+        <field name="Combine 1" type="EnumerationTableFieldDefinition" value="Base" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 1" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="Type 2" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 2" type="StringTableFieldDefinition" value="ALCH_Extract_SwarmingToadstool" />
+        <field name="Combine 2" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 2" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="ResultAmount 1" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Result 1" type="StringTableFieldDefinition" value="OBJ_DrowPoison" />
+        <field name="PreviewStatsID" type="StringTableFieldDefinition" value="OBJ_DrowPoison" />
+        <field name="Type 3" type="EnumerationTableFieldDefinition" value="Category" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 3" type="StringTableFieldDefinition" value="ALCH_Affinity_Earth" />
+        <field name="Combine 3" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 3" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="cf113c11-2bf3-4d18-9fd9-5959ff00f5ea" />
+        <field name="Name" type="NameTableFieldDefinition" value="ALCH_Poison_Paralyze_CarrionCrawler_KELA" />
+        <field name="Type 1" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 1" type="StringTableFieldDefinition" value="OBJ_Laboratory_Installation" />
+        <field name="Combine 1" type="EnumerationTableFieldDefinition" value="Base" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 1" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="Type 2" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 2" type="StringTableFieldDefinition" value="ALCH_Extract_CarrionCrawler" />
+        <field name="Combine 2" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 2" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="ResultAmount 1" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Result 1" type="StringTableFieldDefinition" value="OBJ_CrawlerMucus" />
+        <field name="PreviewStatsID" type="StringTableFieldDefinition" value="OBJ_CrawlerMucus" />
+        <field name="Type 3" type="EnumerationTableFieldDefinition" value="Category" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 3" type="StringTableFieldDefinition" value="ALCH_Affinity_Shadow" />
+        <field name="Combine 3" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 3" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2a89d14a-db7e-4a54-9448-7634d0c2d024" />
+        <field name="Name" type="NameTableFieldDefinition" value="ALCH_Poison_Blind_LolthsCandle_KELA" />
+        <field name="Type 1" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 1" type="StringTableFieldDefinition" value="OBJ_Laboratory_Installation" />
+        <field name="Combine 1" type="EnumerationTableFieldDefinition" value="Base" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 1" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="Type 2" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 2" type="StringTableFieldDefinition" value="ALCH_Extract_LolthsCandle" />
+        <field name="Combine 2" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 2" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="ResultAmount 1" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Result 1" type="StringTableFieldDefinition" value="OBJ_Malice" />
+        <field name="PreviewStatsID" type="StringTableFieldDefinition" value="OBJ_Malice" />
+        <field name="Type 3" type="EnumerationTableFieldDefinition" value="Category" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 3" type="StringTableFieldDefinition" value="ALCH_Affinity_Fire" />
+        <field name="Combine 3" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 3" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="43684a96-e2bb-419a-a1a2-2aa99093b7af" />
+        <field name="Name" type="NameTableFieldDefinition" value="ALCH_Poison_UNI_Brewer_KELA" />
+        <field name="Type 1" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 1" type="StringTableFieldDefinition" value="OBJ_Laboratory_Installation" />
+        <field name="Combine 1" type="EnumerationTableFieldDefinition" value="Base" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 1" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="Type 2" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 2" type="StringTableFieldDefinition" value="ALCH_Extract_CorpseRose" />
+        <field name="Combine 2" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 2" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="ResultAmount 1" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Result 1" type="StringTableFieldDefinition" value="UNI_Poison_Brewer" />
+        <field name="PreviewStatsID" type="StringTableFieldDefinition" value="UNI_Poison_Brewer" />
+        <field name="Type 3" type="EnumerationTableFieldDefinition" value="Category" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 3" type="StringTableFieldDefinition" value="ALCH_Affinity_Water" />
+        <field name="Combine 3" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 3" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f54e6093-7edb-461d-966a-171b7b69f227" />
+        <field name="Name" type="NameTableFieldDefinition" value="ALCH_Toxin_Basic_BullywugTrumpet_KELA" />
+        <field name="Type 1" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 1" type="StringTableFieldDefinition" value="OBJ_Laboratory_Installation" />
+        <field name="Combine 1" type="EnumerationTableFieldDefinition" value="Base" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 1" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="Type 2" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 2" type="StringTableFieldDefinition" value="ALCH_Extract_BullywugTrumpet" />
+        <field name="Combine 2" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 2" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="ResultAmount 1" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Result 1" type="StringTableFieldDefinition" value="Solution_Toxin_Basic" />
+        <field name="PreviewStatsID" type="StringTableFieldDefinition" value="Solution_Toxin_Basic" />
+        <field name="Type 3" type="EnumerationTableFieldDefinition" value="Category" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 3" type="StringTableFieldDefinition" value="ALCH_Affinity_Air" />
+        <field name="Combine 3" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 3" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f5b5ce44-d718-4e93-85d2-15b776aa0c6a" />
+        <field name="Name" type="NameTableFieldDefinition" value="ALCH_Toxin_Greater_SnakeFang_KELA" />
+        <field name="Type 1" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 1" type="StringTableFieldDefinition" value="OBJ_Laboratory_Installation" />
+        <field name="Combine 1" type="EnumerationTableFieldDefinition" value="Base" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 1" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="Type 2" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 2" type="StringTableFieldDefinition" value="ALCH_Extract_SnakeFang" />
+        <field name="Combine 2" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 2" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="ResultAmount 1" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Result 1" type="StringTableFieldDefinition" value="OBJ_SerpentVenom" />
+        <field name="PreviewStatsID" type="StringTableFieldDefinition" value="OBJ_SerpentVenom" />
+        <field name="Type 3" type="EnumerationTableFieldDefinition" value="Category" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 3" type="StringTableFieldDefinition" value="ALCH_Affinity_Shadow" />
+        <field name="Combine 3" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 3" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="cc845223-3ae4-474d-a2b8-e4093f630ffd" />
+        <field name="Name" type="NameTableFieldDefinition" value="ALCH_Toxin_Superior_WyvernStinger_KELA" />
+        <field name="Type 1" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 1" type="StringTableFieldDefinition" value="OBJ_Laboratory_Installation" />
+        <field name="Combine 1" type="EnumerationTableFieldDefinition" value="Base" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 1" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="Type 2" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 2" type="StringTableFieldDefinition" value="ALCH_Extract_WyvernStinger" />
+        <field name="Combine 2" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 2" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="ResultAmount 1" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Result 1" type="StringTableFieldDefinition" value="OBJ_WyvernPoison" />
+        <field name="PreviewStatsID" type="StringTableFieldDefinition" value="OBJ_WyvernPoison" />
+        <field name="Type 3" type="EnumerationTableFieldDefinition" value="Category" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 3" type="StringTableFieldDefinition" value="ALCH_Affinity_Earth" />
+        <field name="Combine 3" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 3" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="25e3566a-fd68-44b4-92b6-79c1cd12f641" />
+        <field name="Name" type="NameTableFieldDefinition" value="ALCH_Toxin_Supreme_PurpleWorm_KELA" />
+        <field name="Type 1" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 1" type="StringTableFieldDefinition" value="OBJ_Laboratory_Installation" />
+        <field name="Combine 1" type="EnumerationTableFieldDefinition" value="Base" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 1" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="Type 2" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 2" type="StringTableFieldDefinition" value="ALCH_Extract_PurpleWorm" />
+        <field name="Combine 2" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 2" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="ResultAmount 1" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Result 1" type="StringTableFieldDefinition" value="OBJ_PurpleWormPoison" />
+        <field name="PreviewStatsID" type="StringTableFieldDefinition" value="OBJ_PurpleWormPoison" />
+        <field name="Type 3" type="EnumerationTableFieldDefinition" value="Category" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 3" type="StringTableFieldDefinition" value="ALCH_Affinity_Shadow" />
+        <field name="Combine 3" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 3" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="60f5f866-a9a7-428e-9a80-42e73da64a1f" />
+        <field name="Name" type="NameTableFieldDefinition" value="ALCH_Grenade_Fire_FireAmber_KELA" />
+        <field name="Type 1" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 1" type="StringTableFieldDefinition" value="OBJ_Laboratory_Installation" />
+        <field name="Combine 1" type="EnumerationTableFieldDefinition" value="Base" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 1" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="Type 2" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 2" type="StringTableFieldDefinition" value="ALCH_Extract_FireAmber" />
+        <field name="Combine 2" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 2" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="ResultAmount 1" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Result 1" type="StringTableFieldDefinition" value="OBJ_FireBottle" />
+        <field name="PreviewStatsID" type="StringTableFieldDefinition" value="OBJ_FireBottle" />
+        <field name="Type 3" type="EnumerationTableFieldDefinition" value="Category" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 3" type="StringTableFieldDefinition" value="ALCH_Affinity_Earth" />
+        <field name="Combine 3" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 3" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d5836aaf-15c1-4642-967b-61502553c590" />
+        <field name="Name" type="NameTableFieldDefinition" value="ALCH_LOW_RegenerationPrevention_Grenade_KELA" />
+        <field name="Type 1" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 1" type="StringTableFieldDefinition" value="OBJ_Laboratory_Installation" />
+        <field name="Combine 1" type="EnumerationTableFieldDefinition" value="Base" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 1" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="Type 2" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 2" type="StringTableFieldDefinition" value="ALCH_Extract_RegenerationPreventionGrenade" />
+        <field name="Combine 2" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 2" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="ResultAmount 1" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Result 1" type="StringTableFieldDefinition" value="LOW_RegenerationPrevention_Grenade" />
+        <field name="PreviewStatsID" type="StringTableFieldDefinition" value="LOW_RegenerationPrevention_Grenade" />
+        <field name="Type 3" type="EnumerationTableFieldDefinition" value="Category" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 3" type="StringTableFieldDefinition" value="ALCH_Affinity_Fey" />
+        <field name="Combine 3" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="IngredientCombineType" version="1" />
+        <field name="Transform 3" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

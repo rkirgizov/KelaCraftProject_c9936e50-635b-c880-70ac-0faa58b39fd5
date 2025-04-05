@@ -1,0 +1,789 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+DB_KELA_ArmorSlots(EQUIPMENTSLOT.Boots);
+DB_KELA_ArmorSlots(EQUIPMENTSLOT.Helmet);
+DB_KELA_ArmorSlots(EQUIPMENTSLOT.Gloves);
+DB_KELA_ArmorSlots(EQUIPMENTSLOT.Breast);
+DB_KELA_ArmorSlots(EQUIPMENTSLOT.MeleeOffHand);
+
+//DB_KELA_ArmorSlots_Boots(EQUIPMENTSLOT.Boots);
+//DB_KELA_ArmorSlots_Helmet(EQUIPMENTSLOT.Helmet);
+//DB_KELA_ArmorSlots_Gloves(EQUIPMENTSLOT.Gloves);
+//DB_KELA_ArmorSlots_Breast(EQUIPMENTSLOT.Breast);
+KBSECTION
+// -----------------------------------------------------------------------------------
+// CRAFT ON CREATE TOOLS
+// -----------------------------------------------------------------------------------
+//REGION
+// IF Tool has CreateTool
+// If you do not delete it, the context of the previous user is saved on the tool.
+IF
+UseStarted(_User,_Tool)
+AND
+HasActiveStatus(_User, "KELA_CRAFT_CREATION_MOD", 1)
+AND
+DB_KELA_CoreToolTag_CreateToolTemplate(_Tag, _CreateToolTemplate)
+AND
+IsTagged(_Tool, _Tag, 1)
+AND
+GetItemByTemplateInInventory(_CreateToolTemplate, _Tool, _)
+THEN
+NOT DB_KELA_CraftingMenu_Opened(1);
+TemplateRemoveFrom(_CreateToolTemplate, _Tool, 1);
+TemplateAddTo(_CreateToolTemplate,_Tool,1,0);
+DB_KELA_Create_Tool_User(_Tool,_User);
+TimerLaunch("KELA_Wait_For_Adding_CreateTool", 50);
+//
+// IF Tool has not CreateTool, then we must add it
+IF
+UseStarted(_User,_Tool)
+AND
+HasActiveStatus(_User, "KELA_CRAFT_CREATION_MOD", 1)
+AND
+DB_KELA_CoreToolTag_CreateToolTemplate(_Tag, _CreateToolTemplate)
+AND
+IsTagged(_Tool, _Tag, 1)
+AND
+NOT GetItemByTemplateInInventory(_CreateToolTemplate, _Tool, _)
+THEN
+NOT DB_KELA_CraftingMenu_Opened(1);
+TemplateAddTo(_CreateToolTemplate,_Tool,1,0);
+DB_KELA_Create_Tool_User(_Tool,_User);
+TimerLaunch("KELA_Wait_For_Adding_CreateTool", 50);
+//
+// And wait until it is added
+IF
+TimerFinished("KELA_Wait_For_Adding_CreateTool")
+AND
+DB_KELA_Create_Tool_User(_Tool,_User)
+THEN
+SetDualEntityEvent(_User, _Tool, "KELA_CreationStarted");
+//
+// Open Crafting Menu
+// ANVIL - only Blacksmith
+IF
+DualEntityEvent(_User, _Tool, "KELA_CreationStarted")
+AND
+DB_KELA_CoreToolTag_CreateToolTemplate(_Tag, _CreateToolTemplate)
+AND
+IsTagged(_Tool, _Tag, 1)
+AND 
+_Tag == KELAANVIL_01dc7295-d16e-4d98-afe2-ea39c5f1ba43
+AND 
+HasActiveStatus(_Tool,"KELA_SMELTINGFORGE_AURA_STAGE_2_ANVIL",1)
+AND
+IsTagged(_User, (TAG)KELABLACKSMITH_c78b77b9-b33c-43fb-8dec-a91bacebb1bf, 1)
+AND
+GetItemByTemplateInInventory(_CreateToolTemplate, _Tool, _CreateTool)
+THEN
+DB_KELA_CraftingMenu_Opened(1);
+Use((CHARACTER)_User, (ITEM)_CreateTool, "");
+//
+// ANVIL - Block Not Fire Forge
+IF
+DualEntityEvent(_User, _Tool, "KELA_CreationStarted")
+AND
+DB_KELA_CoreToolTag_CreateToolTemplate(_Tag, _CreateToolTemplate)
+AND
+IsTagged(_Tool, _Tag, 1)
+AND 
+_Tag == KELAANVIL_01dc7295-d16e-4d98-afe2-ea39c5f1ba43
+AND
+NOT DB_KELA_CraftingMenu_Opened(1)
+AND
+NOT HasActiveStatus(_Tool,"KELA_SMELTINGFORGE_AURA_STAGE_1_ANVIL",1)
+AND
+NOT HasActiveStatus(_Tool,"KELA_SMELTINGFORGE_AURA_STAGE_2_ANVIL",1)
+THEN
+ApplyStatus(_Tool, "KELA_MESSAGE_ANVIL_NOT_FIRE", 5.0, 1);
+PROC_PlayCantUseItemAD((CHARACTER)_User);
+//
+// ANVIL - Block Low Temper Forge
+IF
+DualEntityEvent(_User, _Tool, "KELA_CreationStarted")
+AND
+DB_KELA_CoreToolTag_CreateToolTemplate(_Tag, _CreateToolTemplate)
+AND
+IsTagged(_Tool, _Tag, 1)
+AND 
+_Tag == KELAANVIL_01dc7295-d16e-4d98-afe2-ea39c5f1ba43
+AND
+NOT DB_KELA_CraftingMenu_Opened(1)
+AND
+HasActiveStatus(_Tool,"KELA_SMELTINGFORGE_AURA_STAGE_1_ANVIL",1)
+AND
+NOT HasActiveStatus(_Tool,"KELA_SMELTINGFORGE_AURA_STAGE_2_ANVIL",1)
+THEN
+ApplyStatus(_Tool, "KELA_MESSAGE_ANVIL_FIRE_TOO_COLD", 5.0, 1);
+PROC_PlayCantUseItemAD((CHARACTER)_User);
+//
+// ANVIL - Block Not Blacksmith
+IF
+DualEntityEvent(_User, _Tool, "KELA_CreationStarted")
+AND
+DB_KELA_CoreToolTag_CreateToolTemplate(_Tag, _CreateToolTemplate)
+AND
+IsTagged(_Tool, _Tag, 1)
+AND 
+_Tag == KELAANVIL_01dc7295-d16e-4d98-afe2-ea39c5f1ba43
+AND
+NOT DB_KELA_CraftingMenu_Opened(1)
+AND
+NOT IsTagged(_User, (TAG)KELABLACKSMITH_c78b77b9-b33c-43fb-8dec-a91bacebb1bf, 1)
+THEN
+ApplyStatus(_Tool, "KELA_MESSAGE_NO_KNOWLEDGE_ANVIL_BLACKSMITH", 5.0, 1);
+PROC_PlayCantUseItemAD((CHARACTER)_User);
+//
+// WORKBENCH - Blacksmith, Apprentice, Artisan, Elf
+IF
+DualEntityEvent(_User, _Tool, "KELA_CreationStarted")
+AND
+DB_KELA_CoreToolTag_CreateToolTemplate(_Tag, _CreateToolTemplate)
+AND
+IsTagged(_Tool, _Tag, 1)
+AND 
+_Tag == KELAWORKBENCH_d2eedda0-c4ce-4602-960e-c57b4989b420
+AND 
+DB_KELA_Workbench_User_Tags(_UserTag)
+AND 
+IsTagged(_User, _UserTag, 1)
+AND
+GetItemByTemplateInInventory(_CreateToolTemplate, _Tool, _CreateTool)
+THEN
+DB_KELA_CraftingMenu_Opened(1);
+Use((CHARACTER)_User, (ITEM)_CreateTool, "");
+//
+// WORKBENCH - Block NOT Blacksmith, Apprentice, Artisan, Elf
+IF
+DualEntityEvent(_User, _Tool, "KELA_CreationStarted")
+AND
+DB_KELA_CoreToolTag_CreateToolTemplate(_Tag, _CreateToolTemplate)
+AND
+IsTagged(_Tool, _Tag, 1)
+AND 
+_Tag == KELAWORKBENCH_d2eedda0-c4ce-4602-960e-c57b4989b420
+AND
+NOT DB_KELA_CraftingMenu_Opened(1)
+AND
+DB_KELA_Workbench_User_Tags(_UserTag)
+AND 
+NOT IsTagged(_User, _UserTag, 1)
+THEN
+ApplyStatus(_Tool, "KELA_MESSAGE_NO_KNOWLEDGE_WORKBENCH", 5.0, 1);
+PROC_PlayCantUseItemAD((CHARACTER)_User);
+//
+// -----------------------------------------------------------------------------------
+// COMBINING BLUEPRINT IN CRAFTING TOOLS 
+// -----------------------------------------------------------------------------------
+//
+// CLEAR old combinations vars on start use
+IF
+UseStarted(_User,_Tool)
+AND
+HasActiveStatus(_User, "KELA_CRAFT_CREATION_MOD", 1)
+AND
+DB_KELA_CoreToolTag_CreateToolTemplate(_Tag, _CreateToolTemplate)
+AND
+IsTagged(_Tool, _Tag, 1)
+THEN
+ObjectTimerLaunch(_User, "KELA_Wait_Combine_Clear", 0);
+//
+// -----------------------------------------------------------------------------------
+//
+// COLLECT combination stats PROC_BlockCombineItem
+//
+// Count ingredients
+PROC
+PROC_BlockCombineItem(_User,_)
+AND
+DB_KELA_Ingredients_Count(_OldCounter)
+AND
+IntegerSum(_OldCounter, 1, _NewCounter)
+AND 
+NOT DB_OnlyOnce("KELA_Blueprint_Finalizied")
+THEN
+DB_KELA_Ingredients_Count(_NewCounter);
+//
+// Ingredient 1, Get ItemForBlock
+PROC
+PROC_BlockCombineItem(_User,_ItemX)
+AND 
+GetStatString(_ItemX, _StatName)
+AND
+DB_KELA_Ingredients_Count(1)
+THEN
+DB_KELA_ItemForBlock(_ItemX);
+//
+// Ingredients 1-4, get ingredients
+PROC
+PROC_BlockCombineItem(_User,_ItemX)
+AND 
+GetStatString(_ItemX, _StatName)
+AND
+DB_KELA_Ingredients_Count(_Count)
+AND
+_Count < 5
+THEN
+DB_KELA_Ingredients(_Count,_StatName);
+//
+// Ingredient 5, get ingredient 5, final count
+PROC
+PROC_BlockCombineItem(_User,_ItemX)
+AND 
+GetStatString(_ItemX, _StatName)
+AND
+DB_KELA_Ingredients_Count(5)
+AND 
+NOT DB_OnlyOnce("KELA_Blueprint_Finalizied")
+THEN
+DB_KELA_Ingredients(5,_StatName);
+DB_KELA_Ingredients_Count_Final(5);
+PROC_KELA_Finalizing_Blueprint(_User);
+//
+// Ingredients are out, get final count
+PROC
+PROC_BlockCombineItem(_User,_ItemX)
+AND 
+NOT GetStatString(_ItemX, _)
+AND
+DB_KELA_Ingredients_Count(_Count)
+AND
+IntegerSubtract(_Count, 1, _FinalCount)
+AND 
+NOT DB_OnlyOnce("KELA_Blueprint_Finalizied")
+THEN
+DB_KELA_Ingredients_Count_Final(_FinalCount);
+PROC_KELA_Finalizing_Blueprint(_User);
+//
+// -----------------------------------------------------------------------------------
+//
+// FINALIZING PROC_KELA_Finalizing_Blueprint
+//
+// Get blueprint if ingredients match
+PROC
+PROC_KELA_Finalizing_Blueprint((CHARACTER)_User)
+AND
+QRY_KELA_Get_Finalizied_Blueprint()
+THEN
+DB_OnlyOnce("KELA_Blueprint_Finalizied");
+//
+// Check requirements
+//
+// BLOCKING Blueprint NOT known
+PROC
+PROC_KELA_Finalizing_Blueprint((CHARACTER)_User)
+AND
+DB_KELA_ItemForBlock(_ItemForBlock)
+AND
+DB_KELA_Finalizied_Blueprint(_Blueprint)
+AND
+NOT DB_KELA_Blueprints_Known(_Blueprint,_)
+THEN
+DB_CustomCombineItemResponse(_User,_ItemForBlock,1);
+ApplyStatus(_User, "KELA_MESSAGE_BLUEPRINT_NO_KNOWLEDGE", 5.0, 1);
+PROC_PlayCantUseItemAD((CHARACTER)_User);
+//
+// BLOCKING Creator low level
+PROC
+PROC_KELA_Finalizing_Blueprint((CHARACTER)_User)
+AND
+DB_KELA_ItemForBlock(_ItemForBlock)
+AND
+DB_KELA_Finalizied_Blueprint(_Blueprint)
+AND
+DB_KELA_Blueprints_Known(_Blueprint,_)
+AND 
+DB_KELA_Blueprints_Need_Level(_Blueprint,_IntLevel)
+AND
+GetLevel(_User, _UserLevel)
+AND
+IntegerSubtract(_IntLevel, _UserLevel, _LevelDiff)
+AND
+_LevelDiff > 0
+THEN
+DB_CustomCombineItemResponse(_User,_ItemForBlock,1);
+ApplyStatus(_User, "KELA_MESSAGE_BLUEPRINT_NO_REQUIREMENTS", 5.0, 1);
+PROC_PlayCantUseItemAD((CHARACTER)_User);
+//
+// BLOCKING Creator no required status
+PROC
+PROC_KELA_Finalizing_Blueprint((CHARACTER)_User)
+AND
+DB_KELA_ItemForBlock(_ItemForBlock)
+AND
+DB_KELA_Finalizied_Blueprint(_Blueprint)
+AND
+DB_KELA_Blueprints_Known(_Blueprint,_)
+AND 
+DB_KELA_Blueprints_Need_Status(_Blueprint, _Status)
+AND
+NOT HasActiveStatus(_User, _Status, 1)
+THEN
+DB_CustomCombineItemResponse(_User,_ItemForBlock,1);
+ApplyStatus(_User, "KELA_MESSAGE_BLUEPRINT_NO_REQUIREMENTS", 5.0, 1);
+PROC_PlayCantUseItemAD((CHARACTER)_User);
+//
+// BLOCKING Creator no required tag
+PROC
+PROC_KELA_Finalizing_Blueprint((CHARACTER)_User)
+AND
+DB_KELA_ItemForBlock(_ItemForBlock)
+AND
+DB_KELA_Finalizied_Blueprint(_Blueprint)
+AND
+DB_KELA_Blueprints_Known(_Blueprint,_)
+AND 
+DB_KELA_Blueprints_Need_Tag(_Blueprint, _Tag)
+AND
+NOT IsTagged(_User, _Tag, 1)
+THEN
+DB_CustomCombineItemResponse(_User,_ItemForBlock,1);
+ApplyStatus(_User, "KELA_MESSAGE_BLUEPRINT_NO_REQUIREMENTS", 5.0, 1);
+PROC_PlayCantUseItemAD((CHARACTER)_User);
+//
+// BLOCKING Creator no Elven Roots if needed
+PROC
+PROC_KELA_Finalizing_Blueprint((CHARACTER)_User)
+AND
+DB_KELA_ItemForBlock(_ItemForBlock)
+AND
+DB_KELA_Finalizied_Blueprint(_Blueprint)
+AND
+DB_KELA_Blueprints_Known(_Blueprint,_)
+AND 
+DB_KELA_Blueprints_Need_ELvenRoots(_Blueprint, 1)
+AND
+NOT IsTagged(_User, (TAG)REALLY_ELF_772b1dc6-14be-417f-afa3-c6cf364f45b4, 1)
+AND
+NOT IsTagged(_User, (TAG)REALLY_DROWELF_676e854b-d74b-44f3-8363-3ef27164a54d, 1)
+AND
+NOT IsTagged(_User, (TAG)REALLY_WOODELF_b12e8dff-c1f0-4e9c-9ec0-1cafd22bb637, 1)
+AND
+NOT IsTagged(_User, (TAG)REALLY_HALFELF_277f9609-ad0c-4883-b56d-0850904e88df, 1)
+THEN
+DB_CustomCombineItemResponse(_User,_ItemForBlock,1);
+ApplyStatus(_User, "KELA_MESSAGE_BLUEPRINT_NO_REQUIREMENTS", 5.0, 1);
+PROC_PlayCantUseItemAD((CHARACTER)_User);
+//
+//
+// Need clear variables
+PROC
+PROC_KELA_Finalizing_Blueprint((CHARACTER)_User)
+THEN
+//SetDualEntityEvent(_User, _User, "Need clear variables");
+ObjectTimerLaunch(_User, "KELA_Wait_Combine_Clear", 200);
+//
+// -----------------------------------------------------------------------------------
+//
+// QUERIES
+//
+// 2 slots
+QRY
+QRY_KELA_Get_Finalizied_Blueprint()
+AND
+DB_KELA_Ingredients_Count_Final(2)
+AND
+DB_KELA_Ingredients(1, _ItemStatName1)
+AND
+DB_KELA_Ingredients(2, _ItemStatName2)
+AND
+DB_KELA_Blueprints(_Blueprint, _ItemStatName1)
+AND
+DB_KELA_Blueprints(_Blueprint, _ItemStatName2)
+THEN
+DB_KELA_Finalizied_Blueprint(_Blueprint);
+//
+// 3 slots
+QRY
+QRY_KELA_Get_Finalizied_Blueprint()
+AND
+DB_KELA_Ingredients_Count_Final(3)
+AND
+DB_KELA_Ingredients(1, _ItemStatName1)
+AND
+DB_KELA_Ingredients(2, _ItemStatName2)
+AND
+DB_KELA_Ingredients(3, _ItemStatName3)
+AND
+DB_KELA_Blueprints(_Blueprint, _ItemStatName1)
+AND
+DB_KELA_Blueprints(_Blueprint, _ItemStatName2)
+AND
+DB_KELA_Blueprints(_Blueprint, _ItemStatName3)
+THEN
+DB_KELA_Finalizied_Blueprint(_Blueprint);
+//
+// 4 slots
+QRY
+QRY_KELA_Get_Finalizied_Blueprint()
+AND
+DB_KELA_Ingredients_Count_Final(4)
+AND
+DB_KELA_Ingredients(1, _ItemStatName1)
+AND
+DB_KELA_Ingredients(2, _ItemStatName2)
+AND
+DB_KELA_Ingredients(3, _ItemStatName3)
+AND
+DB_KELA_Ingredients(4, _ItemStatName4)
+AND
+DB_KELA_Blueprints(_Blueprint, _ItemStatName1)
+AND
+DB_KELA_Blueprints(_Blueprint, _ItemStatName2)
+AND
+DB_KELA_Blueprints(_Blueprint, _ItemStatName3)
+AND
+DB_KELA_Blueprints(_Blueprint, _ItemStatName4)
+THEN
+DB_KELA_Finalizied_Blueprint(_Blueprint);
+//
+// 5 slots
+QRY
+QRY_KELA_Get_Finalizied_Blueprint()
+AND
+DB_KELA_Ingredients_Count_Final(5)
+AND
+DB_KELA_Ingredients(1, _ItemStatName1)
+AND
+DB_KELA_Ingredients(2, _ItemStatName2)
+AND
+DB_KELA_Ingredients(3, _ItemStatName3)
+AND
+DB_KELA_Ingredients(4, _ItemStatName4)
+AND
+DB_KELA_Ingredients(5, _ItemStatName5)
+AND
+DB_KELA_Blueprints(_Blueprint, _ItemStatName1)
+AND
+DB_KELA_Blueprints(_Blueprint, _ItemStatName2)
+AND
+DB_KELA_Blueprints(_Blueprint, _ItemStatName3)
+AND
+DB_KELA_Blueprints(_Blueprint, _ItemStatName4)
+AND
+DB_KELA_Blueprints(_Blueprint, _ItemStatName5)
+THEN
+DB_KELA_Finalizied_Blueprint(_Blueprint);
+//
+// The True must always be
+QRY
+QRY_KELA_Get_Finalizied_Blueprint()
+THEN
+DB_NOOP(1);
+//
+//----------------------------------------------------------------
+// TECHNICAL 
+//----------------------------------------------------------------
+//
+// SINGLETONS
+//
+// Singleton for counter
+IF
+DB_KELA_Ingredients_Count(_NewState)
+AND
+DB_KELA_Ingredients_Count(_OldState)
+AND
+_NewState != _OldState
+THEN
+NOT DB_KELA_Ingredients_Count(_OldState);
+//
+// Singleton for final counter
+IF
+DB_KELA_Ingredients_Count_Final(_NewState)
+AND
+DB_KELA_Ingredients_Count_Final(_OldState)
+AND
+_NewState != _OldState
+THEN
+NOT DB_KELA_Ingredients_Count_Final(_OldState);
+//
+// Singletons for tool and user
+IF
+DB_KELA_Create_Tool_User(_Tool,_User)
+AND
+DB_KELA_Create_Tool_User(_OldTool,_OldUser)
+AND
+_User != _OldUser
+THEN
+NOT DB_KELA_Create_Tool_User(_OldTool,_OldUser);
+//
+IF
+DB_KELA_Create_Tool_User(_Tool,_User)
+AND
+DB_KELA_Create_Tool_User(_OldTool,_OldUser)
+AND
+_Tool != _OldTool
+THEN
+NOT DB_KELA_Create_Tool_User(_OldTool,_OldUser);
+//
+// CLEAR VARIABLES
+//
+IF
+ObjectTimerFinished(_User, "KELA_Wait_Combine_Clear")
+THEN
+DB_KELA_Ingredients_Count(0);
+DB_KELA_Ingredients_Count_Final(0);
+NOT DB_OnlyOnce("KELA_Blueprint_Finalizied");
+//
+IF
+ObjectTimerFinished(_User, "KELA_Wait_Combine_Clear")
+AND
+DB_KELA_ItemForBlock(_ItemX)
+THEN
+NOT DB_CustomCombineItemResponse((CHARACTER)_User,_ItemX,1);
+NOT DB_KELA_ItemForBlock(_ItemX);
+//
+IF
+ObjectTimerFinished(_User, "KELA_Wait_Combine_Clear")
+AND
+DB_KELA_Ingredients(_Count,_ItemX)
+THEN
+NOT DB_KELA_Ingredients(_Count,_ItemX);
+//
+IF
+ObjectTimerFinished(_User, "KELA_Wait_Combine_Clear")
+AND
+DB_KELA_Finalizied_Blueprint(_Blueprint)
+THEN
+NOT DB_KELA_Finalizied_Blueprint(_Blueprint);
+//
+//END_REGION
+// -----------------------------------------------------------------------------------
+// CRAFT ON CREATE TOOLS
+// -----------------------------------------------------------------------------------
+
+// -----------------------------------------------------------------------------------
+// ADDITIONAL STATUSES
+// -----------------------------------------------------------------------------------
+//REGION
+//
+// Try Apply Additional Features
+IF
+Combined(_CreateTool, _, _, _, _, _User, _Result)
+AND
+DB_KELA_Create_Tool_User(_CoreTool,_User)
+AND
+DB_KELA_CoreToolTag_CreateToolTemplate(_Tag, _)
+AND
+IsTagged(_CoreTool, _Tag, 1)
+THEN
+SetDualEntityEvent(_CoreTool, _Result, "KELA_Try_Apply_Additional_Status");
+//
+// MAIN QUERIES for additional features
+//
+// WEAPON
+QRY
+QRY_KELA_Apply_Status_On_Result((ITEM)_Result, (STRING)_WeaponStatus, (STRING)_ArmorStatus)
+AND
+IsWeapon((ITEM)_Result, 1)
+THEN
+ApplyStatus(_Result, _WeaponStatus, -1.0, 0);
+DB_NOOP(1);
+//
+// ARMOR
+QRY
+QRY_KELA_Apply_Status_On_Result((ITEM)_Result, (STRING)_WeaponStatus, (STRING)_ArmorStatus)
+AND
+NOT IsWeapon((ITEM)_Result, 1)
+AND
+GetEquipmentSlotForItem((ITEM)_Result, _ItemSlot)
+AND
+DB_KELA_ArmorSlots(_ItemSlot)
+THEN
+ApplyStatus(_Result, _ArmorStatus, -1.0, 0);
+DB_NOOP(1);
+
+
+
+//
+// ARTISAN GUILD
+IF
+DualEntityEvent(_Tool, _Result, "KELA_Try_Apply_Additional_Status")
+AND
+GetHostCharacter(_User)
+AND
+DB_Players(_User) // used to be checking for DB_PartyMembers, problem with this is that if a familiar/summon was used, it'll be treated like whole party is following a companion into the hole - which isn't expected behavior.
+AND
+IsControlled(_User, 1)
+AND
+IsTagged(_User, (TAG)GUILD_ARTISAN_baf9fb0e-f535-40a0-bb78-3ec289d84e66, 1)
+AND
+QRY_KELA_Apply_Status_On_Result((ITEM)_Result, "KELA_FORGED_WEAPON_GUILD_ARTISAN_BONUS", "KELA_FORGED_ARMOR_GUILD_ARTISAN_BONUS")
+THEN
+//SetDualEntityEvent(_Result, _Result, "KELA Applied ARTISAN GUILD");
+DB_NOOP(1);
+
+//
+// ELVEN ROOTS
+IF
+DualEntityEvent(_Tool, _Result, "KELA_Try_Apply_Additional_Status")
+AND
+GetHostCharacter(_User)
+AND
+DB_Players(_User) // used to be checking for DB_PartyMembers, problem with this is that if a familiar/summon was used, it'll be treated like whole party is following a companion into the hole - which isn't expected behavior.
+AND
+IsControlled(_User, 1)
+//AND
+//DB_KELA_Elf_Tags(_ElvenTags)
+//AND
+//IsTagged(_User, _ElvenTags, 1)
+AND
+QRY_KELA_Char_Has_Elven_Root(_User)
+AND
+IsRangedWeapon((ITEM)_Result, 1, 1)
+AND
+QRY_KELA_Apply_Status_On_Result((ITEM)_Result, "KELA_FORGED_WEAPON_ELVEN_ROOTS_BONUS", "-")
+THEN
+//SetDualEntityEvent(_Result, _Result, "KELA Applied ELVEN ROOTS");
+DB_NOOP(1);
+
+//
+// GNOME FORGE
+IF
+DualEntityEvent(_Tool, _Result, "KELA_Try_Apply_Additional_Status")
+AND
+GetHostCharacter(_User)
+AND
+DB_Players(_User) // used to be checking for DB_PartyMembers, problem with this is that if a familiar/summon was used, it'll be treated like whole party is following a companion into the hole - which isn't expected behavior.
+AND
+IsControlled(_User, 1)
+AND
+HasActiveStatus(_Tool, "KELA_SMELTINGFORGE_AURA_GNOME_TOOL", 1)
+AND
+QRY_KELA_Apply_Status_On_Result((ITEM)_Result, "KELA_FORGED_WEAPON_GNOMEFORGE", "KELA_FORGED_ARMOR_GNOMEFORGE_AURA")
+THEN
+//SetDualEntityEvent(_Result, _Result, "KELA Applied GNOME FORGE");
+DB_OnlyOnce("KELA_Additional_Aura_In_Forge_Known");
+
+//
+// LAST LIGHT FORGE
+IF
+DualEntityEvent(_Tool, _Result, "KELA_Try_Apply_Additional_Status")
+AND
+GetHostCharacter(_User)
+AND
+DB_Players(_User) // used to be checking for DB_PartyMembers, problem with this is that if a familiar/summon was used, it'll be treated like whole party is following a companion into the hole - which isn't expected behavior.
+AND
+IsControlled(_User, 1)
+AND
+HasActiveStatus(_Tool, "KELA_SMELTINGFORGE_AURA_LASTINN_TOOL", 1)
+AND
+QRY_KELA_Apply_Status_On_Result((ITEM)_Result, "KELA_FORGED_WEAPON_LASTINN_AURA", "KELA_FORGED_ARMOR_LASTINN_AURA")
+THEN
+//SetDualEntityEvent(_Result, _Result, "KELA Applied LAST LIGHT");
+DB_OnlyOnce("KELA_Additional_Aura_In_Forge_Known");
+
+//
+// SHADOW CURSED FORGE
+IF
+DualEntityEvent(_Tool, _Result, "KELA_Try_Apply_Additional_Status")
+AND
+GetHostCharacter(_User)
+AND
+DB_Players(_User) // used to be checking for DB_PartyMembers, problem with this is that if a familiar/summon was used, it'll be treated like whole party is following a companion into the hole - which isn't expected behavior.
+AND
+IsControlled(_User, 1)
+AND
+HasActiveStatus(_Tool, "KELA_SMELTINGFORGE_AURA_CURSED_TOOL", 1)
+AND
+QRY_KELA_Apply_Status_On_Result((ITEM)_Result, "KELA_FORGED_WEAPON_CURSED_AURA", "KELA_FORGED_ARMOR_CURSED_AURA")
+THEN
+//SetDualEntityEvent(_Result, _Result, "KELA Applied SHADOW CURSED");
+DB_OnlyOnce("KELA_Additional_Aura_In_Forge_Known");
+
+//
+// FORGE OF THE NINE
+IF
+DualEntityEvent(_Tool, _Result, "KELA_Try_Apply_Additional_Status")
+AND
+GetHostCharacter(_User)
+AND
+DB_Players(_User) // used to be checking for DB_PartyMembers, problem with this is that if a familiar/summon was used, it'll be treated like whole party is following a companion into the hole - which isn't expected behavior.
+AND
+IsControlled(_User, 1)
+AND
+HasActiveStatus(_Tool, "KELA_SMELTINGFORGE_AURA_NINE_TOOL", 1)
+AND
+QRY_KELA_Apply_Status_On_Result((ITEM)_Result, "KELA_FORGED_WEAPON_NINE_AURA", "KELA_FORGED_ARMOR_NINE_AURA")
+THEN
+//SetDualEntityEvent(_Result, _Result, "KELA Applied NINE");
+DB_OnlyOnce("KELA_Additional_Aura_In_Forge_Known");
+
+//
+// SUSSUR FORGE
+//
+// Forge Item 3
+IF
+DualEntityEvent(_Tool, _Result, "KELA_Try_Apply_Additional_Status")
+AND
+GetHostCharacter(_User)
+AND
+DB_Players(_User) // used to be checking for DB_PartyMembers, problem with this is that if a familiar/summon was used, it'll be treated like whole party is following a companion into the hole - which isn't expected behavior.
+AND
+IsControlled(_User, 1)
+AND
+HasActiveStatus(_Tool, "KELA_SMELTINGFORGE_AURA_SUSSUR_TOOL", 1)
+AND
+DB_KELA_Sussur_Forge_Item_Created_Count(2)
+AND
+DB_FOR_IncompleteMasterwork_ForgingFurnace(_Furnace)
+AND
+QRY_KELA_Apply_Status_On_Result((ITEM)_Result, "KELA_FORGED_WEAPON_SUSSURFORGE", "KELA_FORGED_ARMOR_SUSSURFORGE")
+THEN
+//SetDualEntityEvent(_Result, _Result, "KELA Applied SUSSUR FORGE");
+NOT DB_KELA_Sussur_Forge_Item_Created_Count(2);
+RemoveStatus(_Furnace, "BURNING");
+// Wait a bit so the VFX ends first
+RealtimeObjectTimerLaunch(_User, "KELA_ReplaceForge_SussurToNotSussur", 1500);
+//
+// Forge Item 2
+IF
+DualEntityEvent(_Tool, _Result, "KELA_Try_Apply_Additional_Status")
+AND
+GetHostCharacter(_User)
+AND
+DB_Players(_User) // used to be checking for DB_PartyMembers, problem with this is that if a familiar/summon was used, it'll be treated like whole party is following a companion into the hole - which isn't expected behavior.
+AND
+IsControlled(_User, 1)
+AND
+HasActiveStatus(_Tool, "KELA_SMELTINGFORGE_AURA_SUSSUR_TOOL", 1)
+AND
+DB_KELA_Sussur_Forge_Item_Created_Count(1)
+AND
+QRY_KELA_Apply_Status_On_Result((ITEM)_Result, "KELA_FORGED_WEAPON_SUSSURFORGE", "KELA_FORGED_ARMOR_SUSSURFORGE")
+THEN
+//SetDualEntityEvent(_Result, _Result, "KELA Applied SUSSUR FORGE");
+NOT DB_KELA_Sussur_Forge_Item_Created_Count(1);
+DB_KELA_Sussur_Forge_Item_Created_Count(2);
+//
+// Forge Item 1
+IF
+DualEntityEvent(_Tool, _Result, "KELA_Try_Apply_Additional_Status")
+AND
+GetHostCharacter(_User)
+AND
+DB_Players(_User) // used to be checking for DB_PartyMembers, problem with this is that if a familiar/summon was used, it'll be treated like whole party is following a companion into the hole - which isn't expected behavior.
+AND
+IsControlled(_User, 1)
+AND
+HasActiveStatus(_Tool, "KELA_SMELTINGFORGE_AURA_SUSSUR_TOOL", 1)
+AND
+NOT DB_KELA_Sussur_Forge_Item_Created_Count(_)
+AND
+QRY_KELA_Apply_Status_On_Result((ITEM)_Result, "KELA_FORGED_WEAPON_SUSSURFORGE", "KELA_FORGED_ARMOR_SUSSURFORGE")
+THEN
+//SetDualEntityEvent(_Result, _Result, "KELA Applied SUSSUR FORGE");
+DB_KELA_Sussur_Forge_Item_Created_Count(1);
+//
+
+
+//
+//END_REGION
+// -----------------------------------------------------------------------------------
+// ADDITIONAL STATUSES 
+// -----------------------------------------------------------------------------------
+EXITSECTION
+
+ENDEXITSECTION
+ParentTargetEdge "GLO_KelaCraftProject"

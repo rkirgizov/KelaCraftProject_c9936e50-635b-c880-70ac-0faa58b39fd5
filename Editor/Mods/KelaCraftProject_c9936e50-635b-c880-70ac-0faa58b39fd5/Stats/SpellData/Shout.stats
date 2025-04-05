@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="9fd4ac7a-fad7-424f-83df-0893eae93c38">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8eb2f31c-ddef-4993-a916-4ae5a1d92756" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_Craft_Creation_Mod" />
+        <field name="Level" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="SpellSchool" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hbf87fc15g5e73g4c34gf735gc30f45d0f045" version="3" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h5cf02511g175fg03a6g6d26gbfbc221cb60c" version="3" />
+        <field name="SpellPrepareCost" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Shout_KELA_Craft_Creation_Mod_1;Shout_KELA_Craft_Creation_Mod_2;Shout_KELA_Craft_Creation_Mod_3;Shout_KELA_Craft_Creation_Mod_4;Shout_KELA_Craft_Creation_Mod_5" />
+        <field name="AIFlags" type="EnumerationListTableFieldDefinition" value="CanNotUse" enumeration_type_name="AIFlags" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_KelaCreation_Main" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsLinkedSpellContainer;IgnoreSilence;ImmediateCast" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="MagicalNonDamage" enumeration_type_name="HitAnimationType" version="1" />
+        <field name="Requirements" type="StringTableFieldDefinition" value="!Combat" />
+        <field name="PreviewCursor" type="EnumerationTableFieldDefinition" value="Cast" enumeration_type_name="CursorMode" version="1" />
+        <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1" />
+        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Utility" enumeration_type_name="VerbalIntent" version="1" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="he39294e7gacf5g37f6gb97fgc2a91fa3c636" version="2" />
+        <field name="TooltipUpcastDescription" type="GuidObjectTableFieldDefinition" value="6ff1780a-855a-414c-a8bf-811251537206" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="32d5faad-eede-43ae-af75-4765957cd997" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_Craft_Creation_Mod_1" />
+        <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="SpellSchool" version="1" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_KELA_Craft_Creation_Mod" />
+        <field name="AIFlags" type="EnumerationListTableFieldDefinition" value="CanNotUse" enumeration_type_name="AIFlags" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(KELA_CRAFT_CREATION_MOD_1,100,-1);ApplyStatus(KELA_CRAFT_CREATION_MOD,100,-1)" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Self()" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_KelaCreation_Slot_1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h81fc245bgdb94g0fe7g10aag429e788d7544" version="3" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hab89cd1fg277fgb3d4ge627g0798577a940a" version="3" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(KELA_CRAFT_CREATION_MOD_1,100,-1)" />
+        <field name="PreviewCursor" type="EnumerationTableFieldDefinition" value="Cast" enumeration_type_name="CursorMode" version="1" />
+        <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1" />
+        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Utility" enumeration_type_name="VerbalIntent" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IgnoreSilence;ImmediateCast" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="MagicalNonDamage" enumeration_type_name="HitAnimationType" version="1" />
+        <field name="Requirements" type="StringTableFieldDefinition" value="!Combat" />
+        <field name="TooltipUpcastDescription" type="GuidObjectTableFieldDefinition" value="6ff1780a-855a-414c-a8bf-811251537206" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="71bc96e6-cd81-463f-8af7-a5a236b8bbde" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="fa6df668-1453-4d2e-9e91-f1186b10fdc0" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2b93a63a-292f-4ebd-b67c-ca56ebe13c0c" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_Craft_Creation_Mod_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="32d5faad-eede-43ae-af75-4765957cd997" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(KELA_CRAFT_CREATION_MOD_2,100,-1);ApplyStatus(KELA_CRAFT_CREATION_MOD,100,-1)" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hbd570865gbb35g2c0bg1205g8600d2e29be6" version="3" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h09dca5e0gd593g1949g5f75g68f70e959ee4" version="2" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(KELA_CRAFT_CREATION_MOD_2,100,-1)" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="CharacterLevelGreaterThan(1,context.Source)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_KelaCreation_Slot_2" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c420fd75-fc07-4a2e-8fa3-375d51c5f15a" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_Craft_Creation_Mod_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="32d5faad-eede-43ae-af75-4765957cd997" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(KELA_CRAFT_CREATION_MOD_3,100,-1);ApplyStatus(KELA_CRAFT_CREATION_MOD,100,-1)" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9341ea05g36eeg11e4gedbbg7c07dfde761b" version="3" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h67ffaf59ge081gc39egd18agd787c244a89c" version="2" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(KELA_CRAFT_CREATION_MOD_3,100,-1)" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="CharacterLevelGreaterThan(2,context.Source)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_KelaCreation_Slot_3" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7b8aaa64-e5e8-4862-b572-9e66ce9f058e" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_Craft_Creation_Mod_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="32d5faad-eede-43ae-af75-4765957cd997" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(KELA_CRAFT_CREATION_MOD_4,100,-1);ApplyStatus(KELA_CRAFT_CREATION_MOD,100,-1)" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h0579ccd4g9117g900fgd0aeg4b49b4da89de" version="3" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h31da95a9g58bcg19bag7f4agab45d6837f9b" version="2" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(KELA_CRAFT_CREATION_MOD_4,100,-1)" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="CharacterLevelGreaterThan(3,context.Source)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_KelaCreation_Slot_4" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8c5a5ce8-0426-4a2c-abec-0616055feefb" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_Craft_Creation_Mod_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="32d5faad-eede-43ae-af75-4765957cd997" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(KELA_CRAFT_REFORGING,100,-1)" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb95f2d15gbabag3b85g8bc0g2b3bf2cbaf6c" version="3" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h1996b916g0991g585ag842cg373ae583596d" version="3" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(KELA_CRAFT_REFORGING,100,-1)" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="CharacterLevelGreaterThan(3,context.Source) and (Tagged('KELABLACKSMITH') or Tagged('GUILD_ARTISAN') or Tagged('REALLY_ELF') or Tagged('REALLY_DROWELF') or Tagged('REALLY_WOODELF') or Tagged('REALLY_HALFELF'))" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_KelaCreation_Recraft" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="fb96514e-5af0-4045-bc1b-789f7ebb2fea" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_Craft_Creation_Mod_Exit" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="RemoveStatus(KELA_CRAFT_CREATION_MOD_1);RemoveStatus(KELA_CRAFT_CREATION_MOD_2);RemoveStatus(KELA_CRAFT_CREATION_MOD_3);RemoveStatus(KELA_CRAFT_CREATION_MOD_4);RemoveStatus(KELA_CRAFT_REFORGING);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h047f6185g47cdgf7a5g978dgc3a7a3f11e13" version="3" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf30bad62g35f1geaf0g5f70g47ee4f016c86" version="3" />
+        <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="SpellSchool" version="1" />
+        <field name="AIFlags" type="EnumerationListTableFieldDefinition" value="CanNotUse" enumeration_type_name="AIFlags" version="1" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Self()" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_KelaCreation_Exit" />
+        <field name="PreviewCursor" type="EnumerationTableFieldDefinition" value="Cast" enumeration_type_name="CursorMode" version="1" />
+        <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1" />
+        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Utility" enumeration_type_name="VerbalIntent" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IgnoreSilence;ImmediateCast;Temporary" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="MagicalNonDamage" enumeration_type_name="HitAnimationType" version="1" />
+        <field name="Requirements" type="StringTableFieldDefinition" value="!Combat" />
+        <field name="TooltipUpcastDescription" type="GuidObjectTableFieldDefinition" value="6ff1780a-855a-414c-a8bf-811251537206" />
+        <field name="FollowUpOriginalSpell" type="StringTableFieldDefinition" value="Shout_KELA_Craft_Creation_Mod" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

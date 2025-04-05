@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="3e76b74c-a5ae-4268-944a-aa9c31e2185e">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5f743e93-2c15-4cf1-a90d-3cb2d106127f" />
+        <field name="Name" type="NameTableFieldDefinition" value="PassiveFeature_Blacksmith" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h49560d25ge18eg572bg9681ga9f4fa43c84e" version="3" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc2fab1a5g8248g4828gfa35gd32f68c7feef" version="7" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Blacksmith" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Tag(KELABLACKSMITH)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3d46f76d-8d91-42ae-bda5-4e014595f857" />
+        <field name="Name" type="NameTableFieldDefinition" value="PassiveFeature_Blacksmith_Apprentice" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h0586d512gc8a6gd192g1f5agc6d90d2d3c01" version="3" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h412aba59ga93fgd247g5998g08bc9510ecbf" version="6" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Blacksmith" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Tag(KELABLACKSMITHAPPRENTICE)" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5f743e93-2c15-4cf1-a90d-3cb2d106127f" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5c721d1f-d8a9-41dc-9776-f42139f063e5" />
+        <field name="Name" type="NameTableFieldDefinition" value="PassiveTechnical_KelaCraftProject_Creation_Spell" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd3ae2f8dgda6egf88fgd060g66d0998bda89" version="3" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h12c22a35g6bc4gacc8g592agb118a02039ce" version="3" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Blacksmith" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="BoostConditions" type="StringTableFieldDefinition" value="Tagged('KELABLACKSMITH') or Tagged('KELABLACKSMITHAPPRENTICE') or Tagged('GUILD_ARTISAN') or Tagged('REALLY_ELF') or Tagged('REALLY_DROWELF') or Tagged('REALLY_WOODELF') or Tagged('REALLY_HALFELF') " />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_KELA_Craft_Creation_Mod);UnlockSpell(Target_KELA_Tag_Item)" />
+        <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="None" enumeration_type_name="StatsFunctorContext" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0ae8495b-9fb4-4f2c-a578-5af3522ef4ad" />
+        <field name="Name" type="NameTableFieldDefinition" value="PassiveWeapon_SussurSilence" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h64431e48g9cbagead4geae1gedb19af05482" version="3" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc537a5f5g1e9ag8cc0g7aeagcd5d93be554b" version="3" />
+        <field name="TooltipSave" type="StringTableFieldDefinition" value="Constitution" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Item_Smelting_Furnace_Sussur" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="(IsMeleeWeaponAttack() or IsRangedWeaponAttack() or IsWeaponAttack()) and not (IsMiss() or IsCriticalMiss())" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(Character() and not SavingThrow(Ability.Constitution, 12)):ApplyStatus(SILENCED, 100, 2)" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

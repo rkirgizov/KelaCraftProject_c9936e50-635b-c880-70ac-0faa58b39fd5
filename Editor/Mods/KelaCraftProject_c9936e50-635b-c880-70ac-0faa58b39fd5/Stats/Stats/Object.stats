@@ -1,0 +1,365 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="e078e210-b9ba-48e5-afe3-c5eb91ba8545">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5089179a-22ff-4e66-a2a2-560dfa7f553d" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_LOOT_Smith_Oil" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="1048b128-62a6-4a6e-a098-4db8ba631457" />
+        <field name="ValueLevel" type="IntegerTableFieldDefinition" value="1" />
+        <field name="ValueUUID" type="GuidObjectTableFieldDefinition" value="d6378d27-882e-4b51-aee6-31e999ea1d81" />
+        <field name="ValueScale" type="FloatTableFieldDefinition" value="1" />
+        <field name="Rarity" type="EnumerationTableFieldDefinition" value="Uncommon" enumeration_type_name="Rarity" version="1" />
+        <field name="Weight" type="FloatTableFieldDefinition" value="0.2" />
+        <field name="AddToBottomBar" type="EnumerationTableFieldDefinition" value="No" enumeration_type_name="YesNo" version="1" />
+        <field name="ItemUseType" type="EnumerationTableFieldDefinition" value="Common" enumeration_type_name="ItemUseTypes" version="1" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="3486ab6b-a396-4f39-a5cf-16dee0f873fd" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6a5f4e82-9202-4361-a66f-6e90901e43c2" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_LOOT_CharCoal" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="7fc43e77-9616-4ebb-ae0e-6e40394237c9" />
+        <field name="Rarity" type="EnumerationTableFieldDefinition" value="Common" enumeration_type_name="Rarity" version="1" />
+        <field name="GameSize" type="EnumerationTableFieldDefinition" value="Tiny" enumeration_type_name="ObjectSize" version="1" />
+        <field name="ObjectCategory" type="StringTableFieldDefinition" value="JunkArtificial" />
+        <field name="MinAmount" type="IntegerTableFieldDefinition" value="1" />
+        <field name="MaxAmount" type="IntegerTableFieldDefinition" value="25" />
+        <field name="ItemUseType" type="EnumerationTableFieldDefinition" value="Common" enumeration_type_name="ItemUseTypes" version="1" />
+        <field name="BludgeoningResistance" type="EnumerationListTableFieldDefinition" value="Resistant" enumeration_type_name="ResistanceFlags" version="1" />
+        <field name="SlashingResistance" type="EnumerationListTableFieldDefinition" value="Resistant" enumeration_type_name="ResistanceFlags" version="1" />
+        <field name="AcidResistance" type="EnumerationListTableFieldDefinition" value="Resistant" enumeration_type_name="ResistanceFlags" version="1" />
+        <field name="ColdResistance" type="EnumerationListTableFieldDefinition" value="Resistant" enumeration_type_name="ResistanceFlags" version="1" />
+        <field name="FireResistance" type="EnumerationListTableFieldDefinition" value="Vulnerable" enumeration_type_name="ResistanceFlags" version="1" />
+        <field name="ForceResistance" type="EnumerationListTableFieldDefinition" value="Resistant" enumeration_type_name="ResistanceFlags" version="1" />
+        <field name="LightningResistance" type="EnumerationListTableFieldDefinition" value="Resistant" enumeration_type_name="ResistanceFlags" version="1" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="e409b155-a938-46b5-aaf9-5b493f90e6fd" />
+        <field name="AddToBottomBar" type="EnumerationTableFieldDefinition" value="No" enumeration_type_name="YesNo" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="dd39797d-a889-43e1-a898-22dcfadccc01" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_TOOL_Blacksmith_Chest" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ac4dbac1-7af0-45da-b0fa-198fe2f76c72" />
+        <field name="Vitality" type="IntegerTableFieldDefinition" value="25" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="3339e045-a078-407b-9fb8-2af0d297e62a" />
+        <field name="Weight" type="FloatTableFieldDefinition" value="5" />
+        <field name="ValueUUID" type="GuidObjectTableFieldDefinition" value="91696f37-5a03-4f10-b636-2e5e2096a594" />
+        <field name="ValueScale" type="FloatTableFieldDefinition" value="1" />
+        <field name="Rarity" type="EnumerationTableFieldDefinition" value="Common" enumeration_type_name="Rarity" version="1" />
+        <field name="InventoryTab" type="EnumerationTableFieldDefinition" value="Misc" enumeration_type_name="InventoryTabs" version="1" />
+        <field name="AddToBottomBar" type="EnumerationTableFieldDefinition" value="Yes" enumeration_type_name="YesNo" version="1" />
+        <field name="BludgeoningResistance" type="EnumerationListTableFieldDefinition" value="Resistant" enumeration_type_name="ResistanceFlags" version="1" />
+        <field name="SlashingResistance" type="EnumerationListTableFieldDefinition" value="Resistant" enumeration_type_name="ResistanceFlags" version="1" />
+        <field name="AcidResistance" type="EnumerationListTableFieldDefinition" value="Resistant" enumeration_type_name="ResistanceFlags" version="1" />
+        <field name="ColdResistance" type="EnumerationListTableFieldDefinition" value="Resistant" enumeration_type_name="ResistanceFlags" version="1" />
+        <field name="FireResistance" type="EnumerationListTableFieldDefinition" value="Vulnerable" enumeration_type_name="ResistanceFlags" version="1" />
+        <field name="ForceResistance" type="EnumerationListTableFieldDefinition" value="Resistant" enumeration_type_name="ResistanceFlags" version="1" />
+        <field name="LightningResistance" type="EnumerationListTableFieldDefinition" value="Resistant" enumeration_type_name="ResistanceFlags" version="1" />
+        <field name="ItemUseType" type="EnumerationTableFieldDefinition" value="Common" enumeration_type_name="ItemUseTypes" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c6886676-fab9-400a-9e14-40f1c27535a9" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_CreateTool_Anvil" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="ea982ccb-29b6-4fc5-af73-ac162e31cf78" />
+        <field name="ValueLevel" type="IntegerTableFieldDefinition" value="1" />
+        <field name="ValueUUID" type="GuidObjectTableFieldDefinition" value="91696f37-5a03-4f10-b636-2e5e2096a594" />
+        <field name="ValueScale" type="FloatTableFieldDefinition" value="1" />
+        <field name="ValueRounding" type="BoolTableFieldDefinition" value="True" />
+        <field name="Weight" type="FloatTableFieldDefinition" value="0.05" />
+        <field name="Vitality" type="IntegerTableFieldDefinition" value="1" />
+        <field name="ArmorClass" type="IntegerTableFieldDefinition" value="0" />
+        <field name="DefaultBoosts" type="StringTableFieldDefinition" value="CriticalHit(AttackTarget,Failure,Never);CriticalHit(AttackTarget,Success,Never)" />
+        <field name="MinAmount" type="IntegerTableFieldDefinition" value="1" />
+        <field name="MaxAmount" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Priority" type="IntegerTableFieldDefinition" value="1" />
+        <field name="MinLevel" type="IntegerTableFieldDefinition" value="1" />
+        <field name="ItemUseType" type="EnumerationTableFieldDefinition" value="Common" enumeration_type_name="ItemUseTypes" version="1" />
+        <field name="Sight" type="IntegerTableFieldDefinition" value="0" />
+        <field name="FOV" type="IntegerTableFieldDefinition" value="0" />
+        <field name="DarkvisionRange" type="IntegerTableFieldDefinition" value="0" />
+        <field name="MinimumDetectionRange" type="IntegerTableFieldDefinition" value="0" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="50ad3fb4-d96f-4d3e-a0ad-8096c4c70e8c" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_CreateTool_Workbench" />
+        <field name="Weight" type="FloatTableFieldDefinition" value="0.05" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="194e5626-78b0-4f04-8556-8e74d787e1b8" />
+        <field name="ValueLevel" type="IntegerTableFieldDefinition" value="1" />
+        <field name="ValueUUID" type="GuidObjectTableFieldDefinition" value="91696f37-5a03-4f10-b636-2e5e2096a594" />
+        <field name="ValueScale" type="FloatTableFieldDefinition" value="1" />
+        <field name="ValueRounding" type="BoolTableFieldDefinition" value="True" />
+        <field name="Vitality" type="IntegerTableFieldDefinition" value="1" />
+        <field name="ArmorClass" type="IntegerTableFieldDefinition" value="0" />
+        <field name="DefaultBoosts" type="StringTableFieldDefinition" value="CriticalHit(AttackTarget,Failure,Never);CriticalHit(AttackTarget,Success,Never)" />
+        <field name="MinAmount" type="IntegerTableFieldDefinition" value="1" />
+        <field name="MaxAmount" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Priority" type="IntegerTableFieldDefinition" value="1" />
+        <field name="MinLevel" type="IntegerTableFieldDefinition" value="1" />
+        <field name="ItemUseType" type="EnumerationTableFieldDefinition" value="Common" enumeration_type_name="ItemUseTypes" version="1" />
+        <field name="Sight" type="IntegerTableFieldDefinition" value="0" />
+        <field name="FOV" type="IntegerTableFieldDefinition" value="0" />
+        <field name="DarkvisionRange" type="IntegerTableFieldDefinition" value="0" />
+        <field name="MinimumDetectionRange" type="IntegerTableFieldDefinition" value="0" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1794b037-29dd-4f9f-b965-c4375a235790" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_Tanning_Frame" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="0dfb979b-824d-4acf-a631-14fd418ff254" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="f74ad098-b55b-458d-85da-e5888606a145" />
+        <field name="GameSize" type="EnumerationTableFieldDefinition" value="Large" enumeration_type_name="ObjectSize" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7a9ab46a-0bec-4a2d-a61a-e35767496073" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_Blueprint_WPN_Shortbow" />
+        <field name="Vitality" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Weight" type="FloatTableFieldDefinition" value="0.15" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="9340c1d9-dac4-40e7-a515-682e01518d09" />
+        <field name="ValueLevel" type="IntegerTableFieldDefinition" value="1" />
+        <field name="ValueUUID" type="GuidObjectTableFieldDefinition" value="4c5217d8-0232-4592-9e32-2fd729123f53" />
+        <field name="ValueScale" type="FloatTableFieldDefinition" value="1" />
+        <field name="ValueRounding" type="BoolTableFieldDefinition" value="True" />
+        <field name="Rarity" type="EnumerationTableFieldDefinition" value="Common" enumeration_type_name="Rarity" version="1" />
+        <field name="GameSize" type="EnumerationTableFieldDefinition" value="Tiny" enumeration_type_name="ObjectSize" version="1" />
+        <field name="ArmorClass" type="IntegerTableFieldDefinition" value="0" />
+        <field name="DefaultBoosts" type="StringTableFieldDefinition" value="CriticalHit(AttackTarget,Failure,Never);CriticalHit(AttackTarget,Success,Never)" />
+        <field name="InventoryTab" type="EnumerationTableFieldDefinition" value="BooksAndKeys" enumeration_type_name="InventoryTabs" version="1" />
+        <field name="MinAmount" type="IntegerTableFieldDefinition" value="1" />
+        <field name="MaxAmount" type="IntegerTableFieldDefinition" value="1" />
+        <field name="ItemUseType" type="EnumerationTableFieldDefinition" value="Common" enumeration_type_name="ItemUseTypes" version="1" />
+        <field name="BludgeoningResistance" type="EnumerationListTableFieldDefinition" value="ResistantToNonMagical" enumeration_type_name="ResistanceFlags" version="1" />
+        <field name="SlashingResistance" type="EnumerationListTableFieldDefinition" value="VulnerableToMagical" enumeration_type_name="ResistanceFlags" version="1" />
+        <field name="PiercingResistance" type="EnumerationListTableFieldDefinition" value="Resistant" enumeration_type_name="ResistanceFlags" version="1" />
+        <field name="FireResistance" type="EnumerationListTableFieldDefinition" value="Vulnerable" enumeration_type_name="ResistanceFlags" version="1" />
+        <field name="NecroticResistance" type="EnumerationListTableFieldDefinition" value="Resistant" enumeration_type_name="ResistanceFlags" version="1" />
+        <field name="PoisonResistance" type="EnumerationListTableFieldDefinition" value="Immune" enumeration_type_name="ResistanceFlags" version="1" />
+        <field name="PsychicResistance" type="EnumerationListTableFieldDefinition" value="Immune" enumeration_type_name="ResistanceFlags" version="1" />
+        <field name="RadiantResistance" type="EnumerationListTableFieldDefinition" value="Vulnerable" enumeration_type_name="ResistanceFlags" version="1" />
+        <field name="FallingHitEffect" type="StringTableFieldDefinition" value="VFX_Combat_Bludgeoning_Damage_Critical_01" />
+        <field name="FallingLandEffect" type="StringTableFieldDefinition" value="VFX_Combat_Force_Land_01" />
+        <field name="Sight" type="IntegerTableFieldDefinition" value="0" />
+        <field name="FOV" type="IntegerTableFieldDefinition" value="0" />
+        <field name="DarkvisionRange" type="IntegerTableFieldDefinition" value="0" />
+        <field name="MinimumDetectionRange" type="IntegerTableFieldDefinition" value="0" />
+        <field name="AddToBottomBar" type="EnumerationTableFieldDefinition" value="No" enumeration_type_name="YesNo" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="200483af-273e-4aa5-a47a-25a2b51de4b1" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_Blueprint_Kit_Trap_Disarm" />
+        <field name="Vitality" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Weight" type="FloatTableFieldDefinition" value="0.15" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="11856b8e-5437-4d2e-8d5c-c910a72db83e" />
+        <field name="ValueLevel" type="IntegerTableFieldDefinition" value="1" />
+        <field name="ValueUUID" type="GuidObjectTableFieldDefinition" value="4c5217d8-0232-4592-9e32-2fd729123f53" />
+        <field name="ValueScale" type="FloatTableFieldDefinition" value="1" />
+        <field name="ValueRounding" type="BoolTableFieldDefinition" value="True" />
+        <field name="Rarity" type="EnumerationTableFieldDefinition" value="Common" enumeration_type_name="Rarity" version="1" />
+        <field name="GameSize" type="EnumerationTableFieldDefinition" value="Tiny" enumeration_type_name="ObjectSize" version="1" />
+        <field name="ArmorClass" type="IntegerTableFieldDefinition" value="0" />
+        <field name="DefaultBoosts" type="StringTableFieldDefinition" value="CriticalHit(AttackTarget,Failure,Never);CriticalHit(AttackTarget,Success,Never)" />
+        <field name="InventoryTab" type="EnumerationTableFieldDefinition" value="BooksAndKeys" enumeration_type_name="InventoryTabs" version="1" />
+        <field name="MinAmount" type="IntegerTableFieldDefinition" value="1" />
+        <field name="MaxAmount" type="IntegerTableFieldDefinition" value="1" />
+        <field name="ItemUseType" type="EnumerationTableFieldDefinition" value="Common" enumeration_type_name="ItemUseTypes" version="1" />
+        <field name="BludgeoningResistance" type="EnumerationListTableFieldDefinition" value="ResistantToNonMagical" enumeration_type_name="ResistanceFlags" version="1" />
+        <field name="SlashingResistance" type="EnumerationListTableFieldDefinition" value="VulnerableToMagical" enumeration_type_name="ResistanceFlags" version="1" />
+        <field name="PiercingResistance" type="EnumerationListTableFieldDefinition" value="Resistant" enumeration_type_name="ResistanceFlags" version="1" />
+        <field name="FireResistance" type="EnumerationListTableFieldDefinition" value="Vulnerable" enumeration_type_name="ResistanceFlags" version="1" />
+        <field name="NecroticResistance" type="EnumerationListTableFieldDefinition" value="Resistant" enumeration_type_name="ResistanceFlags" version="1" />
+        <field name="PoisonResistance" type="EnumerationListTableFieldDefinition" value="Immune" enumeration_type_name="ResistanceFlags" version="1" />
+        <field name="PsychicResistance" type="EnumerationListTableFieldDefinition" value="Immune" enumeration_type_name="ResistanceFlags" version="1" />
+        <field name="RadiantResistance" type="EnumerationListTableFieldDefinition" value="Vulnerable" enumeration_type_name="ResistanceFlags" version="1" />
+        <field name="FallingHitEffect" type="StringTableFieldDefinition" value="VFX_Combat_Bludgeoning_Damage_Critical_01" />
+        <field name="FallingLandEffect" type="StringTableFieldDefinition" value="VFX_Combat_Force_Land_01" />
+        <field name="Sight" type="IntegerTableFieldDefinition" value="0" />
+        <field name="FOV" type="IntegerTableFieldDefinition" value="0" />
+        <field name="DarkvisionRange" type="IntegerTableFieldDefinition" value="0" />
+        <field name="MinimumDetectionRange" type="IntegerTableFieldDefinition" value="0" />
+        <field name="AddToBottomBar" type="EnumerationTableFieldDefinition" value="No" enumeration_type_name="YesNo" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="831534e5-567a-4ff2-8a71-b61ccb6a4add" />
+        <field name="Name" type="NameTableFieldDefinition" value="OBJ_Bottle_For_Grease" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="1048b128-62a6-4a6e-a098-4db8ba631457" />
+        <field name="Vitality" type="IntegerTableFieldDefinition" value="1" />
+        <field name="AddToBottomBar" type="EnumerationTableFieldDefinition" value="No" enumeration_type_name="YesNo" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="050517bd-8c9a-40e4-a5aa-83d508df350f" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_LOOT_Plank_Simple" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="7d159582-c9eb-4e08-971c-375e14d0df7d" />
+        <field name="ValueLevel" type="IntegerTableFieldDefinition" value="1" />
+        <field name="ValueUUID" type="GuidObjectTableFieldDefinition" value="91696f37-5a03-4f10-b636-2e5e2096a594" />
+        <field name="ValueScale" type="FloatTableFieldDefinition" value="1" />
+        <field name="Rarity" type="EnumerationTableFieldDefinition" value="Common" enumeration_type_name="Rarity" version="1" />
+        <field name="Weight" type="FloatTableFieldDefinition" value="1" />
+        <field name="GameSize" type="EnumerationTableFieldDefinition" value="Medium" enumeration_type_name="ObjectSize" version="1" />
+        <field name="Vitality" type="IntegerTableFieldDefinition" value="-1" />
+        <field name="ArmorClass" type="IntegerTableFieldDefinition" value="0" />
+        <field name="DefaultBoosts" type="StringTableFieldDefinition" value="CriticalHit(AttackTarget,Failure,Never);CriticalHit(AttackTarget,Success,Never)" />
+        <field name="InventoryTab" type="EnumerationTableFieldDefinition" value="Misc" enumeration_type_name="InventoryTabs" version="1" />
+        <field name="MinAmount" type="IntegerTableFieldDefinition" value="1" />
+        <field name="MaxAmount" type="IntegerTableFieldDefinition" value="10" />
+        <field name="ItemUseType" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="ItemUseTypes" version="1" />
+        <field name="Sight" type="IntegerTableFieldDefinition" value="0" />
+        <field name="FOV" type="IntegerTableFieldDefinition" value="0" />
+        <field name="DarkvisionRange" type="IntegerTableFieldDefinition" value="0" />
+        <field name="MinimumDetectionRange" type="IntegerTableFieldDefinition" value="0" />
+        <field name="AddToBottomBar" type="EnumerationTableFieldDefinition" value="No" enumeration_type_name="YesNo" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5e3969bc-36b3-484c-ba78-817f14ded8c4" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_LOOT_Branch_Simple" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="8d49ae84-e4bf-4525-8a63-4fe3cc72ea26" />
+        <field name="ValueLevel" type="IntegerTableFieldDefinition" value="1" />
+        <field name="ValueUUID" type="GuidObjectTableFieldDefinition" value="91696f37-5a03-4f10-b636-2e5e2096a594" />
+        <field name="ValueScale" type="FloatTableFieldDefinition" value="1" />
+        <field name="Rarity" type="EnumerationTableFieldDefinition" value="Common" enumeration_type_name="Rarity" version="1" />
+        <field name="Weight" type="FloatTableFieldDefinition" value="0.7" />
+        <field name="GameSize" type="EnumerationTableFieldDefinition" value="Small" enumeration_type_name="ObjectSize" version="1" />
+        <field name="Vitality" type="IntegerTableFieldDefinition" value="-1" />
+        <field name="ArmorClass" type="IntegerTableFieldDefinition" value="0" />
+        <field name="DefaultBoosts" type="StringTableFieldDefinition" value="CriticalHit(AttackTarget,Failure,Never);CriticalHit(AttackTarget,Success,Never)" />
+        <field name="InventoryTab" type="EnumerationTableFieldDefinition" value="Misc" enumeration_type_name="InventoryTabs" version="1" />
+        <field name="MinAmount" type="IntegerTableFieldDefinition" value="1" />
+        <field name="MaxAmount" type="IntegerTableFieldDefinition" value="10" />
+        <field name="ItemUseType" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="ItemUseTypes" version="1" />
+        <field name="Sight" type="IntegerTableFieldDefinition" value="0" />
+        <field name="FOV" type="IntegerTableFieldDefinition" value="0" />
+        <field name="DarkvisionRange" type="IntegerTableFieldDefinition" value="0" />
+        <field name="MinimumDetectionRange" type="IntegerTableFieldDefinition" value="0" />
+        <field name="AddToBottomBar" type="EnumerationTableFieldDefinition" value="No" enumeration_type_name="YesNo" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="515cab93-9d89-46d2-b219-3d4f1ebf0f3e" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_LOOT_Cow_Hide" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="cc3edfd6-2ec2-4a74-b3d6-b1273288f952" />
+        <field name="ValueUUID" type="GuidObjectTableFieldDefinition" value="b179039d-474f-4090-beb5-9468bcb6fba8" />
+        <field name="ValueScale" type="FloatTableFieldDefinition" value="5" />
+        <field name="Rarity" type="EnumerationTableFieldDefinition" value="Common" enumeration_type_name="Rarity" version="1" />
+        <field name="Weight" type="FloatTableFieldDefinition" value="5" />
+        <field name="ValueLevel" type="IntegerTableFieldDefinition" value="1" />
+        <field name="GameSize" type="EnumerationTableFieldDefinition" value="Medium" enumeration_type_name="ObjectSize" version="1" />
+        <field name="Vitality" type="IntegerTableFieldDefinition" value="-1" />
+        <field name="ArmorClass" type="IntegerTableFieldDefinition" value="0" />
+        <field name="DefaultBoosts" type="StringTableFieldDefinition" value="CriticalHit(AttackTarget,Failure,Never);CriticalHit(AttackTarget,Success,Never)" />
+        <field name="InventoryTab" type="EnumerationTableFieldDefinition" value="Misc" enumeration_type_name="InventoryTabs" version="1" />
+        <field name="MinAmount" type="IntegerTableFieldDefinition" value="1" />
+        <field name="MaxAmount" type="IntegerTableFieldDefinition" value="5" />
+        <field name="ItemUseType" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="ItemUseTypes" version="1" />
+        <field name="Sight" type="IntegerTableFieldDefinition" value="0" />
+        <field name="FOV" type="IntegerTableFieldDefinition" value="0" />
+        <field name="DarkvisionRange" type="IntegerTableFieldDefinition" value="0" />
+        <field name="MinimumDetectionRange" type="IntegerTableFieldDefinition" value="0" />
+        <field name="AddToBottomBar" type="EnumerationTableFieldDefinition" value="No" enumeration_type_name="YesNo" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="660457f7-9e97-40ba-af14-1d9fbe45ac12" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_LOOT_Sheep_Hide" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="515cab93-9d89-46d2-b219-3d4f1ebf0f3e" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="9edd5e3b-c598-4269-b0d8-732251a64222" />
+        <field name="ValueUUID" type="GuidObjectTableFieldDefinition" value="b179039d-474f-4090-beb5-9468bcb6fba8" />
+        <field name="ValueScale" type="FloatTableFieldDefinition" value="3" />
+        <field name="Rarity" type="EnumerationTableFieldDefinition" value="Common" enumeration_type_name="Rarity" version="1" />
+        <field name="Weight" type="FloatTableFieldDefinition" value="2" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7001cc8b-6da0-43ff-9b35-dfdc8ef10018" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_LOOT_Deer_Hide" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="515cab93-9d89-46d2-b219-3d4f1ebf0f3e" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="28c06451-6c52-47c4-beed-602964ff21a5" />
+        <field name="ValueUUID" type="GuidObjectTableFieldDefinition" value="b179039d-474f-4090-beb5-9468bcb6fba8" />
+        <field name="ValueScale" type="FloatTableFieldDefinition" value="7" />
+        <field name="Rarity" type="EnumerationTableFieldDefinition" value="Common" enumeration_type_name="Rarity" version="1" />
+        <field name="Weight" type="FloatTableFieldDefinition" value="2" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a7986ffe-5dd6-4ffe-ae86-0fef359bf034" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_LOOT_Wolf_Hide" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="515cab93-9d89-46d2-b219-3d4f1ebf0f3e" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="f59d0888-3b3a-49a9-ab2c-e5a214930db4" />
+        <field name="ValueUUID" type="GuidObjectTableFieldDefinition" value="b179039d-474f-4090-beb5-9468bcb6fba8" />
+        <field name="ValueScale" type="FloatTableFieldDefinition" value="11" />
+        <field name="Rarity" type="EnumerationTableFieldDefinition" value="Common" enumeration_type_name="Rarity" version="1" />
+        <field name="Weight" type="FloatTableFieldDefinition" value="3" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="22e56029-88f2-4d39-8825-b9885e27d3f3" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_LOOT_Bear_Hide" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="515cab93-9d89-46d2-b219-3d4f1ebf0f3e" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="5f315a4b-da27-4aba-9aef-13f7c3cbd80c" />
+        <field name="ValueUUID" type="GuidObjectTableFieldDefinition" value="b179039d-474f-4090-beb5-9468bcb6fba8" />
+        <field name="ValueScale" type="FloatTableFieldDefinition" value="17" />
+        <field name="Rarity" type="EnumerationTableFieldDefinition" value="Common" enumeration_type_name="Rarity" version="1" />
+        <field name="Weight" type="FloatTableFieldDefinition" value="4" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8957b6b9-1304-4d3d-98c1-2b3547a2741d" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_LOOT_Rabbit_Hide" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="515cab93-9d89-46d2-b219-3d4f1ebf0f3e" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="5a3efcc6-93c8-4e95-8192-5aa6b3dfa58f" />
+        <field name="ValueUUID" type="GuidObjectTableFieldDefinition" value="b179039d-474f-4090-beb5-9468bcb6fba8" />
+        <field name="ValueScale" type="FloatTableFieldDefinition" value="1" />
+        <field name="Rarity" type="EnumerationTableFieldDefinition" value="Common" enumeration_type_name="Rarity" version="1" />
+        <field name="Weight" type="FloatTableFieldDefinition" value="1" />
+        <field name="GameSize" type="EnumerationTableFieldDefinition" value="Small" enumeration_type_name="ObjectSize" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a6f079ce-e737-45a7-9833-140b6c21bd02" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_LOOT_Leather" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="515cab93-9d89-46d2-b219-3d4f1ebf0f3e" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="179c4493-f7b1-4786-9aff-27b5ed2a3589" />
+        <field name="ValueUUID" type="GuidObjectTableFieldDefinition" value="560798f9-9c28-4c8d-be75-ad81c613b91f" />
+        <field name="ValueScale" type="FloatTableFieldDefinition" value="4" />
+        <field name="Rarity" type="EnumerationTableFieldDefinition" value="Common" enumeration_type_name="Rarity" version="1" />
+        <field name="Weight" type="FloatTableFieldDefinition" value="0.7" />
+        <field name="GameSize" type="EnumerationTableFieldDefinition" value="Small" enumeration_type_name="ObjectSize" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="59e7d44f-e004-4390-8fce-da4cf295d61e" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_LOOT_Leather_Strips" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a6f079ce-e737-45a7-9833-140b6c21bd02" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="e1680c9d-9fc8-4bb6-8b1d-09037577992c" />
+        <field name="ValueUUID" type="GuidObjectTableFieldDefinition" value="560798f9-9c28-4c8d-be75-ad81c613b91f" />
+        <field name="ValueScale" type="FloatTableFieldDefinition" value="2" />
+        <field name="Rarity" type="EnumerationTableFieldDefinition" value="Common" enumeration_type_name="Rarity" version="1" />
+        <field name="Weight" type="FloatTableFieldDefinition" value="0.2" />
+        <field name="GameSize" type="EnumerationTableFieldDefinition" value="Tiny" enumeration_type_name="ObjectSize" version="1" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

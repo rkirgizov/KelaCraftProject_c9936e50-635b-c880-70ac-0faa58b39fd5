@@ -1,0 +1,237 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+DB_KELA_Log_Book_Template((ITEMROOT)KELA_Blacksmith_Log_Book_9f4b1d6f-7551-440f-9a6b-468f40578a7b);
+
+DB_KELA_Log_Book_Entry_Header("KELA_Log_Header");
+
+DB_KELA_Log_Book_Entries_By_Tag((TAG)KELABLACKSMITH_c78b77b9-b33c-43fb-8dec-a91bacebb1bf, "KELA_Log_Passive_Blacksmith");
+DB_KELA_Log_Book_Entries_By_Tag((TAG)KELABLACKSMITHAPPRENTICE_5c77c6bf-22f7-4109-b9f8-21e3bd7a2634, "KELA_Log_Passive_Apprentice");
+DB_KELA_Log_Book_Entries_By_Tag((TAG)GUILD_ARTISAN_baf9fb0e-f535-40a0-bb78-3ec289d84e66, "KELA_Log_Origin_Guild_Artisan");
+DB_KELA_Log_Book_Entries_By_Tag((TAG)REALLY_ELF_772b1dc6-14be-417f-afa3-c6cf364f45b4, "KELA_Log_Origin_Elf");
+DB_KELA_Log_Book_Entries_By_Tag((TAG)REALLY_DROWELF_676e854b-d74b-44f3-8363-3ef27164a54d, "KELA_Log_Origin_Elf");
+DB_KELA_Log_Book_Entries_By_Tag((TAG)REALLY_WOODELF_b12e8dff-c1f0-4e9c-9ec0-1cafd22bb637, "KELA_Log_Origin_Elf");
+DB_KELA_Log_Book_Entries_By_Tag((TAG)REALLY_HALFELF_277f9609-ad0c-4883-b56d-0850904e88df, "KELA_Log_Origin_Elf");
+
+DB_KELA_Log_Book_Entry_Blueprints("KELA_Log_Header_Blueprints");
+
+DB_KELA_Log_Book(0,"KELA_Blacksmith_Log_Book_0");
+KBSECTION
+// KELA_Log_Book 
+
+IF
+TemplateUseStarted(_User, _Template, _Item)
+AND
+DB_KELA_Log_Book_Template(_Template)
+AND
+NOT HasPassive(_User, "PassiveTechnical_KelaCraftProject_Creation_Spell", 1)
+THEN
+AddPassive(_User, "PassiveTechnical_KelaCraftProject_Creation_Spell");
+// SetDualEntityEvent(_User, _User, "KELA_Log_Book Add Technical Passive for Creation mod spell");
+
+IF
+TemplateUseStarted(_User, _Template, _Item)
+AND
+DB_KELA_Log_Book_Template(_Template)
+AND
+QRY_KELA_Setup_Log_Book((CHARACTER)_User)
+AND
+DB_KELA_Log_Book(_,_LogBookName)
+AND 
+NOT DB_OnlyOnce("KELA_Open_Log_Book")
+THEN
+// SetDualEntityEvent(_User, _User, _LogBookName);
+DB_OnlyOnce("KELA_Open_Log_Book");
+OpenCustomBookUI(_User,_LogBookName);
+TimerLaunch("KELA_Wait_Open_Log_Book", 100);
+
+QRY
+QRY_KELA_Setup_Log_Book((CHARACTER)_User)
+AND
+DB_KELA_Log_Book(_Index, _)
+AND
+IntegerSum(_Index, 1, _NewIndex)
+AND
+IntegerToString(_NewIndex,_StrNewIndex)
+AND
+Concatenate("KELA_Blacksmith_Log_Book_",_StrNewIndex,_LogBookName)
+AND
+QRY_KELA_Log_Book_Header(_User,_LogBookName)
+AND
+QRY_KELA_Log_Book_Entries(_User,_LogBookName)
+AND
+QRY_KELA_Log_Book_Masterwork(_User,_LogBookName)
+AND
+QRY_KELA_Log_Book_Additional_Aura_In_Forge(_User,_LogBookName)
+AND
+QRY_KELA_Log_Book_Blueprints_Header(_User,_LogBookName)
+AND
+QRY_KELA_Log_Book_Blueprints(_User,_LogBookName)
+AND
+QRY_KELA_Log_Book_Reforging(_User,_LogBookName)
+THEN
+// SetDualEntityEvent(_User, _User, "QRY_KELA_Setup_Log_Book");
+DB_KELA_Log_Book(_NewIndex,_LogBookName);
+NOT DB_KELA_Entry_Recieved(1);
+NOT DB_KELA_Reforging_Recieved(1);
+NOT DB_KELA_Masterwork_Recieved(1);
+NOT DB_KELA_Additional_Aura_In_Forge_Recieved(1);
+DB_NOOP(1);
+
+QRY
+QRY_KELA_Log_Book_Header((CHARACTER)_User,(STRING)_LogBookName)
+AND
+DB_KELA_Log_Book_Entry_Header(_Header)
+THEN
+// SetDualEntityEvent(_User, _User, "QRY_KELA_Log_Book_Header");
+AddEntryToCustomBook(_LogBookName, _Header);
+DB_NOOP(1);
+
+QRY
+QRY_KELA_Log_Book_Entries((CHARACTER)_User,(STRING)_LogBookName)
+AND
+DB_KELA_Log_Book_Entries_By_Tag(_UserTag,_Entry)
+AND
+IsTagged(_User, _UserTag, 1)
+THEN
+// SetDualEntityEvent(_User, _User, "QRY_KELA_Log_Book_Entries");
+AddEntryToCustomBook(_LogBookName, _Entry);
+DB_KELA_Entry_Recieved(1);
+DB_NOOP(1);
+
+QRY
+QRY_KELA_Log_Book_Entries((CHARACTER)_User,(STRING)_LogBookName)
+AND
+DB_KELA_Log_Book_Entries_By_Tag(_UserTag,_Entry)
+AND
+NOT IsTagged(_User, _UserTag, 1)
+AND
+NOT DB_KELA_Entry_Recieved(1)
+THEN
+// SetDualEntityEvent(_User, _User, "NOT QRY_KELA_Log_Book_Entries");
+AddEntryToCustomBook(_LogBookName, "KELA_Log_No_Crafting_Abilities");
+DB_KELA_Entry_Recieved(1);
+DB_NOOP(1);
+
+QRY
+QRY_KELA_Log_Book_Reforging((CHARACTER)_User,(STRING)_LogBookName)
+AND
+DB_KELA_Log_Book_Entries_By_Tag(_UserTag,_Entry)
+AND
+IsTagged(_User, _UserTag, 1)
+AND
+_UserTag != KELABLACKSMITHAPPRENTICE_5c77c6bf-22f7-4109-b9f8-21e3bd7a2634
+AND
+NOT DB_KELA_Reforging_Recieved(1)
+THEN
+AddEntryToCustomBook(_LogBookName, "KELA_Log_Reforging");
+DB_KELA_Reforging_Recieved(1);
+DB_NOOP(1);
+
+QRY
+QRY_KELA_Log_Book_Reforging((CHARACTER)_User,(STRING)_LogBookName)
+AND
+NOT DB_KELA_Reforging_Recieved(1)
+THEN
+DB_NOOP(1);
+
+QRY
+QRY_KELA_Log_Book_Masterwork((CHARACTER)_User,(STRING)_LogBookName)
+AND
+QuestIsClosed("FOR_IncompleteMasterwork", 1)
+THEN
+// SetDualEntityEvent(_User, _User, "QRY_KELA_Log_Book_Masterwork");
+AddEntryToCustomBook(_LogBookName, "KELA_Log_Masterwork_Completed");
+DB_KELA_Masterwork_Recieved(1);
+DB_NOOP(1);
+
+QRY
+QRY_KELA_Log_Book_Masterwork((CHARACTER)_User,(STRING)_LogBookName)
+AND
+NOT QuestIsClosed("FOR_IncompleteMasterwork", 1)
+AND
+NOT DB_KELA_Masterwork_Recieved(1)
+THEN
+// SetDualEntityEvent(_User, _User, "NOT QRY_KELA_Log_Book_Masterwork");
+DB_KELA_Masterwork_Recieved(1);
+DB_NOOP(1);
+
+QRY
+QRY_KELA_Log_Book_Additional_Aura_In_Forge((CHARACTER)_User,(STRING)_LogBookName)
+AND
+DB_OnlyOnce("KELA_Additional_Aura_In_Forge_Known")
+THEN
+// SetDualEntityEvent(_User, _User, "QRY_KELA_Log_Book_Additional_Aura_In_Forge");
+AddEntryToCustomBook(_LogBookName, "KELA_Log_Additional_Aura_In_Forge_Known");
+DB_KELA_Additional_Aura_In_Forge_Recieved(1);
+DB_NOOP(1);
+
+QRY
+QRY_KELA_Log_Book_Additional_Aura_In_Forge((CHARACTER)_User,(STRING)_LogBookName)
+AND
+NOT DB_OnlyOnce("KELA_Additional_Aura_In_Forge_Known")
+AND
+NOT DB_KELA_Additional_Aura_In_Forge_Recieved(1)
+THEN
+// SetDualEntityEvent(_User, _User, "NOT QRY_KELA_Log_Book_Additional_Aura_In_Forge");
+DB_KELA_Additional_Aura_In_Forge_Recieved(1);
+DB_NOOP(1);
+
+
+QRY
+QRY_KELA_Log_Book_Blueprints_Header((CHARACTER)_User,(STRING)_LogBookName)
+AND
+DB_KELA_Log_Book_Entry_Blueprints(_Blueprints)
+THEN
+// SetDualEntityEvent(_User, _User, "QRY_KELA_Log_Book_Blueprints_Header");
+AddEntryToCustomBook(_LogBookName, _Blueprints);
+DB_NOOP(1);
+
+QRY
+QRY_KELA_Log_Book_Blueprints((CHARACTER)_User,(STRING)_LogBookName)
+AND
+DB_KELA_Blueprints_Known(_BlueprintStatName,_View)
+AND
+_View == 1
+THEN
+// SetDualEntityEvent(_User, _User, "QRY_KELA_Log_Book_Blueprints");
+AddEntryToCustomBook(_LogBookName, _BlueprintStatName);
+DB_NOOP(1);
+
+QRY
+QRY_KELA_Log_Book_Blueprints((CHARACTER)_User,(STRING)_LogBookName)
+AND
+NOT DB_KELA_Blueprints_Known(_,_)
+THEN
+// SetDualEntityEvent(_User, _User, "NOT QRY_KELA_Log_Book_Blueprints");
+DB_NOOP(1);
+
+//----------------------------------------------------------------
+// TECHNICAL 
+//----------------------------------------------------------------
+//
+// Singleton for tracking template by level
+IF
+DB_KELA_Log_Book(_NewIndex, _NewCustomBook)
+AND
+DB_KELA_Log_Book(_OldIndex, _OldCustomBook)
+AND
+_NewIndex != _OldIndex
+AND
+_NewCustomBook != _OldCustomBook
+THEN
+NOT DB_KELA_Log_Book(_OldIndex, _OldCustomBook);
+
+//
+// KELA_Wait_Log_Open
+IF
+TimerFinished("KELA_Wait_Open_Log_Book")
+AND
+DB_OnlyOnce("KELA_Open_Log_Book")
+THEN
+NOT DB_OnlyOnce("KELA_Open_Log_Book");
+//
+EXITSECTION
+
+ENDEXITSECTION
+ParentTargetEdge "GLO_KelaCraftProject"

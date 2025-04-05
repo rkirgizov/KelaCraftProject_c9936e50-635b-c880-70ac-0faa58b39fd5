@@ -1,0 +1,1202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="e2a8d59b-0e34-4a7c-bf5f-db7a2bb34cde">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="bc560cfe-ed81-43d2-acb9-4be0943f4f42" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_CRAFT_CREATION_MOD" />
+        <field name="StackId" type="StringTableFieldDefinition" value="KELA_CRAFT_CREATION_MOD" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h0ca651ceg2494g660ag42a0g4fe52c8365ca" version="2" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not HasStatus('KELA_CRAFT_CREATION_MOD_1') and not HasStatus('KELA_CRAFT_CREATION_MOD_2') and not HasStatus('KELA_CRAFT_CREATION_MOD_3') and not HasStatus('KELA_CRAFT_CREATION_MOD_4')" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnStatusRemoved" enumeration_type_name="StatusEvent" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h3779f164ge4begc0b2g22c6gba47a5bc6f5b" version="2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_KelaCreation_Main" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisablePortraitIndicator;DisableCombatlog" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="916912a0-8db6-427d-9e22-fd0356275d96" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_CRAFT_CREATION_MOD_1" />
+        <field name="StackId" type="StringTableFieldDefinition" value="KELA_CRAFT" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he5d66a10g4d04gf5c6g99c5g4969676af67d" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h54d4bfb7g5a34gfc3dgb8c6g4035b343a30f" version="2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_KelaCreation_Slot_1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="ForceOverhead" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_KELA_Craft_Creation_Mod_Exit)" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_Kela_Crafting;SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6cb1d65e-0a09-4e94-b36e-ff93b77957d6" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_CRAFT_CREATION_MOD_2" />
+        <field name="StackId" type="StringTableFieldDefinition" value="KELA_CRAFT" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h565f395cg5257gaa74gadcbg7092ac2475e3" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hda622b30gf03ag9000g99aagb98c061f7e5a" version="2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_KelaCreation_Slot_2" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="ForceOverhead" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_KELA_Craft_Creation_Mod_Exit)" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_Kela_Crafting;SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4a477ed3-db26-4317-a408-d7ddf416bdf7" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_CRAFT_CREATION_MOD_3" />
+        <field name="StackId" type="StringTableFieldDefinition" value="KELA_CRAFT" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h211fba02gbbeeg96cagcbfdgd81879b96706" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf4baf730g9390g3130g9d98gf822df538664" version="2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_KelaCreation_Slot_3" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="ForceOverhead" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_KELA_Craft_Creation_Mod_Exit)" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_Kela_Crafting;SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ca83360b-b8ae-4cd9-a95b-a279ed7069ea" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_CRAFT_CREATION_MOD_4" />
+        <field name="StackId" type="StringTableFieldDefinition" value="KELA_CRAFT" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd9746de2g3e7fg24eega0b8g010b51f104a3" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h5c1b7348g4214g204bgff71gac179c5bfccb" version="2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_KelaCreation_Slot_4" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="ForceOverhead" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_KELA_Craft_Creation_Mod_Exit)" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_Kela_Crafting;SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5e64eeb1-c5a3-49a6-808c-a746d0880945" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_CRAFT_REFORGING" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9b36d73cg5990ge82bgc39cg9653eeead9ab" version="2" />
+        <field name="StackId" type="StringTableFieldDefinition" value="KELA_CRAFT" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h7d90c08dg5991g9ef3g02d5g7d985ddf4f61" version="2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_KelaCreation_Recraft" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="ForceOverhead" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_KELA_Craft_Creation_Mod_Exit)" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_Kela_Crafting;SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="20109030-45b7-465a-982b-7c6a35c3cffb" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_WHETSTONE_AURA" />
+        <field name="AuraRadius" type="IntegerTableFieldDefinition" value="5" />
+        <field name="StackId" type="StringTableFieldDefinition" value="KELA_WHETSTONE_AURA" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="TARGET:IF(Character() and Player()):ApplyStatus(KELA_WHETSTONE_AURA_ACTIVE)" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2e259001g92eagf32cgd7adgf70798feaaba" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d40015f8-d58c-45bd-80b1-e661851b298e" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_WHETSTONE_AURA_ACTIVE" />
+        <field name="StackId" type="StringTableFieldDefinition" value="KELA_WHETSTONE_AURA_ACTIVE" />
+        <field name="AuraRadius" type="IntegerTableFieldDefinition" value="5" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h52c9af49ge0cfgd74ag9c1fgc0efdb0a6433" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ef99a7d4-7b7b-495f-81eb-1d81c03b0133" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_ANVIL_AURA" />
+        <field name="AuraRadius" type="IntegerTableFieldDefinition" value="5" />
+        <field name="StackId" type="StringTableFieldDefinition" value="KELA_ANVIL_AURA" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="TARGET:IF(Character() and Player()):ApplyStatus(KELA_ANVIL_AURA_ACTIVE)" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h6013b269g85feg2d30gec1eg3937229ab433" version="2" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="34bf35bf-0cb0-4b2f-9ea9-08385da389e2" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_ANVIL_AURA_ACTIVE" />
+        <field name="StackId" type="StringTableFieldDefinition" value="KELA_ANVIL_AURA_ACTIVE" />
+        <field name="AuraRadius" type="IntegerTableFieldDefinition" value="5" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he814f56egce09gabbegbdb6g88d463de5db8" version="2" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5845e95f-3f96-452e-848e-034aef2a890d" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_WORKBENCH_AURA" />
+        <field name="AuraRadius" type="IntegerTableFieldDefinition" value="5" />
+        <field name="StackId" type="StringTableFieldDefinition" value="KELA_WORKBENCH_AURA" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="TARGET:IF(Character() and Player()):ApplyStatus(KELA_WORKBENCH_AURA_ACTIVE)" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="ha16ca541g2922g8755g73ffg9bfc840a2117" version="2" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="98fe9e9d-cb33-4242-9fa5-d0c0cfea4c24" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_WORKBENCH_AURA_ACTIVE" />
+        <field name="StackId" type="StringTableFieldDefinition" value="KELA_WORKBENCH_AURA_ACTIVE" />
+        <field name="AuraRadius" type="IntegerTableFieldDefinition" value="5" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb3b0219eg6740gcb52gcf4agc5efdd294949" version="2" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0e287dd2-154a-4cfa-87fe-b83b537b29fd" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_SMELTINGFORGE_AURA_STAGE_1" />
+        <field name="AuraRadius" type="IntegerTableFieldDefinition" value="10" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="TARGET:IF(Item() and Tagged('KELAANVIL')):ApplyStatus(KELA_SMELTINGFORGE_AURA_STAGE_1_ANVIL,100,-1)" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h551b82acg90fegd5b5g4406ge7de40045391" version="1" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="HasStatus('KELA_SMELTINGFORGE_AURA_STAGE_2')" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnStatusApplied" enumeration_type_name="StatusEvent" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Status_Burning" />
+        <field name="StackId" type="StringTableFieldDefinition" value="KELA_SMELTINGFORGE_AURA_STAGE_1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;IgnoreResting;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="97c6d051-e332-4ae9-844c-b69daefd2be7" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_SMELTINGFORGE_AURA_STAGE_1_ANVIL" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2cf52989g719eg8685g87d8g81c64b48e60c" version="3" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h43f84387g404bgab75g890agc373d51baf19" version="3" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Item_TOOL_Smith_Anvil_B" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="ForceOverhead;IgnoreResting" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="StackId" type="StringTableFieldDefinition" value="KELA_SMELTINGFORGE_AURA_STAGE_1_ANVIL" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Ignore" enumeration_type_name="StatusStackType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c1213add-641f-43da-a563-9e4b266d30f8" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_SMELTINGFORGE_AURA_STAGE_2" />
+        <field name="AuraRadius" type="IntegerTableFieldDefinition" value="10" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="TARGET:IF(Item() and Tagged('KELAANVIL')):ApplyStatus(KELA_SMELTINGFORGE_AURA_STAGE_2_ANVIL,100,-1)" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h73a46f37gb404gf74fg00ccg18bc21e872ad" version="3" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="HasStatus('KELA_SMELTINGFORGE_AURA_STAGE_1')" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Status_Burning" />
+        <field name="StackId" type="StringTableFieldDefinition" value="KELA_SMELTINGFORGE_AURA_STAGE_2" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnStatusApplied" enumeration_type_name="StatusEvent" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;IgnoreResting" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hcc50b4fag5ba5gfd41gfb4ag0f6b0dded0ee" version="2" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="629a9f1a-2867-4129-85af-dd56c2178b6e" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_SMELTINGFORGE_AURA_STAGE_2_ANVIL" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd775f5f8g3906g6045g10e2g6a74bab787dd" version="3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="97c6d051-e332-4ae9-844c-b69daefd2be7" />
+        <field name="StackId" type="StringTableFieldDefinition" value="KELA_SMELTINGFORGE_AURA_STAGE_2_ANVIL" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="985d166e-63f1-4669-b677-62c4db47e15d" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_SMELTINGFORGE_AURA_SUSSUR" />
+        <field name="AuraRadius" type="IntegerTableFieldDefinition" value="10" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="TARGET:IF(Item() and Tagged('KELAANVIL')):ApplyStatus(KELA_SMELTINGFORGE_AURA_SUSSUR_TOOL,100,-1);TARGET:IF(Item() and Tagged('KELAWORKBENCH')):ApplyStatus(KELA_SMELTINGFORGE_AURA_SUSSUR_TOOL,100,-1);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h0f2588e5gb6b3g8ae9gdf48g63d0b59132bb" version="3" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Item_Smelting_Furnace_Sussur" />
+        <field name="StackId" type="StringTableFieldDefinition" value="KELA_SMELTINGFORGE_AURA_SUSSUR" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;IgnoreResting" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hafb84da9gcda6g48f3g4d25g85782589594d" version="3" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8c63f52a-2225-49f5-b0cc-e76f62d54c8d" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_SMELTINGFORGE_AURA_SUSSUR_TOOL" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h0b7b9625g8e89g8d41g25d7gd8b10951b826" version="4" />
+        <field name="StackId" type="StringTableFieldDefinition" value="KELA_SMELTINGFORGE_AURA_SUSSUR_TOOL" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;IgnoreResting;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="53784a0d-d069-4a3e-9ac8-363a87d0b3f4" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_SMELTINGFORGE_AURA_GNOME" />
+        <field name="AuraRadius" type="IntegerTableFieldDefinition" value="10" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="TARGET:IF(Item() and Tagged('KELAANVIL')):ApplyStatus(KELA_SMELTINGFORGE_AURA_GNOME_TOOL,100,-1);TARGET:IF(Item() and Tagged('KELAWORKBENCH')):ApplyStatus(KELA_SMELTINGFORGE_AURA_GNOME_TOOL,100,-1);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h6d8c4ce4g4b48g6a02g4da9g7837372e35c5" version="2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Item_Smelting_Furnace_Gnome" />
+        <field name="StackId" type="StringTableFieldDefinition" value="KELA_SMELTINGFORGE_AURA_GNOME" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;IgnoreResting" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd8f30160g9c80g5f24g34aeg4dbb633581e2" version="2" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3a062603-0501-4020-93b0-0bdb50a8dfef" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_SMELTINGFORGE_AURA_GNOME_TOOL" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h0a312460g900cg67d4g2f33gf441c9a81840" version="3" />
+        <field name="StackId" type="StringTableFieldDefinition" value="KELA_SMELTINGFORGE_AURA_GNOME_TOOL" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;IgnoreResting;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7d5f7a27-495c-4191-a55a-c78172fbb508" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_SMELTINGFORGE_AURA_LASTINN" />
+        <field name="AuraRadius" type="IntegerTableFieldDefinition" value="10" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="TARGET:IF(Item() and Tagged('KELAANVIL')):ApplyStatus(KELA_SMELTINGFORGE_AURA_LASTINN_TOOL,100,-1);TARGET:IF(Item() and Tagged('KELAWORKBENCH')):ApplyStatus(KELA_SMELTINGFORGE_AURA_LASTINN_TOOL,100,-1);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h8076efd8gde74ge2d5gaa0fgc1fb185f2d89" version="2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Item_Smelting_Furnace_LastLight" />
+        <field name="StackId" type="StringTableFieldDefinition" value="KELA_SMELTINGFORGE_AURA_LASTINN" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;IgnoreResting" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h6c7dcd60g8644ge9ebg7dccga9c66dc4cc5d" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="40db801c-dd54-49e2-b793-22800728e2b8" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_SMELTINGFORGE_AURA_LASTINN_TOOL" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hfd8010e2gae51ga72cg8dc7g2f7a93837951" version="3" />
+        <field name="StackId" type="StringTableFieldDefinition" value="KELA_SMELTINGFORGE_AURA_LASTINN_TOOL" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;IgnoreResting;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5ce9c2c4-5ed2-4539-96a3-846e8c1b98e0" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_SMELTINGFORGE_AURA_CURSED" />
+        <field name="AuraRadius" type="IntegerTableFieldDefinition" value="10" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="TARGET:IF(Item() and Tagged('KELAANVIL')):ApplyStatus(KELA_SMELTINGFORGE_AURA_CURSED_TOOL,100,-1);TARGET:IF(Item() and Tagged('KELAWORKBENCH')):ApplyStatus(KELA_SMELTINGFORGE_AURA_CURSED_TOOL,100,-1);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9755d826gfa56gd5f7g3e93g77bb65ce2c0c" version="2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Item_Smelting_Furnace_ShadowCursed" />
+        <field name="StackId" type="StringTableFieldDefinition" value="KELA_SMELTINGFORGE_AURA_CURSED" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;IgnoreResting" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="ha156be6fg58e4ge2b2g66fbg73802c6df7af" version="2" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="27efceb7-dc0e-4734-b853-084d806216d2" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_SMELTINGFORGE_AURA_CURSED_TOOL" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h04e96f29g07c3ga62cg3b14g8ad3431b029c" version="3" />
+        <field name="StackId" type="StringTableFieldDefinition" value="KELA_SMELTINGFORGE_AURA_CURSED_TOOL" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;IgnoreResting;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="91d16294-0e93-4d05-bbcc-846ebd50bb46" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_SMELTINGFORGE_AURA_NINE" />
+        <field name="AuraRadius" type="IntegerTableFieldDefinition" value="10" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="TARGET:IF(Item() and Tagged('KELAANVIL')):ApplyStatus(KELA_SMELTINGFORGE_AURA_NINE_TOOL,100,-1);TARGET:IF(Item() and Tagged('KELAWORKBENCH')):ApplyStatus(KELA_SMELTINGFORGE_AURA_NINE_TOOL,100,-1);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7c7ab18aga264ge18dgdcebgb1c74f20557b" version="2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Item_Smelting_Furnace_DammonForge" />
+        <field name="StackId" type="StringTableFieldDefinition" value="KELA_SMELTINGFORGE_AURA_NINE" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;IgnoreResting" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h508435b8g7efcg1b2ag27d8g25d1b6485285" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e87dc978-8416-4830-934c-309ea2602752" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_SMELTINGFORGE_AURA_NINE_TOOL" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h55053c71gab4eg07a1ga262g2ab7d29be93a" version="2" />
+        <field name="StackId" type="StringTableFieldDefinition" value="KELA_SMELTINGFORGE_AURA_NINE_TOOL" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;IgnoreResting;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="974e1ba7-bd86-4efb-8c89-2b2fd09e2d88" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_USER_BLOCK_MOVEMENT" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResourceBlock(Movement)" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="ha700efe7g081cgc436gee56g1f065eba44bd" version="1" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnTurn" enumeration_type_name="StatusEvent" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF5F9EA0" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2eeaa94d-a407-4dbe-a88a-122188a810d5" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_MESSAGE_STATUS" />
+        <field name="StackId" type="StringTableFieldDefinition" value="KELA_MESSAGE_STATUS" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="ForceOverhead" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h116f9179gb3fcga3e6g7ddfgda1e50623511" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FFA0522D" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2d545e3d-4034-4719-9155-0a1044286009" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_MESSAGE_ERROR" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2eeaa94d-a407-4dbe-a88a-122188a810d5" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb916afacg1ef8ge856gcc4bg027b87dff5c0" version="3" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="ha4157baagc891g225eg229eg230914f05ab2" version="6" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Tooltip_Error_Cross" />
+        <field name="FormatColor" type="EnumerationTableFieldDefinition" value="Orange" enumeration_type_name="FormatStringColor" version="1" />
+        <field name="SoundStart" type="StringTableFieldDefinition" value="UI_Shared_Error" />
+        <field name="StackId" type="StringTableFieldDefinition" value="KELA_MESSAGE_ERROR" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FFA0522D" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0bb992e7-43ca-4531-94f3-d8680d09e1be" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_MESSAGE_NO_SUITABLE_WEAPON_KELAWHETSTONE" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2d545e3d-4034-4719-9155-0a1044286009" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h21220940g9abdg4fafg981ag12c7df72a363" version="5" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h62a8db26gf88dg15dfg652bgc5cb3aebf798" version="6" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Weapon_Tool_Whetstone" />
+        <field name="FormatColor" type="EnumerationTableFieldDefinition" value="Orange" enumeration_type_name="FormatStringColor" version="1" />
+        <field name="SoundStart" type="StringTableFieldDefinition" value="UI_Shared_Error" />
+        <field name="StackId" type="StringTableFieldDefinition" value="KELA_MESSAGE_NO_SUITABLE_WEAPON_KELAWHETSTONE" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FFA0522D" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="dc040cd4-400a-4feb-9333-6d8a49982026" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_MESSAGE_NO_SUITABLE_WEAPON_KELAWORKBENCH" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="0bb992e7-43ca-4531-94f3-d8680d09e1be" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h52a1d6b9g81fegd258g99c1g93b2dd0aed7f" version="5" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Weapon_Tool_Workbench" />
+        <field name="StackId" type="StringTableFieldDefinition" value="KELA_MESSAGE_NO_SUITABLE_WEAPON_KELAWORKBENCH" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FFA0522D" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c916bd5b-2097-415f-81ac-4ec5000bb7bd" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_MESSAGE_NO_SUITABLE_WEAPON_RANGED" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="0bb992e7-43ca-4531-94f3-d8680d09e1be" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd7451a09gb5ffg2b52g852egbe0ab2a7081e" version="2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Weapon_Tool_Workbench_Ranged" />
+        <field name="StackId" type="StringTableFieldDefinition" value="KELA_MESSAGE_NO_SUITABLE_WEAPON_RANGED" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FFA0522D" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9e469b6a-06a7-481d-83f8-69c7101b2794" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_MESSAGE_NO_SUITABLE_WEAPON_KELAANVIL" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="0bb992e7-43ca-4531-94f3-d8680d09e1be" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h18c84b2dg09c2geb18g2f37gedb9bc242dd4" version="2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Weapon_Tool_Anvil" />
+        <field name="StackId" type="StringTableFieldDefinition" value="KELA_MESSAGE_NO_SUITABLE_WEAPON_KELAANVIL" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FFA0522D" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="60e65b84-d65e-4f75-b3af-a9ab9ed7ba33" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_MESSAGE_SUITABLE_WEAPON_TOO_DAMAGED" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2d545e3d-4034-4719-9155-0a1044286009" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h99af4304g7b2dg3f19gbc37g924b069081eb" version="3" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h247467c1g12a9g606dgce4agf7d1cc560a41" version="3" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Tooltip_Error_Cross" />
+        <field name="FormatColor" type="EnumerationTableFieldDefinition" value="Orange" enumeration_type_name="FormatStringColor" version="1" />
+        <field name="SoundStart" type="StringTableFieldDefinition" value="UI_Shared_Error" />
+        <field name="StackId" type="StringTableFieldDefinition" value="KELA_MESSAGE_SUITABLE_WEAPON_TOO_DAMAGED" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FFA0522D" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="570325dd-bb2a-47b3-894e-f749a1e533cb" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_MESSAGE_ANVIL_NOT_FIRE" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2d545e3d-4034-4719-9155-0a1044286009" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd242be78gf5cag5cebg5997g76c9ba68c752" version="4" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h31c01f82g3f0egd808ga803g715427da1091" version="3" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Tooltip_Error_Cross" />
+        <field name="FormatColor" type="EnumerationTableFieldDefinition" value="Orange" enumeration_type_name="FormatStringColor" version="1" />
+        <field name="SoundStart" type="StringTableFieldDefinition" value="UI_Shared_Error" />
+        <field name="StackId" type="StringTableFieldDefinition" value="KELA_MESSAGE_ANVIL_NOT_FIRE" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FFA0522D" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="08039dd9-26e7-489e-ab48-b994146bd52a" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_MESSAGE_ANVIL_FIRE_TOO_HOT" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2d545e3d-4034-4719-9155-0a1044286009" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hea93aa5eg3d8eg822eg353cgab6eafbc73d3" version="4" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h88370da4g6bc3g191fga4cdgc24e3c60e309" version="2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Tooltip_Error_Cross" />
+        <field name="FormatColor" type="EnumerationTableFieldDefinition" value="Orange" enumeration_type_name="FormatStringColor" version="1" />
+        <field name="SoundStart" type="StringTableFieldDefinition" value="UI_Shared_Error" />
+        <field name="StackId" type="StringTableFieldDefinition" value="KELA_MESSAGE_ANVIL_FIRE_TOO_HOT" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FFA0522D" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="dbee4373-c9b2-434b-aeb6-df7445f4f4c9" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_MESSAGE_ANVIL_FIRE_TOO_COLD" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2d545e3d-4034-4719-9155-0a1044286009" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hea9e1e27g965cgbe4fgf6dag064f0ab18429" version="4" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h8768bf52ga426g2cbcgb4b9g986c7403f67a" version="2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Tooltip_Error_Cross" />
+        <field name="FormatColor" type="EnumerationTableFieldDefinition" value="Orange" enumeration_type_name="FormatStringColor" version="1" />
+        <field name="SoundStart" type="StringTableFieldDefinition" value="UI_Shared_Error" />
+        <field name="StackId" type="StringTableFieldDefinition" value="KELA_MESSAGE_ANVIL_FIRE_TOO_COLD" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FFA0522D" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6f1bbb09-56a0-4253-b69f-b1dea5225ad8" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_MESSAGE_NO_KNOWLEDGE_ANVIL" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2d545e3d-4034-4719-9155-0a1044286009" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h85000710ge5f0gf728g622cg8008e6b3a3e4" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h054ec240g915dg30c6g8429gd6cb219345b4" version="2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Tooltip_Error_Cross" />
+        <field name="FormatColor" type="EnumerationTableFieldDefinition" value="Orange" enumeration_type_name="FormatStringColor" version="1" />
+        <field name="SoundStart" type="StringTableFieldDefinition" value="UI_Shared_Error" />
+        <field name="StackId" type="StringTableFieldDefinition" value="KELA_MESSAGE_NO_KNOWLEDGE_ANVIL" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FFA0522D" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5d7f5d22-3642-4c17-b8d5-76c2a1c51c90" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_MESSAGE_NO_KNOWLEDGE_ANVIL_BLACKSMITH" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2d545e3d-4034-4719-9155-0a1044286009" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h07331bcagacf5g50abga823g3730dcb31dd0" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h110b592cgb216g3dcfg19f4g30362cc627e0" version="2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Tooltip_Error_Cross" />
+        <field name="FormatColor" type="EnumerationTableFieldDefinition" value="Orange" enumeration_type_name="FormatStringColor" version="1" />
+        <field name="SoundStart" type="StringTableFieldDefinition" value="UI_Shared_Error" />
+        <field name="StackId" type="StringTableFieldDefinition" value="KELA_MESSAGE_NO_KNOWLEDGE_ANVIL_BLACKSMITH" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FFA0522D" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f24a3d20-8156-4639-96ae-9036a61a3c1e" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_MESSAGE_NO_KNOWLEDGE_WORKBENCH" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="6f1bbb09-56a0-4253-b69f-b1dea5225ad8" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc860596bgfd3fg2eb8gf651g2ea20ad366d0" version="2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Tooltip_Error_Cross" />
+        <field name="FormatColor" type="EnumerationTableFieldDefinition" value="Orange" enumeration_type_name="FormatStringColor" version="1" />
+        <field name="SoundStart" type="StringTableFieldDefinition" value="UI_Shared_Error" />
+        <field name="StackId" type="StringTableFieldDefinition" value="KELA_MESSAGE_NO_KNOWLEDGE_WORKBENCH" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FFA0522D" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="55d33daf-8913-40bf-8937-57389eede4fa" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_MESSAGE_BLUEPRINT_NO_KNOWLEDGE" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2d545e3d-4034-4719-9155-0a1044286009" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hecd4ee12gb7bfg3280ga0cfg87fad2d19ff5" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hfc4b8c7dgd35fgbe33g1d3cgd0367494de2e" version="2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Tooltip_Error_Cross" />
+        <field name="FormatColor" type="EnumerationTableFieldDefinition" value="Orange" enumeration_type_name="FormatStringColor" version="1" />
+        <field name="SoundStart" type="StringTableFieldDefinition" value="UI_Shared_Error" />
+        <field name="StackId" type="StringTableFieldDefinition" value="KELA_MESSAGE_BLUEPRINT_NO_KNOWLEDGE" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FFA0522D" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="cd27dca4-579b-4d6a-943e-6a059dc43baa" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_MESSAGE_BLUEPRINT_NO_REQUIREMENTS" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2d545e3d-4034-4719-9155-0a1044286009" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h885090eagac03g143bga91dg9952f658313e" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h402cf9a5gc793g300dgdb7fg59d424944663" version="2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Tooltip_Error_Cross" />
+        <field name="FormatColor" type="EnumerationTableFieldDefinition" value="Orange" enumeration_type_name="FormatStringColor" version="1" />
+        <field name="SoundStart" type="StringTableFieldDefinition" value="UI_Shared_Error" />
+        <field name="StackId" type="StringTableFieldDefinition" value="KELA_MESSAGE_BLUEPRINT_NO_REQUIREMENTS" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FFA0522D" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="282a2b15-3d5d-454a-9543-418abfded888" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_MESSAGE_REFORGE_FAILED" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2d545e3d-4034-4719-9155-0a1044286009" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h5af7fd0dg0b9dg13ddgbaecg52b0dd84866a" version="4" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="ha2898bd7gf302gc6b1g5959g7aa634b702e6" version="3" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Tooltip_Error_Cross" />
+        <field name="FormatColor" type="EnumerationTableFieldDefinition" value="Orange" enumeration_type_name="FormatStringColor" version="1" />
+        <field name="SoundStart" type="StringTableFieldDefinition" value="UI_Shared_Error" />
+        <field name="StackId" type="StringTableFieldDefinition" value="KELA_MESSAGE_REFORGE_FAILED" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="ForceOverhead" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FFA0522D" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b22a57e5-fc0c-4dde-a7f2-5c33b7db1db4" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_MESSAGE_REFORGE_NOT_VALID_TEMPLATE" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2d545e3d-4034-4719-9155-0a1044286009" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hdf235fe2g8f0dg54e3g65cbgaca2daf73c53" version="4" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h231d1938g2d36g6e02g651ag551d7b01b91a" version="3" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Tooltip_Error_Cross" />
+        <field name="FormatColor" type="EnumerationTableFieldDefinition" value="Orange" enumeration_type_name="FormatStringColor" version="1" />
+        <field name="SoundStart" type="StringTableFieldDefinition" value="UI_Shared_Error" />
+        <field name="StackId" type="StringTableFieldDefinition" value="KELA_MESSAGE_REFORGE_NOT_VALID_TEMPLATE" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FFA0522D" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5e701214-61ac-44df-9adf-0ca34e726946" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_MESSAGE_REFORGE_ELVEN_ONLY_RANGED" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2d545e3d-4034-4719-9155-0a1044286009" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Tooltip_Error_Cross" />
+        <field name="FormatColor" type="EnumerationTableFieldDefinition" value="Orange" enumeration_type_name="FormatStringColor" version="1" />
+        <field name="SoundStart" type="StringTableFieldDefinition" value="UI_Shared_Error" />
+        <field name="StackId" type="StringTableFieldDefinition" value="KELA_MESSAGE_REFORGE_ELVEN_ONLY_RANGED" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7cc1436ag03ebg2c99g3deagec3790b035e7" version="4" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h109dd3bdgb8a0g1c98g669bg9cf5fff8666b" version="3" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FFA0522D" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="027b08e3-83cb-41dc-9534-436754a19aee" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_MESSAGE_REFORGE_NOT_INGREDIENTS" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2d545e3d-4034-4719-9155-0a1044286009" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Tooltip_Error_Cross" />
+        <field name="FormatColor" type="EnumerationTableFieldDefinition" value="Orange" enumeration_type_name="FormatStringColor" version="1" />
+        <field name="SoundStart" type="StringTableFieldDefinition" value="UI_Shared_Error" />
+        <field name="StackId" type="StringTableFieldDefinition" value="KELA_MESSAGE_REFORGE_NOT_INGREDIENTS" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h09b36e57gaceagfd2bgf225g86f8513d26b5" version="4" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf85d8b2ag0d26g2266ge9bcgbc8697e1ad50" version="4" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FFA0522D" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="70321dc7-7eea-421a-9319-955812fde151" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_MESSAGE_REFORGE_INVENTORY_EMPTY" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2d545e3d-4034-4719-9155-0a1044286009" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Tooltip_Error_Cross" />
+        <field name="FormatColor" type="EnumerationTableFieldDefinition" value="Orange" enumeration_type_name="FormatStringColor" version="1" />
+        <field name="SoundStart" type="StringTableFieldDefinition" value="UI_Shared_Error" />
+        <field name="StackId" type="StringTableFieldDefinition" value="KELA_MESSAGE_REFORGE_NOT_INGREDIENTS" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb430cf3eg3ad9g32b4g4051gc3ac49b77c26" version="3" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hcd9429d7g1d9bg1803gdf00g44e6a9a1134c" version="3" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FFA0522D" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="fe6d4b4d-823c-4d8e-a557-15e66f9b0ad3" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_MESSAGE_PLAYER_HAS_NOT_SMITH_OIL" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h77794615g9749g1a9ag4473g52918c9ffb01" version="6" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hb98d359bg4fbag7812gf24agc6562c63f07b" version="5" />
+        <field name="StackId" type="StringTableFieldDefinition" value="KELA_MESSAGE_PLAYER_HAS_NOT_SMITH_OIL" />
+        <field name="FormatColor" type="EnumerationTableFieldDefinition" value="Yellow" enumeration_type_name="FormatStringColor" version="1" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2d545e3d-4034-4719-9155-0a1044286009" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(20)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Items_CONS_Drink_Bottle_Small_C" />
+        <field name="SoundStart" type="StringTableFieldDefinition" value="UI_Shared_Error" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF5F9EA0" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9dd33f52-2cb8-4887-8a93-8ab338228bb0" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_MESSAGE_UPGRADE_IN_PROCESS_KELAWHETSTONE" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2e0fc362g9423ge904gd1f2g536a0c11c782" version="4" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="he67fb955g1325gae36gfb6bga637b160567b" version="5" />
+        <field name="StackId" type="StringTableFieldDefinition" value="KELA_MESSAGE_UPGRADE_IN_PROCESS_KELAWHETSTONE" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2eeaa94d-a407-4dbe-a88a-122188a810d5" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Weapon_Upgrade_Good" />
+        <field name="SoundStart" type="StringTableFieldDefinition" value="HUM_CUST_GrindingWeapon_Loop" />
+        <field name="SoundStop" type="StringTableFieldDefinition" value="HUM_CUST_GrindingWeapon_Loop_Stop" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="ForceOverhead;DisableCombatlog" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF5F9EA0" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8363b0a8-385e-44a1-9627-b1e247e18345" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_MESSAGE_UPGRADE_IN_PROCESS_KELAANVIL" />
+        <field name="StackId" type="StringTableFieldDefinition" value="KELA_MESSAGE_UPGRADE_IN_PROCESS_KELAANVIL" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Weapon_Upgrade_Good" />
+        <field name="SoundStart" type="StringTableFieldDefinition" value="HAV_Tieflingsurvivors_Weaponsmith_Forging_Start" />
+        <field name="SoundStop" type="StringTableFieldDefinition" value="HAV_Tieflingsurvivors_Weaponsmith_Forging_Stop" />
+        <field name="SoundLoop" type="StringTableFieldDefinition" value="HAV_Tieflingsurvivors_Weaponsmith_Forging_Loop" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="ForceOverhead;DisableCombatlog" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="9dd33f52-2cb8-4887-8a93-8ab338228bb0" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF5F9EA0" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1ecd6c3b-f95a-422f-8f00-30712bff7e7a" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_MESSAGE_UPGRADE_IN_PROCESS_KELAWORKBENCH" />
+        <field name="StackId" type="StringTableFieldDefinition" value="KELA_MESSAGE_UPGRADE_IN_PROCESS_KELAWORKBENCH" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Weapon_Upgrade_Good" />
+        <field name="SoundStart" type="StringTableFieldDefinition" value="Item_Container_Wood_Open" />
+        <field name="SoundStop" type="StringTableFieldDefinition" value="FUR_GEN_Smelting_Forge_Stone_ABC_ForgeLoop_Stop" />
+        <field name="SoundLoop" type="StringTableFieldDefinition" value="FUR_GEN_Smelting_Forge_Stone_ABC_ForgeLoop" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="ForceOverhead;DisableCombatlog" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="9dd33f52-2cb8-4887-8a93-8ab338228bb0" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF5F9EA0" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="864f4c11-1c15-4c2c-a7eb-8a47984ea23f" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_MESSAGE_GET_BLACKSMITH_APPRENTICE_PASSIVE" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h4369c821gf62bg99fbgc6feg183671485dd7" version="4" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h1a8cf37dga2b7g8f93g748dgef4dcf8774d1" version="4" />
+        <field name="StackId" type="StringTableFieldDefinition" value="KELA_MESSAGE_GET_BLACKSMITH_APPRENTICE_PASSIVE" />
+        <field name="FormatColor" type="EnumerationTableFieldDefinition" value="Green" enumeration_type_name="FormatStringColor" version="1" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2eeaa94d-a407-4dbe-a88a-122188a810d5" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Blacksmith_Apprentice" />
+        <field name="ApplyEffect" type="GuidObjectTableFieldDefinition" value="af4bcec0-229d-447c-8513-3e85363a67e7" />
+        <field name="SoundStart" type="StringTableFieldDefinition" value="HAG_Well_Buff" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a3b66e49-5a5e-44bb-9ebf-0bf290d17d88" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_MESSAGE_BLUEPRINT_HAS_BEEN_REVIEWED" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7dfb0160gc921g3ee0gfaa3g1b63ff5e041a" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h3f1e8453gb3bfgf2e7g951agb68fb7d7057d" version="2" />
+        <field name="StackId" type="StringTableFieldDefinition" value="KELA_MESSAGE_BLUEPRINT_HAS_BEEN_REVIEWED" />
+        <field name="FormatColor" type="EnumerationTableFieldDefinition" value="Green" enumeration_type_name="FormatStringColor" version="1" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2eeaa94d-a407-4dbe-a88a-122188a810d5" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Item_BOOK_GEN_Paper_Sheet_C" />
+        <field name="ApplyEffect" type="GuidObjectTableFieldDefinition" value="af4bcec0-229d-447c-8513-3e85363a67e7" />
+        <field name="SoundStart" type="StringTableFieldDefinition" value="HAG_Well_Buff" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF008000" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="29125f28-4f1a-4383-b4da-225600364dcc" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_ITEM_TOOLTIP" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hfa0acb7fge961g8b7dg013cg39fa003f074f" version="3" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h27aa496dg740bg19acg4edeg2f187d1a6391" version="3" />
+        <field name="StackId" type="StringTableFieldDefinition" value="KELA_ITEM_TOOLTIP" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF008000" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3b7193d7-d2fa-40e4-a77b-a25cecb73202" />
+        <field name="Name" type="NameTableFieldDefinition" value="TEMPO_EXAMPLE_NOT_USED_KELA_ITEM_TOOLTIP_SMITH_OIL" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="29125f28-4f1a-4383-b4da-225600364dcc" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h35e3f347g3f59gf1c0g252eg6e8a40b129e6" version="3" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h879e5a14geae4gd45eg8df2gfc9e5be416ae" version="6" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Items_CONS_Drink_Bottle_Small_C" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF00008B" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="27740b3e-93ea-40ee-ae79-7b279380534b" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_GUILD_ARTISAN_SKILLCHECK_BONUS" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h193ebf76g645bg2c63g70edg709f4f628936" version="3" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h295fcdf4g2c96g7b94gab98g2777093c0f21" version="5" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Advantage(Skill,SleightOfHand)" />
+        <field name="StackId" type="StringTableFieldDefinition" value="KELA_GUILD_ARTISAN_SKILLCHECK_BONUS" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Background_Guild_Artisan" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="087fdc5a-c71c-409b-ae43-a360a6011806" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_ELVEN_ROOTS_SKILLCHECK_BONUS" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h362d8b86g8226gf184gca00gbcc5d7e25c83" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hdd47fdc7gd08bg9272gd281g359ba3f28807" version="2" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="RollBonus(SkillCheck,3)" />
+        <field name="StackId" type="StringTableFieldDefinition" value="KELA_ELVEN_ROOTS_SKILLCHECK_BONUS" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Background_Elven_Roots" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF00008B" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="02452f04-dcf3-4cd6-a7e9-741f40bf3203" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_ALCH_ELIXIR_CONCENTRATION_BONUS" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h79b6c4f5g9c83ge3b9g5801gb1da3b9eacda" version="3" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hb2452c40ge4b5g3e94g575dge7ea90bf6712" version="3" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Advantage(Skill,SleightOfHand)" />
+        <field name="StackId" type="StringTableFieldDefinition" value="KELA_ALCH_ELIXIR_CONCENTRATION_BONUS" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Item_CONS_Potion_Invulnerability" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF00008B" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="13deb432-ef29-4d1f-8491-d23f0272fc37" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_WEAPON_PROFICIENCY_SKILLCHECK_BONUS" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="ha834709bg70c6g4b6ag6813g59a14b5e101c" version="3" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h39f6c6a1ga920g2d1egc966g61157cd9cf7c" version="3" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="RollBonus(SkillCheck,1)" />
+        <field name="StackId" type="StringTableFieldDefinition" value="KELA_WEAPON_PROFICIENCY_SKILLCHECK_BONUS" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Weapon_Proficiency" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e51aabf7-684f-491a-9fd2-79c42e3ce0a0" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_WEAPON_UPGRADED" />
+        <field name="StackId" type="StringTableFieldDefinition" value="KELA_WEAPON_UPGRADED" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="IgnoreResting" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7c1a4b1agca7eg573bgfb50g510989ee91a3" version="2" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FFA0522D" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2245c93b-b82d-4432-8fe6-1483c0f82f1d" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_WEAPON_UPGRADED_0_1" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="e51aabf7-684f-491a-9fd2-79c42e3ce0a0" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h75cbbcb9g4b17gedb3g4093g4f70cce99f03" version="4" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h7e58e97bg77e9g9c64g7d30gbe5ec567128f" version="4" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="-1;-1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Weapon_Upgrade_Bad" />
+        <field name="StackId" type="StringTableFieldDefinition" value="KELA_WEAPON_UPGRADED_0_1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="WeaponAttackRollBonus(-1);IF(IsDamageTypeSlashing()):WeaponDamage(-1,Slashing);IF(IsDamageTypePiercing()):WeaponDamage(-1,Piercing);IF(IsDamageTypeBludgeoning()):WeaponDamage(-1,Bludgeoning)" />
+        <field name="TooltipDamage" type="StringTableFieldDefinition" value="DealDamage(-1, Piercing)" />
+        <field name="ApplyEffect" type="GuidObjectTableFieldDefinition" value="abb6d445-5db6-4b1d-be49-31336506e1de" />
+        <field name="FormatColor" type="EnumerationTableFieldDefinition" value="Yellow" enumeration_type_name="FormatStringColor" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FFA0522D" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="430e3190-9ccb-4244-b4d4-4d9b1b5880b2" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_WEAPON_UPGRADED_0_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2245c93b-b82d-4432-8fe6-1483c0f82f1d" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2b856076gf6b3gc9e6g5a10g2c3fc101a22b" version="3" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="-2;-2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Weapon_Upgrade_Bad" />
+        <field name="StackId" type="StringTableFieldDefinition" value="KELA_WEAPON_UPGRADED_0_2" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="WeaponAttackRollBonus(-2);IF(IsDamageTypeSlashing()):WeaponDamage(-2,Slashing);IF(IsDamageTypePiercing()):WeaponDamage(-2,Piercing);IF(IsDamageTypeBludgeoning()):WeaponDamage(-2,Bludgeoning)" />
+        <field name="TooltipDamage" type="StringTableFieldDefinition" value="DealDamage(-2, Piercing)" />
+        <field name="FormatColor" type="EnumerationTableFieldDefinition" value="Orange" enumeration_type_name="FormatStringColor" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FFA0522D" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="22d97cab-00cb-4d32-aaa0-74e44c8f69ae" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_WEAPON_UPGRADED_0_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2245c93b-b82d-4432-8fe6-1483c0f82f1d" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h5aef595eg4165g4fe3ga35egc36e35819e22" version="3" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="-3;-3" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Weapon_Upgrade_Bad" />
+        <field name="StackId" type="StringTableFieldDefinition" value="KELA_WEAPON_UPGRADED_0_3" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="WeaponAttackRollBonus(-3);IF(IsDamageTypeSlashing()):WeaponDamage(-3,Slashing);IF(IsDamageTypePiercing()):WeaponDamage(-3,Piercing);IF(IsDamageTypeBludgeoning()):WeaponDamage(-3,Bludgeoning)" />
+        <field name="TooltipDamage" type="StringTableFieldDefinition" value="DealDamage(-3, Piercing)" />
+        <field name="FormatColor" type="EnumerationTableFieldDefinition" value="Red" enumeration_type_name="FormatStringColor" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2fe71692-cd99-4a23-845c-78324e096abb" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_WEAPON_UPGRADED_1" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="e51aabf7-684f-491a-9fd2-79c42e3ce0a0" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h790d4338g7f94gd2e5g3db6g02f57216603b" version="3" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hb352e4d0ga8c9geca5g8c0fg93307423daf8" version="3" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Weapon_Upgrade_Good" />
+        <field name="StackId" type="StringTableFieldDefinition" value="KELA_WEAPON_UPGRADED_1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsDamageTypeSlashing()):WeaponDamage(1,Slashing);IF(IsDamageTypePiercing()):WeaponDamage(1,Piercing);IF(IsDamageTypeBludgeoning()):WeaponDamage(1,Bludgeoning)" />
+        <field name="TooltipDamage" type="StringTableFieldDefinition" value="DealDamage(1, Piercing)" />
+        <field name="ApplyEffect" type="GuidObjectTableFieldDefinition" value="abb6d445-5db6-4b1d-be49-31336506e1de" />
+        <field name="FormatColor" type="EnumerationTableFieldDefinition" value="White" enumeration_type_name="FormatStringColor" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="97cb2718-2de1-42b4-8a80-248a94a58a90" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_WEAPON_UPGRADED_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2fe71692-cd99-4a23-845c-78324e096abb" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd0ddca10g8f97gdad1gef44g7e924cdd3bd5" version="3" />
+        <field name="StackId" type="StringTableFieldDefinition" value="KELA_WEAPON_UPGRADED_2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h407b8589g16f5g49f7g0325gf7cf170d7a1c" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="2" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsDamageTypeSlashing()):WeaponDamage(2,Slashing);IF(IsDamageTypePiercing()):WeaponDamage(2,Piercing);IF(IsDamageTypeBludgeoning()):WeaponDamage(2,Bludgeoning)" />
+        <field name="TooltipDamage" type="StringTableFieldDefinition" value="DealDamage(2, Piercing)" />
+        <field name="FormatColor" type="EnumerationTableFieldDefinition" value="Green" enumeration_type_name="FormatStringColor" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="101600f5-3bb0-4dd5-87f7-a7d47ad8a7d6" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_WEAPON_UPGRADED_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2fe71692-cd99-4a23-845c-78324e096abb" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h60d49854g5eccgada6g0f6bgcc3a07f503a1" version="3" />
+        <field name="StackId" type="StringTableFieldDefinition" value="KELA_WEAPON_UPGRADED_3" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hdb6796ccg5803g2348gf27dg5ff309482796" version="3" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="1;3" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="WeaponAttackRollBonus(1);IF(IsDamageTypeSlashing()):WeaponDamage(3,Slashing);IF(IsDamageTypePiercing()):WeaponDamage(3,Piercing);IF(IsDamageTypeBludgeoning()):WeaponDamage(3,Bludgeoning)" />
+        <field name="TooltipDamage" type="StringTableFieldDefinition" value="DealDamage(3, Piercing)" />
+        <field name="FormatColor" type="EnumerationTableFieldDefinition" value="Blue" enumeration_type_name="FormatStringColor" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3aab51fa-8f59-46c9-a8d2-d62f5555189a" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_WEAPON_UPGRADED_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2fe71692-cd99-4a23-845c-78324e096abb" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2662ab6bg0937g3da7gc091g5d2796661867" version="3" />
+        <field name="StackId" type="StringTableFieldDefinition" value="KELA_WEAPON_UPGRADED_4" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hdd63740ege2bdg4c74gcf7cg1a91613d7269" version="3" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="2;3" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="WeaponAttackRollBonus(2);IF(IsDamageTypeSlashing()):WeaponDamage(3,Slashing);IF(IsDamageTypePiercing()):WeaponDamage(3,Piercing);IF(IsDamageTypeBludgeoning()):WeaponDamage(3,Bludgeoning)" />
+        <field name="TooltipDamage" type="StringTableFieldDefinition" value="DealDamage(3, Piercing)" />
+        <field name="FormatColor" type="EnumerationTableFieldDefinition" value="Gold" enumeration_type_name="FormatStringColor" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6c24b1c8-97d7-4da6-b798-d66c4ea60be7" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_WEAPON_UPGRADED_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2fe71692-cd99-4a23-845c-78324e096abb" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hfc2618abge483gb295gb2e4g21b24172e68d" version="3" />
+        <field name="StackId" type="StringTableFieldDefinition" value="KELA_WEAPON_UPGRADED_5" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hfd6dc39dgf208gc535g9280gcec177192478" version="3" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3;3" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="WeaponAttackRollBonus(3);IF(IsDamageTypeSlashing()):WeaponDamage(3,Slashing);IF(IsDamageTypePiercing()):WeaponDamage(3,Piercing);IF(IsDamageTypeBludgeoning()):WeaponDamage(3,Bludgeoning)" />
+        <field name="TooltipDamage" type="StringTableFieldDefinition" value="DealDamage(3, Piercing)" />
+        <field name="FormatColor" type="EnumerationTableFieldDefinition" value="StoryItem" enumeration_type_name="FormatStringColor" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="71c537fb-db62-4278-8dc8-4564206267d1" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_WEAPON_GUILD_ARTISAN_BONUS" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h4ee93350g2979g7628g1af9g6fee10ca8b01" version="3" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h5491c51dg71fag7f2ag6ccag91ce8fabe363" version="4" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="1" />
+        <field name="StackId" type="StringTableFieldDefinition" value="KELA_WEAPON_GUILD_ARTISAN_BONUS" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="WeaponAttackRollBonus(1)" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not HasStatus('KELA_WEAPON_UPGRADED_1') and not HasStatus('KELA_WEAPON_UPGRADED_2') and not HasStatus('KELA_WEAPON_UPGRADED_3') and not HasStatus('KELA_WEAPON_UPGRADED_4') and not HasStatus('KELA_WEAPON_UPGRADED_5')" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnStatusRemoved" enumeration_type_name="StatusEvent" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="IgnoreResting;DisableOverhead;DisableCombatlog" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Weapon_Guild_Artisan_Bonus" />
+        <field name="FormatColor" type="EnumerationTableFieldDefinition" value="StoryItem" enumeration_type_name="FormatStringColor" version="1" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Ignore" enumeration_type_name="StatusStackType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="bf03946f-f1fa-4228-9200-1d6a9c364dde" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_FORGED_WEAPON_GUILD_ARTISAN_BONUS" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hdf284b85g8a1eg31eage807g50b29524d5c3" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="2" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="WeaponAttackRollBonus(2)" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="IgnoreResting;DisableOverhead;DisableCombatlog" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf13b1c99g4cb2g0645ga9a7g738cca9ced57" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Weapon_Guild_Artisan_Bonus" />
+        <field name="FormatColor" type="EnumerationTableFieldDefinition" value="StoryItem" enumeration_type_name="FormatStringColor" version="1" />
+        <field name="StackId" type="StringTableFieldDefinition" value="KELA_FORGED_WEAPON_GUILD_ARTISAN_BONUS" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Ignore" enumeration_type_name="StatusStackType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="dea1d80e-ced7-417c-8b53-808e2f53267d" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_FORGED_ARMOR_GUILD_ARTISAN_BONUS" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h73ee3b04g3acdga590g6422gff19a84d28b8" version="3" />
+        <field name="StackId" type="StringTableFieldDefinition" value="KELA_FORGED_ARMOR_GUILD_ARTISAN_BONUS" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="IgnoreResting;DisableOverhead;DisableCombatlog" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7da9c2c0g27d2gbb81ga6a6gcf41aee0d5ac" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Weapon_Guild_Artisan_Bonus" />
+        <field name="FormatColor" type="EnumerationTableFieldDefinition" value="StoryItem" enumeration_type_name="FormatStringColor" version="1" />
+        <field name="AuraRadius" type="IntegerTableFieldDefinition" value="1" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="TARGET:IF(Self() and Character() and HasEquippedItemWithStatus('KELA_FORGED_ARMOR_GUILD_ARTISAN_BONUS')):ApplyStatus(KELA_FORGED_ARMOR_GUILD_ARTISAN_BONUS_2)" />
+        <field name="AuraFlags" type="EnumerationListTableFieldDefinition" value="IgnoreItems" enumeration_type_name="AuraFlags" version="1" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Ignore" enumeration_type_name="StatusStackType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="cf5df743-aaa3-4094-859c-501babfffb14" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_FORGED_ARMOR_GUILD_ARTISAN_BONUS_2" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9724679fg9a31g9926g5233gd605562f6a51" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h4e413efdg43adg70e9ge067g1ccd5bde2c3b" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Weapon_Guild_Artisan_Bonus" />
+        <field name="FormatColor" type="EnumerationTableFieldDefinition" value="StoryItem" enumeration_type_name="FormatStringColor" version="1" />
+        <field name="StackId" type="StringTableFieldDefinition" value="KELA_FORGED_ARMOR_GUILD_ARTISAN_BONUS_2" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="AC(2)" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="IgnoreResting;DisableOverhead;DisableCombatlog" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Ignore" enumeration_type_name="StatusStackType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ce7c64ba-81ce-4c9b-8be0-aeafe2de04ec" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_WEAPON_ELVEN_ROOTS_BONUS" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h5d9e1b81g66a5g5fefg40a4g33e7608797df" version="3" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd4e90e3bgacd6g89d6g4554gb52fed1af012" version="4" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="1" />
+        <field name="StackId" type="StringTableFieldDefinition" value="KELA_WEAPON_ELVEN_ROOTS_BONUS" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="WeaponAttackRollBonus(1)" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not HasStatus('KELA_WEAPON_UPGRADED_1') and not HasStatus('KELA_WEAPON_UPGRADED_2') and not HasStatus('KELA_WEAPON_UPGRADED_3') and not HasStatus('KELA_WEAPON_UPGRADED_4') and not HasStatus('KELA_WEAPON_UPGRADED_5')" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnStatusRemoved" enumeration_type_name="StatusEvent" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="IgnoreResting;DisableOverhead;DisableCombatlog" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Weapon_Elven_Roots_Bonus" />
+        <field name="FormatColor" type="EnumerationTableFieldDefinition" value="StoryItem" enumeration_type_name="FormatStringColor" version="1" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Ignore" enumeration_type_name="StatusStackType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a07c2f20-3fd5-41ab-83d7-e292fbc33a20" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_FORGED_WEAPON_ELVEN_ROOTS_BONUS" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h1f28a99fg96a5g2cf6gaeffg7c3c8e633b52" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h2c8e1789g862cg8648gb5e1g9c6ecbf7d628" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Weapon_Elven_Roots_Bonus" />
+        <field name="FormatColor" type="EnumerationTableFieldDefinition" value="StoryItem" enumeration_type_name="FormatStringColor" version="1" />
+        <field name="StackId" type="StringTableFieldDefinition" value="KELA_FORGED_WEAPON_ELVEN_ROOTS_BONUS" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="WeaponAttackRollBonus(2)" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="IgnoreResting;DisableOverhead;DisableCombatlog" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Ignore" enumeration_type_name="StatusStackType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="63384dad-3849-4ba2-a846-c40f300ed1cd" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_FORGED_WEAPON_SUSSURFORGE" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hdc80a129gd828g1c34g1753g926628fc88c2" version="4" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h1e0e371ag39a7ge93ag9f9agd59c2cdbe04c" version="2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Item_Smelting_Furnace_Sussur" />
+        <field name="FormatColor" type="EnumerationTableFieldDefinition" value="StoryItem" enumeration_type_name="FormatStringColor" version="1" />
+        <field name="StackId" type="StringTableFieldDefinition" value="KELA_FORGED_WEAPON_SUSSURFORGE" />
+        <field name="Passives" type="StringTableFieldDefinition" value="PassiveWeapon_SussurSilence" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="IgnoreResting;DisableOverhead;DisableCombatlog" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Ignore" enumeration_type_name="StatusStackType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f0a23771-eb36-479b-be40-d4d7f01405fc" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_FORGED_ARMOR_SUSSURFORGE" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h3fd8aa4fgb170g2fe2g30e1g3b45b069673c" version="2" />
+        <field name="StackId" type="StringTableFieldDefinition" value="KELA_FORGED_ARMOR_SUSSURFORGE" />
+        <field name="AuraRadius" type="IntegerTableFieldDefinition" value="1" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="TARGET:IF(Self() and Character() and HasEquippedItemWithStatus('KELA_FORGED_ARMOR_SUSSURFORGE')):ApplyStatus(UND_ANCIENTSUSSURTREEANTIMAGIC_AURA)" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h81409c07g5ac6g5e5agc062gbb0dc12b6929" version="3" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Item_Smelting_Furnace_Sussur" />
+        <field name="FormatColor" type="EnumerationTableFieldDefinition" value="StoryItem" enumeration_type_name="FormatStringColor" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="IgnoreResting;DisableOverhead;DisableCombatlog" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Ignore" enumeration_type_name="StatusStackType" version="1" />
+        <field name="AuraFlags" type="EnumerationListTableFieldDefinition" value="IgnoreItems" enumeration_type_name="AuraFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="dd4bdbf5-6b67-462e-a5ef-8d02e70fd62b" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_FORGED_WEAPON_GNOMEFORGE" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h03a45cfcgf180g0c90g680fg6c19be1b8200" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="haa26824cg8e2ega834gf0f4g7e41fd001808" version="4" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d4,Force)" />
+        <field name="StackId" type="StringTableFieldDefinition" value="KELA_FORGED_WEAPON_GNOMEFORGE" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="WeaponDamage(1d4,Force)" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="IgnoreResting;DisableOverhead;DisableCombatlog" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Item_Smelting_Furnace_Gnome" />
+        <field name="FormatColor" type="EnumerationTableFieldDefinition" value="StoryItem" enumeration_type_name="FormatStringColor" version="1" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Ignore" enumeration_type_name="StatusStackType" version="1" />
+        <field name="AuraRadius" type="IntegerTableFieldDefinition" value="1" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="TARGET:IF(Self() and Character() and HasStatus('KELA_FORGED_WEAPON_GNOMEFORGE', GetActiveWeapon(context.Source, true))):ApplyStatus(SELF,KELA_FORGED_WEAPON_GNOMEFORGE_TECHNICAL)" />
+        <field name="AuraFlags" type="EnumerationListTableFieldDefinition" value="IgnoreItems" enumeration_type_name="AuraFlags" version="1" />
+        <field name="TooltipDamage" type="StringTableFieldDefinition" value="WeaponDamage(1d4,Force)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1e9443ec-05a3-4cca-b478-35ed84ab6ac7" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_FORGED_WEAPON_GNOMEFORGE_TECHNICAL" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hdbf86cdag319dg8addgefeag0b1fc625107c" version="2" />
+        <field name="StackId" type="StringTableFieldDefinition" value="KELA_FORGED_WEAPON_GNOMEFORGE_TECHNICAL" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Ignore" enumeration_type_name="StatusStackType" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsWeaponAttack() and IsDamageTypeForce() and HasStatus('KELA_FORGED_WEAPON_GNOMEFORGE', GetAttackWeapon())):IgnoreResistance(Force, Resistant)" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="IgnoreResting;DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="598d1f10-a778-470e-8edd-27c0ac53dc62" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_FORGED_ARMOR_GNOMEFORGE_AURA" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h3cf3c857gbc45g67c4g9b4ag75f56bbd6590" version="2" />
+        <field name="StackId" type="StringTableFieldDefinition" value="KELA_FORGED_ARMOR_GNOMEFORGE_AURA" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="IgnoreResting;DisableOverhead;DisableCombatlog" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h19f57bc2g4380g1146g372fg2204ef7daeb4" version="2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Item_Smelting_Furnace_Gnome" />
+        <field name="FormatColor" type="EnumerationTableFieldDefinition" value="StoryItem" enumeration_type_name="FormatStringColor" version="1" />
+        <field name="AuraRadius" type="IntegerTableFieldDefinition" value="1" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="TARGET:IF(Self() and Character() and HasEquippedItemWithStatus('KELA_FORGED_ARMOR_GNOMEFORGE_AURA')):ApplyStatus(KELA_FORGED_ARMOR_GNOMEFORGE_BONUS)" />
+        <field name="AuraFlags" type="EnumerationListTableFieldDefinition" value="IgnoreItems" enumeration_type_name="AuraFlags" version="1" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Ignore" enumeration_type_name="StatusStackType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2b260c07-7c82-41d3-9d20-ccecb278b342" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_FORGED_ARMOR_GNOMEFORGE_BONUS" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h5b954cb0g768eg534bg0dacg23b7da9c19ab" version="1" />
+        <field name="FormatColor" type="EnumerationTableFieldDefinition" value="StoryItem" enumeration_type_name="FormatStringColor" version="1" />
+        <field name="StackId" type="StringTableFieldDefinition" value="KELA_FORGED_ARMOR_GNOMEFORGE_BONUS" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="AC(1);Resistance(Force,Resistant)" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="IgnoreResting;DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Ignore" enumeration_type_name="StatusStackType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF2F4F4F" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6e172402-165c-4810-b311-ccfa1ea06a0a" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_FORGED_WEAPON_LASTINN_AURA" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hbaaf2a12g9074gf38egcbdfg830dabd8b414" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="ha86c0ffcge6c1gafdeg998ege4323093065a" version="3" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d4,Radiant)" />
+        <field name="StackId" type="StringTableFieldDefinition" value="KELA_FORGED_WEAPON_LASTINN_AURA" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="WeaponDamage(1d4,Radiant)" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="IgnoreResting;DisableOverhead;DisableCombatlog" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Item_Smelting_Furnace_LastLight" />
+        <field name="FormatColor" type="EnumerationTableFieldDefinition" value="StoryItem" enumeration_type_name="FormatStringColor" version="1" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Ignore" enumeration_type_name="StatusStackType" version="1" />
+        <field name="AuraRadius" type="IntegerTableFieldDefinition" value="1" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="TARGET:IF(Self() and Character() and HasStatus('KELA_FORGED_WEAPON_LASTINN_AURA', GetActiveWeapon(context.Source, true))):ApplyStatus(SELF,KELA_FORGED_WEAPON_LASTINN_BONUS)" />
+        <field name="AuraFlags" type="EnumerationListTableFieldDefinition" value="IgnoreItems" enumeration_type_name="AuraFlags" version="1" />
+        <field name="TooltipDamage" type="StringTableFieldDefinition" value="WeaponDamage(1d4,Radiant)" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF2F4F4F" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="afec4622-d36b-4b1a-b567-a3c81d5d3251" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_FORGED_WEAPON_LASTINN_BONUS" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hc548d21egda7eg1673g75ccg1bfb91c084ab" version="3" />
+        <field name="StackId" type="StringTableFieldDefinition" value="KELA_FORGED_WEAPON_LASTINN_BONUS" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Ignore" enumeration_type_name="StatusStackType" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsWeaponAttack() and IsDamageTypeRadiant() and HasStatus('KELA_FORGED_WEAPON_LASTINN_AURA', GetAttackWeapon())):IgnoreResistance(Radiant, Resistant)" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="IgnoreResting;DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF2F4F4F" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f1ca30bd-a6b8-40f0-96d3-5d0685b0561c" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_FORGED_ARMOR_LASTINN_AURA" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h7b996696g64fdg35c6gd426gfb6febaf6b48" version="3" />
+        <field name="StackId" type="StringTableFieldDefinition" value="KELA_FORGED_ARMOR_LASTINN_AURA" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="IgnoreResting;DisableOverhead;DisableCombatlog" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h6339eb7bg861cg828eg5b75g13b13a4375f2" version="2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Item_Smelting_Furnace_LastLight" />
+        <field name="FormatColor" type="EnumerationTableFieldDefinition" value="StoryItem" enumeration_type_name="FormatStringColor" version="1" />
+        <field name="AuraRadius" type="IntegerTableFieldDefinition" value="1" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="TARGET:IF(Self() and Character() and HasEquippedItemWithStatus('KELA_FORGED_ARMOR_LASTINN_AURA')):ApplyStatus(KELA_FORGED_ARMOR_LASTINN_BONUS)" />
+        <field name="AuraFlags" type="EnumerationListTableFieldDefinition" value="IgnoreItems" enumeration_type_name="AuraFlags" version="1" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Ignore" enumeration_type_name="StatusStackType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF2F4F4F" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="225ab8e3-66de-4f52-9cc5-5443a8242804" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_FORGED_ARMOR_LASTINN_BONUS" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h4873799dg84cag3bbdgcb81gbca8b0762680" version="1" />
+        <field name="FormatColor" type="EnumerationTableFieldDefinition" value="StoryItem" enumeration_type_name="FormatStringColor" version="1" />
+        <field name="StackId" type="StringTableFieldDefinition" value="KELA_FORGED_ARMOR_LASTINN_BONUS" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="AC(1);Resistance(Necrotic,Resistant)" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="IgnoreResting;DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Ignore" enumeration_type_name="StatusStackType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="61869459-8c48-4118-8ecb-02ec8923bb7c" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_FORGED_WEAPON_CURSED_AURA" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb92a5a4agde53ga65fg565egb64cb5b1f328" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hdb59764bga871g690ag3094g412f57dacd64" version="3" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d4,Necrotic)" />
+        <field name="StackId" type="StringTableFieldDefinition" value="KELA_FORGED_WEAPON_CURSED_AURA" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="WeaponDamage(1d4,Necrotic)" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="IgnoreResting;DisableOverhead;DisableCombatlog" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Item_Smelting_Furnace_ShadowCursed" />
+        <field name="FormatColor" type="EnumerationTableFieldDefinition" value="StoryItem" enumeration_type_name="FormatStringColor" version="1" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Ignore" enumeration_type_name="StatusStackType" version="1" />
+        <field name="AuraRadius" type="IntegerTableFieldDefinition" value="1" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="TARGET:IF(Self() and Character() and HasStatus('KELA_FORGED_WEAPON_CURSED_AURA', GetActiveWeapon(context.Source, true))):ApplyStatus(SELF,KELA_FORGED_WEAPON_CURSED_BONUS)" />
+        <field name="AuraFlags" type="EnumerationListTableFieldDefinition" value="IgnoreItems" enumeration_type_name="AuraFlags" version="1" />
+        <field name="TooltipDamage" type="StringTableFieldDefinition" value="WeaponDamage(1d4,Necrotic)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c86c6f68-2dd6-4f65-9296-5521a4646197" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_FORGED_WEAPON_CURSED_BONUS" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hadd94046g5e28gfc88g35ccgeceb2ad137e0" version="3" />
+        <field name="StackId" type="StringTableFieldDefinition" value="KELA_FORGED_WEAPON_CURSED_BONUS" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Ignore" enumeration_type_name="StatusStackType" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsWeaponAttack() and IsDamageTypeNecrotic() and HasStatus('KELA_FORGED_WEAPON_CURSED_AURA', GetAttackWeapon())):IgnoreResistance(Necrotic, Resistant)" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="IgnoreResting;DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0bb17b69-b2aa-428b-af23-eb307c5d8c49" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_FORGED_ARMOR_CURSED_AURA" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h0eaec128g3e14g7004g6c10g25dff966a148" version="3" />
+        <field name="StackId" type="StringTableFieldDefinition" value="KELA_FORGED_ARMOR_CURSED_AURA" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="IgnoreResting;DisableOverhead;DisableCombatlog" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="heacb5c0bgb9d0ged78ga5d3gfed30943ad44" version="2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Item_Smelting_Furnace_ShadowCursed" />
+        <field name="FormatColor" type="EnumerationTableFieldDefinition" value="StoryItem" enumeration_type_name="FormatStringColor" version="1" />
+        <field name="AuraRadius" type="IntegerTableFieldDefinition" value="1" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="TARGET:IF(Self() and Character() and HasEquippedItemWithStatus('KELA_FORGED_ARMOR_CURSED_AURA')):ApplyStatus(KELA_FORGED_ARMOR_CURSED_BONUS)" />
+        <field name="AuraFlags" type="EnumerationListTableFieldDefinition" value="IgnoreItems" enumeration_type_name="AuraFlags" version="1" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Ignore" enumeration_type_name="StatusStackType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="248a3760-33be-45be-8b47-5e92ab265782" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_FORGED_ARMOR_CURSED_BONUS" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hc1b163fbg4967g0b73gd3f6gfb9bd796d3ce" version="1" />
+        <field name="FormatColor" type="EnumerationTableFieldDefinition" value="StoryItem" enumeration_type_name="FormatStringColor" version="1" />
+        <field name="StackId" type="StringTableFieldDefinition" value="KELA_FORGED_ARMOR_CURSED_BONUS" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="AC(1);Resistance(Necrotic,Resistant)" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="IgnoreResting;DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Ignore" enumeration_type_name="StatusStackType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="64bf8725-abc5-418a-8423-0003c9824d91" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_FORGED_WEAPON_NINE_AURA" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="ha684f4d3g8b4bg79afgc965gb215a4780830" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h909b6206g7f2dga519gb6aeg69620247c9ee" version="2" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d4,Fire)" />
+        <field name="StackId" type="StringTableFieldDefinition" value="KELA_FORGED_WEAPON_NINE_AURA" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="WeaponDamage(1d4,Fire)" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="IgnoreResting;DisableOverhead;DisableCombatlog" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Item_Smelting_Furnace_DammonForge" />
+        <field name="FormatColor" type="EnumerationTableFieldDefinition" value="StoryItem" enumeration_type_name="FormatStringColor" version="1" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Ignore" enumeration_type_name="StatusStackType" version="1" />
+        <field name="AuraRadius" type="IntegerTableFieldDefinition" value="1" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="TARGET:IF(Self() and Character() and HasStatus('KELA_FORGED_WEAPON_NINE_AURA', GetActiveWeapon(context.Source, true))):ApplyStatus(SELF,KELA_FORGED_WEAPON_NINE_BONUS)" />
+        <field name="AuraFlags" type="EnumerationListTableFieldDefinition" value="IgnoreItems" enumeration_type_name="AuraFlags" version="1" />
+        <field name="TooltipDamage" type="StringTableFieldDefinition" value="WeaponDamage(1d4,Fire)" />
+        <field name="StatusEffectOverride" type="StringTableFieldDefinition" value="44d77ebf-fc9e-407d-b20f-257019351f2a" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="23850da0-e98e-47fc-a532-d08f744f501a" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_FORGED_WEAPON_NINE_BONUS" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd29c6c0cg4e60ge224gf3acg5d61b5f78357" version="1" />
+        <field name="StackId" type="StringTableFieldDefinition" value="KELA_FORGED_WEAPON_NINE_BONUS" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Ignore" enumeration_type_name="StatusStackType" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsWeaponAttack() and IsDamageTypeFire() and HasStatus('KELA_FORGED_WEAPON_NINE_AURA', GetAttackWeapon())):IgnoreResistance(Fire, Resistant)" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="IgnoreResting;DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5965cfa3-2f69-4b12-8f9c-626169322c70" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_FORGED_ARMOR_NINE_AURA" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hb4411942g1ca3g2eb8g93b4g062f6ce7efa4" version="2" />
+        <field name="StackId" type="StringTableFieldDefinition" value="KELA_FORGED_ARMOR_NINE_AURA" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="IgnoreResting;DisableOverhead;DisableCombatlog" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="had52c720g4ad7gb3e5g27e9g48cadda1ad1f" version="2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Item_Smelting_Furnace_DammonForge" />
+        <field name="FormatColor" type="EnumerationTableFieldDefinition" value="StoryItem" enumeration_type_name="FormatStringColor" version="1" />
+        <field name="AuraRadius" type="IntegerTableFieldDefinition" value="1" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="TARGET:IF(Self() and Character() and HasEquippedItemWithStatus('KELA_FORGED_ARMOR_NINE_AURA')):ApplyStatus(KELA_FORGED_ARMOR_NINE_BONUS)" />
+        <field name="AuraFlags" type="EnumerationListTableFieldDefinition" value="IgnoreItems" enumeration_type_name="AuraFlags" version="1" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Ignore" enumeration_type_name="StatusStackType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="35f4accc-9780-46f7-bad5-1a8a64b54c1c" />
+        <field name="Name" type="NameTableFieldDefinition" value="KELA_FORGED_ARMOR_NINE_BONUS" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3de76accgeac3ge643ga4a8g9e68fa806c16" version="1" />
+        <field name="FormatColor" type="EnumerationTableFieldDefinition" value="StoryItem" enumeration_type_name="FormatStringColor" version="1" />
+        <field name="StackId" type="StringTableFieldDefinition" value="KELA_FORGED_ARMOR_NINE_BONUS" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="AC(1);Resistance(Fire,Resistant)" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="IgnoreResting;DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Ignore" enumeration_type_name="StatusStackType" version="1" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

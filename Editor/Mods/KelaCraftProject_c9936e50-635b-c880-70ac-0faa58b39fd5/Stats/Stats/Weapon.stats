@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="a1fa1d2f-c335-4902-898c-4228c3c07d52">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e31c34a5-19fe-4f55-8fec-fa1993ad6298" />
+        <field name="Name" type="NameTableFieldDefinition" value="WPN_Club_2_Kela" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="825386eb-4060-4bda-b074-e7a518e3ec8e" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="b8462034-3ca5-464a-ade0-99d61d70ffa5" />
+        <field name="Rarity" type="EnumerationTableFieldDefinition" value="Rare" enumeration_type_name="Rarity" version="1" />
+        <field name="DefaultBoosts" type="StringTableFieldDefinition" value="WeaponEnchantment(2);WeaponProperty(Magical)" />
+        <field name="ValueUUID" type="GuidObjectTableFieldDefinition" value="71191c11-966f-4c19-b4ee-eb36d31c4944" />
+        <field name="ValueScale" type="FloatTableFieldDefinition" value="1" />
+        <field name="Weapon Properties" type="EnumerationListTableFieldDefinition" value="Light;Melee;Dippable;Magical" enumeration_type_name="WeaponFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="54182dc7-1214-4048-8801-e592d2e4dd6a" />
+        <field name="Name" type="NameTableFieldDefinition" value="WPN_Handaxe_2_Kela" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="8d752f70-9e76-497c-a5d6-f0c68e01f269" />
+        <field name="DefaultBoosts" type="StringTableFieldDefinition" value="WeaponEnchantment(2);WeaponProperty(Magical)" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="b49dd8db-e83e-40ab-a92a-38ae582d1239" />
+        <field name="Rarity" type="EnumerationTableFieldDefinition" value="Rare" enumeration_type_name="Rarity" version="1" />
+        <field name="ValueUUID" type="GuidObjectTableFieldDefinition" value="71191c11-966f-4c19-b4ee-eb36d31c4944" />
+        <field name="ValueScale" type="FloatTableFieldDefinition" value="1" />
+        <field name="Weapon Properties" type="EnumerationListTableFieldDefinition" value="Light;Thrown;Melee;Dippable;Magical" enumeration_type_name="WeaponFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="710a8fe8-e060-426c-875a-7e214f79b8b9" />
+        <field name="Name" type="NameTableFieldDefinition" value="WPN_Sickle_2_Kela" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="7b854117-660e-4f29-8677-2032221bb41e" />
+        <field name="Damage Type" type="EnumerationTableFieldDefinition" value="Slashing" enumeration_type_name="Damage Type" version="1" />
+        <field name="Damage" type="DiceTableFieldDefinition" value="1d4" />
+        <field name="Weapon Group" type="EnumerationTableFieldDefinition" value="SimpleMeleeWeapon" enumeration_type_name="Weapon Group" version="1" />
+        <field name="Weapon Properties" type="EnumerationListTableFieldDefinition" value="Light;Melee;Dippable" enumeration_type_name="WeaponFlags" version="1" />
+        <field name="Proficiency Group" type="EnumerationListTableFieldDefinition" value="Sickles;SimpleWeapons" enumeration_type_name="ProficiencyGroupFlags" version="1" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="8e616c05-3be7-47fb-a0fc-3edcabc53348" />
+        <field name="BoostsOnEquipMainHand" type="StringTableFieldDefinition" value="UnlockSpell(Target_Slash_New)" />
+        <field name="Weight" type="FloatTableFieldDefinition" value="0.9" />
+        <field name="ValueScale" type="FloatTableFieldDefinition" value="0.9" />
+        <field name="ValueUUID" type="GuidObjectTableFieldDefinition" value="71191c11-966f-4c19-b4ee-eb36d31c4944" />
+        <field name="Rarity" type="EnumerationTableFieldDefinition" value="Rare" enumeration_type_name="Rarity" version="1" />
+        <field name="DefaultBoosts" type="StringTableFieldDefinition" value="WeaponEnchantment(2);WeaponProperty(Magical)" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

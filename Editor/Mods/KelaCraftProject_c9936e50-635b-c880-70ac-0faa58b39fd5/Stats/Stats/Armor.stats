@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="239de60a-29b5-4010-bf7d-f6169d4ddd8a">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8fa910a5-5cd1-4a4a-a45f-c59e5f2a22b5" />
+        <field name="Name" type="NameTableFieldDefinition" value="ARM_Shield_Simplest" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c81be4e1-947a-4a86-b8ff-ba8c4b45b8cf" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="d2af60ea-1b72-4d25-a188-6d8bc4fe255b" />
+        <field name="ArmorClass" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Weight" type="FloatTableFieldDefinition" value="2.2" />
+        <field name="ValueScale" type="FloatTableFieldDefinition" value="0.5" />
+        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="SO_Shield_1d4_0_Passive" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ce2489f3-d5c3-4f01-a965-7fb47ffbace9" />
+        <field name="Name" type="NameTableFieldDefinition" value="ARM_Shield_Best" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c81be4e1-947a-4a86-b8ff-ba8c4b45b8cf" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="23957b7d-d466-4241-996b-63ce2f6df678" />
+        <field name="ArmorClass" type="IntegerTableFieldDefinition" value="4" />
+        <field name="Weight" type="FloatTableFieldDefinition" value="3" />
+        <field name="ValueScale" type="FloatTableFieldDefinition" value="6" />
+        <field name="Rarity" type="EnumerationTableFieldDefinition" value="VeryRare" enumeration_type_name="Rarity" version="1" />
+        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="SO_Shield_4d4_Passive" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

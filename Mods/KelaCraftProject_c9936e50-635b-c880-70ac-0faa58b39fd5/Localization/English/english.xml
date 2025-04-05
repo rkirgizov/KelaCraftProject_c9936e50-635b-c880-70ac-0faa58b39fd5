@@ -1,0 +1,386 @@
+<?xml version="1.0"?>
+<contentList xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <content contentuid="hcd2aa42dgfd80g40d6gb65fg9c8cd4a2a7d1" version="33">Anvil</content>
+  <content contentuid="h8cda8e69g8139g10c6gcecbg33f9c54769c9" version="2">KELAANVIL</content>
+  <content contentuid="h173feae5g1587gbf07g834ag51e090ca2df5" version="2">KELAANVIL tooltip</content>
+  <content contentuid="h4aa826cfg2c4fg8220g803bg5908695ab2b3" version="2">KELAWORKBENCH</content>
+  <content contentuid="h64f6603agb728g4284g64c7g991cc09b870a" version="2">KELAWORKBENCH tooltip</content>
+  <content contentuid="h8344e68eg4e00g07d2g6521g1c3a9a834080" version="2">KELAWHETSTONE</content>
+  <content contentuid="h2f49abf1g9515gc4c9g4091g8c6e55751ee5" version="2">KELAWHETSTONE tooltip</content>
+  <content contentuid="h40f55ab4g1998g4dfagae4dgc0857f167d3f" version="60">Workbench</content>
+  <content contentuid="h02ada5begfce9g4138g9e64g8159047f035c" version="61">A workbench that has seen better days. Used to upgrade ranged weapons, quarterstaffs, and clubs, as well as create new gear.</content>
+  <content contentuid="h49560d25ge18eg572bg9681ga9f4fa43c84e" version="3">Blacksmith</content>
+  <content contentuid="hc2fab1a5g8248g4828gfa35gd32f68c7feef" version="7">Grants access to work in the forge and on workbenches. &lt;br&gt;Makes it easier to &lt;LSTag Tooltip="SavingThrow"&gt;savingthrows&lt;/LSTag&gt; when upgrading weapons. &lt;br&gt;Gives &lt;LSTag Tooltip="Proficiency"&gt;proficiency&lt;/LSTag&gt; with hammers. </content>
+  <content contentuid="h783f8b63gfb08ge62agab3dg9a623ce67f86" version="2">Blacksmith</content>
+  <content contentuid="h785090b2g42aag3393gd34eg3b2d3f5893bf" version="4">Grants access to work in the forge and on workbenches. &lt;br&gt;Makes it easier to &lt;LSTag Tooltip="SavingThrow"&gt;savingthrows&lt;/LSTag&gt; when upgrading weapons. &lt;br&gt;Gives &lt;LSTag Tooltip="Proficiency"&gt;proficiency&lt;/LSTag&gt; with hammers. &lt;br&gt;The value of &lt;LSTag Tooltip="Strength"&gt;Strength&lt;/LSTag&gt;, &lt;LSTag Tooltip="Constitution"&gt;Constitution&lt;/LSTag&gt; or &lt;LSTag Tooltip="Dexterity"&gt;Dexterity&lt;/LSTag&gt; increases by 1, to a maximum of 20.</content>
+  <content contentuid="h6a182398gf00ag8716g1a80g9f4001e9c1d1" version="17">Notes of a Blacksmith's Apprentice</content>
+  <content contentuid="hcb8fa0cag43ebge38cg93c3gc2b5c96e05c2" version="28">Blacksmith's oil</content>
+  <content contentuid="h3d93f50cg37aag7416g40dbg0e7d70889aca" version="22">It can be used to simplify the improvement of weapons, as well as the ingredient in some blacksmithing drawings.</content>
+  <content contentuid="h6f571adeg6f1cgfc27g74e5gcc5dd3c6ad45" version="22">The viscous dark green liquid slowly shimmers in the bottle.</content>
+  <content contentuid="h75837053g1ab6g0396ge570g568248766b73" version="9">Whetstone</content>
+  <content contentuid="hc0470050ge70eg4f6eg764bg4589a33dd073" version="73">Whetstone</content>
+  <content contentuid="hef370917ged4ag82e9g7e7bg58d2dcaf15a5" version="71">Use</content>
+  <content contentuid="h701d3b31g5d35gff8ag54abgc968e4c7c8ff" version="2">KELASMITHOIL</content>
+  <content contentuid="h0bcb4648g9f09g0e50gb5f7g1681c1efd7be" version="2">KELASMITHOIL tooltip</content>
+  <content contentuid="h77794615g9749g1a9ag4473g52918c9ffb01" version="6">No oil</content>
+  <content contentuid="hb98d359bg4fbag7812gf24agc6562c63f07b" version="5">No one on the team at [1] has oil in their inventory.</content>
+  <content contentuid="h21220940g9abdg4fafg981ag12c7df72a363" version="5">Unsuitable Weapon</content>
+  <content contentuid="h62a8db26gf88dg15dfg652bgc5cb3aebf798" version="6">There are no slashing or piercing weapons in the main hand.</content>
+  <content contentuid="h52a1d6b9g81fegd258g99c1g93b2dd0aed7f" version="5">There are no ranged or wooden weapons in the main hand.</content>
+  <content contentuid="h35e3f347g3f59gf1c0g252eg6e8a40b129e6" version="3">Blacksmith's oil</content>
+  <content contentuid="h879e5a14geae4gd45eg8df2gfc9e5be416ae" version="6">Used to upgrade weapons.</content>
+  <content contentuid="h75cbbcb9g4b17gedb3g4093g4f70cce99f03" version="4">Damaged weapon 1</content>
+  <content contentuid="h790d4338g7f94gd2e5g3db6g02f57216603b" version="3">Simple improvement</content>
+  <content contentuid="h7e58e97bg77e9g9c64g7d30gbe5ec567128f" version="4">Applies a [1] attack penalty and a [2] damage penalty to the weapon.</content>
+  <content contentuid="hb352e4d0ga8c9geca5g8c0fg93307423daf8" version="3">Gives weapons a damage bonus [1].</content>
+  <content contentuid="hd0ddca10g8f97gdad1gef44g7e924cdd3bd5" version="3">Good improvement</content>
+  <content contentuid="h0f05067fg8b11g86f6gc702g2ffda5434044" version="2">Gives weapons a damage bonus [1].</content>
+  <content contentuid="h60d49854g5eccgada6g0f6bgcc3a07f503a1" version="3">Great improvement</content>
+  <content contentuid="hdb6796ccg5803g2348gf27dg5ff309482796" version="3">Gives the weapon a bonus to attack [1] and damage [2].</content>
+  <content contentuid="h2662ab6bg0937g3da7gc091g5d2796661867" version="3">Expert Enhancement</content>
+  <content contentuid="hdd63740ege2bdg4c74gcf7cg1a91613d7269" version="3">Gives the weapon a bonus to attack [1] and damage [2].</content>
+  <content contentuid="hfc2618abge483gb295gb2e4g21b24172e68d" version="3">Masterful Improvement</content>
+  <content contentuid="hfd6dc39dgf208gc535g9280gcec177192478" version="3">Gives the weapon a bonus to attack [1] and damage [2].</content>
+  <content contentuid="h4ee93350g2979g7628g1af9g6fee10ca8b01" version="3">Guild quality</content>
+  <content contentuid="h5491c51dg71fag7f2ag6ccag91ce8fabe363" version="4">This weapon has been enhanced by a skilled guild master, granting it a bonus [1] to &lt;LSTag Tooltip="AttackRoll"&gt;attack rolls&lt;/LSTag&gt;.</content>
+  <content contentuid="h2e0fc362g9423ge904gd1f2g536a0c11c782" version="4">Improvement</content>
+  <content contentuid="he67fb955g1325gae36gfb6bga637b160567b" version="5">Weapons are being upgraded, you need to wait until it is completed.</content>
+  <content contentuid="hb916afacg1ef8ge856gcc4bg027b87dff5c0" version="3">Not possible now</content>
+  <content contentuid="ha4157baagc891g225eg229eg230914f05ab2" version="6">The action cannot be performed at this time.</content>
+  <content contentuid="h193ebf76g645bg2c63g70edg709f4f628936" version="3">Artisan Past</content>
+  <content contentuid="h295fcdf4g2c96g7b94gab98g2777093c0f21" version="5">Experience gained in the Artisan's Guild allows you to feel more confident in upgrading your equipment by adding &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; to checks.</content>
+  <content contentuid="h2b856076gf6b3gc9e6g5a10g2c3fc101a22b" version="3">Damaged weapon 2</content>
+  <content contentuid="hdd165670g810bg5977gad6fgea177bb1590f" version="2">Applies a [1] attack penalty and a [2] damage penalty to the weapon.</content>
+  <content contentuid="h5aef595eg4165g4fe3ga35egc36e35819e22" version="3">Damaged weapon 3</content>
+  <content contentuid="h54975070g9d6agf022g7cd4gd37b35f73af2" version="2">Applies a [1] attack penalty and a [2] damage penalty to the weapon.</content>
+  <content contentuid="h99af4304g7b2dg3f19gbc37g924b069081eb" version="3">Corrupted Weapon</content>
+  <content contentuid="h247467c1g12a9g606dgce4agf7d1cc560a41" version="3">The weapon in the main hand is too damaged to be repaired.</content>
+  <content contentuid="h6468f5e2ge3dag5311g4f30gfd5443793170" version="7">KELABLACKSMITH</content>
+  <content contentuid="h67d07222g6f02g1532g3a7cg43750267f4c5" version="7">KELABLACKSMITH tooltip</content>
+  <content contentuid="ha834709bg70c6g4b6ag6813g59a14b5e101c" version="3">Weapon Proficiency</content>
+  <content contentuid="h39f6c6a1ga920g2d1egc966g61157cd9cf7c" version="3">Weapon proficiency allows you to work on improving your weapon with greater confidence: it gives you a bonus [1] on skill checks and allows you to improve the weapon to a higher level if you pass an additional Sleight of Hand check.</content>
+  <content contentuid="ha4e306edg5c95gd3a8g8830g50a7bb2aa644" version="13">Blacksmith's chest</content>
+  <content contentuid="h5e1ecb1dg222cgf21fgaf72g63ebfc80d40c" version="13">An old, worn chest that is perfect for storing various tools and crafting materials.</content>
+  <content contentuid="h828112e8gd487g347cg3ab6g7fb6f4d82fe5" version="11" />
+  <content contentuid="hecca53b9g8ea0g5875ge58dge60917d1068b" version="11">Automatically collects matching items that enter your inventory.</content>
+  <content contentuid="h4d2b55f3g4a98gbbc7gecddg6b488c42afa7" version="1">KELABLACKSMITHAPPRENTICE</content>
+  <content contentuid="h40cb5ffbg23b5g8f12g44bfgc4ed3ed12fe5" version="1">KELABLACKSMITHAPPRENTICE tooltip</content>
+  <content contentuid="h0586d512gc8a6gd192g1f5agc6d90d2d3c01" version="3">Blacksmith's Apprentice</content>
+  <content contentuid="h412aba59ga93fgd247g5998g08bc9510ecbf" version="6">Gains access to weapon upgrades at forges and workbenches, but the upgrade level is limited to a minimum. &lt;br&gt;Creating new equipment is only available to the blacksmith and, to a limited extent, to the artisan or elven races.</content>
+  <content contentuid="h4369c821gf62bg99fbgc6feg183671485dd7" version="4">Blacksmith's Apprentice</content>
+  <content contentuid="h1a8cf37dga2b7g8f93g748dgef4dcf8774d1" version="4">You have gained access to weapon upgrades at forges and workbenches, but the upgrade level is limited to a minimum. &lt;br&gt;Creating new equipment is only available to the blacksmith and, to a limited extent, to the artisan or elven races.</content>
+  <content contentuid="h556bd450ga0d7g5642g6373gcdfbe4796bd0" version="1">KELABLACKSMITHLOOT</content>
+  <content contentuid="hac75bd97g3095g8898g2232gbc5b97db9b3e" version="1">KELABLACKSMITHLOOT tooltip</content>
+  <content contentuid="h3e3c7493g124dgae22g4d2bg6c9d7dfe1543" version="10">The pages of this book are covered in large, sloppy handwriting.</content>
+  <content contentuid="h6013b269g85feg2d30gec1eg3937229ab433" version="2">KELA_ANVIL_AURA</content>
+  <content contentuid="he814f56egce09gabbegbdb6g88d463de5db8" version="2">KELA_ANVIL_AURA_ACTIVE</content>
+  <content contentuid="ha16ca541g2922g8755g73ffg9bfc840a2117" version="2">KELA_WORKBENCH_AURA</content>
+  <content contentuid="hb3b0219eg6740gcb52gcf4agc5efdd294949" version="2">KELA_WORKBENCH_AURA_ACTIVE</content>
+  <content contentuid="h7c1a4b1agca7eg573bgfb50g510989ee91a3" version="2">KELA_WEAPON_UPGRADED</content>
+  <content contentuid="h6dba520bg4495g1325g60b9g0780dca7b500" version="2">KELATOOLNEEDFAKE</content>
+  <content contentuid="h91d2ac0cg267ag8d0agb745g70ed7b080f59" version="2">KELATOOLNEEDFAKE tooltip</content>
+  <content contentuid="h4ed60d8cg6293ge685g797age29444f8d39a" version="1">KELA_CRAFT_UPGRADE_MOD</content>
+  <content contentuid="ha9de6f01g19eeg9558g30eag0e1293edd09a" version="2">KELA_CRAFT_CREATION_MOD_1</content>
+  <content contentuid="h2e259001g92eagf32cgd7adgf70798feaaba" version="1">KELA_WHETSTONE_AURA</content>
+  <content contentuid="h52c9af49ge0cfgd74ag9c1fgc0efdb0a6433" version="1">KELA_WHETSTONE_AURA_ACTIVE</content>
+  <content contentuid="he28e181bge352ge018ga470g15e8622d9461" version="2">KELAWEAPONUPGRADETOOL</content>
+  <content contentuid="h31378cf5gf99cg25bega389ge4e5d128dbf7" version="2">KELAWEAPONUPGRADETOOL</content>
+  <content contentuid="ha2952b9fg7f4cg4167g36f5g16bd1e833280" version="1">KELA_UPGRADETOOL_INVENTORY</content>
+  <content contentuid="h79b6c4f5g9c83ge3b9g5801gb1da3b9eacda" version="3">Concentration on work</content>
+  <content contentuid="hb2452c40ge4b5g3e94g575dge7ea90bf6712" version="3">Elixir of Peerless Focus allows you to focus on your work and adds &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; to crafting checks.</content>
+  <content contentuid="h63c76128g0344g4fbfg81ddg8b6204f6b5c8" version="5">Workbench</content>
+  <content contentuid="h1fc60a24geaecg4a09gb731g94b73338aeb0" version="5">Workbench</content>
+  <content contentuid="hca4ada95gf7c5g43a3g9094g4ddf13996b20" version="7">Workbench</content>
+  <content contentuid="h53781230geaf0g4fbbg990bg28fde29791fe" version="6">Workbench</content>
+  <content contentuid="h8d1aafedgbb29g492aga917g3ba3a8f878a0" version="6">This sturdy wooden workbench is covered in stains and nicks.</content>
+  <content contentuid="h7ea0f425g1ac7g4a40g9e00ge8c0afb02dbb" version="5">Workbench</content>
+  <content contentuid="hf9a74a2fg6e4dg4717gae5cg4b295c28dfe0" version="10">Anvil</content>
+  <content contentuid="h7e21f5a0g4669g09d4g9715g3c56ff440683" version="3">KELAWEAPONCREATETOOL</content>
+  <content contentuid="h0bd3d97bgb63eg583ag9de2ga80d36c42326" version="3">KELAWEAPONCREATETOOL</content>
+  <content contentuid="h9c1eb0d8g8193g92bcg171dgad8234de53e0" version="2">KELADEBUG</content>
+  <content contentuid="h5bdf2bbeg81fcg4515g81aeg1f107c127f66" version="2">KELADEBUG</content>
+  <content contentuid="h41e453edg4db9g8380g7cfdg343f0571ad30" version="3">KELAMESSAGE</content>
+  <content contentuid="h6482ff79gf820g9811g25e9gce52428895a2" version="3">KELAMESSAGE</content>
+  <content contentuid="hab5806abg83f1g826bg2d93gd2504c92779b" version="1">KELA_SMELTINGFORGE_AURA</content>
+  <content contentuid="h551b82acg90fegd5b5g4406ge7de40045391" version="1">KELA_SMELTINGFORGE_AURA_STAGE_1</content>
+  <content contentuid="h73a46f37gb404gf74fg00ccg18bc21e872ad" version="3">Hot fire</content>
+  <content contentuid="hd775f5f8g3906g6045g10e2g6a74bab787dd" version="3">Forging</content>
+  <content contentuid="h2cf52989g719eg8685g87d8g81c64b48e60c" version="3">Improvement</content>
+  <content contentuid="h43f84387g404bgab75g890agc373d51baf19" version="3">While the furnace is burning, weapons can be upgraded or forged on the anvil, depending on the strength of the fire.</content>
+  <content contentuid="hcc50b4fag5ba5gfd41gfb4ag0f6b0dded0ee" version="2">The furnace is blazing with a hot fire, and the forge, if the anvil is intact, is ready for work.</content>
+  <content contentuid="h85000710ge5f0gf728g622cg8008e6b3a3e4" version="2">No skill</content>
+  <content contentuid="h054ec240g915dg30c6g8429gd6cb219345b4" version="2">The character has no knowledge of working with an anvil. &lt;br&gt;A blacksmith or his apprentice, as well as a member of the Artisan Guild, can have such knowledge.</content>
+  <content contentuid="hc860596bgfd3fg2eb8gf651g2ea20ad366d0" version="2">The character has no knowledge of working with a workbench. &lt;br&gt;Such knowledge may be possessed by a blacksmith or his apprentice, a representative of the elven race, as well as a member of the Artisan Guild.</content>
+  <content contentuid="hd242be78gf5cag5cebg5997g76c9ba68c752" version="4">There is no fire in the smelting furnace</content>
+  <content contentuid="h31c01f82g3f0egd808ga803g715427da1091" version="3">To work in the forge, you need to light the smelting furnace.</content>
+  <content contentuid="hea93aa5eg3d8eg822eg353cgab6eafbc73d3" version="4">The fire is too hot</content>
+  <content contentuid="h88370da4g6bc3g191fga4cdgc24e3c60e309" version="2">Hot fire is needed for forging, but normal fire is enough for upgrading.</content>
+  <content contentuid="hbf87fc15g5e73g4c34gf735gc30f45d0f045" version="3">Creation mode</content>
+  <content contentuid="h5cf02511g175fg03a6g6d26gbfbc221cb60c" version="3">Allows you to create new items based on the studied blueprints.</content>
+  <content contentuid="h24eceac6gd31ega6b5gf250gcf41e94b7c46" version="11">Anvil</content>
+  <content contentuid="haea32f2cg26fcg8520g8315gb52257fa59fd" version="14">Blueprint: Trap Disarm Toolkit</content>
+  <content contentuid="h48ac2b31g960ag7418g3200g10bbe4acc083" version="14">This drawing has not been studied.</content>
+  <content contentuid="hbfef80e1g20f0g0e8cg586bg358ba9e8f0be" version="25">Workbench</content>
+  <content contentuid="h006b64f6g52a7ga96fge065g240a01caa6ce" version="1">KELABLUEPRINT</content>
+  <content contentuid="he217b87agb8fdge437g4053gb54141d1f49b" version="1">KELABLUEPRINT</content>
+  <content contentuid="hb115d6feg4a27gb5eeg9146gd1c4b25aee12" version="108">&lt;br&gt;&lt;br&gt;Trap Disarm Toolkit&lt;br&gt;&lt;i&gt;A necessary thing, to make it you will need to add tongs and shears to the thief's tools, and the rest is already there (Workbench).&lt;/i&gt;</content>
+  <content contentuid="hf6500141g6b2cgd69fg8c81g3f227794eb3c" version="6">Blacksmith's notebook</content>
+  <content contentuid="h2b88ef56g243bgf170ge51cg1a749d8598fa" version="6">These notes are a must-have for any adventurer interested in crafting.</content>
+  <content contentuid="h524c1fa2g73cagcaaag9a45g01f72b949d03" version="98">&lt;b&gt;A Blacksmith's Apprentice's Notes&lt;/b&gt; &lt;br&gt;&lt;br&gt;Some apprentice's sloppy notes on the basics of using an anvil and workbench, as well as handling light hammers.&lt;br&gt;It's worth trying to improve a weapon. &lt;br&gt;&lt;br&gt;&lt;b&gt;Improving a Weapon&lt;/b&gt; &lt;br&gt;To improve a weapon, equip it in your main hand and use a tool. &lt;br&gt;If none of your allies have oil and you don't mind ruining the weapon, use the tool twice, ignoring the warning. &lt;br&gt;&lt;br&gt;&lt;b&gt;Anvil&lt;/b&gt; - Upgrades impact weapons (Blacksmith, Blacksmith's Apprentice, Guild Member). &lt;br&gt;&lt;b&gt;Whetstone&lt;/b&gt; - Upgrades piercing and slashing weapons (no restrictions). &lt;br&gt;&lt;b&gt;Workbench&lt;/b&gt; - Upgrades ranged and wooden weapons (Blacksmith, Blacksmith's Apprentice, Guild Member, Elven). &lt;br&gt;&lt;br&gt;&lt;i&gt;* Upgrades at an anvil are only available near a smelter with a regular fire burning. &lt;br&gt;* Oil is not required, but recommended. Without it, weapons can only be improved to a minimum level and with a high skill check.&lt;br&gt;* The difficulty of checks and the level of improvement are affected by the use of oil, the presence of the Blacksmith or Guild background trait, the player's level, weapon skills, etc.&lt;br&gt;* Representatives of the elven races can only improve ranged weapons on the workbench.&lt;/i&gt;</content>
+  <content contentuid="hdb2705d7gcf26gd134g5a23gd46b3dc654f1" version="1">KELA_CRAFT_CREATION_MOD</content>
+  <content contentuid="h02f31ab3g0f7bgd5bcg552cg921cb4047b9f" version="1">KELA_CRAFT_CREATION_MOD_2</content>
+  <content contentuid="h44082bf8g3236ge59eg06eag0591dbcff6a5" version="1">KELA_CRAFT_CREATION_MOD_3</content>
+  <content contentuid="h16f1d63bgf741g6089g2d8fg4a0f0a80830d" version="1">KELA_CRAFT_CREATION_MOD_4</content>
+  <content contentuid="h81fc245bgdb94g0fe7g10aag429e788d7544" version="3">Creation: 1 slot</content>
+  <content contentuid="hab89cd1fg277fgb3d4ge627g0798577a940a" version="3">For blueprints with 1 ingredient.</content>
+  <content contentuid="hbd570865gbb35g2c0bg1205g8600d2e29be6" version="3">Creation: 2 slots</content>
+  <content contentuid="h9341ea05g36eeg11e4gedbbg7c07dfde761b" version="3">Creation: 3 slots</content>
+  <content contentuid="h0579ccd4g9117g900fgd0aeg4b49b4da89de" version="3">Creation: 4 slots</content>
+  <content contentuid="h047f6185g47cdgf7a5g978dgc3a7a3f11e13" version="3">Exit</content>
+  <content contentuid="hf30bad62g35f1geaf0g5f70g47ee4f016c86" version="3">Exit all creation modes.</content>
+  <content contentuid="h6c877605g6c4eg4281g9d7bge02765db056a" version="4">Blacksmith's tongs</content>
+  <content contentuid="h79333e24g0927g4925g8f1dg085a0c7dd954" version="4">Constant contact with fire and oil has given the surface of the tongs a copper hue.</content>
+  <content contentuid="h16018409g1b46g4f9dg8938g7f33b21c0f4d" version="4">Blacksmith's tongs</content>
+  <content contentuid="h55a68978g04e8g4c9agb82bg638be04ac769" version="4">Constant contact with fire and oil has given the surface of the tongs a copper hue.</content>
+  <content contentuid="hc3a810c2g4b42g4a0ag9a9dgf5bf5aa677c1" version="4">Blacksmith's tongs</content>
+  <content contentuid="h1547585ag30c8g47c3gbf45g09d441200cb3" version="4">Constant contact with fire and oil has given the surface of the tongs a copper hue.</content>
+  <content contentuid="h258098a6g6c81g4a44gbc12gd36c46a28716" version="4">Blacksmith's tongs</content>
+  <content contentuid="h0b3095efgbf80g4900ga232g7fc7b8350a3f" version="4">Constant contact with fire and oil has given the surface of the tongs a copper hue.</content>
+  <content contentuid="hacf6e0e2gf296g4878gaae7g680b7f02d8f2" version="4">Blacksmith's tongs</content>
+  <content contentuid="h25a0acf7g8b37g4753g818dg47ec5b3c7a01" version="4">Constant contact with fire and oil has given the surface of the tongs a copper hue.</content>
+  <content contentuid="ha464b82cg7bc2g47abg879dg4e85f3521d65" version="4">Barber's shears</content>
+  <content contentuid="hf0480f88gc6dag4067gad2eg9ed501afe5ae" version="4">The blades have become dull from years of use.</content>
+  <content contentuid="h60766a17gab54g421bg89e4g75878a88d345" version="4">Shears</content>
+  <content contentuid="h91ef3f1cg790ag433dga57egb741fcb2e885" version="5">After many years of use, the blades became dull.</content>
+  <content contentuid="h834c84dbg011fg4b16g8c12g05c4391cc3f4" version="4">Broom</content>
+  <content contentuid="h30d4745agb356g4d3fg9049gf8925b2d0fee" version="4">This broom is completely worn out.</content>
+  <content contentuid="hdb464a72g1033g626eg89fcgd084a090de81" version="4">Blueprint: Simple Shortbow</content>
+  <content contentuid="h7fad8b6fg6ba0gec85gfac7g62337a6a7ec3" version="4">This blueprint has not been studied.</content>
+  <content contentuid="h5004b9d9g0279gcdf0g7deag780a30147bde" version="85">&lt;br&gt;&lt;br&gt;Bow&lt;br&gt;&lt;i&gt;Simply take a wooden branch, weave a string out of rope, and you have a simple bow (Workbench).&lt;/i&gt;</content>
+  <content contentuid="h33564d65g8c54ga085g822fg4b9ba9fc70ce" version="83">&lt;br&gt;&lt;br&gt;&lt;br&gt;Alchemy&lt;/br&gt; ...</content>
+  <content contentuid="h3338266aga332g2e4fg68c6g4688b73111ae" version="83">&lt;b&gt;Blacksmith's Notebook&lt;/b&gt;&lt;br&gt;&lt;i&gt;For keeping notes on weapon making and on blueprints found during travels.&lt;/i&gt;</content>
+  <content contentuid="he0f6c34dg360ag21f4gb020gf172da910b7e" version="83">&lt;br&gt;&lt;br&gt;&lt;b&gt;Elven Roots&lt;/b&gt;&lt;br&gt;Your Elven heritage allows you to use workbenches to create, rework and upgrade ranged weapons more easily and better than others.</content>
+  <content contentuid="h0e0ae117ge893gc100g4af4g9ca0a398240c" version="83">&lt;br&gt;&lt;br&gt;&lt;b&gt;Artison Past&lt;/b&gt;&lt;br&gt;Experience gained in the Artison Past allows you to use the workbench to improve weapons, create and rework equipment, while checks are easier to pass, and the equipment is of higher quality than others.</content>
+  <content contentuid="hdcde75a3g30e0g7d1eg3ab8g36e76c410ae6" version="82">&lt;br&gt;&lt;br&gt;&lt;b&gt;Blacksmith's Apprentice&lt;/b&gt;&lt;br&gt;You didn't learn much from the blacksmith's apprentice's notes, but you can now upgrade weapons at the workbench and anvil, at least to a minimum level. You can also create equipment on the workbench using blueprints that do not have special requirements.</content>
+  <content contentuid="h16affc66g78a7g75a5g447fg6ae27fe63180" version="82">&lt;br&gt;&lt;br&gt;&lt;b&gt;Blacksmith&lt;/b&gt;&lt;br&gt;You have reached certain heights in weaponry and can improve weapons to a level inaccessible to others, as well as forge or rework equipment in the Forge. And with every second new level - your skill will grow!</content>
+  <content contentuid="h1a9b9c75g6346gc6feg5832gedac93456e30" version="80">&lt;br&gt;&lt;br&gt;&lt;b&gt;No Crafting Skills&lt;/b&gt;&lt;br&gt;No crafting skills prevents you from using workbenches and forges, or sharpening weapons on whetstones above the minimum level. But this book will contain new blueprints and information about available crafting... &lt;br&gt;Save the book for later, perhaps you or someone on your team will receive such skills in the future.</content>
+  <content contentuid="heca15b8bg92adg6e96g4fc4gbbbeffe9b487" version="78">&lt;br&gt;&lt;br&gt;&lt;b&gt;Blueprints&lt;/b&gt;&lt;br&gt;------------------------------------------------------------------------------&lt;br&gt;* &lt;i&gt;blueprints are available to the entire team&lt;/i&gt;</content>
+  <content contentuid="h63e6f01dg5571g8a23gd08dg812f62f9b7b2" version="4">Once the blueprint is read, the creation of the corresponding item will become available to any party member with the appropriate skills. &lt;br&gt;Information about the blueprint is also recorded in the Blacksmith's Notebook.</content>
+  <content contentuid="h61576878gbf11gf13cg9b07g18ac942fa20e" version="2">Once the blueprint is read, the creation of the corresponding item will become available to any party member with the appropriate skills. &lt;br&gt;Information about the blueprint is also recorded in the Blacksmith's Notebook.</content>
+  <content contentuid="h7dfb0160gc921g3ee0gfaa3g1b63ff5e041a" version="2">The blueprint has been studied</content>
+  <content contentuid="h3f1e8453gb3bfgf2e7g951agb68fb7d7057d" version="2">You have studied the blueprint and recorded the necessary information in the Blacksmith's Notebook.</content>
+  <content contentuid="h07331bcagacf5g50abga823g3730dcb31dd0" version="2">Only a blacksmith</content>
+  <content contentuid="h110b592cgb216g3dcfg19f4g30362cc627e0" version="2">Forging is only available to characters with the Blacksmith feat.</content>
+  <content contentuid="hea9e1e27g965cgbe4fgf6dag064f0ab18429" version="4">The fire is too low</content>
+  <content contentuid="h8768bf52ga426g2cbcgb4b9g986c7403f67a" version="2">Regular fire is suitable for improvement, but forging requires hot fire.</content>
+  <content contentuid="hecd4ee12gb7bfg3280ga0cfg87fad2d19ff5" version="2">Unknown blueprint</content>
+  <content contentuid="hfc4b8c7dgd35fgbe33g1d3cgd0367494de2e" version="2">The ingredients seem to fit together, but you don't know the blueprint for combining them.</content>
+  <content contentuid="h885090eagac03g143bga91dg9952f658313e" version="2">Requirements not met</content>
+  <content contentuid="h402cf9a5gc793g300dgdb7fg59d424944663" version="2">Requirements for creation are not met. Check what is written in the blueprint.</content>
+  <content contentuid="h5917373dg6d04g55a7ga848g57ddc9fc6853" version="52">&lt;b&gt;Blacksmith's Book&lt;/b&gt;&lt;br&gt;&lt;br&gt;You have chosen the honorable path of the weaponsmith, which will allow you to provide yourself and your team with the finest weapons and armor that can be crafted. You also gain proficiency with light and warhammers. &lt;br&gt;&lt;br&gt;&lt;b&gt;Weapon Improvement&lt;/b&gt; &lt;br&gt;To improve a weapon, equip it in your main hand and use a tool. &lt;br&gt;If none of your allies have oil and you are not afraid of ruining the weapon, use the tool twice, ignoring the warning. &lt;br&gt;&lt;br&gt;&lt;b&gt;Anvil&lt;/b&gt; - Improves impact weapons (blacksmith, blacksmith's apprentice, Artisan Guild member). &lt;br&gt;&lt;b&gt;Whetstone&lt;/b&gt; - Upgrade piercing and slashing weapons (no restrictions). &lt;br&gt;&lt;b&gt;Workbench&lt;/b&gt; - Upgrade ranged and wooden weapons (Blacksmith, Blacksmith's Apprentice, Artisan Guild Member, Elven). &lt;br&gt;&lt;br&gt;&lt;i&gt;* Upgrade at the anvil is only available next to a smelter with a regular fire burning. &lt;br&gt;* Oil is not required, but recommended. Without it, weapons can only be improved to a minimum level and with a high skill check.&lt;br&gt;* The difficulty of checks and the level of improvement are affected by the use of oil, the presence of the Blacksmith trait or guild background, the player's level, weapon skills, etc.&lt;br&gt;* Representatives of the elven races can only improve ranged weapons on the workbench.&lt;/i&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;Creating Equipment&lt;/b&gt;&lt;br&gt;To create equipment, you need to find and read the blueprint, which will be stored in the Blacksmith's Notebook (can be found in forges).&lt;br&gt;After that, you can use the blacksmith spell to enter the creation mode, selecting the required number of slots, and use the anvil (blacksmith only) or workbench (blacksmith, blacksmith's apprentice, Guild member, representative of the elven race).&lt;br&gt;&lt;br&gt;&lt;i&gt;* Forging on an anvil is only available near a smelter in which a hot fire is burning.&lt;br&gt;* The blueprints also indicate the requirements for the tool on which it can be used, skills or abilities, and other requirements.&lt;/i&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;Reworking equipment&lt;/b&gt;&lt;br&gt;Reworking equipment is available to a blacksmith, a representative of the elven races (only ranged weapons), and a guild member (workbench).&lt;br&gt;Reworking is done using the Rework Chest. Place a template item, ingredients in it, and use a suitable tool nearby: a workbench or an anvil, depending on the template. &lt;br&gt;Usually, the workbench is used to rework light armor, ranged, wooden, and piercing weapons, while the anvil is used to craft medium and heavy armor, slashing, and impact weapons.</content>
+  <content contentuid="h1fdcf3b8g102ag168ag0bf2g47994bcc3ab1" version="5">Book about blacksmithing</content>
+  <content contentuid="hb59ac20dgb10ag86bagd970g84e27331a700" version="5">The book is written in the confident handwriting of a master who knows his own worth.</content>
+  <content contentuid="h362d8b86g8226gf184gca00gbcc5d7e25c83" version="2">Elven Roots</content>
+  <content contentuid="hdd47fdc7gd08bg9272gd281g359ba3f28807" version="2">Elven Roots allows you to upgrade ranged weapons with greater confidence.</content>
+  <content contentuid="h5d9e1b81g66a5g5fefg40a4g33e7608797df" version="3">Elven quality</content>
+  <content contentuid="hd4e90e3bgacd6g89d6g4554gb52fed1af012" version="4">This weapon has been upgraded by a member of the Elven race, giving it a [1] bonus to &lt;LSTag Tooltip="AttackRoll"&gt;attack rolls&lt;/LSTag&gt;.</content>
+  <content contentuid="he4e3ea31g2c12g3578g7060gc7fac037f783" version="1">KELABLACKSMITHAPPRENTICENOTES</content>
+  <content contentuid="h697cbfdcg74c5g725dg0aefgc1c5725d082e" version="1">KELABLACKSMITHAPPRENTICENOTES</content>
+  <content contentuid="h0f2588e5gb6b3g8ae9gdf48g63d0b59132bb" version="3">Sussur Forge</content>
+  <content contentuid="h0b7b9625g8e89g8d41g25d7gd8b10951b826" version="4">KELA_SMELTINGFORGE_AURA_SUSSUR_TOOL</content>
+  <content contentuid="hafb84da9gcda6g48f3g4d25g85782589594d" version="3">Equipment created in the Sussur Forge gains additional properties.</content>
+  <content contentuid="h73ee3b04g3acdga590g6422gff19a84d28b8" version="3">This armor was created by a skilled guild master, giving it a bonus to &lt;LSTag Tooltip="ArmorClass"&gt;AC&lt;/LSTag&gt; [1].</content>
+  <content contentuid="hdc80a129gd828g1c34g1753g926628fc88c2" version="4">Sussur weapon</content>
+  <content contentuid="h1e0e371ag39a7ge93ag9f9agd59c2cdbe04c" version="2">This weapon was created in a Sussur forge, giving it the anti-magic properties of Sussur.</content>
+  <content contentuid="h3fd8aa4fgb170g2fe2g30e1g3b45b069673c" version="2">This armor was created in a Sussur forge, giving it the anti-magic properties of Sussur.</content>
+  <content contentuid="h64431e48g9cbagead4geae1gedb19af05482" version="3">Sussur weapon</content>
+  <content contentuid="hc537a5f5g1e9ag8cc0g7aeagcd5d93be554b" version="3">If you hit an enemy, there is a chance that &lt;LSTag Type="Status" Tooltip="SILENCED"&gt;silence&lt;/LSTag&gt; will be applied to him. </content>
+  <content contentuid="h289f4dc6gfec6g4f03g93f6g6708da0aeb1e" version="9">Charcoal</content>
+  <content contentuid="h4cf5de88gfc8eg4050ga53bg4b4af8c76b1f" version="10">An essential ingredient in any set.</content>
+  <content contentuid="hfda51287g02a4g408bga9c4g38db6ef31545" version="8">Charcoal</content>
+  <content contentuid="hd6f9ac6bg4439g45b5gd0d6g15340f615ca8" version="36">&lt;br&gt;&lt;br&gt;&lt;b&gt;Sussur Forge&lt;/b&gt;&lt;br&gt;After creating a weapon masterpiece, you have learned the secret of sussur forging, and as long as the sussur fire burns in the smelter, anti-magic properties are added to the created equipment. One sussur heat can create up to 3 items, but if you have additional sussur bark, it can be re-ignited.</content>
+  <content contentuid="hb95f2d15gbabag3b85g8bc0g2b3bf2cbaf6c" version="3">Rework</content>
+  <content contentuid="h1996b916g0991g585ag842cg373ae583596d" version="3">This mode allows you to repair/rework weapons and armor, including broken or rusty ones.</content>
+  <content contentuid="h5af7fd0dg0b9dg13ddgbaecg52b0dd84866a" version="4">Failed</content>
+  <content contentuid="ha2898bd7gf302gc6b1g5959g7aa634b702e6" version="3">Something went wrong while reworking the item. Verify that the template item and ingredients are in the chest, and that the selected character is capable of reworking such an item.</content>
+  <content contentuid="hdf235fe2g8f0dg54e3g65cbgaca2daf73c53" version="4">No template item</content>
+  <content contentuid="h231d1938g2d36g6e02g651ag551d7b01b91a" version="3">There is no known template item in the rework chest.</content>
+  <content contentuid="h7cc1436ag03ebg2c99g3deagec3790b035e7" version="4">Failed (elven race)</content>
+  <content contentuid="h109dd3bdgb8a0g1c98g669bg9cf5fff8666b" version="3">A character of the Elven race, but not a Blacksmith or Guild Artisan member, can only create or rework ranged weapons.</content>
+  <content contentuid="h09b36e57gaceagfd2bgf225g86f8513d26b5" version="4">Ingredients missing</content>
+  <content contentuid="hf85d8b2ag0d26g2266ge9bcgbc8697e1ad50" version="4">Check the rework chest for ingredients.</content>
+  <content contentuid="hb430cf3eg3ad9g32b4g4051gc3ac49b77c26" version="3">The rework chest is empty</content>
+  <content contentuid="hcd9429d7g1d9bg1803gdf00g44e6a9a1134c" version="3">Check the rework chest for the template item and ingredients.</content>
+  <content contentuid="h0ca651ceg2494g660ag42a0g4fe52c8365ca" version="2">Creation mode</content>
+  <content contentuid="h3779f164ge4begc0b2g22c6gba47a5bc6f5b" version="2">Allows you to create new items based on the studied blueprints.</content>
+  <content contentuid="he5d66a10g4d04gf5c6g99c5g4969676af67d" version="2">Creation: 1 slot</content>
+  <content contentuid="h54d4bfb7g5a34gfc3dgb8c6g4035b343a30f" version="2">For blueprints with 1 ingredient.</content>
+  <content contentuid="h565f395cg5257gaa74gadcbg7092ac2475e3" version="2">Creation: 2 slots</content>
+  <content contentuid="hda622b30gf03ag9000g99aagb98c061f7e5a" version="2">For blueprints with 2 ingredients.</content>
+  <content contentuid="h211fba02gbbeeg96cagcbfdgd81879b96706" version="2">Creation: 3 slots</content>
+  <content contentuid="hf4baf730g9390g3130g9d98gf822df538664" version="2">For blueprints with 3 ingredients.</content>
+  <content contentuid="hd9746de2g3e7fg24eega0b8g010b51f104a3" version="2">Creation: 4 slots</content>
+  <content contentuid="h5c1b7348g4214g204bgff71gac179c5bfccb" version="2">For blueprints with 4 ingredients.</content>
+  <content contentuid="h9b36d73cg5990ge82bgc39cg9653eeead9ab" version="2">Rework</content>
+  <content contentuid="h7d90c08dg5991g9ef3g02d5g7d985ddf4f61" version="2">This mode allows you to repair/rework weapons and armor, including broken or rusty ones.</content>
+  <content contentuid="he39294e7gacf5g37f6gb97fgc2a91fa3c636" version="2">After studying the drawing, select the creation mode and use an anvil or workbench, depending on the instructions in the blueprint.</content>
+  <content contentuid="h09dca5e0gd593g1949g5f75g68f70e959ee4" version="2">For blueprints with 2 ingredients.</content>
+  <content contentuid="h67ffaf59ge081gc39egd18agd787c244a89c" version="2">For blueprints with 3 ingredients.</content>
+  <content contentuid="h31da95a9g58bcg19bag7f4agab45d6837f9b" version="2">For blueprints with 4 ingredients.</content>
+  <content contentuid="h0c1fdb0cgc63dg418ag22c0g19e14275d6f5" version="2">Place the template and ingredients in the rework chest and use the anvil or workbench depending on the template.</content>
+  <content contentuid="hbdb5dc3fgdf48gb1aegeba7g3d1d086a6c97" version="7">To sharpen a weapon, equip it in your main hand and use the whetstone. &lt;br&gt;If no one on your team has oil, use the whetstone twice, ignoring the warning, but the sharpening check will be harder without oil.</content>
+  <content contentuid="h432ec992gc4f1g11b4g597agf6a036bfdbee" version="6">This whetstone looks old and worn, but it still seems to be good for sharpening cutting and stabbing weapons.</content>
+  <content contentuid="h09912466g42edgc11egc674g03020c1cd4e8" version="2">To upgrade a weapon, equip it in your main hand and use the anvil. &lt;br&gt;If none of your allies have oil and you don't mind ruining the weapon, use the anvil twice, ignoring the warning. &lt;br&gt;&lt;br&gt;To forge new gear, enter the desired creation mode and use the anvil.</content>
+  <content contentuid="h1514e2abg0f70gc97fga73ag9e8c2c50b514" version="2">A heavy and reliable anvil, all covered in traces of heavy blows of the blacksmith. If there is a working furnace nearby, then this anvil can still be used to improve or forge new equipment.</content>
+  <content contentuid="h69369aecgad81g192fg2979g5a10eb800ecf" version="3">To upgrade a weapon, equip it in your main hand and use the anvil. &lt;br&gt;If none of your allies have oil and you don't mind ruining the weapon, use the anvil twice, ignoring the warning. &lt;br&gt;&lt;br&gt;To forge new gear, enter the desired creation mode and use the anvil.</content>
+  <content contentuid="hec2347fag4bf1g0b18g51ffg9d65c9209799" version="3">A heavy and reliable anvil, all covered in traces of heavy blows of the blacksmith. If there is a working furnace nearby, then this anvil can still be used to improve or forge new equipment.</content>
+  <content contentuid="h66b246b7ge631gcd5ag4922gc9cae3b9de21" version="3">To upgrade a weapon, equip it in your main hand and use the workbench. &lt;br&gt;If none of your allies have oil and you don't mind ruining the weapon, use the workbench twice, ignoring the warning. &lt;br&gt;&lt;br&gt;To create new equipment, enter the desired creation mode and use the workbench.</content>
+  <content contentuid="h6e770dbcg1749g26b5g968bg66eefc1327cf" version="3">Rework Chest</content>
+  <content contentuid="h4d0c678cg5e7cg98aag7e39g77d6309bde73" version="4">Rework chest is used as a support tool when reworking equipment. &lt;br&gt;&lt;br&gt;Use: &lt;br&gt;Place the template item, ingredients, and use a nearby tool: a workbench or anvil, depending on the template. &lt;br&gt;Typically, the workbench is used to rework light armor, ranged weapons, wooden weapons, and piercing weapons, while the anvil is used to rework medium and heavy armor, slashing weapons, and bludgeoning weapons.</content>
+  <content contentuid="hfc94cd11g4d81g8ab4g1789gaf89dd5efcb4" version="2">To store information about characters' crafting abilities, as well as found blueprints and recipes.</content>
+  <content contentuid="h884acfc1gf2c3g9f9eg4426g77edf809bc1d" version="3">Can be used as an ingredient in some blacksmithing blueprints.</content>
+  <content contentuid="h37141a6bg8faeg7b20g1917g306815a89a43" version="6">Rework Chest</content>
+  <content contentuid="h18f8fb56g6c3bgbe6bgd178g8d71d7c0ebc7" version="6">Rework chest is used as a support tool when reworking equipment. &lt;br&gt;&lt;br&gt;Use: &lt;br&gt;Place the template item, ingredients, and use a nearby tool: a workbench or anvil, depending on the template. &lt;br&gt;Typically, the workbench is used to rework light armor, ranged weapons, wooden weapons, and piercing weapons, while the anvil is used to rework medium and heavy armor, slashing weapons, and bludgeoning weapons.</content>
+  <content contentuid="h251e0934gf0e6g6fbfg416bg6c1873420649" version="4">Rework Chest</content>
+  <content contentuid="haa4499d4gf67agc6a1gd6bdgefaa4291d90d" version="4">Rework chest is used as a support tool when reworking equipment. &lt;br&gt;&lt;br&gt;Use: &lt;br&gt;Place the template item, ingredients, and use a nearby tool: a workbench or anvil, depending on the template. &lt;br&gt;Typically, the workbench is used to rework light armor, ranged weapons, wooden weapons, and piercing weapons, while the anvil is used to rework medium and heavy armor, slashing weapons, and bludgeoning weapons.</content>
+  <content contentuid="h9e85c753g4625g57dcg665bg6bba0dd53206" version="4">Rework Chest</content>
+  <content contentuid="h727c7785g5920g40d8g8ba0g25d8c201b048" version="4">Rework chest is used as a support tool when reworking equipment. &lt;br&gt;&lt;br&gt;Use: &lt;br&gt;Place the template item, ingredients, and use a nearby tool: a workbench or anvil, depending on the template. &lt;br&gt;Typically, the workbench is used to rework light armor, ranged weapons, wooden weapons, and piercing weapons, while the anvil is used to rework medium and heavy armor, slashing weapons, and bludgeoning weapons.</content>
+  <content contentuid="h7d38fa5cg7d92g657fg31f3g54868c99a746" version="2">Rework Chest</content>
+  <content contentuid="h24d8d87eg98d1gca7eg6a0dg8062ddfbc577" version="2">Rework chest is used as a support tool when reworking equipment. &lt;br&gt;&lt;br&gt;Use: &lt;br&gt;Place the template item, ingredients, and use a nearby tool: a workbench or anvil, depending on the template. &lt;br&gt;Typically, the workbench is used to rework light armor, ranged weapons, wooden weapons, and piercing weapons, while the anvil is used to rework medium and heavy armor, slashing weapons, and bludgeoning weapons.</content>
+  <content contentuid="h83b3c344g026eg06f2g7a09g525ebc28453d" version="4">Rework Chest</content>
+  <content contentuid="h78c0e1begd449g871cg1a07g69016f5efb67" version="4">Rework chest is used as a support tool when reworking equipment. &lt;br&gt;&lt;br&gt;Use: &lt;br&gt;Place the template item, ingredients, and use a nearby tool: a workbench or anvil, depending on the template. &lt;br&gt;Typically, the workbench is used to rework light armor, ranged weapons, wooden weapons, and piercing weapons, while the anvil is used to rework medium and heavy armor, slashing weapons, and bludgeoning weapons.</content>
+  <content contentuid="hf781f0d0g7504g408eg8672g68c2c25d8ca0" version="4">Wooden shield</content>
+  <content contentuid="h1a61f361g4361g45c8ga8cfgf61d882a8064" version="4">The shield is spattered with blood on both sides.</content>
+  <content contentuid="hd8834ec7gb701g412fg882cg33f725772ad5" version="4">Wooden shield</content>
+  <content contentuid="h9c41fb07g02f0g456bga10dg7598ad0b12f3" version="4">This shield is completely covered with dents and nicks, but on its surface one can still discern a half-erased image of a flower.</content>
+  <content contentuid="h84941b29g832cg4812g883fg05e4710c12a0" version="11">On the shield is the coat of arms of a long-forgotten noble house.</content>
+  <content contentuid="h27034815g3904g49b2g9593g29af0a3db3f7" version="5">Shield</content>
+  <content contentuid="hda92bfeag21cfg4778gb900gb95ac6b783b7" version="5">The surface of this sturdy shield is polished to a mirror finish.</content>
+  <content contentuid="h7632d18ag1e59g4f21ga219g45a38fe38e68" version="8">Shield with spikes</content>
+  <content contentuid="h6aa99b70g8343g44c4g82aagfcb86b4c7f54" version="7">The surface of the shield is covered with small spots of rust.</content>
+  <content contentuid="h767e9cf6gae67g1659gb611gffc2531b1be6" version="6">Shield</content>
+  <content contentuid="he7997288g0771g4139gba45geb8ebdf94104" version="5">Barrel of oil</content>
+  <content contentuid="hf0f3a86cg6dcag4ad9g9a3agdd9b9434afd2" version="5">Black resinous drops slowly flow through the cracks.</content>
+  <content contentuid="h8a416ad7gcb83g47aeg8044g7bdb998655f8" version="8">Bottle</content>
+  <content contentuid="h58482de2g881eg4cd6g8d04gd7e0754102ba" version="5">The dark glass of the bottle both hides and protects the liquid inside.</content>
+  <content contentuid="h82b14187g39a9g442fgb00fg025c3b98763e" version="5">Bottle</content>
+  <content contentuid="h5a8c583dg4b97g42e1gb97egd36ca8a7cb14" version="5">An unknown liquid had dried at the bottom of the bottle.</content>
+  <content contentuid="hb1ede137g17c3gfaf8g572egd09e2e844f8c" version="2">Suitable for filling with oil.</content>
+  <content contentuid="h959edfaegf593gb8acgc7f9gcb8658869bfb" version="2">Suitable for filling with oil.</content>
+  <content contentuid="h6d8c4ce4g4b48g6a02g4da9g7837372e35c5" version="2">Gnome Forge</content>
+  <content contentuid="hd8f30160g9c80g5f24g34aeg4dbb633581e2" version="2">Equipment created in the Gnome Forge gains additional properties.</content>
+  <content contentuid="h0a312460g900cg67d4g2f33gf441c9a81840" version="3">KELA_SMELTINGFORGE_AURA_GNOME_TOOL</content>
+  <content contentuid="h19f57bc2g4380g1146g372fg2204ef7daeb4" version="2">Gnome Force Armor</content>
+  <content contentuid="hf16d2366g32a0g4421gd4feg0eb4d12322f1" version="2">KELA_FORGED_ARMOR_GNOMEFORGE_BONUS Name</content>
+  <content contentuid="h3cf3c857gbc45g67c4g9b4ag75f56bbd6590" version="2">This armor was created in the Gnome Forge, giving it &lt;LSTag Tooltip="Resistant"&gt;resistance&lt;/LSTag&gt; to Force damage and increasing its &lt;LSTag Tooltip="ArmorClass"&gt;AC&lt;/LSTag&gt; by [1].</content>
+  <content contentuid="h03a45cfcgf180g0c90g680fg6c19be1b8200" version="2">Gnome Force Weapon</content>
+  <content contentuid="haa26824cg8e2ega834gf0f4g7e41fd001808" version="4">This weapon was created in the Gnome Forge, which gave it Force properties: it ignores resistance to Force damage and deals additional [1].</content>
+  <content contentuid="hdbf86cdag319dg8addgefeag0b1fc625107c" version="2">KELA_FORGED_WEAPON_GNOMEFORGE_TECHNICAL Name</content>
+  <content contentuid="h30bfe51cgb1edgb0cag23adgc57a4729c68a" version="1">KELA_FORGED_WEAPON_GNOMEFORGE_TECHNICAL Description</content>
+  <content contentuid="he584c0f4gb8e8geeb2g8ac6g768dac65dac8" version="3">Blacksmith Loot Mark</content>
+  <content contentuid="h87b4cdcag047ag6a17g0332gf35ddc753fee" version="3">Allows you to mark an item as blacksmith loot to automatically add it to the blacksmith's chest. &lt;br&gt;Can mark another container to collect in the standard item chest.</content>
+  <content contentuid="h8076efd8gde74ge2d5gaa0fgc1fb185f2d89" version="2">Last Light Forge</content>
+  <content contentuid="hfd8010e2gae51ga72cg8dc7g2f7a93837951" version="3">KELA_SMELTINGFORGE_AURA_LASTINN_TOOL</content>
+  <content contentuid="h9755d826gfa56gd5f7g3e93g77bb65ce2c0c" version="2">Cursed Shadows Forge</content>
+  <content contentuid="ha156be6fg58e4ge2b2g66fbg73802c6df7af" version="2">Equipment created in the Cursed Shadows Forge gains additional properties.</content>
+  <content contentuid="h04e96f29g07c3ga62cg3b14g8ad3431b029c" version="3">KELA_SMELTINGFORGE_AURA_CURSED_TOOL</content>
+  <content contentuid="h7b996696g64fdg35c6gd426gfb6febaf6b48" version="3">This armor was created in the Last Light Forge, giving it &lt;LSTag Tooltip="Resistant"&gt;resistance&lt;/LSTag&gt; to necrotic damage and increasing its &lt;LSTag Tooltip="ArmorClass"&gt;AC&lt;/LSTag&gt; by [1].</content>
+  <content contentuid="h6339eb7bg861cg828eg5b75g13b13a4375f2" version="2">Last Light Armor</content>
+  <content contentuid="h2bd0cf40g9fd0g2350g3b5agadad9f8b0cbf" version="2">KELA_FORGED_ARMOR_LASTINN_BONUS Name</content>
+  <content contentuid="h0eaec128g3e14g7004g6c10g25dff966a148" version="3">This armor was created in the Cursed Shadows Forge, giving it &lt;LSTag Tooltip="Resistant"&gt;resistance&lt;/LSTag&gt; to radiant damage and increasing its &lt;LSTag Tooltip="ArmorClass"&gt;AC&lt;/LSTag&gt; by [1].</content>
+  <content contentuid="heacb5c0bgb9d0ged78ga5d3gfed30943ad44" version="2">Cursed Shadows Armor</content>
+  <content contentuid="h4b572161gc5f6ge315gbf5cg6fb62a3f3796" version="2">KELA_FORGED_ARMOR_CURSED_BONUS Name</content>
+  <content contentuid="hbaaf2a12g9074gf38egcbdfg830dabd8b414" version="2">Last Light Weapon</content>
+  <content contentuid="ha86c0ffcge6c1gafdeg998ege4323093065a" version="3">This weapon was created in the Last Light Forge, giving it radiant properties: it ignores radiant damage resistance and deals additional [1].</content>
+  <content contentuid="hc548d21egda7eg1673g75ccg1bfb91c084ab" version="3">KELA_FORGED_WEAPON_LASTINN_BONUS Name</content>
+  <content contentuid="h035e72a1gb064g2ce5g4c53g8fbbd1b11868" version="1">KELA_FORGED_WEAPON_GNOMEFORGE_TECHNICAL Description</content>
+  <content contentuid="hb92a5a4agde53ga65fg565egb64cb5b1f328" version="2">Cursed Shadows Weapon</content>
+  <content contentuid="hdb59764bga871g690ag3094g412f57dacd64" version="3">This weapon was created in the Cursed Shadows Forge, which gave it necrotic properties: it ignores necrotic damage resistance and deals additional [1].</content>
+  <content contentuid="hadd94046g5e28gfc88g35ccgeceb2ad137e0" version="3">KELA_FORGED_WEAPON_CURSED_BONUS Name</content>
+  <content contentuid="h39eb9780g6ad2ga4d0g50b1g44e2b2de65b9" version="1">KELA_FORGED_WEAPON_GNOMEFORGE_TECHNICAL Description</content>
+  <content contentuid="ha684f4d3g8b4bg79afgc965gb215a4780830" version="2">Weapon of the Nine</content>
+  <content contentuid="h909b6206g7f2dga519gb6aeg69620247c9ee" version="2">This weapon was created in the Forge of the Nine, which gave it fiery properties: it ignores fire resistance and deals additional [1].</content>
+  <content contentuid="hd29c6c0cg4e60ge224gf3acg5d61b5f78357" version="1">KELA_FORGED_WEAPON_NINE_BONUS Name</content>
+  <content contentuid="hb4411942g1ca3g2eb8g93b4g062f6ce7efa4" version="2">This armor was created in the Forge of the Nine, giving it &lt;LSTag Tooltip="Resistant"&gt;resistance&lt;/LSTag&gt; to fire damage and increasing its &lt;LSTag Tooltip="ArmorClass"&gt;AC&lt;/LSTag&gt; by [1].</content>
+  <content contentuid="had52c720g4ad7gb3e5g27e9g48cadda1ad1f" version="2">Armor of the Nine</content>
+  <content contentuid="hc826ebd3g90e6g107dgecb2gf2763e8745c2" version="1">KELA_FORGED_ARMOR_NINE_BONUS Name</content>
+  <content contentuid="h7c7ab18aga264ge18dgdcebgb1c74f20557b" version="2">Forge of the Nine</content>
+  <content contentuid="h55053c71gab4eg07a1ga262g2ab7d29be93a" version="2">KELA_SMELTINGFORGE_AURA_NINE_TOOL</content>
+  <content contentuid="hd2b85f29g3d6fg6579gdd83g13dfb3a7e907" version="2">Crucible</content>
+  <content contentuid="h237fed70g59c1g6b6ag311ag853f5e1d668c" version="2">You can smelt metals in this crucible if you know how (Blacksmith).</content>
+  <content contentuid="h5aae0597g3c82g63c8g3695g5db33031853a" version="2">Shield</content>
+  <content contentuid="hab3a2358gf5c3ge6c9gb404gf8883aa964c9" version="1">On the shield is the coat of arms of a long-forgotten noble house.</content>
+  <content contentuid="h47790ba8g1070g8c36g17a3g0c41710558cf" version="1">Smelting furnace</content>
+  <content contentuid="h78f009a6g2ca2gf4bbg8b2cg036cc62a8870" version="1">Smelting furnace</content>
+  <content contentuid="h3a6dcd9bgf846g147cg169dg296971661010" version="1">Smelting furnace</content>
+  <content contentuid="hc792a376g3155gc636g309bge4ff14540d84" version="1">To upgrade a weapon, equip it in your main hand and use the workbench. &lt;br&gt;If none of your allies have oil and you don't mind ruining the weapon, use the workbench twice, ignoring the warning. &lt;br&gt;&lt;br&gt;To create new equipment, enter the desired crafting mode and use the workbench.</content>
+  <content contentuid="h65915dd9g24b4g3d67g9080g5b5502c11b8f" version="1">A workbench that has seen better days. Used to upgrade ranged weapons, quarterstaffs, and clubs, as well as create new gear.</content>
+  <content contentuid="h938872b0g3edegea0bg2f33gc346d90730db" version="2">A heavy and reliable anvil, all covered in traces of heavy blows of the blacksmith. If there is a working furnace nearby, then this anvil can still be used to improve or forge new equipment.</content>
+  <content contentuid="h52062f6bg755bgc30bg0abfgd40c5ade58bb" version="1">To upgrade a weapon, equip it in your main hand and use the anvil. &lt;br&gt;If none of your allies have oil and you don't mind ruining the weapon, use the anvil twice, ignoring the warning. &lt;br&gt;&lt;br&gt;To forge new gear, enter the desired crafting mode and use the anvil.</content>
+  <content contentuid="hecb01062gd105g1d20g1b22gb27231bb264d" version="1">Can be poured into suitable bottles.</content>
+  <content contentuid="h6c7dcd60g8644ge9ebg7dccga9c66dc4cc5d" version="1">Equipment created in the Last Light Forge gains additional properties.</content>
+  <content contentuid="h508435b8g7efcg1b2ag27d8g25d1b6485285" version="1">Equipment created in the Forge of the Nine gains additional properties.</content>
+  <content contentuid="ha700efe7g081cgc436gee56g1f065eba44bd" version="1">KELA_USER_BLOCK_MOVEMENT</content>
+  <content contentuid="h116f9179gb3fcga3e6g7ddfgda1e50623511" version="1">KELA_MESSAGE_STATUS</content>
+  <content contentuid="hd7451a09gb5ffg2b52g852egbe0ab2a7081e" version="2">There are no ranged weapons in the main hand.</content>
+  <content contentuid="h18c84b2dg09c2geb18g2f37gedb9bc242dd4" version="2">There is no impact weapon in the main hand.</content>
+  <content contentuid="h407b8589g16f5g49f7g0325gf7cf170d7a1c" version="1">Gives weapons a damage bonus [1].</content>
+  <content contentuid="hf13b1c99g4cb2g0645ga9a7g738cca9ced57" version="1">Guild quality</content>
+  <content contentuid="h7da9c2c0g27d2gbb81ga6a6gcf41aee0d5ac" version="1">Guild quality</content>
+  <content contentuid="h9724679fg9a31g9926g5233gd605562f6a51" version="1">Guild quality</content>
+  <content contentuid="hdf284b85g8a1eg31eage807g50b29524d5c3" version="1">This weapon was created by a skilled guild master, giving it a bonus [1] to &lt;LSTag Tooltip="AttackRoll"&gt;attack rolls&lt;/LSTag&gt;.</content>
+  <content contentuid="h4e413efdg43adg70e9ge067g1ccd5bde2c3b" version="1">This armor was created by a skilled guild master, giving it a bonus to &lt;LSTag Tooltip="ArmorClass"&gt;AC&lt;/LSTag&gt; [1].</content>
+  <content contentuid="h1f28a99fg96a5g2cf6gaeffg7c3c8e633b52" version="1">Elven quality</content>
+  <content contentuid="h2c8e1789g862cg8648gb5e1g9c6ecbf7d628" version="1">This weapon was created by a member of the elven race, giving it a bonus [1] to &lt;LSTag Tooltip="AttackRoll"&gt;attack rolls&lt;/LSTag&gt;.</content>
+  <content contentuid="h5b954cb0g768eg534bg0dacg23b7da9c19ab" version="1">Gnome Force Armor</content>
+  <content contentuid="h4873799dg84cag3bbdgcb81gbca8b0762680" version="1">Last Light Armor</content>
+  <content contentuid="hc1b163fbg4967g0b73gd3f6gfb9bd796d3ce" version="1">Cursed Shadows Armor</content>
+  <content contentuid="h3de76accgeac3ge643ga4a8g9e68fa806c16" version="1">Armor of the Nine</content>
+  <content contentuid="h415f4d94g33eeg8934g4f1eg5a09f200e0e9" version="1">The wooden planks of the chest are burnt for strength and reinforced with thick strips of iron. </content>
+  <content contentuid="hc7bb4904gc4d8g916fg45ddg7570df1e502c" version="2">The wooden planks of the chest are burnt for strength and reinforced with thick strips of iron.</content>
+  <content contentuid="h13e3fc81g9f9bg7b59g5b97g6c5880068596" version="1">The wooden planks of the chest are burnt for strength and reinforced with thick strips of iron.</content>
+  <content contentuid="hf8626d4fgb592g630bg0f6ag2b0741cbfa51" version="1">The wooden planks of the chest are burnt for strength and reinforced with thick strips of iron.</content>
+  <content contentuid="h884cbaaag1e66ga3e7gd2ddg64847b8f174f" version="1">The wooden planks of the chest are burnt for strength and reinforced with thick strips of iron.</content>
+  <content contentuid="h9461f1b2g9fb8g89c1g1030g16e5df19517f" version="2">The wooden planks of the chest are burnt for strength and reinforced with thick strips of iron.</content>
+  <content contentuid="hd3ae2f8dgda6egf88fgd060g66d0998bda89" version="3">KELA_TECHNICAL_PASSIVE_SPELL_CREATE_NAME</content>
+  <content contentuid="h12c22a35g6bc4gacc8g592agb118a02039ce" version="3">KELA_TECHNICAL_PASSIVE_SPELL_CREATE_DESCRIPTION</content>
+  <content contentuid="hfa0acb7fge961g8b7dg013cg39fa003f074f" version="3">KELA_TECHNICAL_ITEM_TOOLTIP_NAME</content>
+  <content contentuid="h27aa496dg740bg19acg4edeg2f187d1a6391" version="3">KELA_TECHNICAL_ITEM_TOOLTIP_DESCRIPTION</content>
+  <content contentuid="h81409c07g5ac6g5e5agc062gbb0dc12b6929" version="3">Sussur Armor</content>
+  <content contentuid="hcaddca59g7e85g77b7g6b6cg3a1f0f697816" version="26">&lt;br&gt;&lt;br&gt;&lt;b&gt;Forge Aura&lt;/b&gt;&lt;br&gt;In some forges, the equipment created gains additional properties. It's as if the forge adopts the atmosphere around it or the habits of the blacksmith working in it...</content>
+  <content contentuid="h5653b900ga1deg96fbge56bgc2a38c2d62a2" version="10">Wood</content>
+  <content contentuid="h63a04ff5gf657ge440ga8d4g2862f370fa6b" version="4">Branch</content>
+  <content contentuid="h48078a9cgd290g61bdg76e0g6effcdeba86e" version="13">Cow Hide</content>
+  <content contentuid="h3f8dceafg2fbag1b8bg486bga46696e992aa" version="8">Deer Hide</content>
+  <content contentuid="h9cf0bb96ga207g8576g31cbg1761b2358857" version="4">Wolf Hide</content>
+  <content contentuid="h20370b9fg9e79g4c8bgfaafgfabe3a3462b2" version="7">Bear Hide</content>
+  <content contentuid="h3aef5c86g80deg0990g1073g23565341c642" version="6">Sheep Hide</content>
+  <content contentuid="ha7ecaabcgc020g5cbag1b87gd67bc6572a0c" version="7">Rabbit Hide</content>
+  <content contentuid="hccad2469g7575g1b25g0141g847c4161e5b8" version="7">Tanning Frame</content>
+  <content contentuid="h8bc9e0a6g625fg224eg5e75g9f57c5993a88" version="4">Tanned Leather</content>
+  <content contentuid="h0ad180d0g898bg3b0dgcaf1ga934c81cb926" version="2">Leather Strips</content>
+  <content contentuid="haf3a310fg9d39g6b17g879ag3a9b30fa369c" version="4">The weaponsmith can use hides to craft equipment at forges. &lt;br&gt;At a tanning rack, hides can be processed into leather and leather strips.</content>
+  <content contentuid="h87fdce7cg7d24g8da8gbe01g1111e86e9adc" version="3">The weaponsmith can use hides to craft equipment at forges. &lt;br&gt;At a tanning rack, hides can be processed into leather strips.</content>
+  <content contentuid="h4712597fgd482g7ddagad7dg41dd78ae1c26" version="1">Used to craft equipment in forges. &lt;br&gt;You can get it by processing the hide on a tanning rack.</content>
+  <content contentuid="hfee3ee19ge130g5381g67d4g98ad3fa1d3c2" version="3">Used to craft equipment in forges. &lt;br&gt;Can be obtained by breaking wooden objects.</content>
+  <content contentuid="h8480ef50g8145g4524gb354g7490ecaa902d" version="5">Club +2</content>
+  <content contentuid="hfb502717g447cg4038g95bbg4ff7a448f733" version="3">Dart +2</content>
+  <content contentuid="h1f51d350gddf6g4b00g9cffg32b3d8125c4b" version="12">Rope</content>
+  <content contentuid="h6f744071ge8fag461fg9e49g6b1205d27d50" version="12">A length of strong, hand-braided rope.</content>
+  <content contentuid="h6e343244gf9f0g1dbbg8b4ag61b5fbc3c688" version="2">Handaxe +2</content>
+  <content contentuid="h36b41285g63f4g9608gb2ceg697f74cc3cef" version="1">Light Hammer +2</content>
+  <content contentuid="hbad3849egf677g79a6g88e7g98a188528873" version="1">Sickle +1</content>
+  <content contentuid="ha5873df1g2ce8g0a50gcd34gd5d75c3a46eb" version="1">Sickle +2</content>
+  <content contentuid="h740ece33ga6c8g3c01ga6bbg89792d52177d" version="1">To tan a hide, you need the hide itself, oil, and a charcoal. &lt;br&gt;The amount of tanned leather and strips depends on the size of the hide.</content>
+  <content contentuid="h5754be92ge904g44e8g87a9gfe52008c6083" version="4">Ox</content>
+  <content contentuid="hb5d8ff67g7408g4eedga201g301bee497866" version="3">Rabbit</content>
+  <content contentuid="h65382c6ag9f4fg4cfbg9f5dgb201abbd14a3" version="3">Dire Wolf</content>
+  <content contentuid="h65aed1dfgf910g460bga34agecac9c2c788e" version="3">Wolf</content>
+  <content contentuid="h6373b882gb80cg4d0cga266gb5ccdeec796c" version="3">Bear</content>
+  <content contentuid="h664f86d2g963ag47a5ga1b3g5b0011cb9dad" version="3">Polar Bear</content>
+  <content contentuid="hd9f3c716g537eg4dd7g9b64g8b1caca1fc74" version="3">Sheep</content>
+  <content contentuid="h8b60dbcbgd407g06dbg31fag4bb18732fe4b" version="19">&lt;br&gt;&lt;br&gt;&lt;b&gt;Reworking&lt;/b&gt;&lt;br&gt;------------------------------------------------------------------------------&lt;br&gt;Workbench (weapon): &lt;i&gt;&lt;br&gt;   Shortbow - branch &lt;br&gt;   Longbow - two branches &lt;br&gt;   Club, Pike, Spear, Trident, Warpick - branch and bronze&lt;br&gt;   Halberd - branch and 2 bronzes &lt;br&gt;   Quarterstaff, Glaive - branch, bronze and leather strip &lt;br&gt;   Hand crossbow, Light crossbow - wood, bronze and rope &lt;br&gt;   Heavy crossbow - wood, 2 bronzes and rope &lt;br&gt;   Great club - wood, bronze and leather strip &lt;br&gt;   Dart - bronze and feather &lt;/i&gt;&lt;br&gt;Workbench (armour): &lt;i&gt;&lt;br&gt;   Padded - leather and leather strip&lt;br&gt;   Leather - 2 leathers and leather strip&lt;br&gt;   Studded Leather, Ring Mail - bronze, leather and leather strip&lt;br&gt;   Hide - wolf hide, 2 leathers and leather strip&lt;br&gt;   Scale Mail - bronze, 2 leathers and leather strip &lt;/i&gt;&lt;br&gt;Workbench (shields): &lt;i&gt;&lt;br&gt;   Round shields - 3 woods, bronze and leather strip &lt;br&gt;   Large shields - 4 woods, 2 bronzes and leather strip &lt;/i&gt;&lt;br&gt;Anvil (weapon): &lt;i&gt;&lt;br&gt;   Dagger - bronze&lt;br&gt;   Battleaxe, Flail - wood, bronze and leather strip&lt;br&gt;   Greataxe, Warhammer - branch, 2 bronzes and leather strip&lt;br&gt;   Greatsword - 3 bronzes and leather strip&lt;br&gt;   Handaxe - wood and bronze&lt;br&gt;   Light hammer A, Mace, Morningstar - branch and bronze&lt;br&gt;   Light hammer B, Maul - branch and 2 bronzes&lt;br&gt;   Longsword - 2 bronzes and leather strip&lt;br&gt;   Rapier, Scimitar, Shortsword, Sickle - bronze and leather strip &lt;/i&gt;&lt;br&gt;Anvil (armour): &lt;i&gt;&lt;br&gt;   Breastplate, Chain Shirt, Half Plate - 2 bronzes, leather and leather strip&lt;br&gt;   Chain Mail, Splint, Plate - 3 bronzes, leather and leather strip&lt;br&gt;&lt;/i&gt;</content>
+  <content contentuid="hc9175b7fg53f4g0538g34b1g78c99a2bc920" version="3">Rework Chest</content>
+  <content contentuid="hdb1b6d9bg399ege711g27fege12f95bc1177" version="3">Rework chest is used as a support tool when reworking equipment. &lt;br&gt;&lt;br&gt;Rework is available to blacksmiths, members of the Artisan Guild, or the Elven race from level 4. &lt;br&gt;You can only rework leveled items (normal, +1, +2), as well as their corrupted versions. &lt;br&gt;The result of rework depends on the character's level (normal item - level 4, +1 item - level 6, +2 item - level 8). &lt;br&gt;&lt;br&gt;Use: &lt;br&gt;Enter rework mode, place the template item, ingredients, and use a nearby tool: a workbench or anvil, depending on the template.</content>
+  <content contentuid="hd3bc133cg8c17ge5a5g470cge332e938f0b0" version="3">The wooden planks of the chest are burnt for strength and reinforced with thick strips of iron.</content>
+</contentList>

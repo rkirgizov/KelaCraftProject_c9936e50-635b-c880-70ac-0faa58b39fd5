@@ -1,0 +1,386 @@
+<?xml version="1.0"?>
+<contentList xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <content contentuid="hcd2aa42dgfd80g40d6gb65fg9c8cd4a2a7d1" version="33">Наковальня</content>
+  <content contentuid="h8cda8e69g8139g10c6gcecbg33f9c54769c9" version="2">KELAANVIL</content>
+  <content contentuid="h173feae5g1587gbf07g834ag51e090ca2df5" version="2">KELAANVIL tooltip</content>
+  <content contentuid="h4aa826cfg2c4fg8220g803bg5908695ab2b3" version="2">KELAWORKBENCH</content>
+  <content contentuid="h64f6603agb728g4284g64c7g991cc09b870a" version="2">KELAWORKBENCH tooltip</content>
+  <content contentuid="h8344e68eg4e00g07d2g6521g1c3a9a834080" version="2">KELAWHETSTONE</content>
+  <content contentuid="h2f49abf1g9515gc4c9g4091g8c6e55751ee5" version="2">KELAWHETSTONE tooltip</content>
+  <content contentuid="h40f55ab4g1998g4dfagae4dgc0857f167d3f" version="60">Верстак</content>
+  <content contentuid="h02ada5begfce9g4138g9e64g8159047f035c" version="61">Верстак, видавший лучшие дни. Используется для улучшения дальнобойного оружия, посохов и дубинок, а также для создания нового снаряжения.</content>
+  <content contentuid="h49560d25ge18eg572bg9681ga9f4fa43c84e" version="3">Кузнец</content>
+  <content contentuid="hc2fab1a5g8248g4828gfa35gd32f68c7feef" version="7">Даёт доступ к работе в кузнице и на верстаках. &lt;br&gt;Делает легче &lt;LSTag Tooltip="SavingThrow"&gt;испытания&lt;/LSTag&gt; при улучшении оружия. &lt;br&gt;Даёт &lt;LSTag Tooltip="Proficiency"&gt;умение&lt;/LSTag&gt; с молотами. </content>
+  <content contentuid="h783f8b63gfb08ge62agab3dg9a623ce67f86" version="2">Кузнец</content>
+  <content contentuid="h785090b2g42aag3393gd34eg3b2d3f5893bf" version="4">Даёт доступ к работе в кузнице и на верстаках. &lt;br&gt;Делает легче &lt;LSTag Tooltip="SavingThrow"&gt;испытания&lt;/LSTag&gt; при улучшении оружия. &lt;br&gt;Даёт &lt;LSTag Tooltip="Proficiency"&gt;умение&lt;/LSTag&gt; с молотами. &lt;br&gt;Значение &lt;LSTag Tooltip="Strength"&gt;Силы&lt;/LSTag&gt;, &lt;LSTag Tooltip="Constitution"&gt;Телосложения&lt;/LSTag&gt; или &lt;LSTag Tooltip="Dexterity"&gt;Ловкости&lt;/LSTag&gt; увеличивается на 1, максимум до 20.</content>
+  <content contentuid="h6a182398gf00ag8716g1a80g9f4001e9c1d1" version="17">Записки ученика кузнеца</content>
+  <content contentuid="hcb8fa0cag43ebge38cg93c3gc2b5c96e05c2" version="28">Кузнечное масло</content>
+  <content contentuid="h3d93f50cg37aag7416g40dbg0e7d70889aca" version="22">Может использоваться для упрощения улучшения оружия, а также как ингредиент в некоторых кузнечных чертежах.</content>
+  <content contentuid="h6f571adeg6f1cgfc27g74e5gcc5dd3c6ad45" version="22">Вязкая темно-зеленая жидкость медленно переливается в бутылке.</content>
+  <content contentuid="h75837053g1ab6g0396ge570g568248766b73" version="9">Точильное колесо</content>
+  <content contentuid="hc0470050ge70eg4f6eg764bg4589a33dd073" version="73">Точильное колесо</content>
+  <content contentuid="hef370917ged4ag82e9g7e7bg58d2dcaf15a5" version="71">Использовать</content>
+  <content contentuid="h701d3b31g5d35gff8ag54abgc968e4c7c8ff" version="2">KELASMITHOIL</content>
+  <content contentuid="h0bcb4648g9f09g0e50gb5f7g1681c1efd7be" version="2">KELASMITHOIL tooltip</content>
+  <content contentuid="h77794615g9749g1a9ag4473g52918c9ffb01" version="6">Нет масла</content>
+  <content contentuid="hb98d359bg4fbag7812gf24agc6562c63f07b" version="5">Никто из команды на расстоянии [1] не имеет в инвентаре масла.</content>
+  <content contentuid="h21220940g9abdg4fafg981ag12c7df72a363" version="5">Неподходящее оружие</content>
+  <content contentuid="h62a8db26gf88dg15dfg652bgc5cb3aebf798" version="6">В основной руке нет режущего или колющего оружия.</content>
+  <content contentuid="h52a1d6b9g81fegd258g99c1g93b2dd0aed7f" version="5">В основной руке нет дальнобойного или деревянного оружия.</content>
+  <content contentuid="h35e3f347g3f59gf1c0g252eg6e8a40b129e6" version="3">Кузнечное масло</content>
+  <content contentuid="h879e5a14geae4gd45eg8df2gfc9e5be416ae" version="6">Используется для улучшения оружия.</content>
+  <content contentuid="h75cbbcb9g4b17gedb3g4093g4f70cce99f03" version="4">Повреждённое оружие 1</content>
+  <content contentuid="h790d4338g7f94gd2e5g3db6g02f57216603b" version="3">Простое улучшение</content>
+  <content contentuid="h7e58e97bg77e9g9c64g7d30gbe5ec567128f" version="4">Налагает на оружие штраф к атаке [1], штраф к урону [2].</content>
+  <content contentuid="hb352e4d0ga8c9geca5g8c0fg93307423daf8" version="3">Даёт оружию бонус к урону [1].</content>
+  <content contentuid="hd0ddca10g8f97gdad1gef44g7e924cdd3bd5" version="3">Хорошее улучшение</content>
+  <content contentuid="h0f05067fg8b11g86f6gc702g2ffda5434044" version="2">Даёт оружию бонус к урону [1].</content>
+  <content contentuid="h60d49854g5eccgada6g0f6bgcc3a07f503a1" version="3">Отличное улучшение</content>
+  <content contentuid="hdb6796ccg5803g2348gf27dg5ff309482796" version="3">Даёт оружию бонус к атаке [1] и урону [2].</content>
+  <content contentuid="h2662ab6bg0937g3da7gc091g5d2796661867" version="3">Экспертное улучшение</content>
+  <content contentuid="hdd63740ege2bdg4c74gcf7cg1a91613d7269" version="3">Даёт оружию бонус к атаке [1] и урону [2].</content>
+  <content contentuid="hfc2618abge483gb295gb2e4g21b24172e68d" version="3">Мастерское улучшение</content>
+  <content contentuid="hfd6dc39dgf208gc535g9280gcec177192478" version="3">Даёт оружию бонус к атаке [1] и урону [2].</content>
+  <content contentuid="h4ee93350g2979g7628g1af9g6fee10ca8b01" version="3">Гильдейское качество</content>
+  <content contentuid="h5491c51dg71fag7f2ag6ccag91ce8fabe363" version="4">Это оружие было улучшено опытным гильдейским мастером, что даёт ему бонус [1] к &lt;LSTag Tooltip="AttackRoll"&gt;броскам атаки&lt;/LSTag&gt;.</content>
+  <content contentuid="h2e0fc362g9423ge904gd1f2g536a0c11c782" version="4">Улучшение</content>
+  <content contentuid="he67fb955g1325gae36gfb6bga637b160567b" version="5">Идёт улучшение оружия, необходимо подождать до завершения.</content>
+  <content contentuid="hb916afacg1ef8ge856gcc4bg027b87dff5c0" version="3">Сейчас невозможно</content>
+  <content contentuid="ha4157baagc891g225eg229eg230914f05ab2" version="6">Сейчас действие не может быть выполнено.</content>
+  <content contentuid="h193ebf76g645bg2c63g70edg709f4f628936" version="3">Ремесленное прошлое</content>
+  <content contentuid="h295fcdf4g2c96g7b94gab98g2777093c0f21" version="5">Опыт , полученный в Гильдии ремесленников, позволяет вам чувствовать себя более уверенно при улучшении снаряжения, добавляя &lt;LSTag Tooltip="Advantage"&gt;Преимущество&lt;/LSTag&gt; при проверках.</content>
+  <content contentuid="h2b856076gf6b3gc9e6g5a10g2c3fc101a22b" version="3">Повреждённое оружие 2</content>
+  <content contentuid="hdd165670g810bg5977gad6fgea177bb1590f" version="2">Налагает на оружие штраф к атаке [1], штраф к урону [2].</content>
+  <content contentuid="h5aef595eg4165g4fe3ga35egc36e35819e22" version="3">Повреждённое оружие 3</content>
+  <content contentuid="h54975070g9d6agf022g7cd4gd37b35f73af2" version="2">Налагает на оружие штраф к атаке [1], штраф к урону [2].</content>
+  <content contentuid="h99af4304g7b2dg3f19gbc37g924b069081eb" version="3">Испорченное оружие</content>
+  <content contentuid="h247467c1g12a9g606dgce4agf7d1cc560a41" version="3">Оружие в основной руке слишком повреждено, его уже нельзя восстановить.</content>
+  <content contentuid="h6468f5e2ge3dag5311g4f30gfd5443793170" version="5">KELABLACKSMITH</content>
+  <content contentuid="h67d07222g6f02g1532g3a7cg43750267f4c5" version="5">KELABLACKSMITH tooltip</content>
+  <content contentuid="ha834709bg70c6g4b6ag6813g59a14b5e101c" version="3">Владение оружием</content>
+  <content contentuid="h39f6c6a1ga920g2d1egc966g61157cd9cf7c" version="3">Владение оружием позволяет вам с большей уверенностью работать над его улучшением: оно дает бонус [1] при проверке навыков и позволяет улучшить оружие до более высокого уровня, если вы пройдете дополнительную проверку ловкости рук.</content>
+  <content contentuid="ha4e306edg5c95gd3a8g8830g50a7bb2aa644" version="13">Кузнечный сундук</content>
+  <content contentuid="h5e1ecb1dg222cgf21fgaf72g63ebfc80d40c" version="13">Старый, потертый сундук, который идеально подходит для хранения различных инструментов и материалов для крафта.</content>
+  <content contentuid="h828112e8gd487g347cg3ab6g7fb6f4d82fe5" version="11" />
+  <content contentuid="hecca53b9g8ea0g5875ge58dge60917d1068b" version="11">Автоматически собирает соответствующие предметы, попадающие в ваш инвентарь.</content>
+  <content contentuid="h4d2b55f3g4a98gbbc7gecddg6b488c42afa7" version="1">KELABLACKSMITHAPPRENTICE</content>
+  <content contentuid="h40cb5ffbg23b5g8f12g44bfgc4ed3ed12fe5" version="1">KELABLACKSMITHAPPRENTICE tooltip</content>
+  <content contentuid="h0586d512gc8a6gd192g1f5agc6d90d2d3c01" version="3">Ученик кузнеца</content>
+  <content contentuid="h412aba59ga93fgd247g5998g08bc9510ecbf" version="6">Получает доступ к улучшению оружия в кузницах и на верстаках, но уровень улучшения ограничен минимальным. &lt;br&gt;Создание нового снаряжения доступны только кузнецу и, с ограничениями, ремесленнику или эльфийским рассам.</content>
+  <content contentuid="h4369c821gf62bg99fbgc6feg183671485dd7" version="4">Ученик кузнеца</content>
+  <content contentuid="h1a8cf37dga2b7g8f93g748dgef4dcf8774d1" version="4">Вы получили доступ к улучшению оружия в кузницах и на верстаках, но уровень улучшения ограничен минимальным. &lt;br&gt;Создание нового снаряжения доступны только кузнецу и, с ограничениями, ремесленнику или эльфийским рассам.</content>
+  <content contentuid="h556bd450ga0d7g5642g6373gcdfbe4796bd0" version="1">KELABLACKSMITHLOOT</content>
+  <content contentuid="hac75bd97g3095g8898g2232gbc5b97db9b3e" version="1">KELABLACKSMITHLOOT tooltip</content>
+  <content contentuid="h3e3c7493g124dgae22g4d2bg6c9d7dfe1543" version="10">Страницы этой книги исписаны крупным, неряшливым почерком.</content>
+  <content contentuid="h6013b269g85feg2d30gec1eg3937229ab433" version="2">KELA_ANVIL_AURA</content>
+  <content contentuid="he814f56egce09gabbegbdb6g88d463de5db8" version="2">KELA_ANVIL_AURA_ACTIVE</content>
+  <content contentuid="ha16ca541g2922g8755g73ffg9bfc840a2117" version="2">KELA_WORKBENCH_AURA</content>
+  <content contentuid="hb3b0219eg6740gcb52gcf4agc5efdd294949" version="2">KELA_WORKBENCH_AURA_ACTIVE</content>
+  <content contentuid="h7c1a4b1agca7eg573bgfb50g510989ee91a3" version="2">KELA_WEAPON_UPGRADED</content>
+  <content contentuid="h6dba520bg4495g1325g60b9g0780dca7b500" version="2">KELATOOLNEEDFAKE</content>
+  <content contentuid="h91d2ac0cg267ag8d0agb745g70ed7b080f59" version="2">KELATOOLNEEDFAKE tooltip</content>
+  <content contentuid="h4ed60d8cg6293ge685g797age29444f8d39a" version="1">KELA_CRAFT_UPGRADE_MOD</content>
+  <content contentuid="ha9de6f01g19eeg9558g30eag0e1293edd09a" version="2">KELA_CRAFT_CREATION_MOD_1</content>
+  <content contentuid="h2e259001g92eagf32cgd7adgf70798feaaba" version="1">KELA_WHETSTONE_AURA</content>
+  <content contentuid="h52c9af49ge0cfgd74ag9c1fgc0efdb0a6433" version="1">KELA_WHETSTONE_AURA_ACTIVE</content>
+  <content contentuid="he28e181bge352ge018ga470g15e8622d9461" version="2">KELAWEAPONUPGRADETOOL</content>
+  <content contentuid="h31378cf5gf99cg25bega389ge4e5d128dbf7" version="2">KELAWEAPONUPGRADETOOL</content>
+  <content contentuid="ha2952b9fg7f4cg4167g36f5g16bd1e833280" version="1">KELA_UPGRADETOOL_INVENTORY</content>
+  <content contentuid="h79b6c4f5g9c83ge3b9g5801gb1da3b9eacda" version="3">Концентрация на работе</content>
+  <content contentuid="hb2452c40ge4b5g3e94g575dge7ea90bf6712" version="3">Эликсир несравненного сосредоточения позволяет вам сосредоточиться на работе и добавляет &lt;LSTag Tooltip="Advantage"&gt;Преимущество&lt;/LSTag&gt; к ремесленным проверкам.</content>
+  <content contentuid="h63c76128g0344g4fbfg81ddg8b6204f6b5c8" version="5">Верстак</content>
+  <content contentuid="h1fc60a24geaecg4a09gb731g94b73338aeb0" version="5">Верстак</content>
+  <content contentuid="hca4ada95gf7c5g43a3g9094g4ddf13996b20" version="7">Верстак</content>
+  <content contentuid="h53781230geaf0g4fbbg990bg28fde29791fe" version="6">Верстак</content>
+  <content contentuid="h8d1aafedgbb29g492aga917g3ba3a8f878a0" version="6">Этот крепкий деревянный верстак весь покрыт пятнами и зарубками.</content>
+  <content contentuid="h7ea0f425g1ac7g4a40g9e00ge8c0afb02dbb" version="5">Верстак</content>
+  <content contentuid="hf9a74a2fg6e4dg4717gae5cg4b295c28dfe0" version="10">Наковальня</content>
+  <content contentuid="h7e21f5a0g4669g09d4g9715g3c56ff440683" version="3">KELAWEAPONCREATETOOL</content>
+  <content contentuid="h0bd3d97bgb63eg583ag9de2ga80d36c42326" version="3">KELAWEAPONCREATETOOL</content>
+  <content contentuid="h9c1eb0d8g8193g92bcg171dgad8234de53e0" version="2">KELADEBUG</content>
+  <content contentuid="h5bdf2bbeg81fcg4515g81aeg1f107c127f66" version="2">KELADEBUG</content>
+  <content contentuid="h41e453edg4db9g8380g7cfdg343f0571ad30" version="3">KELAMESSAGE</content>
+  <content contentuid="h6482ff79gf820g9811g25e9gce52428895a2" version="3">KELAMESSAGE</content>
+  <content contentuid="hab5806abg83f1g826bg2d93gd2504c92779b" version="1">KELA_SMELTINGFORGE_AURA</content>
+  <content contentuid="h551b82acg90fegd5b5g4406ge7de40045391" version="1">KELA_SMELTINGFORGE_AURA_STAGE_1</content>
+  <content contentuid="h73a46f37gb404gf74fg00ccg18bc21e872ad" version="3">Горячий жар</content>
+  <content contentuid="hd775f5f8g3906g6045g10e2g6a74bab787dd" version="3">Ковка</content>
+  <content contentuid="h2cf52989g719eg8685g87d8g81c64b48e60c" version="3">Улучшение</content>
+  <content contentuid="h43f84387g404bgab75g890agc373d51baf19" version="3">Пока горит плавильная печь, оружие можно улучшать или выковывать на наковальне, в зависимости от силы огня.</content>
+  <content contentuid="hcc50b4fag5ba5gfd41gfb4ag0f6b0dded0ee" version="2">Печь пылает жарким огнём, и кузница, если наковальня цела, готова к работе.</content>
+  <content contentuid="h85000710ge5f0gf728g622cg8008e6b3a3e4" version="2">Нет умения</content>
+  <content contentuid="h054ec240g915dg30c6g8429gd6cb219345b4" version="2">Персонаж не имеет знаний о работе с наковальней. &lt;br&gt;Такие знания могут иметь кузнец или его ученик, а также член Гильдии Ремесленников.</content>
+  <content contentuid="hc860596bgfd3fg2eb8gf651g2ea20ad366d0" version="2">Персонаж не имеет знаний о работе с верстаком. &lt;br&gt;Такие знания могут иметь кузнец или его ученик, представитель эльфийской рассы, а также член Гильдии Ремесленников.</content>
+  <content contentuid="hd242be78gf5cag5cebg5997g76c9ba68c752" version="4">В плавильной печи нет огня</content>
+  <content contentuid="h31c01f82g3f0egd808ga803g715427da1091" version="3">Для работы в кузне необходимо разжечь плавильную печь.</content>
+  <content contentuid="hea93aa5eg3d8eg822eg353cgab6eafbc73d3" version="4">Слишком жаркий огонь</content>
+  <content contentuid="h88370da4g6bc3g191fga4cdgc24e3c60e309" version="2">Жаркий огонь нужен для ковки, а для улучшения достаточного обычного огня.</content>
+  <content contentuid="hbf87fc15g5e73g4c34gf735gc30f45d0f045" version="3">Режим создания</content>
+  <content contentuid="h5cf02511g175fg03a6g6d26gbfbc221cb60c" version="3">Позволяет создавать новые предметы на основе изученных чертежей.</content>
+  <content contentuid="h24eceac6gd31ega6b5gf250gcf41e94b7c46" version="11">Наковальня</content>
+  <content contentuid="haea32f2cg26fcg8520g8315gb52257fa59fd" version="14">Чертёж: Саперный набор</content>
+  <content contentuid="h48ac2b31g960ag7418g3200g10bbe4acc083" version="14">Этот чертёж не изучен.</content>
+  <content contentuid="hbfef80e1g20f0g0e8cg586bg358ba9e8f0be" version="25">Верстак</content>
+  <content contentuid="h006b64f6g52a7ga96fge065g240a01caa6ce" version="1">KELABLUEPRINT</content>
+  <content contentuid="he217b87agb8fdge437g4053gb54141d1f49b" version="1">KELABLUEPRINT</content>
+  <content contentuid="hb115d6feg4a27gb5eeg9146gd1c4b25aee12" version="84">&lt;br&gt;&lt;br&gt;Сапёрный набор&lt;br&gt;&lt;i&gt;Нужная штука, для её изготовления понадобится добавить щипцы и ножницы в воровские инструменты, а остальной там и так есть (Верстак).&lt;/i&gt;</content>
+  <content contentuid="hf6500141g6b2cgd69fg8c81g3f227794eb3c" version="6">Записная книжка кузнеца</content>
+  <content contentuid="h2b88ef56g243bgf170ge51cg1a749d8598fa" version="6">Эти заметки просто необходимы любому искателю приключений, интересующемуся крафтом.</content>
+  <content contentuid="h524c1fa2g73cagcaaag9a45g01f72b949d03" version="74">&lt;b&gt;Записки ученика кузнеца&lt;/b&gt; &lt;br&gt;&lt;br&gt;Неряшливые записи какого-то ученика об азах работы с наковальней и верстаком, а также об обращении с лёгкими молотами.&lt;br&gt;Стоит попробовать улучшить какое-нибудь оружие. &lt;br&gt;&lt;br&gt;&lt;b&gt;Улучшение оружия&lt;/b&gt; &lt;br&gt;Чтобы улучшить оружие, возьмите его в основную руку и используйте инструмент. &lt;br&gt;Если ни у кого из ваших союзников нет масла и вы не боитесь испортить оружие, используйте инструмент дважды, игнорируя предупреждение. &lt;br&gt;&lt;br&gt;&lt;b&gt;Наковальня&lt;/b&gt; - Улучшение ударного оружие (кузнец, ученик кузнеца, гильдиец). &lt;br&gt;&lt;b&gt;Точильный камень&lt;/b&gt; - Улучшение колющего и рубящего оружия (без ограничений). &lt;br&gt;&lt;b&gt;Верстак&lt;/b&gt; - Улучшение дальнобойного и деревянного оружия (кузнец, ученик кузнеца, гильдиец, представитель эльфийской расы). &lt;br&gt;&lt;br&gt;&lt;i&gt;* Улучшение на наковальне доступно только рядом с плавильней, в которой горит обычный огонь.&lt;br&gt;* Масло не требуется, но рекомендуется. Без него оружие можно улучшить только до минимального уровня и с высоким уровнем проверки навыков.&lt;br&gt;* На сложность проверок и уровень улучшения влияет использование масла, наличие черты Кузнец или гильдейского прошлого, уровень игрока, навыки владения оружием и т. д.&lt;br&gt;* Представители эльфийских рас могут улучшать на верстаке только дальнобойное оружие.&lt;/i&gt;</content>
+  <content contentuid="hdb2705d7gcf26gd134g5a23gd46b3dc654f1" version="1">KELA_CRAFT_CREATION_MOD</content>
+  <content contentuid="h02f31ab3g0f7bgd5bcg552cg921cb4047b9f" version="1">KELA_CRAFT_CREATION_MOD_2</content>
+  <content contentuid="h44082bf8g3236ge59eg06eag0591dbcff6a5" version="1">KELA_CRAFT_CREATION_MOD_3</content>
+  <content contentuid="h16f1d63bgf741g6089g2d8fg4a0f0a80830d" version="1">KELA_CRAFT_CREATION_MOD_4</content>
+  <content contentuid="h81fc245bgdb94g0fe7g10aag429e788d7544" version="3">Создание: 1 слот</content>
+  <content contentuid="hab89cd1fg277fgb3d4ge627g0798577a940a" version="3">Для чертежей с 1 ингредиентом.</content>
+  <content contentuid="hbd570865gbb35g2c0bg1205g8600d2e29be6" version="3">Создание: 2 слота</content>
+  <content contentuid="h9341ea05g36eeg11e4gedbbg7c07dfde761b" version="3">Создание: 3 слота</content>
+  <content contentuid="h0579ccd4g9117g900fgd0aeg4b49b4da89de" version="3">Создание: 4 слота</content>
+  <content contentuid="h047f6185g47cdgf7a5g978dgc3a7a3f11e13" version="3">Выход</content>
+  <content contentuid="hf30bad62g35f1geaf0g5f70g47ee4f016c86" version="3">Выход из всех режимов создания.</content>
+  <content contentuid="h6c877605g6c4eg4281g9d7bge02765db056a" version="4">Клещи кузнеца</content>
+  <content contentuid="h79333e24g0927g4925g8f1dg085a0c7dd954" version="4">Постоянный контакт с огнем и маслом придал поверхности щипцов медный оттенок.</content>
+  <content contentuid="h16018409g1b46g4f9dg8938g7f33b21c0f4d" version="4">Клещи кузнеца</content>
+  <content contentuid="h55a68978g04e8g4c9agb82bg638be04ac769" version="4">Постоянный контакт с огнем и маслом придал поверхности щипцов медный оттенок.</content>
+  <content contentuid="hc3a810c2g4b42g4a0ag9a9dgf5bf5aa677c1" version="4">Клещи кузнеца</content>
+  <content contentuid="h1547585ag30c8g47c3gbf45g09d441200cb3" version="4">Постоянный контакт с огнем и маслом придал поверхности щипцов медный оттенок.</content>
+  <content contentuid="h258098a6g6c81g4a44gbc12gd36c46a28716" version="4">Клещи кузнеца</content>
+  <content contentuid="h0b3095efgbf80g4900ga232g7fc7b8350a3f" version="4">Постоянный контакт с огнем и маслом придал поверхности щипцов медный оттенок.</content>
+  <content contentuid="hacf6e0e2gf296g4878gaae7g680b7f02d8f2" version="4">Клещи кузнеца</content>
+  <content contentuid="h25a0acf7g8b37g4753g818dg47ec5b3c7a01" version="4">Постоянный контакт с огнем и маслом придал поверхности щипцов медный оттенок.</content>
+  <content contentuid="ha464b82cg7bc2g47abg879dg4e85f3521d65" version="4">Ножницы брадобрея</content>
+  <content contentuid="hf0480f88gc6dag4067gad2eg9ed501afe5ae" version="4">Лезвия затупились за долгие годы использования.</content>
+  <content contentuid="h60766a17gab54g421bg89e4g75878a88d345" version="4">Ножницы</content>
+  <content contentuid="h91ef3f1cg790ag433dga57egb741fcb2e885" version="5">После долгих лет использования лезвия затупились.</content>
+  <content contentuid="h834c84dbg011fg4b16g8c12g05c4391cc3f4" version="4">Метла</content>
+  <content contentuid="h30d4745agb356g4d3fg9049gf8925b2d0fee" version="4">Эта метла совсем стерлась.</content>
+  <content contentuid="hdb464a72g1033g626eg89fcgd084a090de81" version="4">Чертёж: Простой лук</content>
+  <content contentuid="h7fad8b6fg6ba0gec85gfac7g62337a6a7ec3" version="4">Этот чертёж не изучен.</content>
+  <content contentuid="h5004b9d9g0279gcdf0g7deag780a30147bde" version="61">&lt;br&gt;&lt;br&gt;Лук&lt;br&gt;&lt;i&gt;Просто возьмите деревянную палку, например метлу, сплетите из верёвки тетиву, и простой лук готов (Верстак).&lt;/i&gt;</content>
+  <content contentuid="h33564d65g8c54ga085g822fg4b9ba9fc70ce" version="59">&lt;br&gt;&lt;br&gt;&lt;b&gt;Алхимия&lt;/b&gt; ...</content>
+  <content contentuid="h3338266aga332g2e4fg68c6g4688b73111ae" version="59">&lt;b&gt;Записная книжка кузнеца&lt;/b&gt;&lt;br&gt;&lt;i&gt;Для записей об оружейном деле и о найденных во время путешествий чертежах.&lt;/i&gt;</content>
+  <content contentuid="he0f6c34dg360ag21f4gb020gf172da910b7e" version="59">&lt;br&gt;&lt;br&gt;&lt;b&gt;Эльфийские корни&lt;/b&gt;&lt;br&gt;Ваше эльфийское наследие позволяет вам использовать верстаки для создания, переделки и улучшения оружия дальнего боя, причем делать это легче и лучше, чем другие.</content>
+  <content contentuid="h0e0ae117ge893gc100g4af4g9ca0a398240c" version="59">&lt;br&gt;&lt;br&gt;&lt;b&gt;Гильдейское прошлое&lt;/b&gt;&lt;br&gt;Опыт, полученный в Гильдии Ремесленников, позволяет использовать верстак для улучшения оружия и создания/переделки снаряжения, при этом проверки проходятся легче, а снаряжение получается качественнее, чем у других.</content>
+  <content contentuid="hdcde75a3g30e0g7d1eg3ab8g36e76c410ae6" version="58">&lt;br&gt;&lt;br&gt;&lt;b&gt;Ученик кузнеца&lt;/b&gt;&lt;br&gt;Из записок ученика кузнеца вы узнали не так уж много, но теперь вы можете улучшать оружие на верстаке и на наковальне, по крайней мере, до минимального уровня.</content>
+  <content contentuid="h16affc66g78a7g75a5g447fg6ae27fe63180" version="58">&lt;br&gt;&lt;br&gt;&lt;b&gt;Кузнец&lt;/b&gt;&lt;br&gt;Вы достигли определенных высот в оружейном деле и можете улучшать оружие до уровня, недоступного другим, а также создавать или переделывать снаряжение в Кузнице. И с каждым вторым новым уровнем - ваше мастерство будет расти!</content>
+  <content contentuid="h1a9b9c75g6346gc6feg5832gedac93456e30" version="56">&lt;br&gt;&lt;br&gt;&lt;b&gt;Нет ремесленных навыков&lt;/b&gt;&lt;br&gt;Отсутствие навыков крафта не позволяет вам использовать верстаки и кузницы, а также затачивать оружие на точильных камнях выше минимального уровня. Но в этой книге будут записаны новые чертежи и информация о доступном крафте... &lt;br&gt;Сохраните книгу на будущее, возможно вы в будущем, или кто-то из вашей команды, получите такие навыки.</content>
+  <content contentuid="heca15b8bg92adg6e96g4fc4gbbbeffe9b487" version="54">&lt;br&gt;&lt;br&gt;&lt;b&gt;Чертежи&lt;/b&gt;&lt;br&gt;------------------------------------------------------------------------------&lt;br&gt;* &lt;i&gt;чертежи доступны всей команде&lt;/i&gt;</content>
+  <content contentuid="h63e6f01dg5571g8a23gd08dg812f62f9b7b2" version="4">После прочтения чертежа создание соответствующего предмета станет доступным для любого члена команды с подходящими навыками. &lt;br&gt;Информация о чертеже также записывается в записную книгу кузнеца.</content>
+  <content contentuid="h61576878gbf11gf13cg9b07g18ac942fa20e" version="2">После прочтения чертежа создание соответствующего предмета станет доступным для любого члена команды с подходящими навыками. &lt;br&gt;Информация о чертеже также записывается в записную книгу кузнеца.</content>
+  <content contentuid="h7dfb0160gc921g3ee0gfaa3g1b63ff5e041a" version="2">Чертёж изучен</content>
+  <content contentuid="h3f1e8453gb3bfgf2e7g951agb68fb7d7057d" version="2">Вы изучили чертёж и записали необходимую информацию в Записную книжку кузнеца.</content>
+  <content contentuid="h07331bcagacf5g50abga823g3730dcb31dd0" version="2">Только кузнец</content>
+  <content contentuid="h110b592cgb216g3dcfg19f4g30362cc627e0" version="2">Ковка доступна только персонажам с чертой Кузнец.</content>
+  <content contentuid="hea9e1e27g965cgbe4fgf6dag064f0ab18429" version="4">Слишком слабый огонь</content>
+  <content contentuid="h8768bf52ga426g2cbcgb4b9g986c7403f67a" version="2">Обычный огонь подходит для улучшения, а для ковки нужен жаркий огонь.</content>
+  <content contentuid="hecd4ee12gb7bfg3280ga0cfg87fad2d19ff5" version="2">Неизвестный чертёж</content>
+  <content contentuid="hfc4b8c7dgd35fgbe33g1d3cgd0367494de2e" version="2">Похоже, что ингредиенты подходят друг к другу, но чертёж для их соединения вам не известен.</content>
+  <content contentuid="h885090eagac03g143bga91dg9952f658313e" version="2">Требования не выполнены</content>
+  <content contentuid="h402cf9a5gc793g300dgdb7fg59d424944663" version="2">Не выполнены требования для создания. Проверьте, что написано в чертеже.</content>
+  <content contentuid="h5917373dg6d04g55a7ga848g57ddc9fc6853" version="28">&lt;b&gt;Книга кузнеца&lt;/b&gt;&lt;br&gt;&lt;br&gt;Вы выбрали почетный путь оружейника, который позволит вам обеспечить себя и свою команду лучшим оружием и доспехами, которые только можно изготовить. Вы также приобретаете мастерство владения легкими и боевыми молотами. &lt;br&gt;&lt;br&gt;&lt;b&gt;Улучшение оружия&lt;/b&gt; &lt;br&gt;Чтобы улучшить оружие, возьмите его в основную руку и используйте инструмент. &lt;br&gt;Если ни у кого из ваших союзников нет масла и вы не боитесь испортить оружие, используйте инструмент дважды, игнорируя предупреждение. &lt;br&gt;&lt;br&gt;&lt;b&gt;Наковальня&lt;/b&gt; - Улучшение ударного оружие (кузнец, ученик кузнеца, гильдиец). &lt;br&gt;&lt;b&gt;Точильный камень&lt;/b&gt; - Улучшение колющего и рубящего оружия (без ограничений). &lt;br&gt;&lt;b&gt;Верстак&lt;/b&gt; - Улучшение дальнобойного и деревянного оружия (кузнец, ученик кузнеца, гильдиец, представитель эльфийской расы). &lt;br&gt;&lt;br&gt;&lt;i&gt;* Улучшение на наковальне доступно только рядом с плавильней, в которой горит обычный огонь.&lt;br&gt;* Масло не требуется, но рекомендуется. Без него оружие можно улучшить только до минимального уровня и с высоким уровнем проверки навыков.&lt;br&gt;* На сложность проверок и уровень улучшения влияет использование масла, наличие черты Кузнец или гильдейского прошлого, уровень игрока, навыки владения оружием и т. д.&lt;br&gt;* Представители эльфийских рас могут улучшать на верстаке только дальнобойное оружие.&lt;/i&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;Создание снаряжения&lt;/b&gt;&lt;br&gt;Чтобы создать снаряжение, необходимо найти и прочитать чертеж, который будет храниться в Записной книжке кузнеца (можно найти в кузницах).&lt;br&gt;После этого можно с помощью кузнечного заклинания войти в режим создания, выбрав необходимое количество слотов, и использовать наковальню (только кузнец) или верстак (кузнец, ученик кузнеца, гильдиец, представитель эльфийской расы).&lt;br&gt;&lt;br&gt;&lt;i&gt;* Ковка на наковальне доступна только возле плавильни, в которой горит жаркий огонь.&lt;br&gt;* В чертежах также указаны требования к инструменту, на котором он может быть использован, навыки или умения и другие требования.&lt;/i&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;Переделка снаряжения&lt;/b&gt;&lt;br&gt;Переделка снаряжения доступна кузнецу, представителю эльфийских рас (только дальнобойное оружие), гильдейцу.&lt;br&gt;Переделка осуществляется с помощью Сундука переделки. Поместите в него шаблонный предмет, ингредиенты и используйте подходящий инструмент поблизости: верстак или наковальню, в зависимости от шаблона. &lt;br&gt;Обычно на верстаке переделывают легкую броню, дальнобойное, деревянное и колющее оружие, а на наковальне — среднюю и тяжелую броню, рубящее и ударное оружие.</content>
+  <content contentuid="h1fdcf3b8g102ag168ag0bf2g47994bcc3ab1" version="5">Книга о кузнечном ремесле</content>
+  <content contentuid="hb59ac20dgb10ag86bagd970g84e27331a700" version="5">Книга написана уверенным почерком мастера, знающего себе цену.</content>
+  <content contentuid="h362d8b86g8226gf184gca00gbcc5d7e25c83" version="2">Эльфийские корни</content>
+  <content contentuid="hdd47fdc7gd08bg9272gd281g359ba3f28807" version="2">Эльфийские корни позволяет вам с большей уверенностью заниматься улучшением оружия дальнего боя.</content>
+  <content contentuid="h5d9e1b81g66a5g5fefg40a4g33e7608797df" version="3">Эльфийское качество</content>
+  <content contentuid="hd4e90e3bgacd6g89d6g4554gb52fed1af012" version="4">Это оружие было улучшено представителем эльфийской расы, что даёт ему бонус [1] к &lt;LSTag Tooltip="AttackRoll"&gt;броскам атаки&lt;/LSTag&gt;.</content>
+  <content contentuid="he4e3ea31g2c12g3578g7060gc7fac037f783" version="1">KELABLACKSMITHAPPRENTICENOTES</content>
+  <content contentuid="h697cbfdcg74c5g725dg0aefgc1c5725d082e" version="1">KELABLACKSMITHAPPRENTICENOTES</content>
+  <content contentuid="h0f2588e5gb6b3g8ae9gdf48g63d0b59132bb" version="3">Суссурная кузница</content>
+  <content contentuid="h0b7b9625g8e89g8d41g25d7gd8b10951b826" version="4">KELA_SMELTINGFORGE_AURA_SUSSUR_TOOL</content>
+  <content contentuid="hafb84da9gcda6g48f3g4d25g85782589594d" version="3">Снаряжение, созданное в суссурной кузнице получает дополнительные свойства.</content>
+  <content contentuid="h73ee3b04g3acdga590g6422gff19a84d28b8" version="3">Эта броня была создана опытным гильдейским мастером, что даёт ей бонус к &lt;LSTag Tooltip="ArmorClass"&gt;классу брони&lt;/LSTag&gt; [1].</content>
+  <content contentuid="hdc80a129gd828g1c34g1753g926628fc88c2" version="4">Суссурное оружие</content>
+  <content contentuid="h1e0e371ag39a7ge93ag9f9agd59c2cdbe04c" version="2">Это оружие было создано в суссурной кузнице, что придало ему антимагические свойства суссура.</content>
+  <content contentuid="h3fd8aa4fgb170g2fe2g30e1g3b45b069673c" version="2">Эта броня была создана в суссурной кузнице, что придало ей антимагические свойства суссура.</content>
+  <content contentuid="h64431e48g9cbagead4geae1gedb19af05482" version="3">Суссурное оружие</content>
+  <content contentuid="hc537a5f5g1e9ag8cc0g7aeagcd5d93be554b" version="3">В случае попадания удара по врагу есть вероятность наложения на него &lt;LSTag Type="Status" Tooltip="SILENCED"&gt;немоты&lt;/LSTag&gt;. </content>
+  <content contentuid="h289f4dc6gfec6g4f03g93f6g6708da0aeb1e" version="9">Уголь</content>
+  <content contentuid="h4cf5de88gfc8eg4050ga53bg4b4af8c76b1f" version="10">Необходимый ингредиент в любом наборе.</content>
+  <content contentuid="hfda51287g02a4g408bga9c4g38db6ef31545" version="8">Уголь</content>
+  <content contentuid="hd6f9ac6bg4439g45b5gd0d6g15340f615ca8" version="12">&lt;br&gt;&lt;br&gt;&lt;b&gt;Суссурная кузница&lt;/b&gt;&lt;br&gt;После создания оружейного шедевра вы узнали секрет суссурной ковки, и пока в плавильне горит суссурный огонь, антимагические свойства добавляются к созданному снаряжению. На одном суссурном жаре можно создать до 3 предметов, но, если у вас есть дополнительная кора дерева Суссур, его можно разжечь снова.</content>
+  <content contentuid="hb95f2d15gbabag3b85g8bc0g2b3bf2cbaf6c" version="3">Переделка</content>
+  <content contentuid="h1996b916g0991g585ag842cg373ae583596d" version="3">Этот режим позволяет вам восстанавливать/переделывать оружие и доспехи, в том числе сломанные или ржавые.</content>
+  <content contentuid="h5af7fd0dg0b9dg13ddgbaecg52b0dd84866a" version="4">Не получилось</content>
+  <content contentuid="ha2898bd7gf302gc6b1g5959g7aa634b702e6" version="3">Что-то пошло не так при переделке предмета. Проверьте, что шаблонный предмет и ингредиенты находятся в сундуке, а выбранный персонаж способен к переделке такого предмета.</content>
+  <content contentuid="hdf235fe2g8f0dg54e3g65cbgaca2daf73c53" version="4">Нет шаблонного предмета</content>
+  <content contentuid="h231d1938g2d36g6e02g651ag551d7b01b91a" version="3">В сундуке переделки нет известного шаблонного предмета.</content>
+  <content contentuid="h7cc1436ag03ebg2c99g3deagec3790b035e7" version="4">Не получилось (эльфийская раса)</content>
+  <content contentuid="h109dd3bdgb8a0g1c98g669bg9cf5fff8666b" version="3">Персонаж эльфийской рассы, но не Кузнец или Ремесленник, может создавать или переделывать только дальнобойное оружие.</content>
+  <content contentuid="h09b36e57gaceagfd2bgf225g86f8513d26b5" version="4">Отсутствуют ингредиенты</content>
+  <content contentuid="hf85d8b2ag0d26g2266ge9bcgbc8697e1ad50" version="4">Проверьте сундук переделки на наличие ингредиентов.</content>
+  <content contentuid="hb430cf3eg3ad9g32b4g4051gc3ac49b77c26" version="3">Сундук переделки пуст</content>
+  <content contentuid="hcd9429d7g1d9bg1803gdf00g44e6a9a1134c" version="3">Проверьте сундук переделки на наличие шаблонного предмета и ингредиентов.</content>
+  <content contentuid="h0ca651ceg2494g660ag42a0g4fe52c8365ca" version="2">Режим создания</content>
+  <content contentuid="h3779f164ge4begc0b2g22c6gba47a5bc6f5b" version="2">Позволяет создавать новые предметы на основе изученных чертежей.</content>
+  <content contentuid="he5d66a10g4d04gf5c6g99c5g4969676af67d" version="2">Создание: 1 слот</content>
+  <content contentuid="h54d4bfb7g5a34gfc3dgb8c6g4035b343a30f" version="2">Для чертежей с 1 ингредиентом.</content>
+  <content contentuid="h565f395cg5257gaa74gadcbg7092ac2475e3" version="2">Создание: 2 слота</content>
+  <content contentuid="hda622b30gf03ag9000g99aagb98c061f7e5a" version="2">Для чертежей с 2 ингредиентами.</content>
+  <content contentuid="h211fba02gbbeeg96cagcbfdgd81879b96706" version="2">Создание: 3 слота</content>
+  <content contentuid="hf4baf730g9390g3130g9d98gf822df538664" version="2">Для чертежей с 3 ингредиентами.</content>
+  <content contentuid="hd9746de2g3e7fg24eega0b8g010b51f104a3" version="2">Создание: 4 слота</content>
+  <content contentuid="h5c1b7348g4214g204bgff71gac179c5bfccb" version="2">Для чертежей с 4 ингредиентами.</content>
+  <content contentuid="h9b36d73cg5990ge82bgc39cg9653eeead9ab" version="2">Переделка</content>
+  <content contentuid="h7d90c08dg5991g9ef3g02d5g7d985ddf4f61" version="2">Этот режим позволяет вам восстанавливать/переделывать оружие и доспехи, в том числе сломанные или ржавые.</content>
+  <content contentuid="he39294e7gacf5g37f6gb97fgc2a91fa3c636" version="2">После изучения чертежа, выберите режим создания и используйте наковальню или верстак, в зависимости от указаний в чертеже.</content>
+  <content contentuid="h09dca5e0gd593g1949g5f75g68f70e959ee4" version="2">Для чертежей с 2 ингредиентами.</content>
+  <content contentuid="h67ffaf59ge081gc39egd18agd787c244a89c" version="2">Для чертежей с 3 ингредиентами.</content>
+  <content contentuid="h31da95a9g58bcg19bag7f4agab45d6837f9b" version="2">Для чертежей с 4 ингредиентами.</content>
+  <content contentuid="h0c1fdb0cgc63dg418ag22c0g19e14275d6f5" version="2">Поместите шаблон и ингредиенты в сундук для переделки и используйте наковальню или верстак, в зависимости от шаблона.</content>
+  <content contentuid="hbdb5dc3fgdf48gb1aegeba7g3d1d086a6c97" version="7">Для заточки оружия возьмите его в основную руку и используйте точильное колесо. &lt;br&gt;Если ни у кого из вашей команды нет масла, используйте точильное колесо дважды, игнорируя предупреждение, но испытание заточки без масла будет сложнее.</content>
+  <content contentuid="h432ec992gc4f1g11b4g597agf6a036bfdbee" version="6">Это точильное колесо выглядит старым и изношенным, но, похоже, оно всё еще годится для заточки режущего и колющего оружия.</content>
+  <content contentuid="h09912466g42edgc11egc674g03020c1cd4e8" version="2">Чтобы улучшить оружие, возьмите его в основную руку и используйте наковальню. &lt;br&gt;Если ни у кого из ваших союзников нет масла и вы не боитесь испортить оружие, используйте наковальню дважды, игнорируя предупреждение. &lt;br&gt;&lt;br&gt;Чтобы выковать новое снаряжение войдите в нужный режим создания и используйте наковальню.</content>
+  <content contentuid="h1514e2abg0f70gc97fga73ag9e8c2c50b514" version="2">Тяжелая и надежная наковальня, вся в следах тяжелых ударов кузнеца. Если поблизости есть работающая печь, то эту наковальню еще можно использовать для улучшения или ковки нового снаряжения.</content>
+  <content contentuid="h69369aecgad81g192fg2979g5a10eb800ecf" version="3">Чтобы улучшить оружие, возьмите его в основную руку и используйте наковальню. &lt;br&gt;Если ни у кого из ваших союзников нет масла и вы не боитесь испортить оружие, используйте наковальню дважды, игнорируя предупреждение. &lt;br&gt;&lt;br&gt;Чтобы выковать новое снаряжение войдите в нужный режим создания и используйте наковальню.</content>
+  <content contentuid="hec2347fag4bf1g0b18g51ffg9d65c9209799" version="3">Тяжелая и надежная наковальня, вся в следах тяжелых ударов кузнеца. Если поблизости есть работающая печь, то эту наковальню еще можно использовать для улучшения или ковки нового снаряжения.</content>
+  <content contentuid="h66b246b7ge631gcd5ag4922gc9cae3b9de21" version="3">Чтобы улучшить оружие, возьмите его в основную руку и используйте верстак. &lt;br&gt;Если ни у кого из ваших союзников нет масла и вы не боитесь испортить оружие, используйте верстак дважды, игнорируя предупреждение. &lt;br&gt;&lt;br&gt;Чтобы создать новое снаряжение войдите в нужный режим создания и используйте верстак.</content>
+  <content contentuid="h6e770dbcg1749g26b5g968bg66eefc1327cf" version="3">Сундук переделки</content>
+  <content contentuid="h4d0c678cg5e7cg98aag7e39g77d6309bde73" version="3">Сундук для переделки используется как вспомогательный инструмент при переделке снаряжения. &lt;br&gt;&lt;br&gt;Использование: &lt;br&gt;Поместите в него шаблонный предмет, ингредиенты и используйте подходящий инструмент поблизости: верстак или наковальню, в зависимости от шаблона. &lt;br&gt;Обычно на верстаке переделывают легкую броню, дальнобойное оружие, деревянное и колющее оружие, а на наковальне — среднюю и тяжелую броню, рубящее и ударное оружие.</content>
+  <content contentuid="hfc94cd11g4d81g8ab4g1789gaf89dd5efcb4" version="2">Для хранения информации о ремесленных способностях персонажей, а также о найденных чертежах и рецептах.</content>
+  <content contentuid="h884acfc1gf2c3g9f9eg4426g77edf809bc1d" version="3">Может использоваться как ингредиент в некоторых кузнечных чертежах.</content>
+  <content contentuid="h37141a6bg8faeg7b20g1917g306815a89a43" version="6">Сундук переделки</content>
+  <content contentuid="h18f8fb56g6c3bgbe6bgd178g8d71d7c0ebc7" version="6">Сундук для переделки используется как вспомогательный инструмент при переделке снаряжения. &lt;br&gt;&lt;br&gt;Использование: &lt;br&gt;Поместите в него шаблонный предмет, ингредиенты и используйте подходящий инструмент поблизости: верстак или наковальню, в зависимости от шаблона. &lt;br&gt;Обычно на верстаке переделывают легкую броню, дальнобойное оружие, деревянное и колющее оружие, а на наковальне — среднюю и тяжелую броню, рубящее и ударное оружие.</content>
+  <content contentuid="h251e0934gf0e6g6fbfg416bg6c1873420649" version="4">Сундук переделки</content>
+  <content contentuid="haa4499d4gf67agc6a1gd6bdgefaa4291d90d" version="4">Сундук для переделки используется как вспомогательный инструмент при переделке снаряжения. &lt;br&gt;&lt;br&gt;Использование: &lt;br&gt;Поместите в него шаблонный предмет, ингредиенты и используйте подходящий инструмент поблизости: верстак или наковальню, в зависимости от шаблона. &lt;br&gt;Обычно на верстаке переделывают легкую броню, дальнобойное оружие, деревянное и колющее оружие, а на наковальне — среднюю и тяжелую броню, рубящее и ударное оружие.</content>
+  <content contentuid="h9e85c753g4625g57dcg665bg6bba0dd53206" version="4">Сундук переделки</content>
+  <content contentuid="h727c7785g5920g40d8g8ba0g25d8c201b048" version="4">Сундук для переделки используется как вспомогательный инструмент при переделке снаряжения. &lt;br&gt;&lt;br&gt;Использование: &lt;br&gt;Поместите в него шаблонный предмет, ингредиенты и используйте подходящий инструмент поблизости: верстак или наковальню, в зависимости от шаблона. &lt;br&gt;Обычно на верстаке переделывают легкую броню, дальнобойное оружие, деревянное и колющее оружие, а на наковальне — среднюю и тяжелую броню, рубящее и ударное оружие.</content>
+  <content contentuid="h7d38fa5cg7d92g657fg31f3g54868c99a746" version="2">Сундук переделки</content>
+  <content contentuid="h24d8d87eg98d1gca7eg6a0dg8062ddfbc577" version="2">Сундук для переделки используется как вспомогательный инструмент при переделке снаряжения. &lt;br&gt;&lt;br&gt;Использование: &lt;br&gt;Поместите в него шаблонный предмет, ингредиенты и используйте подходящий инструмент поблизости: верстак или наковальню, в зависимости от шаблона. &lt;br&gt;Обычно на верстаке переделывают легкую броню, дальнобойное оружие, деревянное и колющее оружие, а на наковальне — среднюю и тяжелую броню, рубящее и ударное оружие.</content>
+  <content contentuid="h83b3c344g026eg06f2g7a09g525ebc28453d" version="4">Сундук переделки</content>
+  <content contentuid="h78c0e1begd449g871cg1a07g69016f5efb67" version="4">Сундук для переделки используется как вспомогательный инструмент при переделке снаряжения. &lt;br&gt;&lt;br&gt;Использование: &lt;br&gt;Поместите в него шаблонный предмет, ингредиенты и используйте подходящий инструмент поблизости: верстак или наковальню, в зависимости от шаблона. &lt;br&gt;Обычно на верстаке переделывают легкую броню, дальнобойное оружие, деревянное и колющее оружие, а на наковальне — среднюю и тяжелую броню, рубящее и ударное оружие.</content>
+  <content contentuid="hf781f0d0g7504g408eg8672g68c2c25d8ca0" version="4">Деревянный щит</content>
+  <content contentuid="h1a61f361g4361g45c8ga8cfgf61d882a8064" version="4">Щит забрызган кровью с обеих сторон.</content>
+  <content contentuid="hd8834ec7gb701g412fg882cg33f725772ad5" version="4">Деревянный щит</content>
+  <content contentuid="h9c41fb07g02f0g456bga10dg7598ad0b12f3" version="4">Этот щит весь покрыт вмятинами и зазубринами, но на его поверхности еще можно различить полустертое изображение цветка.</content>
+  <content contentuid="h84941b29g832cg4812g883fg05e4710c12a0" version="11">На щите – герб давно забытого дворянского дома.</content>
+  <content contentuid="h27034815g3904g49b2g9593g29af0a3db3f7" version="5">Щит</content>
+  <content contentuid="hda92bfeag21cfg4778gb900gb95ac6b783b7" version="5">Поверхность этого крепкого щита отполирована до зеркального блеска.</content>
+  <content contentuid="h7632d18ag1e59g4f21ga219g45a38fe38e68" version="8">Щит с шипами</content>
+  <content contentuid="h6aa99b70g8343g44c4g82aagfcb86b4c7f54" version="7">Поверхность щита покрыта мелкими пятнами ржавчины.</content>
+  <content contentuid="h767e9cf6gae67g1659gb611gffc2531b1be6" version="6">Щит</content>
+  <content contentuid="he7997288g0771g4139gba45geb8ebdf94104" version="5">Бочка с маслом</content>
+  <content contentuid="hf0f3a86cg6dcag4ad9g9a3agdd9b9434afd2" version="5">Сквозь трещины медленно вытекают черные смолистые капли.</content>
+  <content contentuid="h8a416ad7gcb83g47aeg8044g7bdb998655f8" version="8">Бутыль</content>
+  <content contentuid="h58482de2g881eg4cd6g8d04gd7e0754102ba" version="5">Темное стекло бутылки одновременно и скрывает, и защищает жидкость внутри.</content>
+  <content contentuid="h82b14187g39a9g442fgb00fg025c3b98763e" version="5">Бутыль</content>
+  <content contentuid="h5a8c583dg4b97g42e1gb97egd36ca8a7cb14" version="5">На дне бутылки засохла непонятная жидкость.</content>
+  <content contentuid="hb1ede137g17c3gfaf8g572egd09e2e844f8c" version="2">Подходит для заполнения маслом.</content>
+  <content contentuid="h959edfaegf593gb8acgc7f9gcb8658869bfb" version="2">Подходит для заполнения маслом.</content>
+  <content contentuid="h6d8c4ce4g4b48g6a02g4da9g7837372e35c5" version="2">Гномья кузница</content>
+  <content contentuid="hd8f30160g9c80g5f24g34aeg4dbb633581e2" version="2">Снаряжение, созданное в Гномьей кузнице получает дополнительные свойства.</content>
+  <content contentuid="h0a312460g900cg67d4g2f33gf441c9a81840" version="3">KELA_SMELTINGFORGE_AURA_GNOME_TOOL</content>
+  <content contentuid="h19f57bc2g4380g1146g372fg2204ef7daeb4" version="2">Гномья силовая броня</content>
+  <content contentuid="hf16d2366g32a0g4421gd4feg0eb4d12322f1" version="2">KELA_FORGED_ARMOR_GNOMEFORGE_BONUS Name</content>
+  <content contentuid="h3cf3c857gbc45g67c4g9b4ag75f56bbd6590" version="2">Эта броня создана в Гномьей кузнице, что придало ей &lt;LSTag Tooltip="Resistant"&gt;сопротивляемость&lt;/LSTag&gt; силовому урону и увеличило &lt;LSTag Tooltip="ArmorClass"&gt;класс брони&lt;/LSTag&gt; на [1].</content>
+  <content contentuid="h03a45cfcgf180g0c90g680fg6c19be1b8200" version="2">Гномье силовое оружие</content>
+  <content contentuid="haa26824cg8e2ega834gf0f4g7e41fd001808" version="4">Это оружие создано в Гномьей кузнице, что придало ему силовые свойства: игнорирует сопротивление силовому урону и наносит дополнительно [1].</content>
+  <content contentuid="hdbf86cdag319dg8addgefeag0b1fc625107c" version="2">KELA_FORGED_WEAPON_GNOMEFORGE_TECHNICAL Name</content>
+  <content contentuid="h30bfe51cgb1edgb0cag23adgc57a4729c68a" version="1">KELA_FORGED_WEAPON_GNOMEFORGE_TECHNICAL Description</content>
+  <content contentuid="he584c0f4gb8e8geeb2g8ac6g768dac65dac8" version="3">Метка кузнечного лута</content>
+  <content contentuid="h87b4cdcag047ag6a17g0332gf35ddc753fee" version="3">Позволяет пометить предмет как кузнечный лут для автоматического добавления в сундук кузнеца. &lt;br&gt;Можно отметить другой контейнер для сбора в сундуке стандартных предметов.</content>
+  <content contentuid="h8076efd8gde74ge2d5gaa0fgc1fb185f2d89" version="2">Кузница Последнего света</content>
+  <content contentuid="hfd8010e2gae51ga72cg8dc7g2f7a93837951" version="3">KELA_SMELTINGFORGE_AURA_LASTINN_TOOL</content>
+  <content contentuid="h9755d826gfa56gd5f7g3e93g77bb65ce2c0c" version="2">Кузница проклятых теней</content>
+  <content contentuid="ha156be6fg58e4ge2b2g66fbg73802c6df7af" version="2">Снаряжение, созданное в Кузнице проклятых теней получает дополнительные свойства.</content>
+  <content contentuid="h04e96f29g07c3ga62cg3b14g8ad3431b029c" version="3">KELA_SMELTINGFORGE_AURA_CURSED_TOOL</content>
+  <content contentuid="h7b996696g64fdg35c6gd426gfb6febaf6b48" version="3">Эта броня создана в Кузнице Последнего света, что придало ей &lt;LSTag Tooltip="Resistant"&gt;сопротивляемость&lt;/LSTag&gt; некротическому урону и увеличило &lt;LSTag Tooltip="ArmorClass"&gt;класс брони&lt;/LSTag&gt; на [1].</content>
+  <content contentuid="h6339eb7bg861cg828eg5b75g13b13a4375f2" version="2">Броня Последнего света</content>
+  <content contentuid="h2bd0cf40g9fd0g2350g3b5agadad9f8b0cbf" version="2">KELA_FORGED_ARMOR_LASTINN_BONUS Name</content>
+  <content contentuid="h0eaec128g3e14g7004g6c10g25dff966a148" version="3">Эта броня создана в Кузнице Проклятых теней, что придало ей &lt;LSTag Tooltip="Resistant"&gt;сопротивляемость&lt;/LSTag&gt; лучевому урону и увеличило &lt;LSTag Tooltip="ArmorClass"&gt;класс брони&lt;/LSTag&gt; на [1].</content>
+  <content contentuid="heacb5c0bgb9d0ged78ga5d3gfed30943ad44" version="2">Броня Проклятых теней</content>
+  <content contentuid="h4b572161gc5f6ge315gbf5cg6fb62a3f3796" version="2">KELA_FORGED_ARMOR_CURSED_BONUS Name</content>
+  <content contentuid="hbaaf2a12g9074gf38egcbdfg830dabd8b414" version="2">Оружие Последнего света</content>
+  <content contentuid="ha86c0ffcge6c1gafdeg998ege4323093065a" version="3">Это оружие создано в Кузнице Последнего света, что придало ему лучистые свойства: игнорирует сопротивление лучистому урону и наносит дополнительно [1].</content>
+  <content contentuid="hc548d21egda7eg1673g75ccg1bfb91c084ab" version="3">KELA_FORGED_WEAPON_LASTINN_BONUS Name</content>
+  <content contentuid="h035e72a1gb064g2ce5g4c53g8fbbd1b11868" version="1">KELA_FORGED_WEAPON_GNOMEFORGE_TECHNICAL Description</content>
+  <content contentuid="hb92a5a4agde53ga65fg565egb64cb5b1f328" version="2">Оружие Проклятых теней</content>
+  <content contentuid="hdb59764bga871g690ag3094g412f57dacd64" version="3">Это оружие создано в Кузнице Проклятых теней, что придало ему некротические свойства: игнорирует сопротивление некротическому урону и наносит дополнительно [1].</content>
+  <content contentuid="hadd94046g5e28gfc88g35ccgeceb2ad137e0" version="3">KELA_FORGED_WEAPON_CURSED_BONUS Name</content>
+  <content contentuid="h39eb9780g6ad2ga4d0g50b1g44e2b2de65b9" version="1">KELA_FORGED_WEAPON_GNOMEFORGE_TECHNICAL Description</content>
+  <content contentuid="ha684f4d3g8b4bg79afgc965gb215a4780830" version="2">Оружие Девяти</content>
+  <content contentuid="h909b6206g7f2dga519gb6aeg69620247c9ee" version="2">Это оружие создано в Кузнице Девяти, что придало ему огненные свойства: игнорирует сопротивление огненному урону и наносит дополнительно [1].</content>
+  <content contentuid="hd29c6c0cg4e60ge224gf3acg5d61b5f78357" version="1">KELA_FORGED_WEAPON_NINE_BONUS Name</content>
+  <content contentuid="hb4411942g1ca3g2eb8g93b4g062f6ce7efa4" version="2">Эта броня создана в Кузнице Девяти, что придало ей &lt;LSTag Tooltip="Resistant"&gt;сопротивляемость&lt;/LSTag&gt; огненному урону и увеличило &lt;LSTag Tooltip="ArmorClass"&gt;класс брони&lt;/LSTag&gt; на [1].</content>
+  <content contentuid="had52c720g4ad7gb3e5g27e9g48cadda1ad1f" version="2">Броня Девяти</content>
+  <content contentuid="hc826ebd3g90e6g107dgecb2gf2763e8745c2" version="1">KELA_FORGED_ARMOR_NINE_BONUS Name</content>
+  <content contentuid="h7c7ab18aga264ge18dgdcebgb1c74f20557b" version="2">Кузница Девяти</content>
+  <content contentuid="h55053c71gab4eg07a1ga262g2ab7d29be93a" version="2">KELA_SMELTINGFORGE_AURA_NINE_TOOL</content>
+  <content contentuid="hd2b85f29g3d6fg6579gdd83g13dfb3a7e907" version="2">Тигель</content>
+  <content contentuid="h237fed70g59c1g6b6ag311ag853f5e1d668c" version="2">В этом тигеле можно переплавлять металы, если знаешь как (Кузнец).</content>
+  <content contentuid="h5aae0597g3c82g63c8g3695g5db33031853a" version="2">Щит</content>
+  <content contentuid="hab3a2358gf5c3ge6c9gb404gf8883aa964c9" version="1">На щите – герб давно забытого дворянского дома.</content>
+  <content contentuid="h47790ba8g1070g8c36g17a3g0c41710558cf" version="1">Плавильная печь</content>
+  <content contentuid="h78f009a6g2ca2gf4bbg8b2cg036cc62a8870" version="1">Плавильная печь</content>
+  <content contentuid="h3a6dcd9bgf846g147cg169dg296971661010" version="1">Плавильная печь</content>
+  <content contentuid="hc792a376g3155gc636g309bge4ff14540d84" version="1">Чтобы улучшить оружие, возьмите его в основную руку и используйте верстак. &lt;br&gt;Если ни у кого из ваших союзников нет масла и вы не боитесь испортить оружие, используйте верстак дважды, игнорируя предупреждение. &lt;br&gt;&lt;br&gt;Чтобы создать новое снаряжение войдите в нужный режим создания и используйте верстак.</content>
+  <content contentuid="h65915dd9g24b4g3d67g9080g5b5502c11b8f" version="1">Верстак, видавший лучшие дни. Используется для улучшения дальнобойного оружия, посохов и дубинок, а также для создания нового снаряжения.</content>
+  <content contentuid="h938872b0g3edegea0bg2f33gc346d90730db" version="2">Тяжелая и надежная наковальня, вся в следах тяжелых ударов кузнеца. Если поблизости есть работающая печь, то эту наковальню еще можно использовать для улучшения или ковки нового снаряжения.</content>
+  <content contentuid="h52062f6bg755bgc30bg0abfgd40c5ade58bb" version="1">Чтобы улучшить оружие, возьмите его в основную руку и используйте наковальню. &lt;br&gt;Если ни у кого из ваших союзников нет масла и вы не боитесь испортить оружие, используйте наковальню дважды, игнорируя предупреждение. &lt;br&gt;&lt;br&gt;Чтобы выковать новое снаряжение войдите в нужный режим создания и используйте наковальню.</content>
+  <content contentuid="hecb01062gd105g1d20g1b22gb27231bb264d" version="1">Можно разлить по подходящим бутылкам.</content>
+  <content contentuid="h6c7dcd60g8644ge9ebg7dccga9c66dc4cc5d" version="1">Снаряжение, созданное в Кузнице Последнего света получает дополнительные свойства.</content>
+  <content contentuid="h508435b8g7efcg1b2ag27d8g25d1b6485285" version="1">Снаряжение, созданное в Кузнице Девяти получает дополнительные свойства.</content>
+  <content contentuid="ha700efe7g081cgc436gee56g1f065eba44bd" version="1">KELA_USER_BLOCK_MOVEMENT</content>
+  <content contentuid="h116f9179gb3fcga3e6g7ddfgda1e50623511" version="1">KELA_MESSAGE_STATUS</content>
+  <content contentuid="hd7451a09gb5ffg2b52g852egbe0ab2a7081e" version="2">В основной руке нет дальнобойного оружия.</content>
+  <content contentuid="h18c84b2dg09c2geb18g2f37gedb9bc242dd4" version="2">В основной руке нет ударного оружия.</content>
+  <content contentuid="h407b8589g16f5g49f7g0325gf7cf170d7a1c" version="1">Даёт оружию бонус к урону [1].</content>
+  <content contentuid="hf13b1c99g4cb2g0645ga9a7g738cca9ced57" version="1">Гильдейское качество</content>
+  <content contentuid="h7da9c2c0g27d2gbb81ga6a6gcf41aee0d5ac" version="1">Гильдейское качество</content>
+  <content contentuid="h9724679fg9a31g9926g5233gd605562f6a51" version="1">Гильдейское качество</content>
+  <content contentuid="hdf284b85g8a1eg31eage807g50b29524d5c3" version="1">Это оружие было создано опытным гильдейским мастером, что даёт ему бонус [1] к &lt;LSTag Tooltip="AttackRoll"&gt;броскам атаки&lt;/LSTag&gt;.</content>
+  <content contentuid="h4e413efdg43adg70e9ge067g1ccd5bde2c3b" version="1">Эта броня была создана опытным гильдейским мастером, что даёт ей бонус к &lt;LSTag Tooltip="ArmorClass"&gt;классу брони&lt;/LSTag&gt; [1].</content>
+  <content contentuid="h1f28a99fg96a5g2cf6gaeffg7c3c8e633b52" version="1">Эльфийское качество</content>
+  <content contentuid="h2c8e1789g862cg8648gb5e1g9c6ecbf7d628" version="1">Это оружие было создано представителем эльфийской расы, что даёт ему бонус [1] к &lt;LSTag Tooltip="AttackRoll"&gt;броскам атаки&lt;/LSTag&gt;.</content>
+  <content contentuid="h5b954cb0g768eg534bg0dacg23b7da9c19ab" version="1">Гномья силовая броня</content>
+  <content contentuid="h4873799dg84cag3bbdgcb81gbca8b0762680" version="1">Броня Последнего света</content>
+  <content contentuid="hc1b163fbg4967g0b73gd3f6gfb9bd796d3ce" version="1">Броня проклятых теней</content>
+  <content contentuid="h3de76accgeac3ge643ga4a8g9e68fa806c16" version="1">Броня Девяти</content>
+  <content contentuid="h415f4d94g33eeg8934g4f1eg5a09f200e0e9" version="1">Деревянные доски сундука обожжены для прочности и укреплены толстыми полосками железа. </content>
+  <content contentuid="hc7bb4904gc4d8g916fg45ddg7570df1e502c" version="2">Деревянные доски сундука обожжены для прочности и укреплены толстыми полосками железа.</content>
+  <content contentuid="h13e3fc81g9f9bg7b59g5b97g6c5880068596" version="1">Деревянные доски сундука обожжены для прочности и укреплены толстыми полосками железа.</content>
+  <content contentuid="hf8626d4fgb592g630bg0f6ag2b0741cbfa51" version="1">Деревянные доски сундука обожжены для прочности и укреплены толстыми полосками железа.</content>
+  <content contentuid="h884cbaaag1e66ga3e7gd2ddg64847b8f174f" version="1">Деревянные доски сундука обожжены для прочности и укреплены толстыми полосками железа.</content>
+  <content contentuid="h9461f1b2g9fb8g89c1g1030g16e5df19517f" version="1">Деревянные доски сундука обожжены для прочности и укреплены толстыми полосками железа.</content>
+  <content contentuid="hd3ae2f8dgda6egf88fgd060g66d0998bda89" version="3">KELA_TECHNICAL_PASSIVE_SPELL_CREATE_NAME</content>
+  <content contentuid="h12c22a35g6bc4gacc8g592agb118a02039ce" version="3">KELA_TECHNICAL_PASSIVE_SPELL_CREATE_DESCRIPTION</content>
+  <content contentuid="hfa0acb7fge961g8b7dg013cg39fa003f074f" version="3">KELA_TECHNICAL_ITEM_TOOLTIP_NAME</content>
+  <content contentuid="h27aa496dg740bg19acg4edeg2f187d1a6391" version="3">KELA_TECHNICAL_ITEM_TOOLTIP_DESCRIPTION</content>
+  <content contentuid="h81409c07g5ac6g5e5agc062gbb0dc12b6929" version="3">Суссурная броня</content>
+  <content contentuid="hcaddca59g7e85g77b7g6b6cg3a1f0f697816" version="2">&lt;br&gt;&lt;br&gt;&lt;b&gt;Аура кузниц&lt;/b&gt;&lt;br&gt;В некоторых кузницах созданное снаряжение получает дополнительные свойства. Как будто кузница перенимает окружающую её атмосферу или привычки работающего в ней кузнеца...</content>
+  <content contentuid="h5653b900ga1deg96fbge56bgc2a38c2d62a2" version="10">Кусок дерева</content>
+  <content contentuid="h63a04ff5gf657ge440ga8d4g2862f370fa6b" version="4">Ветка</content>
+  <content contentuid="h48078a9cgd290g61bdg76e0g6effcdeba86e" version="13">Коровья шкура</content>
+  <content contentuid="h3f8dceafg2fbag1b8bg486bga46696e992aa" version="8">Оленья шкура</content>
+  <content contentuid="h9cf0bb96ga207g8576g31cbg1761b2358857" version="4">Волчья шкура</content>
+  <content contentuid="h20370b9fg9e79g4c8bgfaafgfabe3a3462b2" version="7">Медвежья шкура</content>
+  <content contentuid="h3aef5c86g80deg0990g1073g23565341c642" version="6">Овечья шкура</content>
+  <content contentuid="ha7ecaabcgc020g5cbag1b87gd67bc6572a0c" version="7">Кроличья шкура</content>
+  <content contentuid="hccad2469g7575g1b25g0141g847c4161e5b8" version="7">Дубильный станок</content>
+  <content contentuid="h8bc9e0a6g625fg224eg5e75g9f57c5993a88" version="4">Дублённая кожа</content>
+  <content contentuid="h0ad180d0g898bg3b0dgcaf1ga934c81cb926" version="2">Кожанные полоски</content>
+  <content contentuid="haf3a310fg9d39g6b17g879ag3a9b30fa369c" version="4">Оружейник может использовать шкуры для изготовления снаряжения в кузницах. &lt;br&gt;На дубильном станке шкуры можно переработать в кожу и кожаные полоски.</content>
+  <content contentuid="h87fdce7cg7d24g8da8gbe01g1111e86e9adc" version="3">Оружейник может использовать шкуры для изготовления снаряжения в кузницах. &lt;br&gt;На дубильном станке шкуры можно переработать в кожаные полоски.</content>
+  <content contentuid="h4712597fgd482g7ddagad7dg41dd78ae1c26" version="1">Используется для изготовления снаряжения в кузницах. &lt;br&gt;Можно получить, обработав шкуру на дубильном станке.</content>
+  <content contentuid="hfee3ee19ge130g5381g67d4g98ad3fa1d3c2" version="3">Используется для изготовления снаряжения в кузницах. &lt;br&gt;Можно получить, разбив деревянные предметы.</content>
+  <content contentuid="h8480ef50g8145g4524gb354g7490ecaa902d" version="5">Дубина +2</content>
+  <content contentuid="hfb502717g447cg4038g95bbg4ff7a448f733" version="3">Дротик +2</content>
+  <content contentuid="h1f51d350gddf6g4b00g9cffg32b3d8125c4b" version="12">Верёвка</content>
+  <content contentuid="h6f744071ge8fag461fg9e49g6b1205d27d50" version="12">Кусок прочной, сплетенной вручную веревки.</content>
+  <content contentuid="h6e343244gf9f0g1dbbg8b4ag61b5fbc3c688" version="2">Топор +2</content>
+  <content contentuid="h36b41285g63f4g9608gb2ceg697f74cc3cef" version="1">Дёгкий молот +2</content>
+  <content contentuid="hbad3849egf677g79a6g88e7g98a188528873" version="1">Серп +1</content>
+  <content contentuid="ha5873df1g2ce8g0a50gcd34gd5d75c3a46eb" version="1">Серп +2</content>
+  <content contentuid="h740ece33ga6c8g3c01ga6bbg89792d52177d" version="1">Для дубления шкуры вам понадобится сама шкура, масло и древесный уголь. &lt;br&gt;Количество дубленой кожи и полосок зависит от размера шкуры.</content>
+  <content contentuid="h5754be92ge904g44e8g87a9gfe52008c6083" version="4">Бык</content>
+  <content contentuid="hb5d8ff67g7408g4eedga201g301bee497866" version="3">Кролик</content>
+  <content contentuid="h65382c6ag9f4fg4cfbg9f5dgb201abbd14a3" version="3">Ужасный волк</content>
+  <content contentuid="h65aed1dfgf910g460bga34agecac9c2c788e" version="3">Волк</content>
+  <content contentuid="h6373b882gb80cg4d0cga266gb5ccdeec796c" version="3">Медведь</content>
+  <content contentuid="h664f86d2g963ag47a5ga1b3g5b0011cb9dad" version="3">Белый медведь</content>
+  <content contentuid="hd9f3c716g537eg4dd7g9b64g8b1caca1fc74" version="3">Овца</content>
+  <content contentuid="h8b60dbcbgd407g06dbg31fag4bb18732fe4b" version="19">&lt;br&gt;&lt;br&gt;&lt;b&gt;Переделка&lt;/b&gt;&lt;br&gt;------------------------------------------------------------------------------&lt;br&gt;Верстак (оружие): &lt;i&gt;&lt;br&gt;   Короткий лук - ветка &lt;br&gt;   Длинный лук - две ветки &lt;br&gt;   Дубина, Пика, Копьё, Трезубец, Клевец - ветка и бронза&lt;br&gt;   Алебарда - ветка и 2 бронзы &lt;br&gt;   Посох, Глефа - ветка, броназ, кожаная полоска &lt;br&gt;   Ручной арбалет, Лёгкий арбалет - дерево, бронза и верёвка &lt;br&gt;   Тяжёлый арбалет - дерево, 2 бронзы и верёвка &lt;br&gt;   Большая дубина - дерево, бронза и кожанаая полоска &lt;br&gt;   Дротик - бронза и перо &lt;/i&gt;&lt;br&gt;Верстак (доспехи): &lt;i&gt;&lt;br&gt;   Стёганый доспех - кожа и полоска кожи&lt;br&gt;   Кожаный - 2 кожи и полоска кожи&lt;br&gt;   Клёпанный кожаный доспех, Кольчатый доспех - бронза, кожа и полоска кожи&lt;br&gt;   Сыромятный доспех - волчья шкура, 2 кожи и полоска кожи&lt;br&gt;   Чешуйчатый доспех - бронза, 2 кожи и полоска кожи &lt;/i&gt;&lt;br&gt;Верстак (щиты): &lt;i&gt;&lt;br&gt;   Круглые щиты - 3 дерева, бронза и полоска кожи &lt;br&gt;   Большие щиты - 4 дерева, 2 бронзы и полоска кожи &lt;/i&gt;&lt;br&gt;Наковальня (оружие): &lt;i&gt;&lt;br&gt;   Кинжал - бронза &lt;br&gt;   Боевой топор, Цеп - дерево, бронза и полоска кожи&lt;br&gt;   Двуручный топор, Боевой молот - ветка, 2 бронзы и полоска кожи&lt;br&gt;   Двуручный меч - 3 бронзы и полоска кожи&lt;br&gt;   Топорик - дерево и бронза&lt;br&gt;   Лёгкий молот A, Булава, Моргенштерн - ветка и бронза&lt;br&gt;   Лёгкий молот B, Двуручный молот - ветка и 2 бронзы&lt;br&gt;   Длинный меч - 2 бронзы и кожаная полоска&lt;br&gt;   Рапира, Скимитар, Короткий меч, Серп - бронза и кожаная полоска &lt;/i&gt;&lt;br&gt;Наковальня (доспехи): &lt;i&gt;&lt;br&gt;   Нагрудник, Кольчужная рубаха, Полулаты - 2 бронзы, кожа и полоска кожи&lt;br&gt;   Кольчужный доспех, Пластинчатый доспех, Латы - 3 бронзы, кожа и полоска кожи&lt;br&gt;&lt;/i&gt;</content>
+  <content contentuid="hc9175b7fg53f4g0538g34b1g78c99a2bc920" version="3">Сундук переделки</content>
+  <content contentuid="hdb1b6d9bg399ege711g27fege12f95bc1177" version="3">Сундук для переделки используется как вспомогательный инструмент при переделке снаряжения. &lt;br&gt;&lt;br&gt;Переработка доступна кузнцеу, гильдейцу или персонажу с эльфийскими корнями, с уровнем от 4. &lt;br&gt;Переделывать можно только уровневые предметы (обычный, +1, +2), а также их испорченные версии. &lt;br&gt;Результат переделки зависит от уровня персонажажа (обычный предмет - 4 уровень, +1 предмет - уровень 6, +2 предмет - уровень 8). &lt;br&gt;&lt;br&gt;Использование: &lt;br&gt;Войдите в режим переделки, поместите в сундук шаблонный предмет, ингредиенты и используйте подходящий инструмент поблизости: верстак или наковальню, в зависимости от шаблона.</content>
+  <content contentuid="hd3bc133cg8c17ge5a5g470cge332e938f0b0" version="3">Деревянные доски сундука обожжены для прочности и укреплены толстыми полосками железа.</content>
+</contentList>

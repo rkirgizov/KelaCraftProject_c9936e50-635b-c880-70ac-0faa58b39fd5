@@ -1,0 +1,284 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+DB_KELA_Initialized(0);
+
+DB_KELA_Blacksmith_Books_Template((ITEMROOT)KELA_Blacksmith_Notes_2025c056-f6d5-4de4-b5ee-97ff04af7dcb);
+DB_KELA_Blacksmith_Books_Template((ITEMROOT)KELA_Blacksmith_Log_Book_9f4b1d6f-7551-440f-9a6b-468f40578a7b);
+DB_KELA_Blacksmith_Books_Template((ITEMROOT)KELA_Blacksmith_Apprentice_Notes_144d2ec2-bb6a-4ecd-93f4-5247974b0120);
+
+DB_KELA_UpgradeTools_Tags((TAG)KELAANVIL_01dc7295-d16e-4d98-afe2-ea39c5f1ba43, "KELAANVIL");
+DB_KELA_UpgradeTools_Tags((TAG)KELAWHETSTONE_80b11843-186f-4b78-bd17-850d5c7ec4d9, "KELAWHETSTONE");
+DB_KELA_UpgradeTools_Tags((TAG)KELAWORKBENCH_d2eedda0-c4ce-4602-960e-c57b4989b420, "KELAWORKBENCH");
+
+DB_KELA_Workbench_User_Tags((TAG)GUILD_ARTISAN_baf9fb0e-f535-40a0-bb78-3ec289d84e66);
+DB_KELA_Workbench_User_Tags((TAG)KELABLACKSMITH_c78b77b9-b33c-43fb-8dec-a91bacebb1bf);
+DB_KELA_Workbench_User_Tags((TAG)KELABLACKSMITHAPPRENTICE_5c77c6bf-22f7-4109-b9f8-21e3bd7a2634);
+DB_KELA_Workbench_User_Tags((TAG)REALLY_ELF_772b1dc6-14be-417f-afa3-c6cf364f45b4);
+DB_KELA_Workbench_User_Tags((TAG)REALLY_DROWELF_676e854b-d74b-44f3-8363-3ef27164a54d);
+DB_KELA_Workbench_User_Tags((TAG)REALLY_WOODELF_b12e8dff-c1f0-4e9c-9ec0-1cafd22bb637);
+DB_KELA_Workbench_User_Tags((TAG)REALLY_HALFELF_277f9609-ad0c-4883-b56d-0850904e88df);
+
+DB_KELA_CoreToolTag_CreateToolTemplate((TAG)KELAANVIL_01dc7295-d16e-4d98-afe2-ea39c5f1ba43, (ITEMROOT)KELA_Helper_Invisible_WeaponCreateTool_Anvil_ea982ccb-29b6-4fc5-af73-ac162e31cf78);
+DB_KELA_CoreToolTag_CreateToolTemplate((TAG)KELAWORKBENCH_d2eedda0-c4ce-4602-960e-c57b4989b420, (ITEMROOT)KELA_Helper_Invisible_WeaponCreateTool_Workbench_194e5626-78b0-4f04-8556-8e74d787e1b8);
+
+DB_KELA_Elf_Tags((TAG)REALLY_ELF_772b1dc6-14be-417f-afa3-c6cf364f45b4);
+DB_KELA_Elf_Tags((TAG)REALLY_DROWELF_676e854b-d74b-44f3-8363-3ef27164a54d);
+DB_KELA_Elf_Tags((TAG)REALLY_WOODELF_b12e8dff-c1f0-4e9c-9ec0-1cafd22bb637);
+DB_KELA_Elf_Tags((TAG)REALLY_HALFELF_277f9609-ad0c-4883-b56d-0850904e88df);
+KBSECTION
+// -----------------------------------------------------------------------------------
+// DEBUG 
+// -----------------------------------------------------------------------------------
+//REGION DEBUG region
+//
+// Debag Message 
+// Entity must match
+// DualEntityEvent(_Entity, _Entity, _EventMessage)
+IF
+DualEntityEvent(_Main, _Debug, _EventMessage)
+AND
+GetHostCharacter(_Player)
+AND 
+_Main == _Debug
+AND
+GUIDToString(_Main, _ItemString)
+AND
+GetDisplayName(_Main,_TranslatedStringKey)
+AND
+ResolveTranslatedString(_TranslatedStringKey,_Name)
+AND
+Concatenate("KELA DEBUG (Entity ",_Name,_FirstResult)
+AND
+Concatenate(_FirstResult,"): ",_SecondResult)
+AND
+Concatenate(_SecondResult,_EventMessage,_FinalResult)
+THEN
+ShowNotification((CHARACTER)_Player, _FinalResult);
+DebugBreak(_FinalResult);
+//DebugText(_Player, _FinalResult);
+//END_REGION
+// -----------------------------------------------------------------------------------
+// DEBUG 
+// -----------------------------------------------------------------------------------
+//
+
+
+IF
+SavegameLoaded()
+AND
+DB_KELA_Initialized(0)
+THEN
+TimerLaunch("KELA_Wait_Game_Loaded", 5000);
+
+IF
+LevelLoaded(_)
+AND
+DB_KELA_Initialized(0)
+THEN
+TimerLaunch("KELA_Wait_Game_Loaded", 5000);
+
+// INIT finish
+IF
+TimerFinished("KELA_Wait_Game_Loaded")
+THEN
+NOT DB_KELA_Initialized(0);
+DB_KELA_Initialized(1);
+SetFlag(GLO_KELA_KelaCraftProject_Initialized_a344df28-2bed-42da-8862-4b7b363b3d27,NULL_00000000-0000-0000-0000-000000000000, 1); // flagType: Global
+
+//IF
+//FlagSet((FLAG)GLO_KELA_KelaCraftProject_Initialized_a344df28-2bed-42da-8862-4b7b363b3d27,NULL_00000000-0000-0000-0000-000000000000,_)
+//AND
+//DB_KELA_Log_Book_Template(_Template)
+//AND
+//GetHostCharacter(_Character)
+//THEN
+//TemplateAddTo(_Template, _Character, 1, 1);
+//ShowNotification((CHARACTER)_User, "Kela Craft Project Succesfully Initialized");
+//QuestUpdate(_Character, "HIDDEN_KELA_Initialized", "KelaInitialized");
+
+//----------------------------------------------------------------
+// TECHNICAL 
+//----------------------------------------------------------------
+//
+
+
+// Add Technical Passive for Creation mod spell
+IF
+DB_Players(_User)
+//AND
+//DB_KELA_Initialized(1)
+THEN
+// SetDualEntityEvent(_User, _User, "AddPassive");
+RemovePassive(_User, "PassiveTechnical_KelaCraftProject_Creation_Spell");
+ObjectTimerLaunch(_User, "KELA_Wait_Update_Passive", 100);
+
+// When got BLACKSMITH we need clear Apprentice passive and tag
+IF 
+TagSet(_User,(TAG)KELABLACKSMITH_c78b77b9-b33c-43fb-8dec-a91bacebb1bf)
+THEN
+TemplateAddTo((ITEMROOT)KELA_Blacksmith_Notes_2025c056-f6d5-4de4-b5ee-97ff04af7dcb,_User,1,1);
+RemovePassive(_User, "PassiveFeature_Blacksmith_Apprentice");
+ClearTag(_User,(TAG)KELABLACKSMITHAPPRENTICE_5c77c6bf-22f7-4109-b9f8-21e3bd7a2634);
+
+// Reading _ApprenticeNotes
+IF
+UseFinished(_User,_ApprenticeNotes,_)
+AND
+DB_Players(_User) // used to be checking for DB_PartyMembers, problem with this is that if a familiar/summon was used, it'll be treated like whole party is following a companion into the hole - which isn't expected behavior.
+//AND
+//IsControlled(_User, 1)
+AND
+IsTagged(_ApprenticeNotes, (TAG)KELABLACKSMITHAPPRENTICENOTES_1527a1f5-146a-45bd-96cd-1d704d492a75, 1)
+AND
+HasPassive(_User,"PassiveFeature_Blacksmith",0)
+AND
+HasPassive(_User,"PassiveFeature_Blacksmith_Apprentice",0)
+THEN
+AddPassive(_User,"PassiveFeature_Blacksmith_Apprentice");
+AddPassive(_User,"Proficiency_LightHammers");
+ApplyStatus(_User, "KELA_MESSAGE_GET_BLACKSMITH_APPRENTICE_PASSIVE", 15.0, 1);
+SetTag(_User,(TAG)KELABLACKSMITHAPPRENTICE_5c77c6bf-22f7-4109-b9f8-21e3bd7a2634);
+
+// debug remove and add passive for spell
+//
+
+IF
+SavegameLoaded()
+AND
+DB_Players(_User) // used to be checking for DB_PartyMembers, problem with this is that if a familiar/summon was used, it'll be treated like whole party is following a companion into the hole - which isn't expected behavior.
+AND
+NOT HasSpell(_User,"Shout_KELA_Craft_Creation_Mod",1)
+THEN
+//SetDualEntityEvent(_User, _User, "Shout_KELA_Craft_Creation_Mod");
+RemovePassive(_User, "PassiveTechnical_KelaCraftProject_Creation_Spell");
+ObjectTimerLaunch(_User, "KELA_Wait_Update_Passive", 100);
+
+IF
+LevelLoaded(_)
+AND
+DB_Players(_User) // used to be checking for DB_PartyMembers, problem with this is that if a familiar/summon was used, it'll be treated like whole party is following a companion into the hole - which isn't expected behavior.
+AND
+NOT HasSpell(_User,"Shout_KELA_Craft_Creation_Mod",1)
+THEN
+//SetDualEntityEvent(_User, _User, "Shout_KELA_Craft_Creation_Mod");
+RemovePassive(_User, "PassiveTechnical_KelaCraftProject_Creation_Spell");
+ObjectTimerLaunch(_User, "KELA_Wait_Update_Passive", 100);
+
+IF
+TemplateUseFinished(_User,(ITEMROOT)_BlacksmithBook,_,_)
+AND
+DB_KELA_Blacksmith_Books_Template(_Template)
+AND
+DB_Players(_User) // used to be checking for DB_PartyMembers, problem with this is that if a familiar/summon was used, it'll be treated like whole party is following a companion into the hole - which isn't expected behavior.
+AND
+NOT HasSpell(_User,"Shout_KELA_Craft_Creation_Mod",1)
+THEN
+//SetDualEntityEvent(_User, _User, "Shout_KELA_Craft_Creation_Mod");
+RemovePassive(_User, "PassiveTechnical_KelaCraftProject_Creation_Spell");
+ObjectTimerLaunch(_User, "KELA_Wait_Update_Passive", 100);
+//
+IF
+TemplateUseFinished(_User,(ITEMROOT)_BlacksmithBook,_,_)
+AND
+DB_KELA_Blacksmith_Books_Template(_Template)
+AND
+DB_Players(_User) // used to be checking for DB_PartyMembers, problem with this is that if a familiar/summon was used, it'll be treated like whole party is following a companion into the hole - which isn't expected behavior.
+AND
+NOT HasSpell(_User,"Target_KELA_Tag_Item",1)
+THEN
+//SetDualEntityEvent(_User, _User, "Target_KELA_Tag_Item");
+RemovePassive(_User, "PassiveTechnical_KelaCraftProject_Creation_Spell");
+ObjectTimerLaunch(_User, "KELA_Wait_Update_Passive", 100);
+//
+IF 
+TagSet((CHARACTER)_User,(TAG)KELABLACKSMITH_c78b77b9-b33c-43fb-8dec-a91bacebb1bf)
+AND
+NOT HasSpell(_User,"Shout_KELA_Craft_Creation_Mod",1)
+THEN
+RemovePassive(_User, "PassiveTechnical_KelaCraftProject_Creation_Spell");
+ObjectTimerLaunch(_User, "KELA_Wait_Update_Passive", 100);
+//
+IF 
+TagSet((CHARACTER)_User,(TAG)KELABLACKSMITH_c78b77b9-b33c-43fb-8dec-a91bacebb1bf)
+AND
+NOT HasSpell(_User,"Target_KELA_Tag_Item",1)
+THEN
+RemovePassive(_User, "PassiveTechnical_KelaCraftProject_Creation_Spell");
+ObjectTimerLaunch(_User, "KELA_Wait_Update_Passive", 100);
+// UPDATE
+IF
+ObjectTimerFinished(_User, "KELA_Wait_Update_Passive")
+THEN
+AddPassive(_User, "PassiveTechnical_KelaCraftProject_Creation_Spell");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+IF
+UsingSpellOnTarget(_Caster, _Item, "Target_KELA_Tag_Item", _, _, _)
+AND
+GetTemplate(_Item, _Template)
+AND
+_Template != KELA_CONT_Chest_For_Blacksmith_52eceb41-7782-4805-9c3d-8093a37dd184
+AND
+NOT IsTagged(_Item, (TAG)KELABLACKSMITHLOOT_3ef3f92e-7e0b-455e-a3e6-55888b3b805c, 1)
+AND
+NOT DB_OnlyOnce("Target_KELA_Tag_Item")
+THEN
+// SetDualEntityEvent(_Caster, _Caster, "USING Target_KELA_Tag_Item");
+SetTag(_Item,(TAG)KELABLACKSMITHLOOT_3ef3f92e-7e0b-455e-a3e6-55888b3b805c);
+DB_OnlyOnce("Target_KELA_Tag_Item");
+
+IF
+UsingSpellOnTarget(_Caster, _Item, "Target_KELA_Tag_Item", _, _, _)
+AND
+GetTemplate(_Item, _Template)
+AND
+_Template != KELA_CONT_Chest_For_Blacksmith_52eceb41-7782-4805-9c3d-8093a37dd184
+AND
+IsTagged(_Item, (TAG)KELABLACKSMITHLOOT_3ef3f92e-7e0b-455e-a3e6-55888b3b805c, 1)
+AND
+NOT DB_OnlyOnce("Target_KELA_Tag_Item")
+THEN
+// SetDualEntityEvent(_Caster, _Caster, "USING Target_KELA_Tag_Item");
+ClearTag(_Item,(TAG)KELABLACKSMITHLOOT_3ef3f92e-7e0b-455e-a3e6-55888b3b805c);
+
+IF
+UsingSpellOnTarget(_Caster, _Item, "Target_KELA_Tag_Item", _, _, _)
+AND
+DB_OnlyOnce("Target_KELA_Tag_Item")
+THEN
+NOT DB_OnlyOnce("Target_KELA_Tag_Item");
+
+
+// QRY USER IS ELVEN
+QRY
+QRY_KELA_Char_Has_Elven_Root((CHARACTER)_User)
+AND
+DB_KELA_Elf_Tags(_ElfTag)
+AND
+IsTagged(_User,_ElfTag,1)
+THEN
+DB_NOOP(1);
+
+
+
+
+
+
+
+EXITSECTION
+
+ENDEXITSECTION
+ParentTargetEdge "GLO_KelaCraftProject"

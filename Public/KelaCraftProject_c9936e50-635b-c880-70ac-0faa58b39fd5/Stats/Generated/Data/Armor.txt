@@ -1,0 +1,17 @@
+new entry "ARM_Shield_Simplest"
+type "Armor"
+using "_Shield"
+data "RootTemplate" "d2af60ea-1b72-4d25-a188-6d8bc4fe255b"
+data "ArmorClass" "1"
+data "ValueScale" "0.5"
+data "Weight" "2.2"
+
+new entry "ARM_Shield_Best"
+type "Armor"
+using "_Shield"
+data "RootTemplate" "23957b7d-d466-4241-996b-63ce2f6df678"
+data "ArmorClass" "4"
+data "ValueScale" "6"
+data "Rarity" "VeryRare"
+data "Weight" "3"
+
